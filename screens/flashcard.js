@@ -1,4 +1,4 @@
-// screens/flashcard.js — 3D Interactive Flashcards with Spaced Repetition
+// screens/flashcard.js — 3D Interactive Flashcards with Spaced Repetition (Mobile-Optimized)
 import { QUESTIONS, TOPICS } from '../data.js';
 import { state, showToast } from '../app.js';
 
@@ -31,7 +31,6 @@ export function renderFlashcards(container, topicId) {
     const topicObj = TOPICS.find(t => t.id === q.topic);
     const topicName = topicObj ? topicObj.nama : q.topic;
     const qState = state.getQuestion(q.id);
-    const correctOption = q.pilihan[q.jawaban] || '';
 
     container.innerHTML = `
       <div class="app-container">
@@ -45,7 +44,7 @@ export function renderFlashcards(container, topicId) {
           </div>
           <!-- Topic selector dropdown / filter chip -->
           <div>
-            <select id="topic-select" style="background:var(--color-paper-2);color:var(--color-ink);border:1px solid var(--color-border);padding:6px 10px;border-radius:var(--radius-md);font-size:var(--text-xs);cursor:pointer;">
+            <select id="topic-select" style="background:var(--color-paper-2);color:var(--color-ink);border:1px solid var(--color-border);padding:6px 10px;border-radius:var(--radius-md);font-size:var(--text-xs);cursor:pointer;" aria-label="Pilih Topik">
               <option value="" ${!topicId || topicId === 'all' ? 'selected' : ''}>Semua Topik (${QUESTIONS.length})</option>
               ${TOPICS.map(t => `<option value="${t.id}" ${topicId === t.id ? 'selected' : ''}>${t.nama} (${t.soalCount})</option>`).join('')}
             </select>
@@ -53,44 +52,72 @@ export function renderFlashcards(container, topicId) {
         </div>
 
         <!-- Progress track -->
-        <div class="progress-track" style="margin-bottom:var(--space-6);">
+        <div class="progress-track" style="margin-bottom:var(--space-5);">
           <div class="progress-fill" style="width:${Math.round(((idx + 1) / total) * 100)}%;"></div>
         </div>
 
         <!-- 3D Flip Card -->
         <div class="flashcard-container">
           <div class="flashcard ${isFlipped ? 'flipped' : ''}" id="main-flashcard" role="button" tabindex="0" aria-label="Flashcard soal ${idx + 1}. Klik untuk membalik kartu.">
-            <!-- Front -->
-            <div class="flashcard-face flashcard-front">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-3);">
+            <!-- Front Face -->
+            <div class="flashcard-face flashcard-front" id="card-front-face">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-3);flex-shrink:0;">
                 <span class="flashcard-label">PERTANYAAN</span>
                 <span class="quiz-topic-label" style="font-size:10px;">${topicName}</span>
               </div>
-              <div class="flashcard-text" style="font-weight:600;font-size:var(--text-lg);color:var(--color-ink);flex:1;display:flex;align-items:center;">
+              
+              <div class="flashcard-text" style="font-weight:600;font-size:var(--text-base);color:var(--color-ink);margin-bottom:var(--space-3);line-height:1.55;">
                 ${q.soal}
               </div>
-              <div style="margin-top:var(--space-4);text-align:center;font-size:var(--text-xs);color:var(--color-ink-3);font-family:var(--font-mono);">
-                👆 Klik / tekan [Spasi] untuk melihat jawaban
+
+              <!-- Options preview -->
+              <div class="flashcard-options-preview" style="flex:1;">
+                ${q.pilihan.map((opt, i) => `
+                  <div class="flashcard-opt-item">
+                    <span style="font-family:var(--font-mono);font-weight:700;color:var(--color-ink-3);flex-shrink:0;">${String.fromCharCode(65 + i)}.</span>
+                    <span style="flex:1;">${opt}</span>
+                  </div>
+                `).join('')}
+              </div>
+
+              <div style="margin-top:var(--space-4);padding-top:var(--space-3);border-top:1px solid var(--color-border);text-align:center;font-size:var(--text-xs);color:var(--color-ink-3);font-family:var(--font-mono);flex-shrink:0;">
+                👆 Klik / [Spasi] untuk melihat jawaban
               </div>
             </div>
 
-            <!-- Back -->
-            <div class="flashcard-face flashcard-back">
-              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-3);">
-                <span class="flashcard-label" style="color:var(--color-correct);">JAWABAN BENAR</span>
+            <!-- Back Face -->
+            <div class="flashcard-face flashcard-back" id="card-back-face">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-3);flex-shrink:0;">
+                <span class="flashcard-label" style="color:var(--color-correct);">KUNCI JAWABAN</span>
                 <span class="quiz-topic-label" style="font-size:10px;">${topicName}</span>
               </div>
-              <div style="flex:1;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;">
-                <div style="font-size:var(--text-base);font-weight:600;color:var(--color-correct);margin-bottom:var(--space-3);">
-                  ✅ ${correctOption}
-                </div>
-                ${q.penjelasan ? `
-                  <div style="font-size:var(--text-sm);color:var(--color-ink-2);line-height:1.6;border-top:1px solid var(--color-border);padding-top:var(--space-3);">
-                    ${q.penjelasan}
-                  </div>
-                ` : ''}
+
+              <div style="font-size:var(--text-xs);color:var(--color-ink-3);margin-bottom:var(--space-3);line-height:1.4;flex-shrink:0;">
+                ${q.soal}
               </div>
-              <div style="margin-top:var(--space-3);text-align:center;font-size:var(--text-xs);color:var(--color-ink-3);font-family:var(--font-mono);">
+
+              <!-- Options with Highlighted Correct Answer -->
+              <div class="flashcard-options-preview" style="flex:1;">
+                ${q.pilihan.map((opt, i) => {
+                  const isCorrect = i === q.jawaban;
+                  return `
+                    <div class="flashcard-opt-item ${isCorrect ? 'correct-opt' : ''}" style="${!isCorrect ? 'opacity:0.6;' : ''}">
+                      <span style="font-family:var(--font-mono);font-weight:700;${isCorrect ? 'color:var(--color-correct);' : 'color:var(--color-ink-3);'}flex-shrink:0;">
+                        ${isCorrect ? '✓' : String.fromCharCode(65 + i)}.
+                      </span>
+                      <span style="flex:1;${isCorrect ? 'font-weight:600;color:var(--color-ink);' : ''}">${opt}</span>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+
+              ${q.penjelasan ? `
+                <div style="font-size:var(--text-xs);color:var(--color-ink-2);line-height:1.55;background:var(--color-paper-4);padding:var(--space-3);border-radius:var(--radius-sm);margin-top:var(--space-3);flex-shrink:0;">
+                  💡 <em>${q.penjelasan}</em>
+                </div>
+              ` : ''}
+
+              <div style="margin-top:var(--space-4);padding-top:var(--space-3);border-top:1px solid var(--color-border);text-align:center;font-size:var(--text-xs);color:var(--color-ink-3);font-family:var(--font-mono);flex-shrink:0;">
                 👆 Klik untuk membalik kembali
               </div>
             </div>
@@ -114,12 +141,12 @@ export function renderFlashcards(container, topicId) {
         </div>
 
         <!-- Navigation buttons -->
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:var(--space-6);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:var(--space-5);">
           <button id="btn-prev" class="btn btn-ghost" ${idx === 0 ? 'disabled' : ''} style="font-size:var(--text-xs);padding:var(--space-2) var(--space-4);">
             ← Sebelumnya
           </button>
           <span style="font-size:var(--text-xs);color:var(--color-ink-3);font-family:var(--font-mono);">
-            Status: ${qState.status === 'correct' ? '✅ Dikuasai' : qState.status === 'wrong' ? '❌ Perlu Review' : 'Belum Dicoba'}
+            ${qState.status === 'correct' ? '✅ Dikuasai' : qState.status === 'wrong' ? '❌ Perlu Review' : 'Belum Dicoba'}
           </span>
           <button id="btn-next" class="btn btn-ghost" ${idx + 1 >= total ? 'disabled' : ''} style="font-size:var(--text-xs);padding:var(--space-2) var(--space-4);">
             Berikutnya →
