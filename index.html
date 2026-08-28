@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>OdooPro — Latihan Sertifikasi Odoo 19</title>
+  <meta name="description" content="321 soal sertifikasi Odoo 19 dengan quiz interaktif, flashcard, exam simulator, dan spaced repetition.">
+  <meta name="theme-color" content="#090b10">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Mobile Header -->
+  <header class="mobile-header">
+    <a href="#dashboard" class="logo" style="text-decoration:none;">
+      Odoo<span class="accent">Pro</span>
+    </a>
+    <div class="header-actions">
+      <div id="xp-pill" class="xp-pill">0 XP</div>
+      <div id="streak-pill" class="streak-pill">1</div>
+    </div>
+  </header>
+
+  <!-- Toast container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- App -->
+  <div id="app">
+    <div class="loading-screen">
+      <div class="spinner"></div>
+      <div style="font-size:0.9rem;font-weight:600;color:var(--color-ink-3);">Memuat OdooPro…</div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav" aria-label="Navigasi Utama">
+    <a href="#dashboard" class="nav-tab active" data-tab="dashboard" aria-label="Dashboard">
+      <svg viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+      <span>Dashboard</span>
+    </a>
+    <a href="#topics" class="nav-tab" data-tab="topics" aria-label="Topik">
+      <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+      <span>Topik</span>
+    </a>
+    <a href="#exam" class="nav-tab" data-tab="exam" aria-label="Exam">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+      <span>Exam</span>
+    </a>
+    <a href="#flashcards" class="nav-tab" data-tab="flashcard" aria-label="Flashcard">
+      <svg viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8"/><path d="M8 10h8"/><path d="M8 14h4"/></svg>
+      <span>Kartu</span>
+    </a>
+    <a href="#progress" class="nav-tab" data-tab="progress" aria-label="Progress">
+      <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+      <span>Progress</span>
+    </a>
+  </nav>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-08-28",
+    "macrostructure": "Dashboard App",
+    "genre": "modern-minimal",
+    "theme": "custom",
+    "theme_axes": "dark / grotesk-sans / cool-purple",
+    "vibe": "technical certification dark utilitarian",
+    "enrichment": "none (typography & 3D CSS cards only)",
+    "brief": "OdooPro — 324 soal sertifikasi Odoo 19 dengan spaced repetition, exam simulator & flashcard",
+    "slop_test": "58 / 58 ✓"
+  }
+]

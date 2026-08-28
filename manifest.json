@@ -1,0 +1,25 @@
+{
+  "name": "OdooPro — Sertifikasi Odoo 19",
+  "short_name": "OdooPro",
+  "description": "Latihan 324 Soal Sertifikasi Resmi Odoo 19 dengan Spaced Repetition, Exam Simulator & Flashcard",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090b10",
+  "theme_color": "#714B67",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

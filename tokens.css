@@ -1,0 +1,90 @@
+/* Hallmark · pre-emit critique: P5 H4 E5 S5 R5 V5
+ * macrostructure: Dashboard App · genre: modern-minimal
+ * theme: custom (vibe: "technical certification dark utilitarian"
+ *   paper oklch(8% 0.01 260) · accent oklch(52% 0.12 320) purple
+ *   Inter + JetBrains Mono)
+ * nav: N/A (bottom-tab PWA) · footer: N/A (app, not page)
+ * axes: dark / grotesk-sans / cool-purple
+ */
+
+:root {
+  /* ─── PAPER (backgrounds) ─── */
+  --color-paper:     oklch(8% 0.01 260);
+  --color-paper-2:   oklch(12% 0.012 260);
+  --color-paper-3:   oklch(16% 0.015 260);
+  --color-paper-4:   oklch(20% 0.018 260);
+
+  /* ─── INK (text) ─── */
+  --color-ink:       oklch(93% 0.01 260);
+  --color-ink-2:     oklch(70% 0.012 260);
+  --color-ink-3:     oklch(50% 0.01 260);
+
+  /* ─── ACCENT (Odoo purple family) ─── */
+  --color-accent:       oklch(52% 0.12 320);
+  --color-accent-hover: oklch(58% 0.14 320);
+  --color-accent-muted: oklch(35% 0.08 320);
+  --color-on-accent:    oklch(98% 0.005 320);
+
+  /* ─── SEMANTIC ─── */
+  --color-correct:      oklch(72% 0.18 155);
+  --color-correct-bg:   oklch(25% 0.06 155);
+  --color-wrong:        oklch(62% 0.22 25);
+  --color-wrong-bg:     oklch(22% 0.06 25);
+  --color-warning:      oklch(78% 0.16 85);
+  --color-warning-bg:   oklch(25% 0.06 85);
+
+  /* ─── BORDERS & RINGS ─── */
+  --color-border:    oklch(22% 0.015 260);
+  --color-border-2:  oklch(28% 0.02 260);
+  --color-focus:     oklch(65% 0.15 320);
+  --color-ring:      oklch(52% 0.12 320);
+
+  /* ─── TYPOGRAPHY ─── */
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* ─── TYPE SCALE (major third — 1.25) ─── */
+  --text-xs:      0.75rem;    /* 12px */
+  --text-sm:      0.875rem;   /* 14px */
+  --text-base:    1rem;       /* 16px */
+  --text-lg:      1.125rem;   /* 18px */
+  --text-xl:      1.25rem;    /* 20px */
+  --text-2xl:     1.5rem;     /* 24px */
+  --text-3xl:     1.875rem;   /* 30px */
+  --text-4xl:     2.25rem;    /* 36px */
+  --text-display: 3rem;       /* 48px */
+
+  /* ─── SPACING (4pt scale) ─── */
+  --space-1:  0.25rem;   /* 4px */
+  --space-2:  0.5rem;    /* 8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+
+  /* ─── EASING ─── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ─── DURATION ─── */
+  --dur-fast:    120ms;
+  --dur-normal:  200ms;
+  --dur-slow:    350ms;
+
+  /* ─── RADII ─── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ─── RULES (decorative lines) ─── */
+  --rule-thin:  1px solid var(--color-border);
+  --rule-thick: 2px solid var(--color-border-2);
+}
