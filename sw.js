@@ -1,5 +1,5 @@
 // sw.js — OdooPro Service Worker (Cache-First Offline Support)
-const CACHE_NAME = 'odoopro-v1.0.2';
+const CACHE_NAME = 'odoopro-v1.0.4';
 
 const ASSETS = [
   './',
