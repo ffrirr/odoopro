@@ -233,10 +233,20 @@ function router() {
 window.addEventListener('hashchange', router);
 window.addEventListener('DOMContentLoaded', () => {
   router();
-  // Register service worker
+  // Register service worker with auto-update
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-      .then(r => r.update())
-      .catch(() => {});
+    navigator.serviceWorker.register('./sw.js').then((reg) => {
+      reg.update();
+      reg.addEventListener('updatefound', () => {
+        const newWorker = reg.installing;
+        if (newWorker) {
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              showToast('Versi baru telah diperbarui!', 'success');
+            }
+          });
+        }
+      });
+    }).catch(() => {});
   }
 });

@@ -1,5 +1,5 @@
-// sw.js — OdooPro Service Worker (Cache-First Offline Support)
-const CACHE_NAME = 'odoopro-v1.0.4';
+// sw.js — OdooPro Service Worker (Network-First with Offline Cache Fallback)
+const CACHE_NAME = 'odoopro-v1.0.5';
 
 const ASSETS = [
   './',
@@ -20,16 +20,17 @@ const ASSETS = [
   './icons/icon-512.png'
 ];
 
-// Install: Cache all critical assets
+// Install: Skip waiting immediately
 self.addEventListener('install', (event) => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(ASSETS);
-    }).then(() => self.skipWaiting())
+    })
   );
 });
 
-// Activate: Clean old caches
+// Activate: Delete all old caches and claim clients
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
@@ -44,25 +45,23 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch: Cache-first, network fallback
+// Fetch: Network First, fallback to cache when offline
 self.addEventListener('fetch', (event) => {
-  // Only handle GET requests
   if (event.request.method !== 'GET') return;
 
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        // Fetch fresh copy in background to keep cache up to date
-        fetch(event.request).then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, networkResponse);
-            });
-          }
-        }).catch(() => {});
-        return cachedResponse;
-      }
-      return fetch(event.request);
-    })
+    fetch(event.request)
+      .then((networkResponse) => {
+        if (networkResponse && networkResponse.status === 200) {
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
+        }
+        return networkResponse;
+      })
+      .catch(() => {
+        return caches.match(event.request);
+      })
   );
 });
