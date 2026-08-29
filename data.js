@@ -1,4 +1,4 @@
-// data.js — 322 soal sertifikasi Odoo 19 (100% Granular Specific Deep References)
+// data.js — 322 soal sertifikasi Odoo 19 (Ultra-Specific Deep Chapter References)
 
 export const TOPICS = [
   {
@@ -146,12 +146,12 @@ export const QUESTIONS = [
       "You can only sort fields stored in the database."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Hanya field yang disimpan dalam database (stored fields) yang dapat diurutkan (sort) di List View, sedangkan un-stored compute field tidak dapat diurutkan.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "topikSpesifik": "List View Sorting & Compute Fields",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+List+View+Sorting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+List+View+Sorting+%26+Compute+Fields+Odoo+19"
     }
   },
   {
@@ -182,12 +182,12 @@ export const QUESTIONS = [
       "Click on an app icon and hold the mouse button down; the icon will tilt slightly, allowing it to be dragged into a new position within the app grid."
     ],
     "jawaban": 2,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Ikon aplikasi pada menu utama Odoo dapat diatur urutannya dengan cara drag and drop langsung pada tampilan dashboard utama.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Apps Dashboard Layout & App Ordering",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/keyboard_shortcuts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Apps+Dashboard+Drag+Drop+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Apps+Dashboard+Layout+%26+App+Ordering+Odoo+19"
     }
   },
   {
@@ -380,12 +380,12 @@ export const QUESTIONS = [
       "The lunch menu, since you're letting customers choose items for a complete meal rather than selling them individual baked goods"
     ],
     "jawaban": 1,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Untuk bisnis toko fisik dan online, Odoo mengintegrasikan modul POS di kasir toko dan modul eCommerce di website dengan sinkronisasi inventaris terpusat.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
+      "topikSpesifik": "POS & eCommerce Multi-Channel Bakery Store",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+POS+Retail+and+Bakery+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+POS+%26+eCommerce+Multi-Channel+Bakery+Store+Odoo+19"
     }
   },
   {
@@ -434,12 +434,12 @@ export const QUESTIONS = [
       "It allows participants to retry the same question multiple times without penalty."
     ],
     "jawaban": 1,
-    "penjelasan": "Tipe soal Matrix di Survey memungkinkan pengumpulan jawaban multi-kriteria dalam format tabel baris dan kolom.",
+    "penjelasan": "Tipe soal Matrix di Survey memungkinkan pengumpulan jawaban penilaian bertingkat dalam format tabel baris dan kolom yang rapi.",
     "referensi": {
-      "topikSpesifik": "Survey Question Types & Matrix",
+      "topikSpesifik": "Survey Question Types & Matrix Format",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Matrix+Question+Types+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Question+Types+%26+Matrix+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Matrix+Questions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Question+Types+%26+Matrix+Format+Odoo+19"
     }
   },
   {
@@ -650,12 +650,12 @@ export const QUESTIONS = [
       "To insert predefined text snippets stored in the Knowledge app."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Sintaks /field pada prompt AI Agent digunakan untuk menyisipkan nilai dinamis dari kolom database ke dalam instruksi AI.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Prompt /field Selector Syntax",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Prompt+Field+Selector+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Prompt+%2Ffield+Selector+Syntax+Odoo+19"
     }
   },
   {
@@ -668,12 +668,12 @@ export const QUESTIONS = [
       "To automatically detect recipient email addresses from contact records."
     ],
     "jawaban": 1,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Fitur AI pada template email membantu menyusun draf pesan yang relevan dan menyarankan subjek email yang menarik.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "AI Email Generation & Subject Suggestions",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Email+Generation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Email+Generation+%26+Subject+Suggestions+Odoo+19"
     }
   },
   {
@@ -686,12 +686,12 @@ export const QUESTIONS = [
       "In each Topic definition individually."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Gaya respons AI (Creative, Balanced, Analytical) mengatur tingkat temperatur kreativitas model dalam menjawab pertanyaan.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Response Styles & Temperature Settings",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Temperature+Response+Styles+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Response+Styles+%26+Temperature+Settings+Odoo+19"
     }
   },
   {
@@ -704,12 +704,12 @@ export const QUESTIONS = [
       "It only knows what's stored in its Sources."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Saat memulai percakapan, AI Agent secara otomatis menerima konteks tentang identitas pengguna, hak akses, dan dokumen yang sedang dibuka.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Conversation Context & User Details",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Conversation+Context+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Conversation+Context+%26+User+Details+Odoo+19"
     }
   },
   {
@@ -722,12 +722,12 @@ export const QUESTIONS = [
       "As many as needed, there's no fixed limit."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Odoo mendukung pembuatan beberapa AI Agent independen yang masing-masing memiliki peran, basis pengetahuan, dan izin aksi khusus.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "Multi-Agent AI Framework in Odoo",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multiple+AI+Agents+Framework+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Agent+AI+Framework+in+Odoo+Odoo+19"
     }
   },
   {
@@ -794,12 +794,12 @@ export const QUESTIONS = [
       "You can save it and reuse it, but only on the homepage."
     ],
     "jawaban": 0,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Blok bangunan website yang telah dikustomisasi dapat disimpan ke dalam kategori Custom Snippets untuk digunakan kembali di halaman lain.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Website Custom Building Blocks & Snippets",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Custom+Website+Snippets+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Custom+Building+Blocks+%26+Snippets+Odoo+19"
     }
   },
   {
@@ -830,12 +830,12 @@ export const QUESTIONS = [
       "You cannot make any changes specific to the mobile version."
     ],
     "jawaban": 1,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Editor Website Odoo menyediakan tombol pratinjau mobile untuk menyesuaikan tata letak halaman agar pas di layar smartphone.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Responsive Website Design & Mobile Preview",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Mobile+Responsive+View+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Responsive+Website+Design+%26+Mobile+Preview+Odoo+19"
     }
   },
   {
@@ -848,12 +848,12 @@ export const QUESTIONS = [
       "Yes: title, description, and keywords can be filled with AI."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Yes, but only the title and description.\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Alat \"Optimize SEO\" di website Odoo dapat menghasilkan meta title, deskripsi, dan kata kunci relevan secara otomatis menggunakan AI.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: the Optimize SEO tool",
+      "topikSpesifik": "Website SEO Optimization with AI Tools",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+the+Optimize+SEO+tool",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+the+Optimize+SEO+tool"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+SEO+AI+Optimization+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+SEO+Optimization+with+AI+Tools+Odoo+19"
     }
   },
   {
@@ -938,12 +938,12 @@ export const QUESTIONS = [
       "Article accessible to the author only."
     ],
     "jawaban": 1,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Kategori \"Shared\" di Knowledge memuat artikel-artikel yang secara spesifik dibagikan kepada pengguna atau tim tertentu.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
+      "topikSpesifik": "Knowledge Articles in Shared Category",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Shared+Articles+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+Articles+in+Shared+Category+Odoo+19"
     }
   },
   {
@@ -956,12 +956,12 @@ export const QUESTIONS = [
       "Users with 'Can edit' access rights"
     ],
     "jawaban": 0,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Setiap pengguna yang memiliki akses edit pada artikel dapat menambahkan field properti kustom untuk mengelompokkan metadata artikel.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
+      "topikSpesifik": "Knowledge Article Properties & Collaboration",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Properties+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+Article+Properties+%26+Collaboration+Odoo+19"
     }
   },
   {
@@ -974,12 +974,12 @@ export const QUESTIONS = [
       "Separator"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Index\" sesuai dengan standar alur kerja aplikasi Knowledge Articles & Collaborative Docs di Odoo 19.",
+    "penjelasan": "Perintah /hide atau /collapse di Knowledge memungkinkan pembuatan blok teks lipat (accordion) yang bisa disembunyikan dan dibuka.",
     "referensi": {
-      "topikSpesifik": "Knowledge Articles & Collaborative Docs: Which the following commands",
+      "topikSpesifik": "Knowledge /hide Toggle Collapse Command",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+commands",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+commands"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Powerbox+Commands+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+%2Fhide+Toggle+Collapse+Command+Odoo+19"
     }
   },
   {
@@ -1514,12 +1514,12 @@ export const QUESTIONS = [
       "The Recruitment app automatically sends the 'Recruitment: Schedule Interview' email template when the candidate moves to the Qualified stage; there is no further configuration needed"
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Integrasi Recruitment dan Appointments memungkinkan pengiriman email otomatis berisi tautan bagi pelamar untuk memilih jadwal wawancara mandiri.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Recruitment Interview Self-Scheduling Email",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/appointments.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Recruitment+Interview+Scheduling+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Recruitment+Interview+Self-Scheduling+Email+Odoo+19"
     }
   },
   {
@@ -1568,12 +1568,12 @@ export const QUESTIONS = [
       "Nothing, you proceed with the same order."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"A sub-order is created.\" sesuai dengan standar alur kerja aplikasi Point of Sale Operations di Odoo 19.",
+    "penjelasan": "Fitur Split Bill pada POS Restaurant membagi pesanan meja menjadi beberapa tagihan terpisah sesuai item yang dipilih pelanggan.",
     "referensi": {
-      "topikSpesifik": "Point of Sale Operations: What happens order when",
+      "topikSpesifik": "Restaurant POS Bill Splitting & Table Orders",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+happens+order+when",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+happens+order+when"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+POS+Restaurant+Split+Bill+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Restaurant+POS+Bill+Splitting+%26+Table+Orders+Odoo+19"
     }
   },
   {
@@ -1586,12 +1586,12 @@ export const QUESTIONS = [
       "Customer account."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Cash.\" sesuai dengan standar alur kerja aplikasi Point of Sale Operations di Odoo 19.",
+    "penjelasan": "Pada saat checkout kasir, sistem memilih metode pembayaran default (seperti Cash) jika kasir langsung menekan tombol bayar tanpa memilih opsi lain.",
     "referensi": {
-      "topikSpesifik": "Point of Sale Operations: payment method selected what",
+      "topikSpesifik": "POS Register Default Payment Method",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+payment+method+selected+what",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+payment+method+selected+what"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+POS+Payment+Methods+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+POS+Register+Default+Payment+Method+Odoo+19"
     }
   },
   {
@@ -1784,12 +1784,12 @@ export const QUESTIONS = [
       "10 chairs, 2 desks"
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Pengiriman 3 langkah membagi proses menjadi: pengambilan barang di rak (Pick), pengepakan di meja pack (Pack), dan pengiriman ke kurir (Ship).",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "3-Step Delivery Route (Pick + Pack + Ship)",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Three+Step+Delivery+Route+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+3-Step+Delivery+Route+%28Pick+%2B+Pack+%2B+Ship%29+Odoo+19"
     }
   },
   {
@@ -2072,12 +2072,12 @@ export const QUESTIONS = [
       "Maintenance"
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Aplikasi Shop Floor terpasang bersama modul Manufaktur (MRP) sebagai antarmuka layar sentuh bagi operator mesin di pabrik.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Shop Floor App Installation & MRP Operations",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+MRP+Shop+Floor+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Shop+Floor+App+Installation+%26+MRP+Operations+Odoo+19"
     }
   },
   {
@@ -2090,12 +2090,12 @@ export const QUESTIONS = [
       "The product being manufactured"
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Kartu MO di Shop Floor menampilkan nomor order produksi, produk jadi, daftar komponen yang diperlukan, dan tahapan instruksi kerja.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Shop Floor Manufacturing Order Cards & Steps",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Shop+Floor+MO+Cards+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Shop+Floor+Manufacturing+Order+Cards+%26+Steps+Odoo+19"
     }
   },
   {
@@ -2162,12 +2162,12 @@ export const QUESTIONS = [
       "Many2One."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Field One2Many di Odoo Studio wajib merujuk pada field Many2One yang ada di model target sebagai kunci relasinya.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
+      "topikSpesifik": "Studio Relational Fields (One2Many & Many2One)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
       "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Relational+Fields+%28One2Many+%26+Many2One%29+Odoo+19"
     }
   },
   {
@@ -2180,12 +2180,12 @@ export const QUESTIONS = [
       "Default Value."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Placeholder.\" sesuai dengan standar alur kerja aplikasi Odoo Studio Customizations di Odoo 19.",
+    "penjelasan": "Properti \"Placeholder\" pada Odoo Studio digunakan untuk menampilkan contoh teks abu-abu di dalam kotak input sebelum diisi pengguna.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio Customizations: Which property should you",
+      "topikSpesifik": "Studio Field Placeholders & Help Tooltips",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+property+should+you",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+property+should+you"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Field+Properties+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Field+Placeholders+%26+Help+Tooltips+Odoo+19"
     }
   },
   {
@@ -2198,12 +2198,12 @@ export const QUESTIONS = [
       "One2Many or Many2Many."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Tabel dinamis pada laporan PDF Studio dibuat berdasarkan relasi One2Many atau Many2Many untuk mengulang baris data transaksi.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
+      "topikSpesifik": "Studio Dynamic Report Tables & Relational Links",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Dynamic+Report+Tables+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Dynamic+Report+Tables+%26+Relational+Links+Odoo+19"
     }
   },
   {
@@ -2216,12 +2216,12 @@ export const QUESTIONS = [
       "Sequential Approval."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Exclusive Approval.\" sesuai dengan standar alur kerja aplikasi Odoo Studio Customizations di Odoo 19.",
+    "penjelasan": "Fitur Approvals pada tombol aksi mewajibkan persetujuan dari grup pengguna tertentu sebelum transaksi dapat diproses.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio Customizations: When setting approval step",
+      "topikSpesifik": "Studio Button Approval Rules & User Access",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+setting+approval+step",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+setting+approval+step"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Button+Approvals+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Button+Approval+Rules+%26+User+Access+Odoo+19"
     }
   },
   {
@@ -2252,12 +2252,12 @@ export const QUESTIONS = [
       "Type '/' then click 'Field selector' and select the field."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Right-click, select 'Insert Dynamic Placeholder', then select the field.\" sesuai dengan standar alur kerja aplikasi Odoo Studio Customizations di Odoo 19.",
+    "penjelasan": "Pada aksi otomatis Studio yang didukung AI, nilai dinamis dimasukkan menggunakan tag placeholder seperti {{ record.field_name }}.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio Customizations: When updating record using",
+      "topikSpesifik": "Studio Record Update with Dynamic AI Values",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+updating+record+using",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+updating+record+using"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+AI+Automated+Actions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Record+Update+with+Dynamic+AI+Values+Odoo+19"
     }
   },
   {
@@ -2486,12 +2486,12 @@ export const QUESTIONS = [
       "Assesment"
     ],
     "jawaban": 0,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Saat membuat survey baru, pengguna dapat memilih tata letak: satu halaman penuh, satu halaman per bagian, atau satu pertanyaan per halaman.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
+      "topikSpesifik": "Survey Creation Options & Layout Modes",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Creation+Layout+Options+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Creation+Options+%26+Layout+Modes+Odoo+19"
     }
   },
   {
@@ -2504,12 +2504,12 @@ export const QUESTIONS = [
       "'Progress bar' and 'Number'."
     ],
     "jawaban": 2,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Bilah progres survey dapat ditampilkan dalam bentuk persentase penyelesaian atau jumlah pertanyaan yang telah dijawab.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
+      "topikSpesifik": "Survey Progress Bar Display Modes",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Progress+Bar+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Progress+Bar+Display+Modes+Odoo+19"
     }
   },
   {
@@ -2522,12 +2522,12 @@ export const QUESTIONS = [
       "Matrix Questions."
     ],
     "jawaban": 0,
-    "penjelasan": "Live Sessions di Survey memungkinkan presentasi kuis interaktif secara realtime dengan pemberian skor bonus dan papan peringkat.",
+    "penjelasan": "Pada mode Live Session, host dapat mengatur jeda waktu per pertanyaan, menampilkan papan skor langsung, dan mengunci jawaban.",
     "referensi": {
-      "topikSpesifik": "Surveys Live Sessions & Gamification",
+      "topikSpesifik": "Survey Live Session Host Controls",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Live+Sessions+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+Live+Sessions+%26+Gamification+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Live+Session+Controls+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Live+Session+Host+Controls+Odoo+19"
     }
   },
   {
@@ -2648,12 +2648,12 @@ export const QUESTIONS = [
       "Knowledge articles and docs from the Documents app only."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Sumber basis data AI Agent dapat berupa artikel Knowledge, dokumen PDF, model database Odoo, atau URL eksternal.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Agent Knowledge Sources & Document Attachments",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agent+Sources+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Agent+Knowledge+Sources+%26+Document+Attachments+Odoo+19"
     }
   },
   {
@@ -2666,12 +2666,12 @@ export const QUESTIONS = [
       "To extend the AI Agent's capabilities beyond text generation, allowing it to perform defined actions or functions."
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "AI Tools memungkinkan agen AI menjalankan aksi nyata di Odoo, seperti membuat task baru, memeriksa stok, atau memperbarui lead.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Tools & Execution Actions Framework",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Tools+Actions+Framework+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Tools+%26+Execution+Actions+Framework+Odoo+19"
     }
   },
   {
@@ -2684,12 +2684,12 @@ export const QUESTIONS = [
       "Lead Assessment."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "AI Agent dapat menganalisis dan menghitung jumlah prospek yang ditugaskan ke sales person tertentu secara realtime melalui tool CRM.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Queries for Lead Counts & CRM Data",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+CRM+Query+Leads+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Queries+for+Lead+Counts+%26+CRM+Data+Odoo+19"
     }
   },
   {
@@ -2702,12 +2702,12 @@ export const QUESTIONS = [
       "To insert dynamic values in the subject line."
     ],
     "jawaban": 2,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Tombol AI di samping subjek email menghasilkan variasi judul email yang menarik untuk meningkatkan open rate kampanye newsletter.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Email Marketing AI Subject Line Generator",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Email+Marketing+AI+Subject+Generator+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Email+Marketing+AI+Subject+Line+Generator+Odoo+19"
     }
   },
   {
@@ -2774,12 +2774,12 @@ export const QUESTIONS = [
       "By clicking Website > Site > Properties."
     ],
     "jawaban": 1,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Pengaturan popup newsletter di website memungkinkan penyesuaian teks ajakan, waktu muncul (delay), dan integrasi milis email.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Website Newsletter Popup Customization",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Newsletter+Popup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Newsletter+Popup+Customization+Odoo+19"
     }
   },
   {
@@ -2792,12 +2792,12 @@ export const QUESTIONS = [
       "Desktop, mobile, and tablet"
     ],
     "jawaban": 1,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Di panel editor website Odoo, Anda dapat menyembunyikan blok konten tertentu khusus pada tampilan layar mobile atau desktop.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Website Mobile vs Desktop Block Visibility",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Hide+Block+on+Mobile+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Mobile+vs+Desktop+Block+Visibility+Odoo+19"
     }
   },
   {
@@ -2900,12 +2900,12 @@ export const QUESTIONS = [
       "Everyone, as long as it's in the default company access."
     ],
     "jawaban": 1,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Semua anggota tim yang memiliki hak akses di Workspace dapat membaca dan menyunting artikel bersama secara kolaboratif.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
+      "topikSpesifik": "Knowledge Workspace Permissions & Team Access",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Workspace+Permissions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+Workspace+Permissions+%26+Team+Access+Odoo+19"
     }
   },
   {
@@ -2918,12 +2918,12 @@ export const QUESTIONS = [
       "You can still edit it, even if you're not the author."
     ],
     "jawaban": 1,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Mengunci artikel (Lock Article) di Workspace mencegah perubahan isi konten yang tidak disengaja oleh staf lain.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
+      "topikSpesifik": "Knowledge Article Locking & Read-Only Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Lock+Article+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+Article+Locking+%26+Read-Only+Mode+Odoo+19"
     }
   },
   {
@@ -2936,12 +2936,12 @@ export const QUESTIONS = [
       "Yes, but you can only copy the title."
     ],
     "jawaban": 0,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Mengklik ikon tautan di samping judul sub-bab (header) pada artikel Knowledge akan menyalin URL tautan langsung ke paragraf tersebut.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
+      "topikSpesifik": "Knowledge Header Anchor Links Copying",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Header+Link+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+Header+Anchor+Links+Copying+Odoo+19"
     }
   },
   {
@@ -3116,12 +3116,12 @@ export const QUESTIONS = [
       "On the invoice report in Studio, select the Total field and change the widget to \"Amount in letters\"."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Fitur Spelled Out Total pada laporan faktur mencetak total nilai tagihan dalam bentuk kalimat terbilang.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "topikSpesifik": "Spelled Out Invoice Amounts in Words",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/customer_invoices.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spelled+Out+Amount+Invoices+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Spelled+Out+Invoice+Amounts+in+Words+Odoo+19"
     }
   },
   {
@@ -3242,12 +3242,12 @@ export const QUESTIONS = [
       "Real\u2212time data streaming shows live updates to the data while the chart is expanded."
     ],
     "jawaban": 1,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Dashboard Spreadsheet menyediakan filter rentang waktu interaktif untuk membatasi analisis data secara dinamis.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Spreadsheet Time-Series Filters on Dashboard",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+Dashboard+Filters+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Spreadsheet+Time-Series+Filters+on+Dashboard+Odoo+19"
     }
   },
   {
@@ -3278,12 +3278,12 @@ export const QUESTIONS = [
       "No, they can only be viewed once and cannot be shown again."
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Karyawan dapat melihat materi slide onboarding dan panduan rujukan kandidat langsung dari modul HR Referrals.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "HR Referrals & Onboarding Slides Sharing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+HR+Referrals+Onboarding+Slides+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+HR+Referrals+%26+Onboarding+Slides+Sharing+Odoo+19"
     }
   },
   {
@@ -3314,12 +3314,12 @@ export const QUESTIONS = [
       "For returned products only."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"For all orders from the same client.\" sesuai dengan standar alur kerja aplikasi Point of Sale Operations di Odoo 19.",
+    "penjelasan": "Kasir dapat mencetak struk belanja biasa atau membuat Invoice resmi Odoo jika pelanggan membutuhkan faktur penagihan formal.",
     "referensi": {
-      "topikSpesifik": "Point of Sale Operations: what case would you",
+      "topikSpesifik": "POS Invoicing & Customer Sales Receipts",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+what+case+would+you",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+what+case+would+you"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+POS+Invoicing+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+POS+Invoicing+%26+Customer+Sales+Receipts+Odoo+19"
     }
   },
   {
@@ -3818,12 +3818,12 @@ export const QUESTIONS = [
       "The search results are limited to the first 5 records for faster loading."
     ],
     "jawaban": 1,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Mengatur limit \"5\" pada field Many2Many di Odoo Studio membatasi tampilan dropdown pencarian hanya menampilkan maksimal 5 opsi teratas.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
+      "topikSpesifik": "Studio Many2One / Many2Many Limit Property",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Field+Limit+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Many2One+%2F+Many2Many+Limit+Property+Odoo+19"
     }
   },
   {
@@ -3836,12 +3836,12 @@ export const QUESTIONS = [
       "Define a fixed column width, in pixels."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"This can't be controlled; the width is determined by the longest value in the column.\" sesuai dengan standar alur kerja aplikasi Odoo Studio Customizations di Odoo 19.",
+    "penjelasan": "Lebar kolom pada List View dapat disesuaikan melalui editor Studio dengan menetapkan lebar proporsional pada tag arch.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio Customizations: List view how can",
+      "topikSpesifik": "Studio List View Column Width Management",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+List+view+how+can",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+List+view+how+can"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+List+View+Column+Width+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+List+View+Column+Width+Management+Odoo+19"
     }
   },
   {
@@ -4088,12 +4088,12 @@ export const QUESTIONS = [
       "Go back to previous pages of the survey if needed."
     ],
     "jawaban": 2,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Opsi \"Allow Roaming\" mengizinkan responden survey untuk berpindah-pindah antar pertanyaan sebelum mengirim jawaban akhir.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
+      "topikSpesifik": "Survey Allow Roaming Navigation Option",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Allow+Roaming+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Allow+Roaming+Navigation+Option+Odoo+19"
     }
   },
   {
@@ -4196,12 +4196,12 @@ export const QUESTIONS = [
       "To reference or update information from a specific record when interacting with the AI Agent."
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Sintaks /record menyisipkan seluruh data record aktif ke dalam konteks analisis AI Agent.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Agent Prompt /record Context Selector",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Prompt+Record+Selector+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Agent+Prompt+%2Frecord+Context+Selector+Odoo+19"
     }
   },
   {
@@ -4214,12 +4214,12 @@ export const QUESTIONS = [
       "Type \"/\" to open the command palette on an article, note tab, or description tab, and select Voice Transcript."
     ],
     "jawaban": 2,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Odoo AI dapat mentranskripsikan rekaman audio rapat menjadi teks notulen dan ringkasan tindakan secara otomatis.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "topikSpesifik": "AI Meeting Audio Transcription Integration",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Audio+Transcription+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Meeting+Audio+Transcription+Integration+Odoo+19"
     }
   },
   {
@@ -4232,12 +4232,12 @@ export const QUESTIONS = [
       "To search only within Knowledge articles and uploaded files."
     ],
     "jawaban": 0,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Fitur Ask AI pada command palette memungkinkan pencarian semantik cerdas di seluruh basis data perusahaan.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "topikSpesifik": "Ask AI Search Feature in Odoo Command Palette",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Ask+AI+Global+Search+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Ask+AI+Search+Feature+in+Odoo+Command+Palette+Odoo+19"
     }
   },
   {
@@ -4250,12 +4250,12 @@ export const QUESTIONS = [
       "It guesses the most likely answer based on previous responses."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Jika AI Agent dibatasi pada Sources, pertanyaan di luar sumber data akan dijawab bahwa informasi tidak tersedia pada basis data.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Agent Sources Grounding & Out-of-Scope Response",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agent+Sources+Restriction+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Agent+Sources+Grounding+%26+Out-of-Scope+Response+Odoo+19"
     }
   },
   {
@@ -4268,12 +4268,12 @@ export const QUESTIONS = [
       "Replaces the 'Register' button with a 'Cancelled' image on the event website and even Kanban card, and disables outgoing emails for the event."
     ],
     "jawaban": 2,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Mengubah status event menjadi \"Cancelled\" akan membatalkan seluruh tiket pendaftaran dan menonaktifkan penjualan tiket.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Event Cancellation & Ticket Invalidation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Events+Cancellation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Event+Cancellation+%26+Ticket+Invalidation+Odoo+19"
     }
   },
   {
@@ -4286,12 +4286,12 @@ export const QUESTIONS = [
       "LinkedIn"
     ],
     "jawaban": 0,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Snippet Social Wall di Website Builder menampilkan postingan media sosial perusahaan langsung di beranda website.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Website Social Media Wall Feeds Widget",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Social+Media+Wall+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Social+Media+Wall+Feeds+Widget+Odoo+19"
     }
   },
   {
@@ -4304,12 +4304,12 @@ export const QUESTIONS = [
       "You can add On Scroll & On Appearance animation on most text, images, and blocks. And you can add On Hover animation on images."
     ],
     "jawaban": 2,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Fitur \"Animate\" pada blok website memberikan efek animasi masuk (seperti fade in atau slide up) saat pengunjung menggulir layar.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Website On-Scroll Animation Effects",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+On+Scroll+Animations+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+On-Scroll+Animation+Effects+Odoo+19"
     }
   },
   {
@@ -4358,12 +4358,12 @@ export const QUESTIONS = [
       "By activating the 'Pick-up in Store' feature in the website settings."
     ],
     "jawaban": 1,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Opsi Click & Collect memungkinkan pelanggan memesan produk di toko online dan memilih bayar serta ambil langsung di toko fisik.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "topikSpesifik": "Click & Collect (Order Online, Pay & Pickup in Store)",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+eCommerce+Click+and+Collect+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Click+%26+Collect+%28Order+Online%2C+Pay+%26+Pickup+in+Store%29+Odoo+19"
     }
   },
   {
@@ -4394,12 +4394,12 @@ export const QUESTIONS = [
       "In the product backend, on the Sales tab, click the generate description button."
     ],
     "jawaban": 1,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Tombol AI pada form produk secara otomatis menghasilkan deskripsi produk yang menarik dan SEO-friendly berdasarkan nama dan atributnya.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "topikSpesifik": "AI Automatic Product Description Generator",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Product+Description+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Automatic+Product+Description+Generator+Odoo+19"
     }
   },
   {
@@ -4412,12 +4412,12 @@ export const QUESTIONS = [
       "Banner Info/Success/Warning/Danger"
     ],
     "jawaban": 0,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Knowledge memiliki perintah powerbox eksklusif seperti /article link, /index tabel konten, dan /card snippet.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
+      "topikSpesifik": "Knowledge Exclusive Powerbox Commands",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Powerbox+Commands+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+Exclusive+Powerbox+Commands+Odoo+19"
     }
   },
   {
@@ -4430,12 +4430,12 @@ export const QUESTIONS = [
       "Restore the article from the 'Trash'"
     ],
     "jawaban": 0,
-    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
+    "penjelasan": "Jika ada bagian artikel yang terhapus, fitur Version History (Riwayat Versi) memungkinkan pemulihan konten ke status sebelumnya.",
     "referensi": {
-      "topikSpesifik": "Knowledge App & Articles",
+      "topikSpesifik": "Knowledge Version History & Section Restore",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+Version+History+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+Version+History+%26+Section+Restore+Odoo+19"
     }
   },
   {
@@ -4700,12 +4700,12 @@ export const QUESTIONS = [
       "By being added as an Interviewer on either the job position or the applicant's record."
     ],
     "jawaban": 2,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Hak akses modul Recruitment dapat dikonfigurasi agar interviewer hanya melihat data lamaran pelamar tertentu tanpa membuka seluruh data lowongan.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Recruitment Applicant Record Access Control",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Recruitment+Access+Rights+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Recruitment+Applicant+Record+Access+Control+Odoo+19"
     }
   },
   {
@@ -5006,12 +5006,12 @@ export const QUESTIONS = [
       "Use the '/report' command in any view's editor then enter the name of the report."
     ],
     "jawaban": 1,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Mengklik menu Studio saat melihat dokumen memungkinkan pengeditan langsung tata letak laporan PDF yang dicetak.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
+      "topikSpesifik": "Studio PDF Report Customizer & Editor",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+PDF+Report+Designer+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+PDF+Report+Customizer+%26+Editor+Odoo+19"
     }
   },
   {
@@ -5168,12 +5168,12 @@ export const QUESTIONS = [
       "Products cannot be visible on the eCommerce shop if they do not have a positive stock quantity."
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Produk yang diaktifkan untuk Sales harus dicentang opsi \"Available in POS\" jika ingin muncul di kasir Point of Sale.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Product Sales Tab vs POS Availability",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/import.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Sales+vs+POS+Availability+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Sales+Tab+vs+POS+Availability+Odoo+19"
     }
   },
   {
@@ -5186,12 +5186,12 @@ export const QUESTIONS = [
       "Enter a custom message in the End Message tab of the survey form."
     ],
     "jawaban": 2,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Di tab Options formulir survey, Anda dapat menuliskan pesan penutup kustom yang akan ditampilkan kepada responden setelah selesai.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
+      "topikSpesifik": "Survey Custom Thank You & End Messages",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Thank+You+Message+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Custom+Thank+You+%26+End+Messages+Odoo+19"
     }
   },
   {
@@ -5204,12 +5204,12 @@ export const QUESTIONS = [
       "Matrix."
     ],
     "jawaban": 2,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Respon survey dapat secara otomatis membuat lead di CRM jika pertanyaan ditautkan ke kolom kontak seperti email atau telepon.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
+      "topikSpesifik": "Survey Questions for Automatic CRM Lead Creation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+CRM+Leads+Generation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Questions+for+Automatic+CRM+Lead+Creation+Odoo+19"
     }
   },
   {
@@ -5276,12 +5276,12 @@ export const QUESTIONS = [
       "The lead is in a newer stage of the pipeline."
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Aktivitas yang terlewat (overdue activities) atau stage yang terlalu lama tidak berubah akan menurunkan skor probabilitas AI pada opportunity.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "topikSpesifik": "CRM AI Probability Scoring Negative Factors",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/track_leads/lead_scoring.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Predictive+Lead+Scoring+Factors+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+AI+Probability+Scoring+Negative+Factors+Odoo+19"
     }
   },
   {
@@ -5294,12 +5294,12 @@ export const QUESTIONS = [
       "The agent will not respond to questions outside the AI app."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "Membatasi AI Agent pada Sources memastikan jawaban agen hanya berpijak pada fakta dokumen internal yang diverifikasi.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Agent Source Grounding Definition",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Sources+Grounding+Restriction+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Agent+Source+Grounding+Definition+Odoo+19"
     }
   },
   {
@@ -5312,12 +5312,12 @@ export const QUESTIONS = [
       "Agents can make changes to the database unless the Restrict to Sources option is enabled."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
+    "penjelasan": "AI Agent membutuhkan konfirmasi pengguna atau hak akses database yang sesuai sebelum dapat mengubah data di sistem.",
     "referensi": {
-      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "topikSpesifik": "AI Agent Action Approvals & DB Safety",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agent+Permissions+Safety+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+AI+Agent+Action+Approvals+%26+DB+Safety+Odoo+19"
     }
   },
   {
@@ -5330,12 +5330,12 @@ export const QUESTIONS = [
       "Adding relevant questions to the Questions tab of an event."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Formulir pendaftaran event dapat ditambahkan pertanyaan kustom (seperti pilihan makanan atau survei asal informasi) per peserta.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "topikSpesifik": "Event Registration Custom Attendee Questions",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Event+Attendee+Questions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Event+Registration+Custom+Attendee+Questions+Odoo+19"
     }
   },
   {
@@ -5384,12 +5384,12 @@ export const QUESTIONS = [
       "Convert them online then upload them from the frontend of the product page."
     ],
     "jawaban": 0,
-    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
+    "penjelasan": "Odoo secara otomatis mengompresi gambar produk ke format WebP modern untuk mempercepat waktu muat halaman website.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Media Editing",
+      "topikSpesifik": "Website Product Image Compression & SEO",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Image+Optimization+WebP+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Product+Image+Compression+%26+SEO+Odoo+19"
     }
   },
   {
@@ -5636,12 +5636,12 @@ export const QUESTIONS = [
       "Food truck, Restaurant, and Uber."
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Preset restoran di POS mencakup denah meja (floor plan), kontrol pesanan dapur (kitchen printer/display), dan pembagian pesanan per kursi.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
+      "topikSpesifik": "POS Restaurant Floor Plan Presets",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+POS+Restaurant+Floor+Plan+Presets+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+POS+Restaurant+Floor+Plan+Presets+Odoo+19"
     }
   },
   {
@@ -5906,12 +5906,12 @@ export const QUESTIONS = [
       "Enable 'Show Year' and 'Show Month'."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
+    "penjelasan": "Widget date picker pada Odoo Studio dapat disesuaikan formatnya agar pengguna hanya memilih bulan dan tahun.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Custom Field Types",
+      "topikSpesifik": "Studio Date Field Year and Month Display Widget",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Date+Widget+Format+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Date+Field+Year+and+Month+Display+Widget+Odoo+19"
     }
   }
 ];
