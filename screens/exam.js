@@ -103,16 +103,53 @@ export function renderExamQuiz(container, params) {
     }
   }
 
-  // Shuffle
+  // Stratified sampling across all modules if preset count is defined
+  const preset = EXAM_PRESETS[mode];
+  if (preset && preset.count > 0 && pool.length > preset.count) {
+    const byTopic = {};
+    pool.forEach(q => {
+      if (!byTopic[q.topic]) byTopic[q.topic] = [];
+      byTopic[q.topic].push(q);
+    });
+
+    const topicKeys = Object.keys(byTopic);
+    // Shuffle topics order
+    for (let i = topicKeys.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [topicKeys[i], topicKeys[j]] = [topicKeys[j], topicKeys[i]];
+    }
+    // Shuffle questions within each topic
+    topicKeys.forEach(t => {
+      for (let i = byTopic[t].length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [byTopic[t][i], byTopic[t][j]] = [byTopic[t][j], byTopic[t][i]];
+      }
+    });
+
+    const selected = [];
+    const pointers = {};
+    topicKeys.forEach(t => { pointers[t] = 0; });
+
+    while (selected.length < preset.count) {
+      let addedInRound = false;
+      for (const t of topicKeys) {
+        if (selected.length >= preset.count) break;
+        if (pointers[t] < byTopic[t].length) {
+          selected.push(byTopic[t][pointers[t]]);
+          pointers[t]++;
+          addedInRound = true;
+        }
+      }
+      if (!addedInRound) break;
+    }
+
+    pool = selected;
+  }
+
+  // Final shuffle of selected pool
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [pool[i], pool[j]] = [pool[j], pool[i]];
-  }
-
-  // Limit
-  const preset = EXAM_PRESETS[mode];
-  if (preset && preset.count > 0 && pool.length > preset.count) {
-    pool = pool.slice(0, preset.count);
   }
 
   const total = pool.length;
