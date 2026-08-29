@@ -217,6 +217,25 @@ export function renderExamQuiz(container, params) {
           <div class="feedback-card ${selected === q.jawaban ? 'correct' : 'wrong'}">
             <div class="feedback-title">${selected === q.jawaban ? 'Jawaban Tepat' : 'Jawaban Kurang Tepat'}</div>
             ${q.penjelasan ? `<div class="feedback-text">${q.penjelasan}</div>` : ''}
+            
+            ${q.referensi ? `
+              <div class="ref-card">
+                <div class="ref-card-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  <span>Referensi: ${q.referensi.topikSpesifik}</span>
+                </div>
+                <div class="ref-btn-row">
+                  <a href="${q.referensi.docsUrl}" target="_blank" rel="noopener noreferrer" class="ref-btn ref-btn-docs">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    <span>Baca Docs Odoo 19</span>
+                  </a>
+                  <a href="${q.referensi.videoUrl}" target="_blank" rel="noopener noreferrer" class="ref-btn ref-btn-video">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Tonton Video Tutorial</span>
+                  </a>
+                </div>
+              </div>
+            ` : ''}
           </div>
           ${!confidence ? `
             <div style="margin-top:var(--space-3);">
