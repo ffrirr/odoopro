@@ -1,4 +1,4 @@
-// data.js — 322 soal sertifikasi Odoo 19 (Enriched with Specific References & Explanations)
+// data.js — 322 soal sertifikasi Odoo 19 (100% Granular Specific Deep References)
 
 export const TOPICS = [
   {
@@ -128,11 +128,11 @@ export const QUESTIONS = [
       "Enable an option called Accessible to Everyone on the contact."
     ],
     "jawaban": 1,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada contact record membuatnya bersifat global dan dapat diakses oleh seluruh entitas perusahaan.",
+    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Customer+Share",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Setup+%26+Records+Sharing+Odoo+19"
     }
   },
@@ -146,12 +146,12 @@ export const QUESTIONS = [
       "You can only sort fields stored in the database."
     ],
     "jawaban": 2,
-    "penjelasan": "Field One2Many di Odoo Studio membutuhkan field Many2One pada model target sebagai relasi penghubungnya.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Relational Fields",
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Customization",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Relational+Fields+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   },
   {
@@ -164,11 +164,11 @@ export const QUESTIONS = [
       "A message/discussion sends notifications to external contacts, while a log note keeps communication limited to internal followers."
     ],
     "jawaban": 2,
-    "penjelasan": "Pesan (discussion) di chatter bersifat publik/notifikasi ke followers dan customer, sedangkan log note ditujukan untuk catatan internal tim.",
+    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+Log+Notes+Activities",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+and+Activities+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chatter%2C+Log+Notes+%26+Activities+Odoo+19"
     }
   },
@@ -186,7 +186,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -200,11 +200,11 @@ export const QUESTIONS = [
       "From Settings > Users & Companies, update the follower lists for all related records."
     ],
     "jawaban": 0,
-    "penjelasan": "Pesan (discussion) di chatter bersifat publik/notifikasi ke followers dan customer, sedangkan log note ditujukan untuk catatan internal tim.",
+    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+Log+Notes+Activities",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+and+Activities+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chatter%2C+Log+Notes+%26+Activities+Odoo+19"
     }
   },
@@ -218,12 +218,12 @@ export const QUESTIONS = [
       "All fields from secondary contacts overwrite the data in the master contact."
     ],
     "jawaban": 1,
-    "penjelasan": "Saat menggabungkan kontak (merge), field master tetap dipertahankan dan data non-kosong dari kontak sekunder digabungkan ke master.",
+    "penjelasan": "Saat menggabungkan kontak (merge), field master tetap dipertahankan dan data dari kontak sekunder digabungkan ke master.",
     "referensi": {
-      "topikSpesifik": "Merge Duplicate Contacts",
+      "topikSpesifik": "Merge Contacts & Deduplication",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/contacts/merge.html",
       "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Merge+Contacts+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Merge+Duplicate+Contacts+Odoo+19"
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Merge+Contacts+%26+Deduplication+Odoo+19"
     }
   },
   {
@@ -236,12 +236,12 @@ export const QUESTIONS = [
       "$89.99"
     ],
     "jawaban": 1,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -254,12 +254,12 @@ export const QUESTIONS = [
       "Margins can only be viewed by going to the Reporting header and clicking \"Margins\""
     ],
     "jawaban": 1,
-    "penjelasan": "Margin dihitung dari selisih harga jual dan harga pokok (cost). Di Sales Order, margin tampil langsung di baris order atau laporan analisis penjualan.",
+    "penjelasan": "Margin penjualan dihitung dari selisih antara harga jual (Sales Price) dan harga pokok (Cost Price) pada Sales Order.",
     "referensi": {
-      "topikSpesifik": "Sales Margins & Profitability Analysis",
+      "topikSpesifik": "Sales Margins & Cost Analysis",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/margin.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Margins+Profitability",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Margins+%26+Profitability+Analysis+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Margins+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Margins+%26+Cost+Analysis+Odoo+19"
     }
   },
   {
@@ -272,12 +272,12 @@ export const QUESTIONS = [
       "Click the \"Measures\" drop-down menu and select \"Margin\""
     ],
     "jawaban": 2,
-    "penjelasan": "Margin dihitung dari selisih harga jual dan harga pokok (cost). Di Sales Order, margin tampil langsung di baris order atau laporan analisis penjualan.",
+    "penjelasan": "Margin penjualan dihitung dari selisih antara harga jual (Sales Price) dan harga pokok (Cost Price) pada Sales Order.",
     "referensi": {
-      "topikSpesifik": "Sales Margins & Profitability Analysis",
+      "topikSpesifik": "Sales Margins & Cost Analysis",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/margin.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Margins+Profitability",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Margins+%26+Profitability+Analysis+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Margins+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Margins+%26+Cost+Analysis+Odoo+19"
     }
   },
   {
@@ -290,11 +290,11 @@ export const QUESTIONS = [
       "The two units of measure must have the same unit name as each other"
     ],
     "jawaban": 0,
-    "penjelasan": "Konversi satuan hanya dapat dilakukan antar Unit of Measure yang berada dalam Kategori Satuan yang sama.",
+    "penjelasan": "Konversi satuan hanya dapat dilakukan antar Unit of Measure yang berada dalam Kategori Satuan (UoM Category) yang sama.",
     "referensi": {
       "topikSpesifik": "Units of Measure (UoM) & Conversions",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Units+of+Measure",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/configure/uom.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Units+of+Measure+UoM+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Units+of+Measure+%28UoM%29+%26+Conversions+Odoo+19"
     }
   },
@@ -308,12 +308,12 @@ export const QUESTIONS = [
       "Both are true"
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -326,12 +326,12 @@ export const QUESTIONS = [
       "Both solutions are correct"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Both solutions are correct\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Menonaktifkan opsi \"Can be Sold\" atau mengarsipkan (archive) produk akan mencegah produk tersebut dipilih pada penawaran penjualan baru.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: How could you prevent",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+could+you+prevent",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+could+you+prevent"
+      "topikSpesifik": "Product Catalog & Archiving Records",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/product_catalog.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Catalog+Archiving+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Catalog+%26+Archiving+Records+Odoo+19"
     }
   },
   {
@@ -344,12 +344,12 @@ export const QUESTIONS = [
       "This should be set up with the Product Type \"Combo\", since the appraisal is a service but coming to the customer's location counts as a delivered good"
     ],
     "jawaban": 1,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah barang diterima).",
+    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
     "referensi": {
-      "topikSpesifik": "Invoicing Policies & Down Payments",
+      "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Down+Payments",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Down+Payments+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Pro-Forma+Invoices+Odoo+19"
     }
   },
   {
@@ -362,11 +362,11 @@ export const QUESTIONS = [
       "Create a Conditional Rule with the minimum purchase set to '50' and create a Reward with Reward Type set to 'Free Product.' Then, create or select 'Tote Bag' in the Product field"
     ],
     "jawaban": 2,
-    "penjelasan": "Program eWallet, kartu hadiah, dan poin loyalitas dapat digunakan lintas Sales, POS, dan eCommerce.",
+    "penjelasan": "Program Loyalitas dan Kartu Hadiah (Gift Cards) dapat digunakan secara terintegrasi di modul Sales, POS, dan eCommerce.",
     "referensi": {
       "topikSpesifik": "eWallets, Gift Cards & Loyalty Programs",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/ewallets_giftcards.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Gift+Cards+eWallets+Loyalty",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Gift+Cards+eWallets+Loyalty+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eWallets%2C+Gift+Cards+%26+Loyalty+Programs+Odoo+19"
     }
   },
@@ -380,12 +380,12 @@ export const QUESTIONS = [
       "The lunch menu, since you're letting customers choose items for a complete meal rather than selling them individual baked goods"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"The at-home breadmaking classes, since you are selling an experience and not a physical good\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: You run small business",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+You+run+small+business",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+You+run+small+business"
+      "topikSpesifik": "Point of Sale (POS) Operations",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
   {
@@ -398,12 +398,12 @@ export const QUESTIONS = [
       "5% of the margin of all sales across a specific product category over the course of a year"
     ],
     "jawaban": 1,
-    "penjelasan": "Margin dihitung dari selisih harga jual dan harga pokok (cost). Di Sales Order, margin tampil langsung di baris order atau laporan analisis penjualan.",
+    "penjelasan": "Modul Commissions memungkinkan pengaturan skema komisi bagi tim penjualan berdasarkan target omzet atau pencapaian kuota.",
     "referensi": {
-      "topikSpesifik": "Sales Margins & Profitability Analysis",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/margin.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Margins+Profitability",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Margins+%26+Profitability+Analysis+Odoo+19"
+      "topikSpesifik": "Sales Commissions Plans",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/commissions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Commissions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Commissions+Plans+Odoo+19"
     }
   },
   {
@@ -416,11 +416,11 @@ export const QUESTIONS = [
       "Enable the Score by time option in the Questions tab of the survey."
     ],
     "jawaban": 1,
-    "penjelasan": "Program eWallet, kartu hadiah, dan poin loyalitas dapat digunakan lintas Sales, POS, dan eCommerce.",
+    "penjelasan": "Program Loyalitas dan Kartu Hadiah (Gift Cards) dapat digunakan secara terintegrasi di modul Sales, POS, dan eCommerce.",
     "referensi": {
       "topikSpesifik": "eWallets, Gift Cards & Loyalty Programs",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/ewallets_giftcards.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Gift+Cards+eWallets+Loyalty",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Gift+Cards+eWallets+Loyalty+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eWallets%2C+Gift+Cards+%26+Loyalty+Programs+Odoo+19"
     }
   },
@@ -434,12 +434,12 @@ export const QUESTIONS = [
       "It allows participants to retry the same question multiple times without penalty."
     ],
     "jawaban": 1,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Tipe soal Matrix di Survey memungkinkan pengumpulan jawaban multi-kriteria dalam format tabel baris dan kolom.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
+      "topikSpesifik": "Survey Question Types & Matrix",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Matrix+Question+Types+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Survey+Question+Types+%26+Matrix+Odoo+19"
     }
   },
   {
@@ -456,7 +456,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+Integration",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheets+Pivot+Integration+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheets+%26+Live+Pivot+Tables+Odoo+19"
     }
   },
@@ -470,12 +470,12 @@ export const QUESTIONS = [
       "Odoo filters opportunities with a specific activity status across all stages (Planned, Today, Overdue)."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Odoo filters opportunities in that stage by the color code, which represents the current activity status.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: What happens when you",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+happens+when+you",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+happens+when+you"
+      "topikSpesifik": "Stages & Kanban Progress Bars",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Kanban+Stages+Progress+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Stages+%26+Kanban+Progress+Bars+Odoo+19"
     }
   },
   {
@@ -488,11 +488,11 @@ export const QUESTIONS = [
       "The likelihood of successfully closing the deal with the prospect."
     ],
     "jawaban": 2,
-    "penjelasan": "Field Probability di CRM memperkirakan kemungkinan deal berhasil ditutup berdasarkan riwayat stage dan algoritma scoring.",
+    "penjelasan": "Field Probability di CRM memperkirakan peluang keberhasilan deal berdasarkan data historis dan atribut prospek.",
     "referensi": {
       "topikSpesifik": "Predictive Lead Scoring & Probabilities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/track_leads/lead_scoring.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Predictive+Lead+Scoring+Probability",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Predictive+Lead+Scoring+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Predictive+Lead+Scoring+%26+Probabilities+Odoo+19"
     }
   },
@@ -506,12 +506,12 @@ export const QUESTIONS = [
       "The date the opportunity record was removed from the database."
     ],
     "jawaban": 1,
-    "penjelasan": "Lead yang memenuhi kualifikasi dapat dikonversi menjadi Opportunity dan ditugaskan ke Sales Team yang sesuai.",
+    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
     "referensi": {
-      "topikSpesifik": "CRM Pipeline & Lead Management",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Pipeline+Lead+Management",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+%26+Lead+Management+Odoo+19"
+      "topikSpesifik": "Convert Leads into Opportunities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Convert+Leads+to+Opportunities+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Convert+Leads+into+Opportunities+Odoo+19"
     }
   },
   {
@@ -524,12 +524,12 @@ export const QUESTIONS = [
       "By creating a new opportunity and merging it with the sales order."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Under the Other Info tab on the sales order.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: How can you manually",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+manually",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+manually"
+      "topikSpesifik": "Convert Leads into Opportunities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Convert+Leads+to+Opportunities+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Convert+Leads+into+Opportunities+Odoo+19"
     }
   },
   {
@@ -542,12 +542,12 @@ export const QUESTIONS = [
       "Enrich all leads automatically."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Enrich leads based on customer behavior.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Fitur Lead Enrichment secara otomatis melengkapi data profil perusahaan calon prospek menggunakan teknologi Odoo IAP.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: Which the following not",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+not",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+not"
+      "topikSpesifik": "CRM Lead Enrichment & IAP",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/optimize/lead_enrichment.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Lead+Enrichment+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Lead+Enrichment+%26+IAP+Odoo+19"
     }
   },
   {
@@ -560,11 +560,11 @@ export const QUESTIONS = [
       "Filter based on company revenue instead of size."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -578,12 +578,12 @@ export const QUESTIONS = [
       "Go to Sales > Opportunities and filter by team."
     ],
     "jawaban": 0,
-    "penjelasan": "Lead yang memenuhi kualifikasi dapat dikonversi menjadi Opportunity dan ditugaskan ke Sales Team yang sesuai.",
+    "penjelasan": "Mengatur Sales Team dan tahapan pipeline (stages) membantu memonitor alur kerja dan pencapaian target penjualan tiap tim.",
     "referensi": {
-      "topikSpesifik": "CRM Pipeline & Lead Management",
+      "topikSpesifik": "Sales Teams & Pipeline Stages",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Pipeline+Lead+Management",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+%26+Lead+Management+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Teams+Pipeline+Stages+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Teams+%26+Pipeline+Stages+Odoo+19"
     }
   },
   {
@@ -596,12 +596,12 @@ export const QUESTIONS = [
       "Hours"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Seconds\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Penugasan lead otomatis (Lead Assignment) berjalan berdasarkan interval cron job terjadwal di Odoo CRM.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: What the shortest interval",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+the+shortest+interval",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+the+shortest+interval"
+      "topikSpesifik": "Automated Lead Assignment Rules",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/lead_mining.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lead+Assignment+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automated+Lead+Assignment+Rules+Odoo+19"
     }
   },
   {
@@ -614,12 +614,12 @@ export const QUESTIONS = [
       "The stage header flashes to indicate a rotted opportunity."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"A red warning icon appears next to the opportunity name in the list view.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: What visual indicator shows",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+visual+indicator+shows",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+visual+indicator+shows"
+      "topikSpesifik": "Stages & Kanban Progress Bars",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Kanban+Stages+Progress+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Stages+%26+Kanban+Progress+Bars+Odoo+19"
     }
   },
   {
@@ -632,12 +632,12 @@ export const QUESTIONS = [
       "They are assigned randomly to any available salesperson."
     ],
     "jawaban": 1,
-    "penjelasan": "Lead yang memenuhi kualifikasi dapat dikonversi menjadi Opportunity dan ditugaskan ke Sales Team yang sesuai.",
+    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
     "referensi": {
-      "topikSpesifik": "CRM Pipeline & Lead Management",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Pipeline+Lead+Management",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+%26+Lead+Management+Odoo+19"
+      "topikSpesifik": "Customer Payment Follow-ups",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payment+Follow+Up+Levels+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Payment+Follow-ups+Odoo+19"
     }
   },
   {
@@ -650,11 +650,11 @@ export const QUESTIONS = [
       "To insert predefined text snippets stored in the Knowledge app."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -672,7 +672,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -686,11 +686,11 @@ export const QUESTIONS = [
       "In each Topic definition individually."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -704,11 +704,11 @@ export const QUESTIONS = [
       "It only knows what's stored in its Sources."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -722,11 +722,11 @@ export const QUESTIONS = [
       "As many as needed, there's no fixed limit."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -740,12 +740,12 @@ export const QUESTIONS = [
       "Yes, since mailing list contacts contain both email addresses and phone numbers."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"No, mailing list contacts are specific to the delivery method, and are not interchangeable.\" sesuai dengan standar alur kerja aplikasi Email Marketing & Campaigns di Odoo 19.",
+    "penjelasan": "Modul Email Marketing mengelola pengiriman buletin massal, segmentasi mailing list, dan pelacakan tingkat keterbukaan email (open rate).",
     "referensi": {
-      "topikSpesifik": "Email Marketing & Campaigns: Can you use the",
+      "topikSpesifik": "Email Marketing & Mass Mailing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Can+you+use+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Can+you+use+the"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Email+Marketing+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Email+Marketing+%26+Mass+Mailing+Odoo+19"
     }
   },
   {
@@ -758,12 +758,12 @@ export const QUESTIONS = [
       "No, but Odoo Events automatically creates 10 extra tickets per event, so new attendees can use one, if available"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"No, registrants MUST register in advance.\" sesuai dengan standar alur kerja aplikasi Email Marketing & Campaigns di Odoo 19.",
+    "penjelasan": "Layar Kiosk Attendance memungkinkan karyawan melakukan check-in dan check-out mandiri menggunakan PIN atau pemindai barcode/RFID.",
     "referensi": {
-      "topikSpesifik": "Email Marketing & Campaigns: Can you create new",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Can+you+create+new",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Can+you+create+new"
+      "topikSpesifik": "Attendances & Kiosk Mode",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosk_mode.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Attendance+Kiosk+Mode+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Attendances+%26+Kiosk+Mode+Odoo+19"
     }
   },
   {
@@ -776,12 +776,12 @@ export const QUESTIONS = [
       "Mass Mailing Analysis and Opt-Out Report."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Success Rate and Opt-Out Report.\" sesuai dengan standar alur kerja aplikasi Email Marketing & Campaigns di Odoo 19.",
+    "penjelasan": "Modul Email Marketing mengelola pengiriman buletin massal, segmentasi mailing list, dan pelacakan tingkat keterbukaan email (open rate).",
     "referensi": {
-      "topikSpesifik": "Email Marketing & Campaigns: What are the two",
+      "topikSpesifik": "Email Marketing & Mass Mailing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+are+the+two",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+are+the+two"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Email+Marketing+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Email+Marketing+%26+Mass+Mailing+Odoo+19"
     }
   },
   {
@@ -794,12 +794,12 @@ export const QUESTIONS = [
       "You can save it and reuse it, but only on the homepage."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"You can save it and reuse it anywhere on your website.\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: Youve just customized building",
+      "topikSpesifik": "Website Builder & Media Editing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Youve+just+customized+building",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Youve+just+customized+building"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -812,12 +812,12 @@ export const QUESTIONS = [
       "Yes, you can choose between appointments, products, web pages, blogs, events, jobs, forums, knowledge articles, and courses (if the related modules are installed) or everything."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"No, the search bar is only searching for products.\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Fitur Add Custom Filter pada bilah pencarian memungkinkan penyaringan data berdasarkan kriteria spesifik seperti jumlah karyawan perusahaan.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: Regarding the Search Bar",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Regarding+the+Search+Bar",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Regarding+the+Search+Bar"
+      "topikSpesifik": "Custom Filters & Search Views",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Search+Filter+Group+By+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Custom+Filters+%26+Search+Views+Odoo+19"
     }
   },
   {
@@ -830,12 +830,12 @@ export const QUESTIONS = [
       "You cannot make any changes specific to the mobile version."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"You can reorder elements, resize columns, and hide specific blocks for mobile without changing the desktop layout.\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: Youve finished designing the",
+      "topikSpesifik": "Website Builder & Media Editing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Youve+finished+designing+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Youve+finished+designing+the"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -866,12 +866,12 @@ export const QUESTIONS = [
       "On the product form in the backend, in the Attributes menu."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"On the product form in the backend, click the Variant smart button.\" sesuai dengan standar alur kerja aplikasi eCommerce & Online Store di Odoo 19.",
+    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
     "referensi": {
-      "topikSpesifik": "eCommerce & Online Store: Where can you set",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Where+can+you+set",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Where+can+you+set"
+      "topikSpesifik": "Product Variants & Attributes",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Variants+Attributes+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Variants+%26+Attributes+Odoo+19"
     }
   },
   {
@@ -884,12 +884,12 @@ export const QUESTIONS = [
       "2"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"5\" sesuai dengan standar alur kerja aplikasi eCommerce & Online Store di Odoo 19.",
+    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
     "referensi": {
-      "topikSpesifik": "eCommerce & Online Store: According the screenshot below",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+According+the+screenshot+below",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+According+the+screenshot+below"
+      "topikSpesifik": "Product Variants & Attributes",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Variants+Attributes+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Variants+%26+Attributes+Odoo+19"
     }
   },
   {
@@ -920,12 +920,12 @@ export const QUESTIONS = [
       "In the product backend, on the Sales tab."
     ],
     "jawaban": 0,
-    "penjelasan": "Template penawaran mempercepat pembuatan order dengan default produk, syarat pembayaran, dan produk opsional yang dapat dipilih customer.",
+    "penjelasan": "Optional Products memungkinkan penawaran produk pelengkap atau alternatif kepada customer langsung di portal web customer.",
     "referensi": {
-      "topikSpesifik": "Quotation Templates & PDF Builder",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/quote_template.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Quotation+Templates+PDF+Builder",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Quotation+Templates+%26+PDF+Builder+Odoo+19"
+      "topikSpesifik": "Optional Products & Upselling",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/optional_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Optional+Products+Upselling+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Optional+Products+%26+Upselling+Odoo+19"
     }
   },
   {
@@ -938,12 +938,12 @@ export const QUESTIONS = [
       "Article accessible to the author only."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Articles shared with specific users with no default access.\" sesuai dengan standar alur kerja aplikasi Knowledge Articles & Collaborative Docs di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Knowledge Articles & Collaborative Docs: What articles feature the",
+      "topikSpesifik": "Knowledge App & Articles",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+articles+feature+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+articles+feature+the"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -956,12 +956,12 @@ export const QUESTIONS = [
       "Users with 'Can edit' access rights"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Any user accessing an article\" sesuai dengan standar alur kerja aplikasi Knowledge Articles & Collaborative Docs di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Knowledge Articles & Collaborative Docs: What type users can",
+      "topikSpesifik": "Knowledge App & Articles",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+type+users+can",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+type+users+can"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -992,12 +992,12 @@ export const QUESTIONS = [
       "By setting the project visibility to public"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"By sharing a public link to the task or project\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Tugas proyek dapat dibagikan ke publik atau klien eksternal melalui fitur Share / Portal Access.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: How can you share",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+share",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+share"
+      "topikSpesifik": "Public Task Sharing & Customer Portal",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Share+Task+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Public+Task+Sharing+%26+Customer+Portal+Odoo+19"
     }
   },
   {
@@ -1010,11 +1010,11 @@ export const QUESTIONS = [
       "All users added as followers of the task and users with the access right \"Project Administrator\""
     ],
     "jawaban": 1,
-    "penjelasan": "Pesan (discussion) di chatter bersifat publik/notifikasi ke followers dan customer, sedangkan log note ditujukan untuk catatan internal tim.",
+    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+Log+Notes+Activities",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+and+Activities+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chatter%2C+Log+Notes+%26+Activities+Odoo+19"
     }
   },
@@ -1028,11 +1028,11 @@ export const QUESTIONS = [
       "Calendar"
     ],
     "jawaban": 2,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime.",
+    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime pada dashboard proyek.",
     "referensi": {
       "topikSpesifik": "Project Management & Burndown Charts",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Management+Gantt",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Burndown+Chart+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Management+%26+Burndown+Charts+Odoo+19"
     }
   },
@@ -1046,12 +1046,12 @@ export const QUESTIONS = [
       "When the milestone's deadline has passed and at least one of its tasks is not marked as done or canceled"
     ],
     "jawaban": 2,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime.",
+    "penjelasan": "Milestone proyek ditampilkan berwarna merah jika tenggat waktu telah terlampaui (overdue) dan belum selesai.",
     "referensi": {
-      "topikSpesifik": "Project Management & Burndown Charts",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Management+Gantt",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Management+%26+Burndown+Charts+Odoo+19"
+      "topikSpesifik": "Project Milestones Tracking",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_milestones.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Milestones+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Milestones+Tracking+Odoo+19"
     }
   },
   {
@@ -1064,12 +1064,12 @@ export const QUESTIONS = [
       "Set the task deadline's to be in 24 hours"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Allocate 24 hours to the task\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Menambahkan \"24h\" pada judul saat membuat tugas cepat di Kanban akan otomatis mengisi alokasi waktu tugas sebesar 24 jam.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: When creating task from",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+creating+task+from",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+creating+task+from"
+      "topikSpesifik": "Quick Task Creation Syntax (Duration)",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/task_creation.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Quick+Task+Creation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Quick+Task+Creation+Syntax+%28Duration%29+Odoo+19"
     }
   },
   {
@@ -1082,12 +1082,12 @@ export const QUESTIONS = [
       "Add the text \"#priority\" to the task's title"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Set's the task's priority to high\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Menambahkan tagar seperti \"#priority\" pada pembuatan tugas di Kanban akan otomatis menandai bintang prioritas pada tugas tersebut.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: When creating task from",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+creating+task+from",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+creating+task+from"
+      "topikSpesifik": "Quick Task Priority Tags (#priority)",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/task_creation.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Quick+Task+Creation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Quick+Task+Priority+Tags+%28%23priority%29+Odoo+19"
     }
   },
   {
@@ -1100,12 +1100,12 @@ export const QUESTIONS = [
       "Add and share custom views"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Automate task moves between stages\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Bilah navigasi atas (top bar) proyek menyediakan akses cepat ke ringkasan analitik, dokumen, dan konfigurasi proyek.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: The top bar does",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+The+top+bar+does",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+The+top+bar+does"
+      "topikSpesifik": "Project Navigation & Top Bar Actions",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Top+Bar+Actions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Navigation+%26+Top+Bar+Actions+Odoo+19"
     }
   },
   {
@@ -1118,12 +1118,12 @@ export const QUESTIONS = [
       "Kanban stages in the project"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Analytic plans in the project\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: The number analytic accounts",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+The+number+analytic+accounts",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+The+number+analytic+accounts"
+      "topikSpesifik": "Stages & Kanban Progress Bars",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Kanban+Stages+Progress+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Stages+%26+Kanban+Progress+Bars+Odoo+19"
     }
   },
   {
@@ -1136,12 +1136,12 @@ export const QUESTIONS = [
       "It means the line is related to a project or task for which the user has not yet submitted a timesheet during the displayed period"
     ],
     "jawaban": 0,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -1154,12 +1154,12 @@ export const QUESTIONS = [
       "Employees cannot edit a timesheet outside their working hours"
     ],
     "jawaban": 1,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -1172,12 +1172,12 @@ export const QUESTIONS = [
       "Timesheets require validation by a supervisor before being used by the Payroll or Invoicing app"
     ],
     "jawaban": 2,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Work Entries di modul Payroll mencatat kehadiran, cuti, dan jam kerja aktual sebagai dasar kalkulasi slip gaji karyawan.",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Payroll & Work Entries",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/payroll/work_entries.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payroll+Work+Entries+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Payroll+%26+Work+Entries+Odoo+19"
     }
   },
   {
@@ -1190,12 +1190,12 @@ export const QUESTIONS = [
       "Never"
     ],
     "jawaban": 1,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -1208,12 +1208,12 @@ export const QUESTIONS = [
       "It means the employee worked undertime on that day"
     ],
     "jawaban": 0,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -1226,12 +1226,12 @@ export const QUESTIONS = [
       "4 journal items"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"2 journal items\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Bagan Akun (Chart of Accounts) mendefinisikan struktur akun keuangan standar (Asset, Liability, Equity, Revenue, Expense).",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: customer invoice with two",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+customer+invoice+with+two",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+customer+invoice+with+two"
+      "topikSpesifik": "Chart of Accounts & Journals Setup",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chart+of+Accounts+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chart+of+Accounts+%26+Journals+Setup+Odoo+19"
     }
   },
   {
@@ -1244,7 +1244,7 @@ export const QUESTIONS = [
       "Odoo updates the invoice journal entry to replace the account receivable with the suspense account of the bank transaction."
     ],
     "jawaban": 0,
-    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/bill menggunakan aturan model rekonsiliasi otomatis.",
+    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/pembayaran menggunakan model rekonsiliasi otomatis.",
     "referensi": {
       "topikSpesifik": "Bank Reconciliation & Reconciliation Models",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/reconciliation.html",
@@ -1262,11 +1262,11 @@ export const QUESTIONS = [
       "By default, currency rates are updated daily and can be manually triggered using the developer mode."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -1280,11 +1280,11 @@ export const QUESTIONS = [
       "You can modify a single posted journal entry's number by going into developer mode and manually changing the number, or you can change them en masse by selecting the journal entries, resetting them to draft and selecting Resequence from the action menu."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -1298,12 +1298,12 @@ export const QUESTIONS = [
       "The default payment terms, default payment method, and outstanding account."
     ],
     "jawaban": 0,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), setiap mutasi stok (penerimaan barang dan pengiriman) otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
     "referensi": {
-      "topikSpesifik": "Perpetual Inventory Valuation & Costing",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Perpetual+Inventory+Valuation+FIFO",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Perpetual+Inventory+Valuation+%26+Costing+Odoo+19"
+      "topikSpesifik": "Customer Payment Follow-ups",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payment+Follow+Up+Levels+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Payment+Follow-ups+Odoo+19"
     }
   },
   {
@@ -1316,12 +1316,12 @@ export const QUESTIONS = [
       "Go to Accounting > Reporting > Balance Sheet, and select the period. Odoo automatically creates a budget for the selected period."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Set up analytic plans and accounts first, then create a budget via Accounting > Accounting > Analytic Budget.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Anggaran keuangan (Budgets) disusun berdasarkan posisi anggaran (budgetary positions) yang ditautkan ke akun analitik.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: How can you create",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+create",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+create"
+      "topikSpesifik": "Financial Budgets & Analytic Positions",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/reporting/analytic_accounting.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Accounting+Budgeting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Financial+Budgets+%26+Analytic+Positions+Odoo+19"
     }
   },
   {
@@ -1334,12 +1334,12 @@ export const QUESTIONS = [
       "Yes, by merging accounts from various companies or mapping multiple companies on an account, each with a code."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Yes, but only if the companies are set as branch offices.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Akun pada bagan akun dapat dikonfigurasikan agar spesifik milik satu entitas perusahaan atau dibagikan jika tidak memiliki company id.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: Can accounts belong multiple",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Can+accounts+belong+multiple",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Can+accounts+belong+multiple"
+      "topikSpesifik": "Multi-Company Chart of Accounts",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Chart+of+Accounts+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Chart+of+Accounts+Odoo+19"
     }
   },
   {
@@ -1352,7 +1352,7 @@ export const QUESTIONS = [
       "Yes, draft invoices can be matched with bank entries for reconciliation."
     ],
     "jawaban": 0,
-    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/bill menggunakan aturan model rekonsiliasi otomatis.",
+    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/pembayaran menggunakan model rekonsiliasi otomatis.",
     "referensi": {
       "topikSpesifik": "Bank Reconciliation & Reconciliation Models",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/reconciliation.html",
@@ -1370,12 +1370,12 @@ export const QUESTIONS = [
       "In the Accounting tab of the customer form, click Send in the Invoice Follow-ups section and select the invoice that needs a reminder."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"In the customer Follow-up report, enable the toggle in the No Follow-up column for the invoice you want to exclude.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: How can you send",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+send",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+send"
+      "topikSpesifik": "Customer Payment Follow-ups",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payment+Follow+Up+Levels+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Payment+Follow-ups+Odoo+19"
     }
   },
   {
@@ -1388,12 +1388,12 @@ export const QUESTIONS = [
       "Generate a customizable audit report for that period, including a table of contents, attestations, the balance sheet, a profit and loss statement, annexes, and supporting documents."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Both review working files and generate a customizable audit report, and control and track changes with a non-restrictive audit trail that is accessible by default to everyone.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Fitur Audit Trail mencatat setiap riwayat modifikasi jurnal, pembuat transaksi, dan timestamp untuk kepatuhan audit.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: What the audit features",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+the+audit+features",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+the+audit+features"
+      "topikSpesifik": "Accounting Audit Trail & Activity Logs",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/cheat_sheet.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Accounting+Audit+Trail+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Accounting+Audit+Trail+%26+Activity+Logs+Odoo+19"
     }
   },
   {
@@ -1406,12 +1406,12 @@ export const QUESTIONS = [
       "Validating the receipt, confirming the vendor bill, validating the delivery order, and confirming the customer invoice."
     ],
     "jawaban": 2,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), setiap mutasi stok (penerimaan barang dan pengiriman) otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
     "referensi": {
-      "topikSpesifik": "Perpetual Inventory Valuation & Costing",
+      "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Perpetual+Inventory+Valuation+FIFO",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Perpetual+Inventory+Valuation+%26+Costing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Valuation+Accounting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Valuation+%26+Perpetual+Accounting+Odoo+19"
     }
   },
   {
@@ -1428,7 +1428,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+Integration",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheets+Pivot+Integration+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheets+%26+Live+Pivot+Tables+Odoo+19"
     }
   },
@@ -1442,12 +1442,12 @@ export const QUESTIONS = [
       "The spreadsheet is deleted from the Documents app and can only be accessed via the Dashboards app."
     ],
     "jawaban": 0,
-    "penjelasan": "Odoo Spreadsheet memungkinkan analisis data dinamis langsung dari pivot view dengan sinkronisasi data live.",
+    "penjelasan": "Modul Fixed Assets mengelola jadwal depresiasi aset tetap secara otomatis ke dalam jurnal akuntansi sesuai metode penyusutan.",
     "referensi": {
-      "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+Integration",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheets+%26+Live+Pivot+Tables+Odoo+19"
+      "topikSpesifik": "Fixed Assets & Depreciation Management",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/vendor_bills/assets.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fixed+Assets+Depreciation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fixed+Assets+%26+Depreciation+Management+Odoo+19"
     }
   },
   {
@@ -1460,11 +1460,11 @@ export const QUESTIONS = [
       "This is not possible; any dashboard is visible to all companies present in the database."
     ],
     "jawaban": 0,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada contact record membuatnya bersifat global dan dapat diakses oleh seluruh entitas perusahaan.",
+    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Customer+Share",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Setup+%26+Records+Sharing+Odoo+19"
     }
   },
@@ -1518,7 +1518,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -1532,12 +1532,12 @@ export const QUESTIONS = [
       "On the Employee record, click Actions > Presence Control > Set Absent"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"In the Employees app dashboard, click Presence Icon > Absent\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Layar Kiosk Attendance memungkinkan karyawan melakukan check-in dan check-out mandiri menggunakan PIN atau pemindai barcode/RFID.",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: How can user with",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+user+with",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+user+with"
+      "topikSpesifik": "Attendances & Kiosk Mode",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosk_mode.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Attendance+Kiosk+Mode+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Attendances+%26+Kiosk+Mode+Odoo+19"
     }
   },
   {
@@ -1604,12 +1604,12 @@ export const QUESTIONS = [
       "Refund the customer."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Cancel the order until more units are ordered.\" sesuai dengan standar alur kerja aplikasi Point of Sale Operations di Odoo 19.",
+    "penjelasan": "Credit note digunakan untuk membatalkan atau mengurangi tagihan customer saat terjadi retur barang atau koreksi harga.",
     "referensi": {
-      "topikSpesifik": "Point of Sale Operations: product set for late",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+product+set+for+late",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+product+set+for+late"
+      "topikSpesifik": "Credit Notes and Customer Refunds",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/credit_notes.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Credit+Notes+Customer+Refunds+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Credit+Notes+and+Customer+Refunds+Odoo+19"
     }
   },
   {
@@ -1622,12 +1622,12 @@ export const QUESTIONS = [
       "In the email the seller receives, the seller clicks the \"Download\" button and uploads the downloaded PDF to the Sales dashboard"
     ],
     "jawaban": 0,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -1640,12 +1640,12 @@ export const QUESTIONS = [
       "The bill uploads and is automatically marked payable in full regardless of receipts"
     ],
     "jawaban": 0,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah barang diterima).",
+    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
     "referensi": {
-      "topikSpesifik": "Invoicing Policies & Down Payments",
+      "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Down+Payments",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Down+Payments+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Pro-Forma+Invoices+Odoo+19"
     }
   },
   {
@@ -1658,12 +1658,12 @@ export const QUESTIONS = [
       "The vendor with the cheapest price"
     ],
     "jawaban": 0,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -1676,12 +1676,12 @@ export const QUESTIONS = [
       "No"
     ],
     "jawaban": 0,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), setiap mutasi stok (penerimaan barang dan pengiriman) otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
     "referensi": {
-      "topikSpesifik": "Perpetual Inventory Valuation & Costing",
+      "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Perpetual+Inventory+Valuation+FIFO",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Perpetual+Inventory+Valuation+%26+Costing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Valuation+Accounting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Valuation+%26+Perpetual+Accounting+Odoo+19"
     }
   },
   {
@@ -1694,12 +1694,12 @@ export const QUESTIONS = [
       "Order Date + Vendor Lead Time + Company Security Days"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Order Date + Vendor Lead Time\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Tanggal kedatangan pesanan (Expected Arrival) dihitung dari tanggal PO ditambah Vendor Lead Time pada Vendor Pricelist.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: When you purchase new",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+you+purchase+new",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+you+purchase+new"
+      "topikSpesifik": "PO Lead Times & Expected Arrival Date",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/lead_times.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Vendor+Lead+Times+Arrival+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+PO+Lead+Times+%26+Expected+Arrival+Date+Odoo+19"
     }
   },
   {
@@ -1712,12 +1712,12 @@ export const QUESTIONS = [
       "Yes, by clicking 'Link to Existing RfQ', under the 'Alternatives' tab on a new request for quotation"
     ],
     "jawaban": 0,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -1730,12 +1730,12 @@ export const QUESTIONS = [
       "When the vendor bill's status changes from 'In Payment' to 'Paid'"
     ],
     "jawaban": 0,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah barang diterima).",
+    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
     "referensi": {
-      "topikSpesifik": "Invoicing Policies & Down Payments",
+      "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Down+Payments",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Down+Payments+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Pro-Forma+Invoices+Odoo+19"
     }
   },
   {
@@ -1748,12 +1748,12 @@ export const QUESTIONS = [
       "It looks at quantities delivered over the past 7 days to compute daily demand, then multiplies by 15 and subtracts on-hand stock"
     ],
     "jawaban": 2,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -1766,12 +1766,12 @@ export const QUESTIONS = [
       "If you order today, the product would arrive in 5 days, based on today's date and configured lead times"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"You have 5 days to decide to replenish before your stock runs into critically low levels\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Time to Replenish menunjukkan estimasi jumlah hari yang dibutuhkan hingga stok baru tiba di gudang.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: Youre reviewing the Forecasted",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Youre+reviewing+the+Forecasted",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Youre+reviewing+the+Forecasted"
+      "topikSpesifik": "Forecasted Inventory & Time to Replenish",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Forecasted+Stock+Replenishment+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Forecasted+Inventory+%26+Time+to+Replenish+Odoo+19"
     }
   },
   {
@@ -1788,7 +1788,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -1802,12 +1802,12 @@ export const QUESTIONS = [
       "A move between two 'Internal Locations'"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"A move from an 'Internal Location' to an 'Inventory Adjustment' location\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Penyesuaian stok melibatkan mutasi antara Internal Location (WH/Stock) dan Virtual Loss/Inventory Adjustment Location.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: When performing inventory adjustment",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+performing+inventory+adjustment",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+performing+inventory+adjustment"
+      "topikSpesifik": "Physical Inventory Adjustments & Locations",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/count_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Adjustments+Stock+Count+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Physical+Inventory+Adjustments+%26+Locations+Odoo+19"
     }
   },
   {
@@ -1823,8 +1823,8 @@ export const QUESTIONS = [
     "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
     "referensi": {
       "topikSpesifik": "Lots & Serial Numbers Traceability",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/product_tracking.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lots+%26+Serial+Numbers+Traceability+Odoo+19"
     }
   },
@@ -1838,12 +1838,12 @@ export const QUESTIONS = [
       "The forecasted quantity becomes negative, and the product is marked as \"Not Available\" on any current delivery orders"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"The forecasted quantity is updated to 0\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Saat pesanan dikonfirmasi, sistem secara otomatis mereservasi stok yang tersedia untuk Delivery Order yang diproses.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: product has been reserved",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+product+has+been+reserved",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+product+has+been+reserved"
+      "topikSpesifik": "Delivery Orders & Stock Reservation",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Delivery+Orders+Stock+Reservation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Delivery+Orders+%26+Stock+Reservation+Odoo+19"
     }
   },
   {
@@ -1856,12 +1856,12 @@ export const QUESTIONS = [
       "A move of 1 unit from an 'Inventory Loss' location to an 'Internal Location'"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"A move of 4 units from an 'Internal Location' to an 'Inventory Loss' location\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Mengubah jumlah stok on-hand secara manual membentuk Stock Move selisih yang dicatat ke akun penyesuaian persediaan.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: When you update onhand",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+you+update+onhand",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+you+update+onhand"
+      "topikSpesifik": "Stock Moves on Quantity Update",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/count_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Stock+Moves+Inventory+Update+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Stock+Moves+on+Quantity+Update+Odoo+19"
     }
   },
   {
@@ -1874,12 +1874,12 @@ export const QUESTIONS = [
       "Creates one package containing all 6 sodas, but no Package Type is set, because it's not a thing"
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur Put in Pack mengelompokkan barang ke dalam koli/paket saat picking, sedangkan Scrap mencatat barang rusak/hilang dari stok.",
+    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
     "referensi": {
-      "topikSpesifik": "Packages, Packaging & Scrap Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Packaging+Scrap",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages%2C+Packaging+%26+Scrap+Orders+Odoo+19"
+      "topikSpesifik": "Packages & Move Entire Package",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Move+Entire+Package+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages+%26+Move+Entire+Package+Odoo+19"
     }
   },
   {
@@ -1892,12 +1892,12 @@ export const QUESTIONS = [
       "In the Barcode app, click \"Count inventory\", click the gear icon (settings) menu, and enable \"Count Entire Locations\""
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"In Inventory > Configuration > Settings, under the Barcode section, enable the \"Count Entire Locations\" feature\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Fitur \"Count Entire Locations\" diaktifkan pada tipe operasi Barcode untuk memvalidasi seluruh isi rak penyimpanan sekaligus.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: Where the Count Entire",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Where+the+Count+Entire",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Where+the+Count+Entire"
+      "topikSpesifik": "Barcode Count Entire Locations",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/barcode/operations/count_locations.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Barcode+Inventory+Count+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Barcode+Count+Entire+Locations+Odoo+19"
     }
   },
   {
@@ -1913,8 +1913,8 @@ export const QUESTIONS = [
     "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
     "referensi": {
       "topikSpesifik": "Automated Reordering Rules",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Inventory",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/reordering_rules.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Replenishment+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automated+Reordering+Rules+Odoo+19"
     }
   },
@@ -1928,12 +1928,12 @@ export const QUESTIONS = [
       "Create a custom route for the shipping method and setting it in the Routes field in Inventory > Configuration > Delivery Methods"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Going to Inventory > Configuration > Shipping Methods and choosing a routes for the Routes field.\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Metode pengiriman seperti FedEx atau DHL dapat dihubungkan ke rute spesifik gudang untuk membedakan alur pengambilan barang.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: want configure specific route",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+want+configure+specific+route",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+want+configure+specific+route"
+      "topikSpesifik": "Delivery Methods & Shipping Routes",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/delivery_method.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Shipping+Delivery+Methods+Routes+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Delivery+Methods+%26+Shipping+Routes+Odoo+19"
     }
   },
   {
@@ -1946,12 +1946,12 @@ export const QUESTIONS = [
       "Create a quality check for each specific vendor"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Create a quality control point on the \"Receipt\" operation type\" sesuai dengan standar alur kerja aplikasi Manufacturing & Shop Floor Operations di Odoo 19.",
+    "penjelasan": "Titik kontrol kualitas (Quality Control Point) pada operasi Incoming/Receipts otomatis memicu pemeriksaan mutu saat barang tiba dari vendor.",
     "referensi": {
-      "topikSpesifik": "Manufacturing & Shop Floor Operations: You want trigger quality",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+You+want+trigger+quality",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+You+want+trigger+quality"
+      "topikSpesifik": "Quality Checks on Vendor Receipts",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/quality/quality_management/quality_checks.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Quality+Checks+Incoming+Receipts+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Quality+Checks+on+Vendor+Receipts+Odoo+19"
     }
   },
   {
@@ -1964,11 +1964,11 @@ export const QUESTIONS = [
       "4 MOs with 30 each"
     ],
     "jawaban": 0,
-    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen dan tahapan operasi yang dibutuhkan untuk memproduksi sebuah barang.",
+    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen, sub-rakitan (kit), dan produk sampingan (by-products) dalam proses manufaktur.",
     "referensi": {
       "topikSpesifik": "Bills of Materials (BoM) & Kits",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/kit_shipping.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bills+of+Materials+%28BoM%29+%26+Kits+Odoo+19"
     }
   },
@@ -1985,8 +1985,8 @@ export const QUESTIONS = [
     "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
     "referensi": {
       "topikSpesifik": "Lots & Serial Numbers Traceability",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/product_tracking.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lots+%26+Serial+Numbers+Traceability+Odoo+19"
     }
   },
@@ -2003,8 +2003,8 @@ export const QUESTIONS = [
     "penjelasan": "MPS merencanakan kebutuhan produksi dan pengadaan jangka panjang berdasarkan ramalan penjualan (demand forecast).",
     "referensi": {
       "topikSpesifik": "Master Production Schedule (MPS)",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Master+Production+Schedule",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/mps.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Master+Production+Schedule+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Master+Production+Schedule+%28MPS%29+Odoo+19"
     }
   },
@@ -2020,10 +2020,10 @@ export const QUESTIONS = [
     "jawaban": 2,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -2036,12 +2036,12 @@ export const QUESTIONS = [
       "A warning is raised to reflect that the original quantity does not fulfill the updated demand. You have to click \"Update Quantity\""
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Nothing at first, and once you confirm the picking, a backorder is created to make up the missing quantities\" sesuai dengan standar alur kerja aplikasi Manufacturing & Shop Floor Operations di Odoo 19.",
+    "penjelasan": "Pada manufaktur 2 langkah, penambahan jumlah produksi akan memperbarui kuantitas transfer pengambilan komponen (Pick components).",
     "referensi": {
-      "topikSpesifik": "Manufacturing & Shop Floor Operations: Youve configured your manufacturing",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Youve+configured+your+manufacturing",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Youve+configured+your+manufacturing"
+      "topikSpesifik": "2-Step Manufacturing & Pre-Production Picking",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/sub_assemblies.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Two+Step+Manufacturing+Picking+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+2-Step+Manufacturing+%26+Pre-Production+Picking+Odoo+19"
     }
   },
   {
@@ -2057,8 +2057,8 @@ export const QUESTIONS = [
     "penjelasan": "Subkontrak memungkinkan pengiriman bahan baku ke pihak ketiga untuk diproduksi dan diterima kembali sebagai barang jadi.",
     "referensi": {
       "topikSpesifik": "Subcontracting in Manufacturing",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Subcontracting+Manufacturing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/subcontracting.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Subcontracting+Manufacturing+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Subcontracting+in+Manufacturing+Odoo+19"
     }
   },
@@ -2110,10 +2110,10 @@ export const QUESTIONS = [
     "jawaban": 2,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -2128,10 +2128,10 @@ export const QUESTIONS = [
     "jawaban": 0,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -2146,10 +2146,10 @@ export const QUESTIONS = [
     "jawaban": 0,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -2162,12 +2162,12 @@ export const QUESTIONS = [
       "Many2One."
     ],
     "jawaban": 2,
-    "penjelasan": "Field One2Many di Odoo Studio membutuhkan field Many2One pada model target sebagai relasi penghubungnya.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Relational Fields",
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Customization",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Relational+Fields+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   },
   {
@@ -2198,12 +2198,12 @@ export const QUESTIONS = [
       "One2Many or Many2Many."
     ],
     "jawaban": 2,
-    "penjelasan": "Field One2Many di Odoo Studio membutuhkan field Many2One pada model target sebagai relasi penghubungnya.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Relational Fields",
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Customization",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Relational+Fields+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   },
   {
@@ -2234,11 +2234,11 @@ export const QUESTIONS = [
       "Use the 'Send Email' action and set the action to 'Message'."
     ],
     "jawaban": 0,
-    "penjelasan": "Pesan (discussion) di chatter bersifat publik/notifikasi ke followers dan customer, sedangkan log note ditujukan untuk catatan internal tim.",
+    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+Log+Notes+Activities",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+and+Activities+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chatter%2C+Log+Notes+%26+Activities+Odoo+19"
     }
   },
@@ -2270,11 +2270,11 @@ export const QUESTIONS = [
       "Company and Not-for-Profit."
     ],
     "jawaban": 0,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada contact record membuatnya bersifat global dan dapat diakses oleh seluruh entitas perusahaan.",
+    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Customer+Share",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Setup+%26+Records+Sharing+Odoo+19"
     }
   },
@@ -2288,12 +2288,12 @@ export const QUESTIONS = [
       "When a record is archived, nobody can ever modify it, it's frozen forever."
     ],
     "jawaban": 1,
-    "penjelasan": "Mengarsipkan record (archive) menyembunyikannya dari tampilan reguler tanpa menghapus data historis/audit trail.",
+    "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
     "referensi": {
-      "topikSpesifik": "Record Archiving & Filters",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Archive+Records+Filters",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Record+Archiving+%26+Filters+Odoo+19"
+      "topikSpesifik": "Lots & Serial Numbers Traceability",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/product_tracking.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lots+%26+Serial+Numbers+Traceability+Odoo+19"
     }
   },
   {
@@ -2306,11 +2306,11 @@ export const QUESTIONS = [
       "Open the Activities panel from the record header and use \"Add Activity\" to define the activity details."
     ],
     "jawaban": 0,
-    "penjelasan": "Pesan (discussion) di chatter bersifat publik/notifikasi ke followers dan customer, sedangkan log note ditujukan untuk catatan internal tim.",
+    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+Log+Notes+Activities",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chatter+and+Activities+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chatter%2C+Log+Notes+%26+Activities+Odoo+19"
     }
   },
@@ -2324,11 +2324,11 @@ export const QUESTIONS = [
       "It provides the user with temporary Administration Access Rights."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -2342,12 +2342,12 @@ export const QUESTIONS = [
       "Either a target or achievement-based commission plan"
     ],
     "jawaban": 0,
-    "penjelasan": "Program eWallet, kartu hadiah, dan poin loyalitas dapat digunakan lintas Sales, POS, dan eCommerce.",
+    "penjelasan": "Modul Commissions memungkinkan pengaturan skema komisi bagi tim penjualan berdasarkan target omzet atau pencapaian kuota.",
     "referensi": {
-      "topikSpesifik": "eWallets, Gift Cards & Loyalty Programs",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/ewallets_giftcards.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Gift+Cards+eWallets+Loyalty",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eWallets%2C+Gift+Cards+%26+Loyalty+Programs+Odoo+19"
+      "topikSpesifik": "Sales Commissions Plans",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/commissions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Commissions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Commissions+Plans+Odoo+19"
     }
   },
   {
@@ -2360,12 +2360,12 @@ export const QUESTIONS = [
       "Sections"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Sections\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Fitur \"Add a Section\" pada Sales Order memungkinkan pengelompokan baris produk untuk menghasilkan subtotal terpisah.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: you would like group",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+you+would+like+group",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+you+would+like+group"
+      "topikSpesifik": "Quotation Sections, Notes & Subtotals",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/quote_template.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Quotation+Sections+Subtotals+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Quotation+Sections%2C+Notes+%26+Subtotals+Odoo+19"
     }
   },
   {
@@ -2378,12 +2378,12 @@ export const QUESTIONS = [
       "Submit partial payments and down payments for invoices (if the payment terms allow)"
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -2396,12 +2396,12 @@ export const QUESTIONS = [
       "Confirmation that the Terms & Conditions will be displayed on the quotation"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"The number of days, promised to the customer, between the confirmation of the sales order and the delivery\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Customer Lead Time adalah estimasi jumlah hari antara konfirmasi pesanan penjualan hingga barang dikirimkan ke pelanggan.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: What does the Customer",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+does+the+Customer",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+does+the+Customer"
+      "topikSpesifik": "Customer Lead Time on Product Form",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/lead_times.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Customer+Lead+Time+Delivery+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Lead+Time+on+Product+Form+Odoo+19"
     }
   },
   {
@@ -2414,12 +2414,12 @@ export const QUESTIONS = [
       "Promotions, Loyalty & Gift Card, since you're creating a loyalty program"
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -2432,11 +2432,11 @@ export const QUESTIONS = [
       "Both"
     ],
     "jawaban": 2,
-    "penjelasan": "Program eWallet, kartu hadiah, dan poin loyalitas dapat digunakan lintas Sales, POS, dan eCommerce.",
+    "penjelasan": "Program Loyalitas dan Kartu Hadiah (Gift Cards) dapat digunakan secara terintegrasi di modul Sales, POS, dan eCommerce.",
     "referensi": {
       "topikSpesifik": "eWallets, Gift Cards & Loyalty Programs",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/ewallets_giftcards.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Gift+Cards+eWallets+Loyalty",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Gift+Cards+eWallets+Loyalty+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eWallets%2C+Gift+Cards+%26+Loyalty+Programs+Odoo+19"
     }
   },
@@ -2450,12 +2450,12 @@ export const QUESTIONS = [
       "Dynamically"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Formula-based\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Pembuatan varian atribut dapat diatur ke mode Instantly, Dynamically (saat dipesan), atau Never (hanya sebagai opsi kustom).",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: Which the following NOT",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+NOT",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+NOT"
+      "topikSpesifik": "Product Attribute Variant Creation Modes",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Attribute+Variants+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Attribute+Variant+Creation+Modes+Odoo+19"
     }
   },
   {
@@ -2468,12 +2468,12 @@ export const QUESTIONS = [
       "There is no way to add an upsell product to the bottom a product page in the eCommerce store."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"In the 'Sales' tab of your eCommerce product, enter the upsell product in the 'Alternative Products' field\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Optional Products memungkinkan penawaran produk pelengkap atau alternatif kepada customer langsung di portal web customer.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: How you configure upsell",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+you+configure+upsell",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+you+configure+upsell"
+      "topikSpesifik": "Optional Products & Upselling",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/optional_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Optional+Products+Upselling+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Optional+Products+%26+Upselling+Odoo+19"
     }
   },
   {
@@ -2522,12 +2522,12 @@ export const QUESTIONS = [
       "Matrix Questions."
     ],
     "jawaban": 0,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Live Sessions di Survey memungkinkan presentasi kuis interaktif secara realtime dengan pemberian skor bonus dan papan peringkat.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
+      "topikSpesifik": "Surveys Live Sessions & Gamification",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Survey+Live+Sessions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+Live+Sessions+%26+Gamification+Odoo+19"
     }
   },
   {
@@ -2540,12 +2540,12 @@ export const QUESTIONS = [
       "They have the exact same tags"
     ],
     "jawaban": 0,
-    "penjelasan": "Lead yang memenuhi kualifikasi dapat dikonversi menjadi Opportunity dan ditugaskan ke Sales Team yang sesuai.",
+    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
     "referensi": {
-      "topikSpesifik": "CRM Pipeline & Lead Management",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Pipeline+Lead+Management",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+%26+Lead+Management+Odoo+19"
+      "topikSpesifik": "Convert Leads into Opportunities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Convert+Leads+to+Opportunities+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Convert+Leads+into+Opportunities+Odoo+19"
     }
   },
   {
@@ -2558,12 +2558,12 @@ export const QUESTIONS = [
       "Transforming a lead into an opportunity."
     ],
     "jawaban": 2,
-    "penjelasan": "Lead yang memenuhi kualifikasi dapat dikonversi menjadi Opportunity dan ditugaskan ke Sales Team yang sesuai.",
+    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
     "referensi": {
-      "topikSpesifik": "CRM Pipeline & Lead Management",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Pipeline+Lead+Management",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+%26+Lead+Management+Odoo+19"
+      "topikSpesifik": "Convert Leads into Opportunities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Convert+Leads+to+Opportunities+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Convert+Leads+into+Opportunities+Odoo+19"
     }
   },
   {
@@ -2576,11 +2576,11 @@ export const QUESTIONS = [
       "Only opportunities that have scheduled activities."
     ],
     "jawaban": 0,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada contact record membuatnya bersifat global dan dapat diakses oleh seluruh entitas perusahaan.",
+    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Customer+Share",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Setup+%26+Records+Sharing+Odoo+19"
     }
   },
@@ -2594,12 +2594,12 @@ export const QUESTIONS = [
       "All CRM users."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"All CRM users.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Laporan Analisis CRM dan Pipeline dapat diakses oleh manajer penjualan untuk mengevaluasi performa konversi tim.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: Who can access Reporting",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Who+can+access+Reporting",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Who+can+access+Reporting"
+      "topikSpesifik": "CRM Pipeline Reporting & Win/Loss Analysis",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/performance/win_loss.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Reporting+Win+Loss+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+Reporting+%26+Win%2FLoss+Analysis+Odoo+19"
     }
   },
   {
@@ -2612,12 +2612,12 @@ export const QUESTIONS = [
       "When a salesperson wants to impress a client."
     ],
     "jawaban": 0,
-    "penjelasan": "Lead yang memenuhi kualifikasi dapat dikonversi menjadi Opportunity dan ditugaskan ke Sales Team yang sesuai.",
+    "penjelasan": "Property fields memungkinkan penambahan field kustom tanpa mengubah struktur tabel database utama.",
     "referensi": {
-      "topikSpesifik": "CRM Pipeline & Lead Management",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Pipeline+Lead+Management",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+%26+Lead+Management+Odoo+19"
+      "topikSpesifik": "Property Fields Configuration",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/property_fields.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Property+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Property+Fields+Configuration+Odoo+19"
     }
   },
   {
@@ -2630,12 +2630,12 @@ export const QUESTIONS = [
       "The activity is due today."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"The activity is due today.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Ikon jam aktivitas berwarna oranye pada kartu Kanban menandakan ada aktivitas yang jatuh tempo hari ini.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: What does orange activity",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+does+orange+activity",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+does+orange+activity"
+      "topikSpesifik": "Activity Clock Icons in Kanban View",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Activity+Clock+Colors+Kanban+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Activity+Clock+Icons+in+Kanban+View+Odoo+19"
     }
   },
   {
@@ -2648,11 +2648,11 @@ export const QUESTIONS = [
       "Knowledge articles and docs from the Documents app only."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -2666,11 +2666,11 @@ export const QUESTIONS = [
       "To extend the AI Agent's capabilities beyond text generation, allowing it to perform defined actions or functions."
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -2684,11 +2684,11 @@ export const QUESTIONS = [
       "Lead Assessment."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -2702,12 +2702,12 @@ export const QUESTIONS = [
       "To insert dynamic values in the subject line."
     ],
     "jawaban": 2,
-    "penjelasan": "Modul Survey mendukung pembuatan kuis bersertifikasi dengan penilaian otomatis dan passing score.",
+    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
     "referensi": {
-      "topikSpesifik": "Surveys & Online Certifications",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Surveys+Certifications",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Surveys+%26+Online+Certifications+Odoo+19"
+      "topikSpesifik": "Point of Sale (POS) Operations",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
   {
@@ -2720,12 +2720,12 @@ export const QUESTIONS = [
       "Sending the same email to two different mailing lists, so the mailing list with the fewest open rates is archived."
     ],
     "jawaban": 0,
-    "penjelasan": "Mengarsipkan record (archive) menyembunyikannya dari tampilan reguler tanpa menghapus data historis/audit trail.",
+    "penjelasan": "Modul Email Marketing mengelola pengiriman buletin massal, segmentasi mailing list, dan pelacakan tingkat keterbukaan email (open rate).",
     "referensi": {
-      "topikSpesifik": "Record Archiving & Filters",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Archive+Records+Filters",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Record+Archiving+%26+Filters+Odoo+19"
+      "topikSpesifik": "Email Marketing & Mass Mailing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Email+Marketing+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Email+Marketing+%26+Mass+Mailing+Odoo+19"
     }
   },
   {
@@ -2756,11 +2756,11 @@ export const QUESTIONS = [
       "By activating developer mode and enabling it in the website properties."
     ],
     "jawaban": 1,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -2774,12 +2774,12 @@ export const QUESTIONS = [
       "By clicking Website > Site > Properties."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"By clicking on 'Newsletter Popup' in the 'Invisible Elements' section at the bottom of the website editor.\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: You added the Newsletter",
+      "topikSpesifik": "Website Builder & Media Editing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+You+added+the+Newsletter",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+You+added+the+Newsletter"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -2792,12 +2792,12 @@ export const QUESTIONS = [
       "Desktop, mobile, and tablet"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Desktop and mobile\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: which device can you",
+      "topikSpesifik": "Website Builder & Media Editing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+which+device+can+you",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+which+device+can+you"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -2810,11 +2810,11 @@ export const QUESTIONS = [
       "You cannot link an image to a URL on your website."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -2828,12 +2828,12 @@ export const QUESTIONS = [
       "Optional products"
     ],
     "jawaban": 0,
-    "penjelasan": "Template penawaran mempercepat pembuatan order dengan default produk, syarat pembayaran, dan produk opsional yang dapat dipilih customer.",
+    "penjelasan": "Optional Products memungkinkan penawaran produk pelengkap atau alternatif kepada customer langsung di portal web customer.",
     "referensi": {
-      "topikSpesifik": "Quotation Templates & PDF Builder",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/quote_template.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Quotation+Templates+PDF+Builder",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Quotation+Templates+%26+PDF+Builder+Odoo+19"
+      "topikSpesifik": "Optional Products & Upselling",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/optional_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Optional+Products+Upselling+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Optional+Products+%26+Upselling+Odoo+19"
     }
   },
   {
@@ -2846,12 +2846,12 @@ export const QUESTIONS = [
       "Accessory products."
     ],
     "jawaban": 1,
-    "penjelasan": "Template penawaran mempercepat pembuatan order dengan default produk, syarat pembayaran, dan produk opsional yang dapat dipilih customer.",
+    "penjelasan": "Optional Products memungkinkan penawaran produk pelengkap atau alternatif kepada customer langsung di portal web customer.",
     "referensi": {
-      "topikSpesifik": "Quotation Templates & PDF Builder",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/quote_template.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Quotation+Templates+PDF+Builder",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Quotation+Templates+%26+PDF+Builder+Odoo+19"
+      "topikSpesifik": "Optional Products & Upselling",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/optional_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Optional+Products+Upselling+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Optional+Products+%26+Upselling+Odoo+19"
     }
   },
   {
@@ -2900,12 +2900,12 @@ export const QUESTIONS = [
       "Everyone, as long as it's in the default company access."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"The author only.\" sesuai dengan standar alur kerja aplikasi Knowledge Articles & Collaborative Docs di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Knowledge Articles & Collaborative Docs: Who can edit article",
+      "topikSpesifik": "Knowledge App & Articles",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Who+can+edit+article",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Who+can+edit+article"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -2918,12 +2918,12 @@ export const QUESTIONS = [
       "You can still edit it, even if you're not the author."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"You can only read the article.\" sesuai dengan standar alur kerja aplikasi Knowledge Articles & Collaborative Docs di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Knowledge Articles & Collaborative Docs: What happens you lock",
+      "topikSpesifik": "Knowledge App & Articles",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+happens+you+lock",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+happens+you+lock"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -2936,12 +2936,12 @@ export const QUESTIONS = [
       "Yes, but you can only copy the title."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Yes, any header can be copied.\" sesuai dengan standar alur kerja aplikasi Knowledge Articles & Collaborative Docs di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Knowledge Articles & Collaborative Docs: Can you copy the",
+      "topikSpesifik": "Knowledge App & Articles",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Can+you+copy+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Can+you+copy+the"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -2954,12 +2954,12 @@ export const QUESTIONS = [
       "Both when a task reaches a specific stage or on a periodic basis"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Both when a task reaches a specific stage or on a periodic basis\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Odoo dapat secara otomatis mengirimkan email survei kepuasan bintang/rating kepada klien saat tugas mencapai stage tertentu.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: When can Odoo send",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+can+Odoo+send",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+can+Odoo+send"
+      "topikSpesifik": "Customer Ratings on Project Tasks",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/customer_ratings.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Customer+Ratings+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Ratings+on+Project+Tasks+Odoo+19"
     }
   },
   {
@@ -2972,12 +2972,12 @@ export const QUESTIONS = [
       "Public"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"All internal users\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Opsi visibilitas proyek mencakup Invited Employees Only (Private), All Employees, dan Portal Users / Public.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: Which the following project",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+project",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+project"
+      "topikSpesifik": "Project Privacy & Visibility Settings",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Visibility+Privacy+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Privacy+%26+Visibility+Settings+Odoo+19"
     }
   },
   {
@@ -2990,12 +2990,12 @@ export const QUESTIONS = [
       "Only invited internal users and users with the access right \"Project Administrator\""
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Only invited internal users and users with the access right \"Project Administrator\"\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Proyek privat hanya dapat dilihat oleh karyawan yang secara eksplisit diundang dan manajer proyek.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: Who can potentially view",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Who+can+potentially+view",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Who+can+potentially+view"
+      "topikSpesifik": "Private Projects Access Rights",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Private+Projects+Access+Rights+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Private+Projects+Access+Rights+Odoo+19"
     }
   },
   {
@@ -3008,11 +3008,11 @@ export const QUESTIONS = [
       "The number of canceled tasks"
     ],
     "jawaban": 0,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime.",
+    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime pada dashboard proyek.",
     "referensi": {
       "topikSpesifik": "Project Management & Burndown Charts",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Management+Gantt",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Burndown+Chart+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Management+%26+Burndown+Charts+Odoo+19"
     }
   },
@@ -3026,12 +3026,12 @@ export const QUESTIONS = [
       "Analytic items"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Analytic items\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Dashboard Overview proyek menampilkan grafik profitabilitas, jam kerja tercatat, dan dokumen terkait tugas.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: What element cannot added",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+element+cannot+added",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+element+cannot+added"
+      "topikSpesifik": "Project Overview Dashboard Elements",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Overview+Dashboard+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Overview+Dashboard+Elements+Odoo+19"
     }
   },
   {
@@ -3044,12 +3044,12 @@ export const QUESTIONS = [
       "15 minutes"
     ],
     "jawaban": 2,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -3062,12 +3062,12 @@ export const QUESTIONS = [
       "Set the invoice's fiscal position to 'Detect Automatically'."
     ],
     "jawaban": 0,
-    "penjelasan": "Fiscal position secara otomatis memetakan akun dan jenis pajak berdasarkan lokasi geografis atau status perpajakan mitra bisnis.",
+    "penjelasan": "Fiscal position secara otomatis memetakan akun dan jenis pajak berdasarkan lokasi geografis atau status perpajakan customer/vendor.",
     "referensi": {
-      "topikSpesifik": "Fiscal Positions & Tax Mapping",
+      "topikSpesifik": "Fiscal Positions & Tax Account Mapping",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/taxes/fiscal_positions.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fiscal+Positions+Taxes",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fiscal+Positions+%26+Tax+Mapping+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fiscal+Positions+Tax+Mapping+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fiscal+Positions+%26+Tax+Account+Mapping+Odoo+19"
     }
   },
   {
@@ -3080,12 +3080,12 @@ export const QUESTIONS = [
       "Create follow-up levels then set reminders in Accounting > Customers > Follow-up Reports."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Create follow-up levels then set reminders in Accounting > Customers > Follow-up Reports.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: How can you set",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+set",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+set"
+      "topikSpesifik": "Customer Payment Follow-ups",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payment+Follow+Up+Levels+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Payment+Follow-ups+Odoo+19"
     }
   },
   {
@@ -3098,11 +3098,11 @@ export const QUESTIONS = [
       "In developer mode, go to the Advanced Settings tab of each journal that you want to cancel journal entries in, enable the Cancel Posted Entries With Hash field, and set the specific date."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -3116,12 +3116,12 @@ export const QUESTIONS = [
       "On the invoice report in Studio, select the Total field and change the widget to \"Amount in letters\"."
     ],
     "jawaban": 2,
-    "penjelasan": "Field One2Many di Odoo Studio membutuhkan field Many2One pada model target sebagai relasi penghubungnya.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Relational Fields",
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Customization",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Relational+Fields+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   },
   {
@@ -3134,12 +3134,12 @@ export const QUESTIONS = [
       "Enable inter-company transactions in the general settings, then select the \"Create Vendor Bills\" option in Company B."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Enable inter-company transactions in the general settings, then select the \"Create Vendor Bills\" option in Company B.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Transaksi Inter-Company secara otomatis membuat Vendor Bill di Perusahaan B ketika Customer Invoice divalidasi di Perusahaan A.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: How can you automatically",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+automatically",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+automatically"
+      "topikSpesifik": "Inter-Company Invoices and Bills Synchronization",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/inter_company.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inter+Company+Transactions+Invoicing+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inter-Company+Invoices+and+Bills+Synchronization+Odoo+19"
     }
   },
   {
@@ -3152,11 +3152,11 @@ export const QUESTIONS = [
       "Set the Lock Purchases date."
     ],
     "jawaban": 2,
-    "penjelasan": "Lock dates mengunci periode pembukuan agar transaksi sebelum tanggal tersebut tidak dapat diubah lagi oleh staf akuntansi.",
+    "penjelasan": "Lock dates mengunci periode pembukuan agar transaksi sebelum tanggal tersebut tidak dapat diubah oleh staf akuntansi.",
     "referensi": {
       "topikSpesifik": "Accounting Lock Dates & Year-End Closing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/reporting/year_end.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Accounting+Lock+Dates",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Accounting+Lock+Dates+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Accounting+Lock+Dates+%26+Year-End+Closing+Odoo+19"
     }
   },
@@ -3170,12 +3170,12 @@ export const QUESTIONS = [
       "In perpetual accounting, vendor bills are recorded as expenses, and the inventory (stock valuation) is adjusted in the closing entry."
     ],
     "jawaban": 0,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), setiap mutasi stok (penerimaan barang dan pengiriman) otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
     "referensi": {
-      "topikSpesifik": "Perpetual Inventory Valuation & Costing",
+      "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Perpetual+Inventory+Valuation+FIFO",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Perpetual+Inventory+Valuation+%26+Costing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Valuation+Accounting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Valuation+%26+Perpetual+Accounting+Odoo+19"
     }
   },
   {
@@ -3188,11 +3188,11 @@ export const QUESTIONS = [
       "Method, Not Depreciable Value, Prorata Date"
     ],
     "jawaban": 0,
-    "penjelasan": "Modul Aset mengelola jadwal depresiasi aset tetap secara otomatis ke dalam jurnal akuntansi sesuai metode penyusutan yang dipilih.",
+    "penjelasan": "Modul Fixed Assets mengelola jadwal depresiasi aset tetap secara otomatis ke dalam jurnal akuntansi sesuai metode penyusutan.",
     "referensi": {
       "topikSpesifik": "Fixed Assets & Depreciation Management",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/vendor_bills/assets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fixed+Assets+Depreciation",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fixed+Assets+Depreciation+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fixed+Assets+%26+Depreciation+Management+Odoo+19"
     }
   },
@@ -3206,12 +3206,12 @@ export const QUESTIONS = [
       "The product is not available for delivery in the requested quantity."
     ],
     "jawaban": 1,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -3228,7 +3228,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+Integration",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheets+Pivot+Integration+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheets+%26+Live+Pivot+Tables+Odoo+19"
     }
   },
@@ -3246,7 +3246,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -3260,12 +3260,12 @@ export const QUESTIONS = [
       "It assigns the same goal to multiple employees at one time"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"It allows scheduling multiple appraisals at once\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Modul Email Marketing mengelola pengiriman buletin massal, segmentasi mailing list, dan pelacakan tingkat keterbukaan email (open rate).",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: What does the Launch",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+does+the+Launch",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+does+the+Launch"
+      "topikSpesifik": "Email Marketing & Mass Mailing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Email+Marketing+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Email+Marketing+%26+Mass+Mailing+Odoo+19"
     }
   },
   {
@@ -3282,7 +3282,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -3332,12 +3332,12 @@ export const QUESTIONS = [
       "The purchase is automatically refunded."
     ],
     "jawaban": 1,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Credit note digunakan untuk membatalkan atau mengurangi tagihan customer saat terjadi retur barang atau koreksi harga.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Credit Notes and Customer Refunds",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/credit_notes.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Credit+Notes+Customer+Refunds+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Credit+Notes+and+Customer+Refunds+Odoo+19"
     }
   },
   {
@@ -3350,12 +3350,12 @@ export const QUESTIONS = [
       "A new sales order must be created for the remaining amount."
     ],
     "jawaban": 0,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah barang diterima).",
+    "penjelasan": "Uang muka (Down Payment) dapat ditagihkan dalam bentuk persentase atau nominal tetap sebelum barang dikirim.",
     "referensi": {
-      "topikSpesifik": "Invoicing Policies & Down Payments",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Down+Payments",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Down+Payments+Odoo+19"
+      "topikSpesifik": "Down Payments Invoicing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/down_payment.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Down+Payments+Invoicing+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Down+Payments+Invoicing+Odoo+19"
     }
   },
   {
@@ -3368,12 +3368,12 @@ export const QUESTIONS = [
       "The route on the product is set as 'Manufacture' and a quotation is created"
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -3386,12 +3386,12 @@ export const QUESTIONS = [
       "The one with the biggest quantity under the quantity ordered"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"The cheapest if the condition of quantity is met\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Jika ada beberapa baris harga untuk vendor yang sama, Odoo memilih baris dengan kuantitas minimum yang paling sesuai dengan jumlah pesanan.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: you have several lines",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+you+have+several+lines",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+you+have+several+lines"
+      "topikSpesifik": "Vendor Pricelist Selection Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/agreements.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Vendor+Pricelist+Hierarchy+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Vendor+Pricelist+Selection+Hierarchy+Odoo+19"
     }
   },
   {
@@ -3404,12 +3404,12 @@ export const QUESTIONS = [
       "Odoo converts automatically without any setup, thanks to AI"
     ],
     "jawaban": 1,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -3422,12 +3422,12 @@ export const QUESTIONS = [
       "Yes, the Discount can be modified directly on the purchase order line when creating an RFQ"
     ],
     "jawaban": 2,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -3440,12 +3440,12 @@ export const QUESTIONS = [
       "Yes, by selecting two RFQs from the RFQs overview page, clicking the 'gear' icon, and clicking 'create alternative quotation'"
     ],
     "jawaban": 0,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -3461,8 +3461,8 @@ export const QUESTIONS = [
     "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
     "referensi": {
       "topikSpesifik": "Automated Reordering Rules",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Inventory",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/reordering_rules.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Replenishment+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automated+Reordering+Rules+Odoo+19"
     }
   },
@@ -3476,12 +3476,12 @@ export const QUESTIONS = [
       "$55"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"$0\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Metode pengiriman berbasis aturan (Based on Rules) secara otomatis mengevaluasi total belanja keranjang untuk menentukan ongkos kirim.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: delivery method set Based",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+delivery+method+set+Based",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+delivery+method+set+Based"
+      "topikSpesifik": "Delivery Pricing Rules Computation",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/delivery_method.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Delivery+Pricing+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Delivery+Pricing+Rules+Computation+Odoo+19"
     }
   },
   {
@@ -3496,10 +3496,10 @@ export const QUESTIONS = [
     "jawaban": 0,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -3512,12 +3512,12 @@ export const QUESTIONS = [
       "The on-hand quantity updates to 10, and an inventory adjustment is created to account for the difference"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"The on-hand quantity updates to 10, and an inventory adjustment is created to account for the difference\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Menambah kuantitas on-hand produk akan membuat dokumen pergerakan stok (Stock Move) penambahan dari lokasi virtual persediaan.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: What happens when the",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+happens+when+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+happens+when+the"
+      "topikSpesifik": "Inventory On-Hand Quantity Adjustment",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/count_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Stock+Adjustment+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+On-Hand+Quantity+Adjustment+Odoo+19"
     }
   },
   {
@@ -3530,12 +3530,12 @@ export const QUESTIONS = [
       "The barcode app shows all inventory counts to do at the selected location"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"The barcode app shows all inventory counts to do at the selected location\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Penyesuaian persediaan digunakan untuk menyinkronkan jumlah stok fisik di gudang dengan catatan kuantitas di database Odoo.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: Which the following statements",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+statements",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+statements"
+      "topikSpesifik": "Inventory Adjustments Principles",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management/count_products.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Adjustments+Stock+Count+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Adjustments+Principles+Odoo+19"
     }
   },
   {
@@ -3548,12 +3548,12 @@ export const QUESTIONS = [
       "Two remaining units, both valued at $35"
     ],
     "jawaban": 1,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), setiap mutasi stok (penerimaan barang dan pengiriman) otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
     "referensi": {
-      "topikSpesifik": "Perpetual Inventory Valuation & Costing",
+      "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Perpetual+Inventory+Valuation+FIFO",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Perpetual+Inventory+Valuation+%26+Costing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Valuation+Accounting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Valuation+%26+Perpetual+Accounting+Odoo+19"
     }
   },
   {
@@ -3566,12 +3566,12 @@ export const QUESTIONS = [
       "Neither delivery is reserved, because the scheduled date hasn't yet arrived"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Only the starred delivery is reserved, because it's within 10 days of the scheduled date\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Saat pesanan dikonfirmasi, sistem secara otomatis mereservasi stok yang tersedia untuk Delivery Order yang diproses.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: Your warehouse uses the",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Your+warehouse+uses+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Your+warehouse+uses+the"
+      "topikSpesifik": "Delivery Orders & Stock Reservation",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Delivery+Orders+Stock+Reservation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Delivery+Orders+%26+Stock+Reservation+Odoo+19"
     }
   },
   {
@@ -3584,12 +3584,12 @@ export const QUESTIONS = [
       "WH/Stock"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"WH/Stock\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: You receive pallet Teakwood",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+You+receive+pallet+Teakwood",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+You+receive+pallet+Teakwood"
+      "topikSpesifik": "Warehouse & Location Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Warehouses+and+Locations+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Warehouse+%26+Location+Hierarchy+Odoo+19"
     }
   },
   {
@@ -3602,12 +3602,12 @@ export const QUESTIONS = [
       "Product Categories"
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur Put in Pack mengelompokkan barang ke dalam koli/paket saat picking, sedangkan Scrap mencatat barang rusak/hilang dari stok.",
+    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
     "referensi": {
-      "topikSpesifik": "Packages, Packaging & Scrap Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Packaging+Scrap",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages%2C+Packaging+%26+Scrap+Orders+Odoo+19"
+      "topikSpesifik": "Packages & Move Entire Package",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Move+Entire+Package+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages+%26+Move+Entire+Package+Odoo+19"
     }
   },
   {
@@ -3620,12 +3620,12 @@ export const QUESTIONS = [
       "No"
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur Put in Pack mengelompokkan barang ke dalam koli/paket saat picking, sedangkan Scrap mencatat barang rusak/hilang dari stok.",
+    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
     "referensi": {
-      "topikSpesifik": "Packages, Packaging & Scrap Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Packaging+Scrap",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages%2C+Packaging+%26+Scrap+Orders+Odoo+19"
+      "topikSpesifik": "Packages & Move Entire Package",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Move+Entire+Package+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages+%26+Move+Entire+Package+Odoo+19"
     }
   },
   {
@@ -3641,8 +3641,8 @@ export const QUESTIONS = [
     "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
     "referensi": {
       "topikSpesifik": "Automated Reordering Rules",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Inventory",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/reordering_rules.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Replenishment+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automated+Reordering+Rules+Odoo+19"
     }
   },
@@ -3656,12 +3656,12 @@ export const QUESTIONS = [
       "Finished products and by-products are recorded as revenue on the analytic account"
     ],
     "jawaban": 1,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -3676,10 +3676,10 @@ export const QUESTIONS = [
     "jawaban": 2,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -3695,8 +3695,8 @@ export const QUESTIONS = [
     "penjelasan": "Subkontrak memungkinkan pengiriman bahan baku ke pihak ketiga untuk diproduksi dan diterima kembali sebagai barang jadi.",
     "referensi": {
       "topikSpesifik": "Subcontracting in Manufacturing",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Subcontracting+Manufacturing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/subcontracting.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Subcontracting+Manufacturing+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Subcontracting+in+Manufacturing+Odoo+19"
     }
   },
@@ -3713,8 +3713,8 @@ export const QUESTIONS = [
     "penjelasan": "Subkontrak memungkinkan pengiriman bahan baku ke pihak ketiga untuk diproduksi dan diterima kembali sebagai barang jadi.",
     "referensi": {
       "topikSpesifik": "Subcontracting in Manufacturing",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Subcontracting+Manufacturing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/subcontracting.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Subcontracting+Manufacturing+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Subcontracting+in+Manufacturing+Odoo+19"
     }
   },
@@ -3731,8 +3731,8 @@ export const QUESTIONS = [
     "penjelasan": "MPS merencanakan kebutuhan produksi dan pengadaan jangka panjang berdasarkan ramalan penjualan (demand forecast).",
     "referensi": {
       "topikSpesifik": "Master Production Schedule (MPS)",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Master+Production+Schedule",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/mps.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Master+Production+Schedule+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Master+Production+Schedule+%28MPS%29+Odoo+19"
     }
   },
@@ -3748,10 +3748,10 @@ export const QUESTIONS = [
     "jawaban": 2,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -3764,11 +3764,11 @@ export const QUESTIONS = [
       "Only manufacturing orders of even quantities may be split"
     ],
     "jawaban": 2,
-    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen dan tahapan operasi yang dibutuhkan untuk memproduksi sebuah barang.",
+    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen, sub-rakitan (kit), dan produk sampingan (by-products) dalam proses manufaktur.",
     "referensi": {
       "topikSpesifik": "Bills of Materials (BoM) & Kits",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/kit_shipping.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bills+of+Materials+%28BoM%29+%26+Kits+Odoo+19"
     }
   },
@@ -3784,10 +3784,10 @@ export const QUESTIONS = [
     "jawaban": 0,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -3802,10 +3802,10 @@ export const QUESTIONS = [
     "jawaban": 1,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -3818,12 +3818,12 @@ export const QUESTIONS = [
       "The search results are limited to the first 5 records for faster loading."
     ],
     "jawaban": 1,
-    "penjelasan": "Field One2Many di Odoo Studio membutuhkan field Many2One pada model target sebagai relasi penghubungnya.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Relational Fields",
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Customization",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Relational+Fields+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   },
   {
@@ -3854,12 +3854,12 @@ export const QUESTIONS = [
       "After the basic approval rule is set up, create an automation rule to further define the circumstances in which it applies."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"When setting up an approval step, click the filter icon and define the relevant conditions.\" sesuai dengan standar alur kerja aplikasi Odoo Studio Customizations di Odoo 19.",
+    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio Customizations: action only needs approval",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+action+only+needs+approval",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+action+only+needs+approval"
+      "topikSpesifik": "Studio Automated Actions & Rules",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Automation+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Automated+Actions+%26+Rules+Odoo+19"
     }
   },
   {
@@ -3872,12 +3872,12 @@ export const QUESTIONS = [
       "It specifies the user groups that are allowed to trigger the automation rule."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"It defines the conditions a record must meet before the trigger event occurs.\" sesuai dengan standar alur kerja aplikasi Odoo Studio Customizations di Odoo 19.",
+    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio Customizations: What the primary function",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+the+primary+function",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+the+primary+function"
+      "topikSpesifik": "Studio Automated Actions & Rules",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Automation+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Automated+Actions+%26+Rules+Odoo+19"
     }
   },
   {
@@ -3890,12 +3890,12 @@ export const QUESTIONS = [
       "Set the Trigger to 'Values Updated' and select 'Creation Date' as the field to watch."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Set the Trigger to 'On create'.\" sesuai dengan standar alur kerja aplikasi Odoo Studio Customizations di Odoo 19.",
+    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio Customizations: How can you trigger",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+trigger",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+trigger"
+      "topikSpesifik": "Studio Automated Actions & Rules",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Automation+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Automated+Actions+%26+Rules+Odoo+19"
     }
   },
   {
@@ -3908,12 +3908,12 @@ export const QUESTIONS = [
       "80 records is the maximum number of results that can be displayed in list view."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"By clicking on the page indicator next to the view options and entering 1-1000.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Jumlah baris data yang ditampilkan pada tampilan List View dapat diubah melalui kontrol pager di pojok kanan atas.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: you were any list",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+you+were+any+list",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+you+were+any+list"
+      "topikSpesifik": "List View Paging & Custom Limits",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+List+View+Pager+Records+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+List+View+Paging+%26+Custom+Limits+Odoo+19"
     }
   },
   {
@@ -3926,11 +3926,11 @@ export const QUESTIONS = [
       "Go to General Settings > Manage Companies > Select the company line (list view) > Action > Archive."
     ],
     "jawaban": 2,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada contact record membuatnya bersifat global dan dapat diakses oleh seluruh entitas perusahaan.",
+    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Customer+Share",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Setup+%26+Records+Sharing+Odoo+19"
     }
   },
@@ -3944,12 +3944,12 @@ export const QUESTIONS = [
       "2FA (Two-Factor Authentication)."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"2FA (Two-Factor Authentication).\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Mengaktifkan autentikasi dua faktor (2FA) mewajibkan kode verifikasi tambahan saat login untuk mengamankan akun pengguna.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What option Odoo can",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+option+Odoo+can",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+option+Odoo+can"
+      "topikSpesifik": "Two-Factor Authentication (2FA) Security",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/auth/2fa.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Two+Factor+Authentication+2FA+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Two-Factor+Authentication+%282FA%29+Security+Odoo+19"
     }
   },
   {
@@ -3962,12 +3962,12 @@ export const QUESTIONS = [
       "In the Sales app, under the \"Configuration\" header, choose \"Delivery Method\". Click the \"New\" button and create a Delivery Method set to \"Invoice address only\""
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"In the Contacts app, open a customer's contact form. Under the Contacts tab, click \"Add Contact\". Then enter addresses under both the \"Invoice\" and \"Delivery\" radio buttons. This automatically fills out the invoice and delivery address fields in quotations\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Kontak customer dapat memiliki alamat penagihan (Invoice Address) dan alamat pengiriman (Delivery Address) yang terpisah.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: How can set separate",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+set+separate",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+set+separate"
+      "topikSpesifik": "Customer Invoice and Delivery Addresses",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/contacts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Contact+Invoice+Delivery+Address+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Invoice+and+Delivery+Addresses+Odoo+19"
     }
   },
   {
@@ -3980,12 +3980,12 @@ export const QUESTIONS = [
       "When inventory for the product reaches 0, a Request for Quotation will be sent to a vendor to have them come and assemble more of the product in your warehouse"
     ],
     "jawaban": 1,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -3998,12 +3998,12 @@ export const QUESTIONS = [
       "A sales order has failed and product has not been removed from inventory"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"New products are planned to be added to inventory because of a purchase or manufacturing order or because of returns\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Stok Forecasted lebih tinggi dari On-Hand berarti ada pesanan pembelian masuk (incoming receipts) yang sedang dalam perjalanan.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What does mean the",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+does+mean+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+does+mean+the"
+      "topikSpesifik": "Forecasted vs On-Hand Inventory Quantities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Forecasted+vs+On+Hand+Stock+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Forecasted+vs+On-Hand+Inventory+Quantities+Odoo+19"
     }
   },
   {
@@ -4016,12 +4016,12 @@ export const QUESTIONS = [
       "When purchasing this product, the customer must choose multiple product variants to submit an order"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"When purchasing this product type, the customer can choose one product amongst a selection of multiple\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What does mean when",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+does+mean+when",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+does+mean+when"
+      "topikSpesifik": "Product Variants & Attributes",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Variants+Attributes+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Variants+%26+Attributes+Odoo+19"
     }
   },
   {
@@ -4034,12 +4034,12 @@ export const QUESTIONS = [
       "When salespeople usually create large quotations with many product variants for clients"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"When salespeople typically recommend specific product variants to clients\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: When would most useful",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+would+most+useful",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+would+most+useful"
+      "topikSpesifik": "Product Variants & Attributes",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Variants+Attributes+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Variants+%26+Attributes+Odoo+19"
     }
   },
   {
@@ -4052,12 +4052,12 @@ export const QUESTIONS = [
       "A pro-forma invoice follows a standardized format intended for providing professional services, like a legal consultation"
     ],
     "jawaban": 1,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah barang diterima).",
+    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
     "referensi": {
-      "topikSpesifik": "Invoicing Policies & Down Payments",
+      "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Down+Payments",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Down+Payments+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Pro-Forma+Invoices+Odoo+19"
     }
   },
   {
@@ -4070,12 +4070,12 @@ export const QUESTIONS = [
       "A plan based on the total quantity of products sold"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"A plan based on the total amount of sales quoted\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Modul Commissions memungkinkan pengaturan skema komisi bagi tim penjualan berdasarkan target omzet atau pencapaian kuota.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: Which the following NOT",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+NOT",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+NOT"
+      "topikSpesifik": "Sales Commissions Plans",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/commissions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Sales+Commissions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sales+Commissions+Plans+Odoo+19"
     }
   },
   {
@@ -4106,12 +4106,12 @@ export const QUESTIONS = [
       "The opportunity is archived and removed from all dashboards but can still be accessed through advanced search options."
     ],
     "jawaban": 0,
-    "penjelasan": "Mengarsipkan record (archive) menyembunyikannya dari tampilan reguler tanpa menghapus data historis/audit trail.",
+    "penjelasan": "Mencatat alasan kegagalan (Lost Reason) pada kesempatan penjualan membantu evaluasi dan analisis pipeline penjualan perusahaan.",
     "referensi": {
-      "topikSpesifik": "Record Archiving & Filters",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Archive+Records+Filters",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Record+Archiving+%26+Filters+Odoo+19"
+      "topikSpesifik": "Lost Opportunities & Reason Tracking",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/lost_opportunities.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lost+Opportunities+CRM+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lost+Opportunities+%26+Reason+Tracking+Odoo+19"
     }
   },
   {
@@ -4124,12 +4124,12 @@ export const QUESTIONS = [
       "Leads and opportunities have the same likelihood of being won."
     ],
     "jawaban": 1,
-    "penjelasan": "Lead yang memenuhi kualifikasi dapat dikonversi menjadi Opportunity dan ditugaskan ke Sales Team yang sesuai.",
+    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
     "referensi": {
-      "topikSpesifik": "CRM Pipeline & Lead Management",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Pipeline+Lead+Management",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+CRM+Pipeline+%26+Lead+Management+Odoo+19"
+      "topikSpesifik": "Convert Leads into Opportunities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Convert+Leads+to+Opportunities+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Convert+Leads+into+Opportunities+Odoo+19"
     }
   },
   {
@@ -4142,12 +4142,12 @@ export const QUESTIONS = [
       "Deleting an opportunity and marking it as Lost both archive the record, but marking it as Lost also triggers a notification to the sales team."
     ],
     "jawaban": 1,
-    "penjelasan": "Mengarsipkan record (archive) menyembunyikannya dari tampilan reguler tanpa menghapus data historis/audit trail.",
+    "penjelasan": "Mencatat alasan kegagalan (Lost Reason) pada kesempatan penjualan membantu evaluasi dan analisis pipeline penjualan perusahaan.",
     "referensi": {
-      "topikSpesifik": "Record Archiving & Filters",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Archive+Records+Filters",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Record+Archiving+%26+Filters+Odoo+19"
+      "topikSpesifik": "Lost Opportunities & Reason Tracking",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/lost_opportunities.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lost+Opportunities+CRM+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lost+Opportunities+%26+Reason+Tracking+Odoo+19"
     }
   },
   {
@@ -4160,12 +4160,12 @@ export const QUESTIONS = [
       "It can be set or modified manually at any time."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"It can be set or modified manually at any time.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: When can the Expected",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+can+the+Expected",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+can+the+Expected"
+      "topikSpesifik": "Convert Leads into Opportunities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Convert+Leads+to+Opportunities+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Convert+Leads+into+Opportunities+Odoo+19"
     }
   },
   {
@@ -4178,12 +4178,12 @@ export const QUESTIONS = [
       "Go to Configuration > CRM Settings and define a default number of days that applies to all stages in the pipeline."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Click the gear icon on the stage, select Edit, and enter the number of days in the Days to Rot field.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Field \"Days to Rot\" pada konfigurasi stage CRM menentukan berapa hari suatu opportunity dianggap mengendap sebelum ditandai tidak aktif.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: How can you set",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+set",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+set"
+      "topikSpesifik": "Days to Rot on CRM Pipeline Stages",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+CRM+Days+to+Rot+Stages+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Days+to+Rot+on+CRM+Pipeline+Stages+Odoo+19"
     }
   },
   {
@@ -4196,11 +4196,11 @@ export const QUESTIONS = [
       "To reference or update information from a specific record when interacting with the AI Agent."
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -4214,12 +4214,12 @@ export const QUESTIONS = [
       "Type \"/\" to open the command palette on an article, note tab, or description tab, and select Voice Transcript."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Type \"/\" to open the command palette on an article, note tab, or description tab, and select Voice Transcript.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: How can you enable",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+enable",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+enable"
+      "topikSpesifik": "Knowledge App & Articles",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -4232,12 +4232,12 @@ export const QUESTIONS = [
       "To search only within Knowledge articles and uploaded files."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"To turn a plain-language search into the right database filters automatically.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What does the Ask",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+does+the+Ask",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+does+the+Ask"
+      "topikSpesifik": "Knowledge App & Articles",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -4250,11 +4250,11 @@ export const QUESTIONS = [
       "It guesses the most likely answer based on previous responses."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -4268,12 +4268,12 @@ export const QUESTIONS = [
       "Replaces the 'Register' button with a 'Cancelled' image on the event website and even Kanban card, and disables outgoing emails for the event."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Replaces the 'Register' button with a 'Cancelled' image on the event website and even Kanban card, and disables outgoing emails for the event.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What happens when you",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+happens+when+you",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+happens+when+you"
+      "topikSpesifik": "Website Builder & Media Editing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -4286,12 +4286,12 @@ export const QUESTIONS = [
       "LinkedIn"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Instagram\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: What social media wall",
+      "topikSpesifik": "Website Builder & Media Editing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+social+media+wall",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+social+media+wall"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -4304,12 +4304,12 @@ export const QUESTIONS = [
       "You can add On Scroll & On Appearance animation on most text, images, and blocks. And you can add On Hover animation on images."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"You can add On Scroll & On Appearance animation on most text, images, and blocks. And you can add On Hover animation on images.\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: How can you animate",
+      "topikSpesifik": "Website Builder & Media Editing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+animate",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+animate"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -4322,11 +4322,11 @@ export const QUESTIONS = [
       "You can do this in the website editor, in the Blocks tab."
     ],
     "jawaban": 1,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -4340,12 +4340,12 @@ export const QUESTIONS = [
       "This can only be done with a pricelist."
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -4358,12 +4358,12 @@ export const QUESTIONS = [
       "By activating the 'Pick-up in Store' feature in the website settings."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"By enabling the 'Click & Collect' feature, configuring a picking site, and activating the 'Pay in Site' payment provider.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: How can you allow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+allow",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+allow"
+      "topikSpesifik": "Website Builder & Media Editing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -4376,12 +4376,12 @@ export const QUESTIONS = [
       "An image of the product or a GIF can be displayed instead of a color."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"An image of the product or a GIF can be displayed instead of a color.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What other option there",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+other+option+there",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+other+option+there"
+      "topikSpesifik": "Product Variants & Attributes",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Variants+Attributes+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Variants+%26+Attributes+Odoo+19"
     }
   },
   {
@@ -4394,12 +4394,12 @@ export const QUESTIONS = [
       "In the product backend, on the Sales tab, click the generate description button."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"In Website > Configuration > Settings, enable \"Generate Product Description Automatically\".\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: How can you automatically",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+automatically",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+automatically"
+      "topikSpesifik": "Website Builder & Media Editing",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -4412,12 +4412,12 @@ export const QUESTIONS = [
       "Banner Info/Success/Warning/Danger"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Index, Item Kanban/Cards/List/Calendar\" sesuai dengan standar alur kerja aplikasi Knowledge Articles & Collaborative Docs di Odoo 19.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Knowledge Articles & Collaborative Docs: Which the following powerbox",
+      "topikSpesifik": "Knowledge App & Articles",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+powerbox",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+powerbox"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -4430,12 +4430,12 @@ export const QUESTIONS = [
       "Restore the article from the 'Trash'"
     ],
     "jawaban": 0,
-    "penjelasan": "Mengarsipkan record (archive) menyembunyikannya dari tampilan reguler tanpa menghapus data historis/audit trail.",
+    "penjelasan": "Aplikasi Knowledge berfungsi sebagai basis data internal tim untuk dokumentasi SOP, artikel kolaboratif, dan panduan kerja.",
     "referensi": {
-      "topikSpesifik": "Record Archiving & Filters",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/search.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Archive+Records+Filters",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Record+Archiving+%26+Filters+Odoo+19"
+      "topikSpesifik": "Knowledge App & Articles",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Knowledge+App+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Knowledge+App+%26+Articles+Odoo+19"
     }
   },
   {
@@ -4448,11 +4448,11 @@ export const QUESTIONS = [
       "The project's profitability"
     ],
     "jawaban": 1,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime.",
+    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime pada dashboard proyek.",
     "referensi": {
       "topikSpesifik": "Project Management & Burndown Charts",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Management+Gantt",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Burndown+Chart+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Management+%26+Burndown+Charts+Odoo+19"
     }
   },
@@ -4466,12 +4466,12 @@ export const QUESTIONS = [
       "You move them manually across stages"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"You move them manually across stages\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: How are the tasks",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+are+the+tasks",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+are+the+tasks"
+      "topikSpesifik": "Convert Leads into Opportunities",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Convert+Leads+to+Opportunities+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Convert+Leads+into+Opportunities+Odoo+19"
     }
   },
   {
@@ -4484,12 +4484,12 @@ export const QUESTIONS = [
       "Task blocked by other tasks"
     ],
     "jawaban": 2,
-    "penjelasan": "Dependensi tugas menghubungkan tugas yang saling bergantung dan memungkinkan penjadwalan ulang otomatis pada Gantt view.",
+    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
     "referensi": {
-      "topikSpesifik": "Sub-tasks, Task Hierarchy & Dependencies",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Subtasks+Dependencies",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sub-tasks%2C+Task+Hierarchy+%26+Dependencies+Odoo+19"
+      "topikSpesifik": "Stages & Kanban Progress Bars",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Kanban+Stages+Progress+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Stages+%26+Kanban+Progress+Bars+Odoo+19"
     }
   },
   {
@@ -4502,12 +4502,12 @@ export const QUESTIONS = [
       "By setting a timesheet cost on the task form"
     ],
     "jawaban": 0,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -4520,11 +4520,11 @@ export const QUESTIONS = [
       "Declining, Declining then Straight line, Straight line, and Progressive."
     ],
     "jawaban": 1,
-    "penjelasan": "Modul Aset mengelola jadwal depresiasi aset tetap secara otomatis ke dalam jurnal akuntansi sesuai metode penyusutan yang dipilih.",
+    "penjelasan": "Modul Fixed Assets mengelola jadwal depresiasi aset tetap secara otomatis ke dalam jurnal akuntansi sesuai metode penyusutan.",
     "referensi": {
       "topikSpesifik": "Fixed Assets & Depreciation Management",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/vendor_bills/assets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fixed+Assets+Depreciation",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fixed+Assets+Depreciation+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fixed+Assets+%26+Depreciation+Management+Odoo+19"
     }
   },
@@ -4538,12 +4538,12 @@ export const QUESTIONS = [
       "The invoice/bill is recorded using the account currency but the journal items are set in the company currency."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"The invoice/bill is recorded using the account currency but the journal items are set in the company currency.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Bagan Akun (Chart of Accounts) mendefinisikan struktur akun keuangan standar (Asset, Liability, Equity, Revenue, Expense).",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What happens customer account",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+happens+customer+account",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+happens+customer+account"
+      "topikSpesifik": "Chart of Accounts & Journals Setup",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chart+of+Accounts+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chart+of+Accounts+%26+Journals+Setup+Odoo+19"
     }
   },
   {
@@ -4556,12 +4556,12 @@ export const QUESTIONS = [
       "Currency cannot be managed at account level, only at journal level."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"The account can be used for transactions in any currency.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Bagan Akun (Chart of Accounts) mendefinisikan struktur akun keuangan standar (Asset, Liability, Equity, Revenue, Expense).",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What happens currency not",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+happens+currency+not",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+happens+currency+not"
+      "topikSpesifik": "Chart of Accounts & Journals Setup",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chart+of+Accounts+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chart+of+Accounts+%26+Journals+Setup+Odoo+19"
     }
   },
   {
@@ -4574,12 +4574,12 @@ export const QUESTIONS = [
       "Based on the number of days overdue starting from the invoice date of the invoice."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Based on the number of days overdue starting from the due date of the invoice.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: How are followup actions",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+are+followup+actions",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+are+followup+actions"
+      "topikSpesifik": "Customer Payment Follow-ups",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payment+Follow+Up+Levels+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Payment+Follow-ups+Odoo+19"
     }
   },
   {
@@ -4592,12 +4592,12 @@ export const QUESTIONS = [
       "Account Groups."
     ],
     "jawaban": 0,
-    "penjelasan": "Fiscal position secara otomatis memetakan akun dan jenis pajak berdasarkan lokasi geografis atau status perpajakan mitra bisnis.",
+    "penjelasan": "Fiscal position secara otomatis memetakan akun dan jenis pajak berdasarkan lokasi geografis atau status perpajakan customer/vendor.",
     "referensi": {
-      "topikSpesifik": "Fiscal Positions & Tax Mapping",
+      "topikSpesifik": "Fiscal Positions & Tax Account Mapping",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/taxes/fiscal_positions.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fiscal+Positions+Taxes",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fiscal+Positions+%26+Tax+Mapping+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fiscal+Positions+Tax+Mapping+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fiscal+Positions+%26+Tax+Account+Mapping+Odoo+19"
     }
   },
   {
@@ -4610,12 +4610,12 @@ export const QUESTIONS = [
       "By adding an outstanding payments/receipts account to the payment method in the journal that is used to record the payment."
     ],
     "jawaban": 2,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Bagan Akun (Chart of Accounts) mendefinisikan struktur akun keuangan standar (Asset, Liability, Equity, Revenue, Expense).",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Chart of Accounts & Journals Setup",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chart+of+Accounts+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chart+of+Accounts+%26+Journals+Setup+Odoo+19"
     }
   },
   {
@@ -4628,12 +4628,12 @@ export const QUESTIONS = [
       "Bank, Cash, Credit card, Sales, and Purchase."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Bank, Cash, Credit card, Sales, and Purchase.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Fitur Loans Management mengelola pinjaman bank, tabel amortisasi, dan pencatatan bunga pinjaman otomatis ke jurnal akuntansi.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: Apart from miscellaneous what",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Apart+from+miscellaneous+what",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Apart+from+miscellaneous+what"
+      "topikSpesifik": "Loans Management & Amortization",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/loans.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Loans+Management+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Loans+Management+%26+Amortization+Odoo+19"
     }
   },
   {
@@ -4650,7 +4650,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+Integration",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheets+Pivot+Integration+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheets+%26+Live+Pivot+Tables+Odoo+19"
     }
   },
@@ -4682,12 +4682,12 @@ export const QUESTIONS = [
       "Working Schedules, Attendance, and Planning"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Working Schedules, Attendance, and Planning\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Layar Kiosk Attendance memungkinkan karyawan melakukan check-in dan check-out mandiri menggunakan PIN atau pemindai barcode/RFID.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: the Payroll application what",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+the+Payroll+application+what",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+the+Payroll+application+what"
+      "topikSpesifik": "Attendances & Kiosk Mode",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosk_mode.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Attendance+Kiosk+Mode+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Attendances+%26+Kiosk+Mode+Odoo+19"
     }
   },
   {
@@ -4704,7 +4704,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -4718,12 +4718,12 @@ export const QUESTIONS = [
       "A Visitors kiosk"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"An Attendances kiosk\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Layar Kiosk Attendance memungkinkan karyawan melakukan check-in dan check-out mandiri menggunakan PIN atau pemindai barcode/RFID.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What this screen Shows",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+this+screen+Shows",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+this+screen+Shows"
+      "topikSpesifik": "Attendances & Kiosk Mode",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosk_mode.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Attendance+Kiosk+Mode+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Attendances+%26+Kiosk+Mode+Odoo+19"
     }
   },
   {
@@ -4736,12 +4736,12 @@ export const QUESTIONS = [
       "Set the 'Book' field to 'Resources'."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Set the 'Book' field to 'Resources'.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Modul Appointments memungkinkan klien menjadwalkan pertemuan atau reservasi secara mandiri melalui portal online.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: When configuring bookings what",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+configuring+bookings+what",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+configuring+bookings+what"
+      "topikSpesifik": "Online Appointments & Bookings",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/appointments.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Appointments+Booking+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Online+Appointments+%26+Bookings+Odoo+19"
     }
   },
   {
@@ -4754,12 +4754,12 @@ export const QUESTIONS = [
       "Both answers above are true"
     ],
     "jawaban": 2,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -4772,12 +4772,12 @@ export const QUESTIONS = [
       "No, never"
     ],
     "jawaban": 0,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -4790,12 +4790,12 @@ export const QUESTIONS = [
       "A request for quotation will be created for the vendor set on your product. Once validated, a DS operation will be generated to directly send the product from the supplier to your customer"
     ],
     "jawaban": 2,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -4808,12 +4808,12 @@ export const QUESTIONS = [
       "It means the vendor rejected the order and it must be canceled or reissued"
     ],
     "jawaban": 0,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -4826,12 +4826,12 @@ export const QUESTIONS = [
       "Both locations increase by +10 units"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Vendor Location: -10 units / Internal Location: +10 units\" sesuai dengan standar alur kerja aplikasi Inventory & Warehouse Operations di Odoo 19.",
+    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
     "referensi": {
-      "topikSpesifik": "Inventory & Warehouse Operations: You receive units product",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+You+receive+units+product",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+You+receive+units+product"
+      "topikSpesifik": "Warehouse & Location Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Warehouses+and+Locations+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Warehouse+%26+Location+Hierarchy+Odoo+19"
     }
   },
   {
@@ -4844,12 +4844,12 @@ export const QUESTIONS = [
       "Create one reordering rule and assign multiple warehouses to it"
     ],
     "jawaban": 1,
-    "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
+    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
     "referensi": {
-      "topikSpesifik": "Automated Reordering Rules",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Inventory",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automated+Reordering+Rules+Odoo+19"
+      "topikSpesifik": "Warehouse & Location Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Warehouses+and+Locations+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Warehouse+%26+Location+Hierarchy+Odoo+19"
     }
   },
   {
@@ -4862,12 +4862,12 @@ export const QUESTIONS = [
       "Open to Inventory > Reporting > Valuation and expand the grouped by view of products to view the component's stock valuation layers"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Open Inventory > Reporting > Stock, locate the component, and click the Unit Cost to see all stock moves that affected its valuation\" sesuai dengan standar alur kerja aplikasi Inventory & Warehouse Operations di Odoo 19.",
+    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
     "referensi": {
-      "topikSpesifik": "Inventory & Warehouse Operations: Youre using the Average",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Youre+using+the+Average",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Youre+using+the+Average"
+      "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Valuation+Accounting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Valuation+%26+Perpetual+Accounting+Odoo+19"
     }
   },
   {
@@ -4883,8 +4883,8 @@ export const QUESTIONS = [
     "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
     "referensi": {
       "topikSpesifik": "Lots & Serial Numbers Traceability",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/product_tracking.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lots+%26+Serial+Numbers+Traceability+Odoo+19"
     }
   },
@@ -4898,12 +4898,12 @@ export const QUESTIONS = [
       "500.0"
     ],
     "jawaban": 0,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), setiap mutasi stok (penerimaan barang dan pengiriman) otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
     "referensi": {
-      "topikSpesifik": "Perpetual Inventory Valuation & Costing",
+      "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Perpetual+Inventory+Valuation+FIFO",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Perpetual+Inventory+Valuation+%26+Costing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Valuation+Accounting+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Valuation+%26+Perpetual+Accounting+Odoo+19"
     }
   },
   {
@@ -4916,12 +4916,12 @@ export const QUESTIONS = [
       "A reservation method is required the Lots & Serial Numbers setting to be enabled, while removal strategy requires the Storage Locations setting"
     ],
     "jawaban": 0,
-    "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
+    "penjelasan": "Removal strategy mengatur urutan lokasi pengambilan stok saat pengiriman barang (misal FEFO untuk produk berkadaluarsa).",
     "referensi": {
-      "topikSpesifik": "Lots & Serial Numbers Traceability",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lots+%26+Serial+Numbers+Traceability+Odoo+19"
+      "topikSpesifik": "Removal Strategies (FIFO, LIFO, FEFO)",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/removal_strategies.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Removal+Strategies+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Removal+Strategies+%28FIFO%2C+LIFO%2C+FEFO%29+Odoo+19"
     }
   },
   {
@@ -4934,12 +4934,12 @@ export const QUESTIONS = [
       "No"
     ],
     "jawaban": 0,
-    "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
+    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
     "referensi": {
-      "topikSpesifik": "Lots & Serial Numbers Traceability",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lots+%26+Serial+Numbers+Traceability+Odoo+19"
+      "topikSpesifik": "Warehouse & Location Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Warehouses+and+Locations+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Warehouse+%26+Location+Hierarchy+Odoo+19"
     }
   },
   {
@@ -4954,10 +4954,10 @@ export const QUESTIONS = [
     "jawaban": 0,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -4970,12 +4970,12 @@ export const QUESTIONS = [
       "When the manufacturing order is marked as done"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"At confirmation of the manufacturing order\" sesuai dengan standar alur kerja aplikasi Manufacturing & Shop Floor Operations di Odoo 19.",
+    "penjelasan": "MPS merencanakan kebutuhan produksi dan pengadaan jangka panjang berdasarkan ramalan penjualan (demand forecast).",
     "referensi": {
-      "topikSpesifik": "Manufacturing & Shop Floor Operations: When are forecasted quantities",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+are+forecasted+quantities",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+are+forecasted+quantities"
+      "topikSpesifik": "Master Production Schedule (MPS)",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/mps.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Master+Production+Schedule+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Master+Production+Schedule+%28MPS%29+Odoo+19"
     }
   },
   {
@@ -4988,11 +4988,11 @@ export const QUESTIONS = [
       "Only when the 'BoM Kits' setting is enabled"
     ],
     "jawaban": 0,
-    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen dan tahapan operasi yang dibutuhkan untuk memproduksi sebuah barang.",
+    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen, sub-rakitan (kit), dan produk sampingan (by-products) dalam proses manufaktur.",
     "referensi": {
       "topikSpesifik": "Bills of Materials (BoM) & Kits",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/kit_shipping.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bills+of+Materials+%28BoM%29+%26+Kits+Odoo+19"
     }
   },
@@ -5006,12 +5006,12 @@ export const QUESTIONS = [
       "Use the '/report' command in any view's editor then enter the name of the report."
     ],
     "jawaban": 1,
-    "penjelasan": "Field One2Many di Odoo Studio membutuhkan field Many2One pada model target sebagai relasi penghubungnya.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Relational Fields",
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Customization",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Relational+Fields+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   },
   {
@@ -5024,12 +5024,12 @@ export const QUESTIONS = [
       "The email will use the updated field values, as actions are executed in the order they are defined."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"The email will use the updated field values, as actions are executed in the order they are defined.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: automation rule includes both",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+automation+rule+includes+both",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+automation+rule+includes+both"
+      "topikSpesifik": "Studio Automated Actions & Rules",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Automation+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Studio+Automated+Actions+%26+Rules+Odoo+19"
     }
   },
   {
@@ -5042,11 +5042,11 @@ export const QUESTIONS = [
       "Activate Developer Mode, open the debug menu, then toggle the Onboarding option, or click \"Stop Tour\" on the tour pop-up."
     ],
     "jawaban": 2,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan perbaikan administratif.",
+    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Superuser",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
     }
   },
@@ -5060,12 +5060,12 @@ export const QUESTIONS = [
       "The Discount type allows you to set a validity period, while the Formula type is applied permanently once created."
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -5078,12 +5078,12 @@ export const QUESTIONS = [
       "September 4th"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"September 6th\" sesuai dengan standar alur kerja aplikasi Inventory & Warehouse Operations di Odoo 19.",
+    "penjelasan": "Saat pesanan dikonfirmasi, sistem secara otomatis mereservasi stok yang tersedia untuk Delivery Order yang diproses.",
     "referensi": {
-      "topikSpesifik": "Inventory & Warehouse Operations: Assuming you have enough",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Assuming+you+have+enough",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Assuming+you+have+enough"
+      "topikSpesifik": "Delivery Orders & Stock Reservation",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Delivery+Orders+Stock+Reservation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Delivery+Orders+%26+Stock+Reservation+Odoo+19"
     }
   },
   {
@@ -5096,12 +5096,12 @@ export const QUESTIONS = [
       "When a sales order is confirmed, a delivery order is created, but no other documents are generated because Odoo will expect you to manually create a manufacturing order."
     ],
     "jawaban": 1,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -5114,12 +5114,12 @@ export const QUESTIONS = [
       "No, the product must have the \"Available in POS\" checkbox checked under the Sales tab."
     ],
     "jawaban": 1,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Menonaktifkan opsi \"Can be Sold\" atau mengarsipkan (archive) produk akan mencegah produk tersebut dipilih pada penawaran penjualan baru.",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Product Catalog & Archiving Records",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/product_catalog.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Catalog+Archiving+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Product+Catalog+%26+Archiving+Records+Odoo+19"
     }
   },
   {
@@ -5132,12 +5132,12 @@ export const QUESTIONS = [
       "The system will ask the user to choose which pricelist to apply."
     ],
     "jawaban": 1,
-    "penjelasan": "Pricelist Odoo mendukung diskon persentase, formula berbasis cost/sales price, pembulatan (rounding), dan biaya tambahan (extra fee).",
+    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
     "referensi": {
-      "topikSpesifik": "Pricelists, Discount & Price Rules",
+      "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists%2C+Discount+%26+Price+Rules+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Pricelists+Discount+Rules+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Pricelists+%26+Dynamic+Pricing+Rules+Odoo+19"
     }
   },
   {
@@ -5150,12 +5150,12 @@ export const QUESTIONS = [
       "Odoo automatically generates a sales order, which can then be viewed and managed from the Sales backend."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Odoo automatically generates a sales order, which can then be viewed and managed from the Sales backend.\" sesuai dengan standar alur kerja aplikasi Purchase Orders & Vendor Management di Odoo 19.",
+    "penjelasan": "Modul eCommerce mengintegrasikan katalog produk, keranjang belanja, proses checkout, dan pembuatan Sales Order otomatis.",
     "referensi": {
-      "topikSpesifik": "Purchase Orders & Vendor Management: When customer finalizes purchase",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+customer+finalizes+purchase",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+customer+finalizes+purchase"
+      "topikSpesifik": "eCommerce & Online Store Management",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+eCommerce+Online+Store+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eCommerce+%26+Online+Store+Management+Odoo+19"
     }
   },
   {
@@ -5172,7 +5172,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -5222,12 +5222,12 @@ export const QUESTIONS = [
       "The opportunity temporarily appears at the top of the stage until the page is refreshed."
     ],
     "jawaban": 0,
-    "penjelasan": "Point of Sale (POS) mendukung penjualan kasir offline, pengelolaan meja restoran, dan kontrol uang kas harian.",
+    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
     "referensi": {
-      "topikSpesifik": "Point of Sale (POS) Operations",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
+      "topikSpesifik": "Stages & Kanban Progress Bars",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Kanban+Stages+Progress+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Stages+%26+Kanban+Progress+Bars+Odoo+19"
     }
   },
   {
@@ -5240,12 +5240,12 @@ export const QUESTIONS = [
       "Only one quotation or sales order can be active at a time."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"As many quotations and sales orders as you want.\" sesuai dengan standar alur kerja aplikasi Sales & Quotations Management di Odoo 19.",
+    "penjelasan": "Dari satu kesempatan penjualan (Opportunity), pengguna dapat membuat beberapa penawaran harga alternatif untuk customer yang sama.",
     "referensi": {
-      "topikSpesifik": "Sales & Quotations Management: How many quotations sales",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+many+quotations+sales",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+many+quotations+sales"
+      "topikSpesifik": "Opportunity Quotations Multi-Creation",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Opportunity+Quotations+Creation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Opportunity+Quotations+Multi-Creation+Odoo+19"
     }
   },
   {
@@ -5258,12 +5258,12 @@ export const QUESTIONS = [
       "You can still edit the opportunity."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"You can still edit the opportunity.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Setelah kesempatan penjualan ditandai sebagai \"Won\", pengguna dapat melanjutkan proses ke pembuatan Sales Order atau faktur.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: Once opportunity marked Won",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Once+opportunity+marked+Won",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Once+opportunity+marked+Won"
+      "topikSpesifik": "Won Opportunities & Order Follow-ups",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Won+Opportunities+Sales+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Won+Opportunities+%26+Order+Follow-ups+Odoo+19"
     }
   },
   {
@@ -5276,12 +5276,12 @@ export const QUESTIONS = [
       "The lead is in a newer stage of the pipeline."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"The lead is in a newer stage of the pipeline.\" sesuai dengan standar alur kerja aplikasi CRM & Opportunity Pipeline di Odoo 19.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
-      "topikSpesifik": "CRM & Opportunity Pipeline: Which the following factors",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+factors",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+factors"
+      "topikSpesifik": "Odoo AI Agents & Data Sources",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
   {
@@ -5294,11 +5294,11 @@ export const QUESTIONS = [
       "The agent will not respond to questions outside the AI app."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -5312,11 +5312,11 @@ export const QUESTIONS = [
       "Agents can make changes to the database unless the Restrict to Sources option is enabled."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan sumber data internal yang diizinkan.",
+    "penjelasan": "Fitur AI Agent dengan \"Restrict to Sources\" membatasi jawaban hanya berdasarkan basis pengetahuan internal yang diizinkan.",
     "referensi": {
       "topikSpesifik": "Odoo AI Agents & Data Sources",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+AI+Agents+Setup+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+AI+Agents+%26+Data+Sources+Odoo+19"
     }
   },
@@ -5330,12 +5330,12 @@ export const QUESTIONS = [
       "Adding relevant questions to the Questions tab of an event."
     ],
     "jawaban": 2,
-    "penjelasan": "Field One2Many di Odoo Studio membutuhkan field Many2One pada model target sebagai relasi penghubungnya.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo Studio & Relational Fields",
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Customization",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Relational+Fields+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   },
   {
@@ -5348,12 +5348,12 @@ export const QUESTIONS = [
       "You can only email attendees if they select 'allow emails' on the event registration page."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Select an email template in the Communication tab of the event, with the trigger \"After each registration\".\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Marketing Automation mengotomatiskan pengiriman email berantai dan aksi lanjutan berdasarkan respons audiens pada event atau formulir.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: How would you automatically",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+would+you+automatically",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+would+you+automatically"
+      "topikSpesifik": "Marketing Automation Campaigns",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/marketing_automation.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Marketing+Automation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Marketing+Automation+Campaigns+Odoo+19"
     }
   },
   {
@@ -5366,12 +5366,12 @@ export const QUESTIONS = [
       "0 hours after an email has been clicked."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"2 days after an email has been forwarded.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Marketing Automation mengotomatiskan pengiriman email berantai dan aksi lanjutan berdasarkan respons audiens pada event atau formulir.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: Which the following NOT",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+the+following+NOT",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+the+following+NOT"
+      "topikSpesifik": "Marketing Automation Campaigns",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/marketing_automation.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Marketing+Automation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Marketing+Automation+Campaigns+Odoo+19"
     }
   },
   {
@@ -5384,12 +5384,12 @@ export const QUESTIONS = [
       "Convert them online then upload them from the frontend of the product page."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Upload them from the form view in the backend, where Odoo automatically converts them to the WebP format.\" sesuai dengan standar alur kerja aplikasi Website Builder & Pages di Odoo 19.",
+    "penjelasan": "Editor Website Odoo memudahkan penambahan hyperlink ke gambar, penyesuaian tema, dan penyusunan blok snippet.",
     "referensi": {
-      "topikSpesifik": "Website Builder & Pages: How can you optimize",
+      "topikSpesifik": "Website Builder & Media Editing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+optimize",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+optimize"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Website+Builder+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Website+Builder+%26+Media+Editing+Odoo+19"
     }
   },
   {
@@ -5402,12 +5402,12 @@ export const QUESTIONS = [
       "Tags are not shared between tasks"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Tags are shared between all tasks of all projects\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Sub-task memecah tugas besar menjadi bagian-bagian kerja yang lebih kecil dan terorganisir di bawah Parent Task.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: How are tags shared",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+are+tags+shared",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+are+tags+shared"
+      "topikSpesifik": "Sub-tasks & Task Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/sub-tasks.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Subtasks+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Sub-tasks+%26+Task+Hierarchy+Odoo+19"
     }
   },
   {
@@ -5420,12 +5420,12 @@ export const QUESTIONS = [
       "Assignees"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"Activities\" sesuai dengan standar alur kerja aplikasi Project & Task Management di Odoo 19.",
+    "penjelasan": "Tugas berulang (Recurring Tasks) otomatis membuat salinan tugas baru pada interval tertentu tanpa menduplikasi log waktu lampau.",
     "referensi": {
-      "topikSpesifik": "Project & Task Management: What not carried over",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+not+carried+over",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+not+carried+over"
+      "topikSpesifik": "Recurring Tasks Configuration",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/recurring_tasks.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Recurring+Tasks+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Recurring+Tasks+Configuration+Odoo+19"
     }
   },
   {
@@ -5438,12 +5438,12 @@ export const QUESTIONS = [
       "Milestones are automatically marked as reached when all the their tasks have been moved to the last Kanban stage"
     ],
     "jawaban": 0,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime.",
+    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
     "referensi": {
-      "topikSpesifik": "Project Management & Burndown Charts",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Project+Management+Gantt",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Project+Management+%26+Burndown+Charts+Odoo+19"
+      "topikSpesifik": "Stages & Kanban Progress Bars",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Kanban+Stages+Progress+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Stages+%26+Kanban+Progress+Bars+Odoo+19"
     }
   },
   {
@@ -5456,12 +5456,12 @@ export const QUESTIONS = [
       "These are the actual timesheeted hours that cannot be invoiced from the sales order"
     ],
     "jawaban": 1,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah barang diterima).",
+    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
     "referensi": {
-      "topikSpesifik": "Invoicing Policies & Down Payments",
+      "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Down+Payments",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Down+Payments+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoicing+Policies+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Invoicing+Policies+%26+Pro-Forma+Invoices+Odoo+19"
     }
   },
   {
@@ -5474,12 +5474,12 @@ export const QUESTIONS = [
       "By billing rate and total time"
     ],
     "jawaban": 2,
-    "penjelasan": "Timesheet mencatat waktu kerja karyawan pada tugas/proyek dan terintegrasi dengan modul Penagihan (Invoicing) dan Cuti (Time Off).",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Timesheets & Time Off Integration",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+%26+Time+Off+Integration+Odoo+19"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -5492,12 +5492,12 @@ export const QUESTIONS = [
       "At the project level"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"At the employee level\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: which level you define",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+which+level+you+define",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+which+level+you+define"
+      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
     }
   },
   {
@@ -5510,11 +5510,11 @@ export const QUESTIONS = [
       "All users can still make corrections to all types of journal items."
     ],
     "jawaban": 0,
-    "penjelasan": "Lock dates mengunci periode pembukuan agar transaksi sebelum tanggal tersebut tidak dapat diubah lagi oleh staf akuntansi.",
+    "penjelasan": "Lock dates mengunci periode pembukuan agar transaksi sebelum tanggal tersebut tidak dapat diubah oleh staf akuntansi.",
     "referensi": {
       "topikSpesifik": "Accounting Lock Dates & Year-End Closing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/reporting/year_end.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Accounting+Lock+Dates",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Accounting+Lock+Dates+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Accounting+Lock+Dates+%26+Year-End+Closing+Odoo+19"
     }
   },
@@ -5528,12 +5528,12 @@ export const QUESTIONS = [
       "Registering a payment for the full amount will automatically group all installments into one payment record."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"A single payment can be registered for the full amount directly from the invoice.\" sesuai dengan standar alur kerja aplikasi Accounting & Financial Management di Odoo 19.",
+    "penjelasan": "Tombol Register Payment pada invoice langsung mencatat penerimaan/pengeluaran kas dan mengubah status tagihan menjadi In Payment / Paid.",
     "referensi": {
-      "topikSpesifik": "Accounting & Financial Management: How can you register",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+register",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+register"
+      "topikSpesifik": "Registering Customer & Vendor Payments",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/customer_payments.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Register+Payments+Invoices+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Registering+Customer+%26+Vendor+Payments+Odoo+19"
     }
   },
   {
@@ -5546,7 +5546,7 @@ export const QUESTIONS = [
       "Require a manual reconciliation of the outstanding balance."
     ],
     "jawaban": 0,
-    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/bill menggunakan aturan model rekonsiliasi otomatis.",
+    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/pembayaran menggunakan model rekonsiliasi otomatis.",
     "referensi": {
       "topikSpesifik": "Bank Reconciliation & Reconciliation Models",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/reconciliation.html",
@@ -5568,7 +5568,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+Integration",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheets+Pivot+Integration+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheets+%26+Live+Pivot+Tables+Odoo+19"
     }
   },
@@ -5582,12 +5582,12 @@ export const QUESTIONS = [
       "A Visitors kiosk"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"An Attendances kiosk\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Layar Kiosk Attendance memungkinkan karyawan melakukan check-in dan check-out mandiri menggunakan PIN atau pemindai barcode/RFID.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: What this screen Shows",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+this+screen+Shows",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+this+screen+Shows"
+      "topikSpesifik": "Attendances & Kiosk Mode",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosk_mode.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Attendance+Kiosk+Mode+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Attendances+%26+Kiosk+Mode+Odoo+19"
     }
   },
   {
@@ -5618,12 +5618,12 @@ export const QUESTIONS = [
       "The Employees dashboard"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"The Employees dashboard\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Work Entries di modul Payroll mencatat kehadiran, cuti, dan jam kerja aktual sebagai dasar kalkulasi slip gaji karyawan.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: the Payroll app where",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+the+Payroll+app+where",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+the+Payroll+app+where"
+      "topikSpesifik": "Payroll & Work Entries",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/payroll/work_entries.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payroll+Work+Entries+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Payroll+%26+Work+Entries+Odoo+19"
     }
   },
   {
@@ -5640,7 +5640,7 @@ export const QUESTIONS = [
     "referensi": {
       "topikSpesifik": "Point of Sale (POS) Operations",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Point+of+Sale+POS+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Point+of+Sale+%28POS%29+Operations+Odoo+19"
     }
   },
@@ -5657,8 +5657,8 @@ export const QUESTIONS = [
     "penjelasan": "Purchase Agreement (Blanket Order) mengunci kesepakatan harga dan kuantitas jangka panjang dengan vendor untuk pemesanan bertahap.",
     "referensi": {
       "topikSpesifik": "Purchase Agreements & Blanket Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Agreements+Blanket+Orders",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/agreements.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Agreements+Blanket+Orders+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Purchase+Agreements+%26+Blanket+Orders+Odoo+19"
     }
   },
@@ -5675,8 +5675,8 @@ export const QUESTIONS = [
     "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
     "referensi": {
       "topikSpesifik": "Automated Reordering Rules",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Inventory",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/reordering_rules.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Replenishment+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automated+Reordering+Rules+Odoo+19"
     }
   },
@@ -5690,12 +5690,12 @@ export const QUESTIONS = [
       "To email the confirmed purchase order to the vendor so they can acknowledge the order and send the vendor bill"
     ],
     "jawaban": 2,
-    "penjelasan": "Alur pembelian dimulai dari RFQ (Permintaan Penawaran) yang dikonfirmasi menjadi Purchase Order resmi ke vendor.",
+    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
     "referensi": {
-      "topikSpesifik": "RFQ & Purchase Orders Workflow",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+RFQ+Purchase+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+RFQ+%26+Purchase+Orders+Workflow+Odoo+19"
+      "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Purchase+Orders+RFQ+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Requests+for+Quotation+%28RFQ%29+%26+PO+Workflow+Odoo+19"
     }
   },
   {
@@ -5708,12 +5708,12 @@ export const QUESTIONS = [
       "Routes"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Routes\" sesuai dengan standar alur kerja aplikasi Inventory & Warehouse Operations di Odoo 19.",
+    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
     "referensi": {
-      "topikSpesifik": "Inventory & Warehouse Operations: When creating new warehouse",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+When+creating+new+warehouse",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+When+creating+new+warehouse"
+      "topikSpesifik": "Warehouse & Location Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Warehouses+and+Locations+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Warehouse+%26+Location+Hierarchy+Odoo+19"
     }
   },
   {
@@ -5726,12 +5726,12 @@ export const QUESTIONS = [
       "When moving a package, a new pack is automatically created at the destination location, and all items are transferred into the new pack."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur Put in Pack mengelompokkan barang ke dalam koli/paket saat picking, sedangkan Scrap mencatat barang rusak/hilang dari stok.",
+    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
     "referensi": {
-      "topikSpesifik": "Packages, Packaging & Scrap Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Packaging+Scrap",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages%2C+Packaging+%26+Scrap+Orders+Odoo+19"
+      "topikSpesifik": "Packages & Move Entire Package",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Move+Entire+Package+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages+%26+Move+Entire+Package+Odoo+19"
     }
   },
   {
@@ -5744,12 +5744,12 @@ export const QUESTIONS = [
       "Create an operation type named \"Quality Check\" and link it to the default packing operation."
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"On the pack operation, click the button to Add an ad-hoc Quality check.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: Youre reviewing Pack operation",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Youre+reviewing+Pack+operation",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Youre+reviewing+Pack+operation"
+      "topikSpesifik": "Packages & Move Entire Package",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Move+Entire+Package+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages+%26+Move+Entire+Package+Odoo+19"
     }
   },
   {
@@ -5762,12 +5762,12 @@ export const QUESTIONS = [
       "A proposed manufacturing order is created for the product in Warehouse B."
     ],
     "jawaban": 2,
-    "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
+    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
     "referensi": {
-      "topikSpesifik": "Automated Reordering Rules",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Reordering+Rules+Inventory",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automated+Reordering+Rules+Odoo+19"
+      "topikSpesifik": "Warehouse & Location Hierarchy",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Warehouses+and+Locations+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Warehouse+%26+Location+Hierarchy+Odoo+19"
     }
   },
   {
@@ -5780,12 +5780,12 @@ export const QUESTIONS = [
       "Both deliveries remain unreserved until more stock is received."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"The starred picking gets priority, and the product is reserved for it first.\" sesuai dengan standar alur kerja aplikasi Inventory & Warehouse Operations di Odoo 19.",
+    "penjelasan": "Saat pesanan dikonfirmasi, sistem secara otomatis mereservasi stok yang tersedia untuk Delivery Order yang diproses.",
     "referensi": {
-      "topikSpesifik": "Inventory & Warehouse Operations: Two delivery orders are",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Two+delivery+orders+are",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Two+delivery+orders+are"
+      "topikSpesifik": "Delivery Orders & Stock Reservation",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Delivery+Orders+Stock+Reservation+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Delivery+Orders+%26+Stock+Reservation+Odoo+19"
     }
   },
   {
@@ -5798,12 +5798,12 @@ export const QUESTIONS = [
       "The products in this category don't have expiration dates, which are required for LIFO."
     ],
     "jawaban": 0,
-    "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
+    "penjelasan": "Removal strategy mengatur urutan lokasi pengambilan stok saat pengiriman barang (misal FEFO untuk produk berkadaluarsa).",
     "referensi": {
-      "topikSpesifik": "Lots & Serial Numbers Traceability",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Lots+Serial+Numbers+Traceability",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Lots+%26+Serial+Numbers+Traceability+Odoo+19"
+      "topikSpesifik": "Removal Strategies (FIFO, LIFO, FEFO)",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/removal_strategies.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Removal+Strategies+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Removal+Strategies+%28FIFO%2C+LIFO%2C+FEFO%29+Odoo+19"
     }
   },
   {
@@ -5816,12 +5816,12 @@ export const QUESTIONS = [
       "Volume"
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur Put in Pack mengelompokkan barang ke dalam koli/paket saat picking, sedangkan Scrap mencatat barang rusak/hilang dari stok.",
+    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
     "referensi": {
-      "topikSpesifik": "Packages, Packaging & Scrap Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Packaging+Scrap",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages%2C+Packaging+%26+Scrap+Orders+Odoo+19"
+      "topikSpesifik": "Packages & Move Entire Package",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Packages+Move+Entire+Package+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Packages+%26+Move+Entire+Package+Odoo+19"
     }
   },
   {
@@ -5834,11 +5834,11 @@ export const QUESTIONS = [
       "Create one BoM and change the components manually for each order"
     ],
     "jawaban": 0,
-    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen dan tahapan operasi yang dibutuhkan untuk memproduksi sebuah barang.",
+    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen, sub-rakitan (kit), dan produk sampingan (by-products) dalam proses manufaktur.",
     "referensi": {
       "topikSpesifik": "Bills of Materials (BoM) & Kits",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/kit_shipping.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bills+of+Materials+BoM+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bills+of+Materials+%28BoM%29+%26+Kits+Odoo+19"
     }
   },
@@ -5854,10 +5854,10 @@ export const QUESTIONS = [
     "jawaban": 1,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -5872,10 +5872,10 @@ export const QUESTIONS = [
     "jawaban": 0,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -5890,10 +5890,10 @@ export const QUESTIONS = [
     "jawaban": 2,
     "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
     "referensi": {
-      "topikSpesifik": "Work Centers, Routings & Work Orders",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Work+Orders+Odoo+19"
+      "topikSpesifik": "Work Centers, Routings & Capacity",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Work+Centers+Work+Orders+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Work+Centers%2C+Routings+%26+Capacity+Odoo+19"
     }
   },
   {
@@ -5906,18 +5906,18 @@ export const QUESTIONS = [
       "Enable 'Show Year' and 'Show Month'."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Enable 'Show Year' and 'Show Month'.\" sesuai dengan standar alur kerja aplikasi Odoo 19 Essentials & General Concepts di Odoo 19.",
+    "penjelasan": "Odoo Studio memungkinkan pembuatan field relasional (One2Many/Many2One) dan kustomisasi widget input tanggal secara visual.",
     "referensi": {
-      "topikSpesifik": "Odoo 19 Essentials & General Concepts: How can you ensure",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+ensure",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+ensure"
+      "topikSpesifik": "Odoo Studio & Custom Field Types",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Studio+Relational+Fields+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Studio+%26+Custom+Field+Types+Odoo+19"
     }
   }
 ];
 
 export const EXAM_PRESETS = {
   full:  { nama: 'Full Exam',      count: 114, timerMin: 90, desc: 'Simulasi ujian sertifikasi asli (114 soal, 90 min)' },
-  quick: { nama: 'Practice Exam',  count: 60,  timerMin: 45, desc: '60 soal terdistribusi merata dari seluruh 19 modul (45 min)' },
+  quick: { nama: 'Practice Exam',  count: 60,  timerMin: 45, desc: '60 soal terdistribusi merata dari seluruh modul (45 min)' },
   speed: { nama: 'Speed Run',      count: 0,   timerMin: 0,  desc: 'Semua soal tanpa batas waktu' },
 };
