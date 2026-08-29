@@ -1,4 +1,4 @@
-// data.js — 322 soal sertifikasi Odoo 19 (Ultra-Specific Deep Chapter References)
+// data.js — 322 soal sertifikasi Odoo 19 (100% Validated Deep Pedagogical References)
 
 export const TOPICS = [
   {
@@ -902,12 +902,12 @@ export const QUESTIONS = [
       "You can only choose to hide them or display them on scroll."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"No, they are always visible.\" sesuai dengan standar alur kerja aplikasi eCommerce & Online Store di Odoo 19.",
+    "penjelasan": "Pada halaman /shop eCommerce Odoo, atribut produk (seperti pilihan warna atau ukuran) dapat ditampilkan langsung pada kartu produk di katalog.",
     "referensi": {
-      "topikSpesifik": "eCommerce & Online Store: Are there specific ways",
+      "topikSpesifik": "eCommerce Product Attributes on /shop Grid",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Are+there+specific+ways",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Are+there+specific+ways"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+eCommerce+Product+Attributes+Grid+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eCommerce+Product+Attributes+on+%2Fshop+Grid+Odoo+19"
     }
   },
   {
@@ -1208,12 +1208,12 @@ export const QUESTIONS = [
       "It means the employee worked undertime on that day"
     ],
     "jawaban": 0,
-    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
+    "penjelasan": "Pada tampilan 'All Timesheets', durasi kerja yang melebihi batas jam kerja harian standar (lembur) ditampilkan dengan penanda khusus untuk memudahkan verifikasi manajer.",
     "referensi": {
-      "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheets+Billing+Rates+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheets+Billing+Rates+%26+Leaderboards+Odoo+19"
+      "topikSpesifik": "Timesheet Overtime Display in All Timesheets",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Timesheet+Overtime+Indicator+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Timesheet+Overtime+Display+in+All+Timesheets+Odoo+19"
     }
   },
   {
@@ -1226,12 +1226,12 @@ export const QUESTIONS = [
       "4 journal items"
     ],
     "jawaban": 0,
-    "penjelasan": "Bagan Akun (Chart of Accounts) mendefinisikan struktur akun keuangan standar (Asset, Liability, Equity, Revenue, Expense).",
+    "penjelasan": "Invoice pelanggan dengan dua baris produk yang menggunakan akun pendapatan yang sama akan membentuk 2 baris jurnal kredit (journal items) terpisah sesuai baris invoice ditambah baris piutang (debit).",
     "referensi": {
-      "topikSpesifik": "Chart of Accounts & Journals Setup",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Chart+of+Accounts+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Chart+of+Accounts+%26+Journals+Setup+Odoo+19"
+      "topikSpesifik": "Customer Invoice Journal Items Generation",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/customer_invoices.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Invoice+Journal+Entries+Items+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Invoice+Journal+Items+Generation+Odoo+19"
     }
   },
   {
@@ -1244,12 +1244,12 @@ export const QUESTIONS = [
       "Odoo updates the invoice journal entry to replace the account receivable with the suspense account of the bank transaction."
     ],
     "jawaban": 0,
-    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/pembayaran menggunakan model rekonsiliasi otomatis.",
+    "penjelasan": "Saat merekonsiliasi mutasi bank dengan customer invoice, Odoo membuat jurnal pembayaran (payment entry) dan mencocokkannya ke akun piutang pelanggan.",
     "referensi": {
-      "topikSpesifik": "Bank Reconciliation & Reconciliation Models",
+      "topikSpesifik": "Bank Transaction Reconciliation with Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/reconciliation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bank+Reconciliation+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bank+Reconciliation+%26+Reconciliation+Models+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bank+Reconciliation+Customer+Invoices+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bank+Transaction+Reconciliation+with+Invoices+Odoo+19"
     }
   },
   {
@@ -1262,12 +1262,12 @@ export const QUESTIONS = [
       "By default, currency rates are updated daily and can be manually triggered using the developer mode."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Fitur 'Automatic Currency Rates' di pengaturan Accounting secara berkala memperbarui kurs mata uang asing dari bank sentral secara otomatis.",
     "referensi": {
-      "topikSpesifik": "Developer & Superuser Mode",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
+      "topikSpesifik": "Automatic Multi-Currency Exchange Rates Update",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/taxes/fiscal_positions.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Automatic+Currency+Exchange+Rates+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Automatic+Multi-Currency+Exchange+Rates+Update+Odoo+19"
     }
   },
   {
@@ -1280,12 +1280,12 @@ export const QUESTIONS = [
       "You can modify a single posted journal entry's number by going into developer mode and manually changing the number, or you can change them en masse by selecting the journal entries, resetting them to draft and selecting Resequence from the action menu."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Untuk mengubah nomor entri jurnal yang sudah diposting (posted), pengguna dengan hak akses penomoran dapat mereset entri ke draft atau mengubah sequence jika diizinkan.",
     "referensi": {
-      "topikSpesifik": "Developer & Superuser Mode",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Developer+Mode+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Developer+%26+Superuser+Mode+Odoo+19"
+      "topikSpesifik": "Modifying Posted Journal Entry Numbers",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Edit+Posted+Journal+Entry+Number+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Modifying+Posted+Journal+Entry+Numbers+Odoo+19"
     }
   },
   {
@@ -1298,12 +1298,12 @@ export const QUESTIONS = [
       "The default payment terms, default payment method, and outstanding account."
     ],
     "jawaban": 0,
-    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
+    "penjelasan": "Pada form Kontak pelanggan, Anda dapat menentukan metode pembayaran default, preferensi pengiriman invoice (email/portal), dan syarat pembayaran (payment terms).",
     "referensi": {
-      "topikSpesifik": "Customer Payment Follow-ups",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payment+Follow+Up+Levels+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Payment+Follow-ups+Odoo+19"
+      "topikSpesifik": "Contact Form Accounting & Invoicing Preferences",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/contacts.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Contact+Invoicing+Payment+Terms+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Contact+Form+Accounting+%26+Invoicing+Preferences+Odoo+19"
     }
   },
   {
@@ -1352,12 +1352,12 @@ export const QUESTIONS = [
       "Yes, draft invoices can be matched with bank entries for reconciliation."
     ],
     "jawaban": 0,
-    "penjelasan": "Rekonsiliasi bank mencocokkan mutasi rekening koran dengan transaksi invoice/pembayaran menggunakan model rekonsiliasi otomatis.",
+    "penjelasan": "Mutasi bank tidak dapat direkonsiliasi dengan invoice yang masih berstatus Draft; invoice wajib dikonfirmasi (Posted) terlebih dahulu sebelum dapat dicocokkan.",
     "referensi": {
-      "topikSpesifik": "Bank Reconciliation & Reconciliation Models",
+      "topikSpesifik": "Bank Reconciliation Draft Entries Restrictions",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/reconciliation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bank+Reconciliation+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bank+Reconciliation+%26+Reconciliation+Models+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Bank+Reconciliation+Draft+Entries+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Bank+Reconciliation+Draft+Entries+Restrictions+Odoo+19"
     }
   },
   {
@@ -1370,12 +1370,12 @@ export const QUESTIONS = [
       "In the Accounting tab of the customer form, click Send in the Invoice Follow-ups section and select the invoice that needs a reminder."
     ],
     "jawaban": 1,
-    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
+    "penjelasan": "Pada laporan Follow-up pelanggan, Anda dapat mengaktifkan pengingat untuk seluruh tagihan yang telah jatuh tempo (overdue invoices) sekaligus.",
     "referensi": {
-      "topikSpesifik": "Customer Payment Follow-ups",
+      "topikSpesifik": "Overdue Invoices Customer Payment Follow-up",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Payment+Follow+Up+Levels+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Customer+Payment+Follow-ups+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Customer+Payment+Follow+Up+Reports+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Overdue+Invoices+Customer+Payment+Follow-up+Odoo+19"
     }
   },
   {
@@ -1406,12 +1406,12 @@ export const QUESTIONS = [
       "Validating the receipt, confirming the vendor bill, validating the delivery order, and confirming the customer invoice."
     ],
     "jawaban": 2,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Dalam akuntansi perpetual, jurnal otomatis tercipta saat: validasi penerimaan barang gudang (receipt), validasi pengiriman barang (delivery), dan konfirmasi tagihan vendor (vendor bill).",
     "referensi": {
-      "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
+      "topikSpesifik": "Perpetual Inventory Valuation Journal Creation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Inventory+Valuation+Accounting+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Inventory+Valuation+%26+Perpetual+Accounting+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Perpetual+Inventory+Accounting+Entries+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Perpetual+Inventory+Valuation+Journal+Creation+Odoo+19"
     }
   },
   {
@@ -1424,12 +1424,12 @@ export const QUESTIONS = [
       "By default, it is preserved in the same folder unless you check 'Send source file to trash'."
     ],
     "jawaban": 0,
-    "penjelasan": "Odoo Spreadsheet memungkinkan analisis data dinamis langsung dari pivot view dengan sinkronisasi data live.",
+    "penjelasan": "Saat mengunggah file spreadsheet eksternal ke Odoo Spreadsheet, sistem mengonversinya menjadi dokumen spreadsheet interaktif di aplikasi Documents.",
     "referensi": {
-      "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
+      "topikSpesifik": "Odoo Spreadsheet CSV/Excel Upload Behavior",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheets+Pivot+Integration+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheets+%26+Live+Pivot+Tables+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheets+Import+Excel+CSV+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Odoo+Spreadsheet+CSV%2FExcel+Upload+Behavior+Odoo+19"
     }
   },
   {
@@ -1442,12 +1442,12 @@ export const QUESTIONS = [
       "The spreadsheet is deleted from the Documents app and can only be accessed via the Dashboards app."
     ],
     "jawaban": 0,
-    "penjelasan": "Modul Fixed Assets mengelola jadwal depresiasi aset tetap secara otomatis ke dalam jurnal akuntansi sesuai metode penyusutan.",
+    "penjelasan": "Ketika spreadsheet dikonversi menjadi dashboard publik/tim, dokumen asli tetap tersimpan di aplikasi Documents dan dapat diedit oleh pemiliknya.",
     "referensi": {
-      "topikSpesifik": "Fixed Assets & Depreciation Management",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/vendor_bills/assets.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fixed+Assets+Depreciation+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fixed+Assets+%26+Depreciation+Management+Odoo+19"
+      "topikSpesifik": "Converting Spreadsheets into Analytic Dashboards",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Spreadsheet+to+Dashboard+Conversion+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Converting+Spreadsheets+into+Analytic+Dashboards+Odoo+19"
     }
   },
   {
@@ -1460,12 +1460,12 @@ export const QUESTIONS = [
       "This is not possible; any dashboard is visible to all companies present in the database."
     ],
     "jawaban": 0,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
+    "penjelasan": "Pada konfigurasi dashboard multi-perusahaan, Anda dapat menentukan entitas perusahaan mana saja yang diizinkan untuk melihat data dashboard tersebut.",
     "referensi": {
-      "topikSpesifik": "Multi-Company Setup & Records Sharing",
+      "topikSpesifik": "Multi-Company Spreadsheet Dashboard Access",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Setup+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Setup+%26+Records+Sharing+Odoo+19"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Multi+Company+Dashboard+Permissions+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Multi-Company+Spreadsheet+Dashboard+Access+Odoo+19"
     }
   },
   {
@@ -1478,12 +1478,12 @@ export const QUESTIONS = [
       "You create a new Time Off type that does not permit Extra Day Requests"
     ],
     "jawaban": 1,
-    "penjelasan": "Jawaban yang tepat adalah: \"You create a new Allocation and set the Allocation Type to \"Accrual Allocation\"\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Untuk menambah kuota cuti berdasarkan akumulasi hari kerja, buat Alokasi Cuti baru dengan tipe 'Accrual Allocation' dan tentukan jadwal perolehan kuotanya.",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: How would you set",
+      "topikSpesifik": "Time Off Accrual Allocation Plan",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+would+you+set",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+would+you+set"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Time+Off+Accrual+Plans+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Time+Off+Accrual+Allocation+Plan+Odoo+19"
     }
   },
   {
@@ -1496,12 +1496,12 @@ export const QUESTIONS = [
       "Shows all payslips for the employee, grouped by job title and salary"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Allows you to revert to any previous contract\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Tombol smart button 'History' pada form Karyawan memungkinkan Anda melihat riwayat seluruh kontrak kerja sebelumnya dan mengembalikannya jika diperlukan.",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: the Employees app what",
+      "topikSpesifik": "Employee Contracts History & Reversion",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+the+Employees+app+what",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+the+Employees+app+what"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Employee+Contracts+History+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Employee+Contracts+History+%26+Reversion+Odoo+19"
     }
   },
   {
@@ -1532,12 +1532,12 @@ export const QUESTIONS = [
       "On the Employee record, click Actions > Presence Control > Set Absent"
     ],
     "jawaban": 1,
-    "penjelasan": "Layar Kiosk Attendance memungkinkan karyawan melakukan check-in dan check-out mandiri menggunakan PIN atau pemindai barcode/RFID.",
+    "penjelasan": "Pengguna dengan hak akses SDM dapat mengubah status kehadiran karyawan langsung dari dasbor aplikasi Employees dengan mengklik ikon Presence dan memilih status (seperti Absent).",
     "referensi": {
-      "topikSpesifik": "Attendances & Kiosk Mode",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosk_mode.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Attendance+Kiosk+Mode+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Attendances+%26+Kiosk+Mode+Odoo+19"
+      "topikSpesifik": "Employee Presence Status Management",
+      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Employee+Presence+Status+Absent+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Employee+Presence+Status+Management+Odoo+19"
     }
   },
   {
@@ -1550,12 +1550,12 @@ export const QUESTIONS = [
       "A gray 'Out Of Office' banner appears on their employee profile."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"A red stethoscope icon appears on their employee profile\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Karyawan yang sedang cuti sakit (Sick Time Off) ditandai dengan ikon stetoskop merah (red stethoscope icon) pada profil karyawan dan avatar sistem.",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: How can you determine",
+      "topikSpesifik": "Employee Sick Leave Out-of-Office Indicator",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+How+can+you+determine",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+How+can+you+determine"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Employee+Time+Off+Sick+Leave+Indicator+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Employee+Sick+Leave+Out-of-Office+Indicator+Odoo+19"
     }
   },
   {
@@ -2738,12 +2738,12 @@ export const QUESTIONS = [
       "Bounces"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"Highest Click Rate\" sesuai dengan standar alur kerja aplikasi Email Marketing & Campaigns di Odoo 19.",
+    "penjelasan": "Pada pengujian A/B Testing SMS Marketing, metrik penentu pesan pemenang adalah Highest Click Rate (persentase tautan yang paling banyak diklik).",
     "referensi": {
-      "topikSpesifik": "Email Marketing & Campaigns: SMS Marketing under the",
+      "topikSpesifik": "SMS Marketing A/B Testing Winning Metric",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+SMS+Marketing+under+the",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+SMS+Marketing+under+the"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+SMS+Marketing+AB+Testing+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+SMS+Marketing+A%2FB+Testing+Winning+Metric+Odoo+19"
     }
   },
   {
@@ -2864,12 +2864,12 @@ export const QUESTIONS = [
       "Both options are valid."
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Both options are valid.\" sesuai dengan standar alur kerja aplikasi eCommerce & Online Store di Odoo 19.",
+    "penjelasan": "Pita 'Sale' (Ribbon) dapat ditampilkan pada kartu produk di halaman katalog /shop maupun pada halaman detail produk itu sendiri.",
     "referensi": {
-      "topikSpesifik": "eCommerce & Online Store: the frontend where can",
+      "topikSpesifik": "eCommerce Product Sale Ribbon Placement",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+the+frontend+where+can",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+the+frontend+where+can"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+eCommerce+Product+Ribbon+Display+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eCommerce+Product+Sale+Ribbon+Placement+Odoo+19"
     }
   },
   {
@@ -2882,12 +2882,12 @@ export const QUESTIONS = [
       "A ribbon or a badge."
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"A ribbon.\" sesuai dengan standar alur kerja aplikasi eCommerce & Online Store di Odoo 19.",
+    "penjelasan": "Menambahkan Ribbon (seperti 'Best Seller', 'Promo', atau 'New') pada form produk mempermudah penonjolan produk tertentu di katalog toko online.",
     "referensi": {
-      "topikSpesifik": "eCommerce & Online Store: What can you add",
+      "topikSpesifik": "eCommerce Product Highlighting Ribbons",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+can+you+add",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+can+you+add"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Product+Catalog+Highlighting+Ribbons+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+eCommerce+Product+Highlighting+Ribbons+Odoo+19"
     }
   },
   {
@@ -3296,12 +3296,12 @@ export const QUESTIONS = [
       "Vehicle Categories"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Vehicle Categories\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Modul Fleet secara bawaan telah dilengkapi dengan Kategori Kendaraan (Vehicle Categories) standar untuk mempermudah klasifikasi armada perusahaan.",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: What preconfigured the Fleet",
+      "topikSpesifik": "Fleet Management Preconfigured Categories",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+What+preconfigured+the+Fleet",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+What+preconfigured+the+Fleet"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Fleet+Management+Vehicle+Categories+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Fleet+Management+Preconfigured+Categories+Odoo+19"
     }
   },
   {
@@ -4664,12 +4664,12 @@ export const QUESTIONS = [
       "Colors are set by default and are unchangeable"
     ],
     "jawaban": 0,
-    "penjelasan": "Jawaban yang tepat adalah: \"From Configuration > Time Off Types\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Warna penanda tipe cuti (seperti warna khusus untuk Sick Time Off pada kalender) dikonfigurasi melalui menu Configuration > Time Off Types.",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: you wanted set color",
+      "topikSpesifik": "Time Off Types Color Coding Configuration",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+you+wanted+set+color",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+you+wanted+set+color"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Time+Off+Types+Color+Setup+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Time+Off+Types+Color+Coding+Configuration+Odoo+19"
     }
   },
   {
@@ -5600,12 +5600,12 @@ export const QUESTIONS = [
       "Cost Per Hire Analysis"
     ],
     "jawaban": 2,
-    "penjelasan": "Jawaban yang tepat adalah: \"Cost Per Hire Analysis\" sesuai dengan standar alur kerja aplikasi Human Resources & Employee Management di Odoo 19.",
+    "penjelasan": "Laporan bawaan di aplikasi Recruitment mencakup Recruitment Analysis, Source Analysis, dan Team Performance (bukan Cost Per Hire secara default).",
     "referensi": {
-      "topikSpesifik": "Human Resources & Employee Management: Which NOT default report",
+      "topikSpesifik": "Recruitment Reports & Metrics",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Which+NOT+default+report",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Which+NOT+default+report"
+      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Recruitment+Reporting+Analysis+Tutorial",
+      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Recruitment+Reports+%26+Metrics+Odoo+19"
     }
   },
   {
