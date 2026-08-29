@@ -1,4 +1,4 @@
-// screens/exam.js — Exam Simulator with Frontend Customizer & Stratified Sampling
+// screens/exam.js — Exam Simulator with Fully Flexible Question Count & Timer Controls
 import { QUESTIONS, TOPICS, EXAM_PRESETS } from '../data.js';
 import { state, showToast } from '../app.js';
 
@@ -23,6 +23,8 @@ export function renderExam(container) {
 
     const topicsCount = selectedTopics.size > 0 ? selectedTopics.size : TOPICS.length;
     const perTopicAvg = Math.max(1, Math.round(selectedCount / topicsCount));
+    const autoEstimateTimer = Math.max(5, Math.round(selectedCount * 0.75)); // ~45s per question in min
+    const secPerQuestion = selectedTimer > 0 ? Math.round((selectedTimer * 60) / selectedCount) : 0;
 
     container.innerHTML = `
       <div class="app-container">
@@ -48,10 +50,10 @@ export function renderExam(container) {
           </button>
 
           <button class="mode-card ${selectedMode === 'custom' ? 'selected' : ''}" data-mode="custom">
-            <div class="mode-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+            <div class="mode-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
             <div class="mode-info">
-              <div class="mode-name">Custom Exam (Atur Sendiri)</div>
-              <div class="mode-desc">Atur jumlah soal, timer, dan kombinasi modul sesuka Anda</div>
+              <div class="mode-name">Custom Exam (Fleksibel)</div>
+              <div class="mode-desc">Atur bebas jumlah soal, durasi waktu, dan modul pilihan</div>
             </div>
           </button>
 
@@ -64,15 +66,15 @@ export function renderExam(container) {
           </button>
         </div>
 
-        <!-- Custom Settings Panel (Always accessible for fine-tuning) -->
+        <!-- Custom Settings Panel -->
         <div class="card" style="margin-bottom:var(--space-6);background:var(--color-paper-2);border:1px solid var(--color-border);">
           <h2 style="font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-4);display:flex;align-items:center;gap:var(--space-2);">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-            <span>Pengaturan Jumlah Soal & Waktu</span>
+            <span>Pengaturan Jumlah Soal & Waktu Ujian Fleksibel</span>
           </h2>
 
-          <!-- Question Count Controls -->
-          <div style="margin-bottom:var(--space-4);">
+          <!-- 1. Question Count Controls -->
+          <div style="margin-bottom:var(--space-5);">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-2);">
               <label style="font-size:var(--text-xs);font-weight:600;color:var(--color-ink-2);">Jumlah Pertanyaan:</label>
               <span style="font-family:var(--font-mono);font-size:var(--text-base);font-weight:800;color:var(--color-accent);">${selectedCount} Soal</span>
@@ -90,30 +92,45 @@ export function renderExam(container) {
             <!-- Slider & Custom Input -->
             <div style="display:flex;align-items:center;gap:var(--space-3);">
               <input type="range" id="count-range" min="5" max="${maxAvailable}" step="5" value="${selectedCount}" style="flex:1;accent-color:var(--color-accent);cursor:pointer;">
-              <input type="number" id="count-num" min="1" max="${maxAvailable}" value="${selectedCount}" style="width:70px;background:var(--color-paper-3);color:var(--color-ink);border:1px solid var(--color-border);padding:6px 8px;border-radius:var(--radius-sm);font-family:var(--font-mono);font-size:var(--text-xs);text-align:center;">
+              <input type="number" id="count-num" min="1" max="${maxAvailable}" value="${selectedCount}" style="width:75px;background:var(--color-paper-3);color:var(--color-ink);border:1px solid var(--color-border);padding:6px 8px;border-radius:var(--radius-sm);font-family:var(--font-mono);font-size:var(--text-xs);text-align:center;">
             </div>
           </div>
 
-          <!-- Timer Controls -->
-          <div style="margin-bottom:var(--space-4);padding-top:var(--space-3);border-top:1px solid var(--color-border);">
+          <!-- 2. Flexible Timer Controls -->
+          <div style="margin-bottom:var(--space-5);padding-top:var(--space-4);border-top:1px solid var(--color-border);">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-2);">
-              <label style="font-size:var(--text-xs);font-weight:600;color:var(--color-ink-2);">Batas Waktu (Timer):</label>
-              <span style="font-family:var(--font-mono);font-size:var(--text-xs);font-weight:700;color:var(--color-ink-2);">
+              <label style="font-size:var(--text-xs);font-weight:600;color:var(--color-ink-2);">Durasi Waktu Ujian (Timer):</label>
+              <span style="font-family:var(--font-mono);font-size:var(--text-base);font-weight:800;color:var(--color-correct);">
                 ${selectedTimer > 0 ? `${selectedTimer} Menit` : 'Tanpa Batas Waktu'}
               </span>
             </div>
 
-            <div style="display:flex;gap:var(--space-2);flex-wrap:wrap;">
+            <!-- Quick Timer Chips -->
+            <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-3);flex-wrap:wrap;">
               <button class="chip ${selectedTimer === 0 ? 'active' : ''}" data-timer="0">Tanpa Timer</button>
-              <button class="chip ${selectedTimer === 30 ? 'active' : ''}" data-timer="30">30 Menit</button>
-              <button class="chip ${selectedTimer === 45 ? 'active' : ''}" data-timer="45">45 Menit</button>
-              <button class="chip ${selectedTimer === 90 ? 'active' : ''}" data-timer="90">90 Menit</button>
+              <button class="chip ${selectedTimer === autoEstimateTimer ? 'active' : ''}" data-timer="${autoEstimateTimer}">⚡ Otomatis (${autoEstimateTimer} Min)</button>
+              <button class="chip ${selectedTimer === 15 ? 'active' : ''}" data-timer="15">15 Min</button>
+              <button class="chip ${selectedTimer === 30 ? 'active' : ''}" data-timer="30">30 Min</button>
+              <button class="chip ${selectedTimer === 45 ? 'active' : ''}" data-timer="45">45 Min</button>
+              <button class="chip ${selectedTimer === 60 ? 'active' : ''}" data-timer="60">60 Min</button>
+              <button class="chip ${selectedTimer === 90 ? 'active' : ''}" data-timer="90">90 Min</button>
+              <button class="chip ${selectedTimer === 120 ? 'active' : ''}" data-timer="120">120 Min</button>
+            </div>
+
+            <!-- Slider & Number Input for Timer -->
+            <div style="display:flex;align-items:center;gap:var(--space-3);">
+              <input type="range" id="timer-range" min="0" max="180" step="5" value="${selectedTimer}" style="flex:1;accent-color:var(--color-correct);cursor:pointer;">
+              <div style="display:flex;align-items:center;gap:4px;">
+                <input type="number" id="timer-num" min="0" max="240" value="${selectedTimer}" style="width:65px;background:var(--color-paper-3);color:var(--color-ink);border:1px solid var(--color-border);padding:6px 8px;border-radius:var(--radius-sm);font-family:var(--font-mono);font-size:var(--text-xs);text-align:center;">
+                <span style="font-size:var(--text-xs);color:var(--color-ink-3);">min</span>
+              </div>
             </div>
           </div>
 
-          <!-- Live Stratified Distribution Estimation -->
-          <div style="padding:var(--space-3);background:var(--color-paper-3);border-radius:var(--radius-sm);font-size:var(--text-xs);color:var(--color-ink-2);line-height:1.5;">
-            ⚖️ <strong>Distribusi Merata:</strong> Mempersiapkan <strong>${selectedCount} soal</strong> dari <strong>${topicsCount} modul</strong> (~${perTopicAvg} soal per modul).
+          <!-- Live Stratified Distribution & Time Estimation -->
+          <div style="padding:var(--space-3);background:var(--color-paper-3);border-radius:var(--radius-sm);font-size:var(--text-xs);color:var(--color-ink-2);line-height:1.6;">
+            <div>⚖️ <strong>Distribusi Soal:</strong> Mempersiapkan <strong>${selectedCount} soal</strong> dari <strong>${topicsCount} modul</strong> (~${perTopicAvg} soal per modul).</div>
+            <div>⏱️ <strong>Alokasi Waktu:</strong> ${selectedTimer > 0 ? `<strong>${selectedTimer} menit total</strong> (rata-rata <strong>${secPerQuestion} detik</strong> per soal).` : 'Mode santai tanpa tekanan waktu.'}</div>
           </div>
         </div>
 
@@ -140,7 +157,7 @@ export function renderExam(container) {
 
         <!-- Start Button -->
         <button id="btn-start" class="btn btn-primary" style="width:100%;padding:var(--space-4);font-size:var(--text-base);font-weight:700;">
-          Mulai Latihan (${selectedCount} Soal · ${selectedTimer > 0 ? `${selectedTimer} Min` : 'Tanpa Waktu'})
+          Mulai Ujian (${selectedCount} Soal · ${selectedTimer > 0 ? `${selectedTimer} Menit` : 'Tanpa Timer'})
         </button>
       </div>
     `;
@@ -194,6 +211,27 @@ export function renderExam(container) {
         if (val < 1) val = 1;
         if (val > maxAvailable) val = maxAvailable;
         selectedCount = val;
+        selectedMode = 'custom';
+        updateSetupUI();
+      });
+    }
+
+    const timerRange = container.querySelector('#timer-range');
+    const timerNum = container.querySelector('#timer-num');
+
+    if (timerRange && timerNum) {
+      timerRange.addEventListener('input', (e) => {
+        selectedTimer = parseInt(e.target.value, 10);
+        selectedMode = 'custom';
+        timerNum.value = selectedTimer;
+        updateSetupUI();
+      });
+
+      timerNum.addEventListener('change', (e) => {
+        let val = parseInt(e.target.value, 10);
+        if (isNaN(val) || val < 0) val = 0;
+        if (val > 240) val = 240;
+        selectedTimer = val;
         selectedMode = 'custom';
         updateSetupUI();
       });
