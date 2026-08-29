@@ -6,8 +6,8 @@ let keyHandler = null;
 
 export function renderExam(container) {
   let selectedMode = 'quick'; // default: practice exam
-  let selectedCount = 60;
-  let selectedTimer = 45; // minutes, 0 = no timer
+  let selectedCount = 120;
+  let selectedTimer = 90; // minutes, 0 = no timer
   const selectedTopics = new Set();
 
   function updateSetupUI() {
@@ -36,16 +36,16 @@ export function renderExam(container) {
           <button class="mode-card ${selectedMode === 'quick' ? 'selected' : ''}" data-mode="quick">
             <div class="mode-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
             <div class="mode-info">
-              <div class="mode-name">Practice Exam (60 Soal)</div>
-              <div class="mode-desc">60 soal terdistribusi merata lintas modul (45 menit)</div>
+              <div class="mode-name">Practice Exam (120 Soal)</div>
+              <div class="mode-desc">120 soal terdistribusi merata lintas modul (90 menit)</div>
             </div>
           </button>
 
           <button class="mode-card ${selectedMode === 'full' ? 'selected' : ''}" data-mode="full">
             <div class="mode-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div>
             <div class="mode-info">
-              <div class="mode-name">Full Exam (114 Soal)</div>
-              <div class="mode-desc">Simulasi ujian sertifikasi asli Odoo (114 soal, 90 menit)</div>
+              <div class="mode-name">Full Exam (120 Soal)</div>
+              <div class="mode-desc">Simulasi ujian sertifikasi lengkap Odoo 19 (120 soal, 90 menit)</div>
             </div>
           </button>
 
@@ -85,7 +85,8 @@ export function renderExam(container) {
               <button class="chip ${selectedCount === 15 ? 'active' : ''}" data-count="15">15 Soal</button>
               <button class="chip ${selectedCount === 30 ? 'active' : ''}" data-count="30">30 Soal</button>
               <button class="chip ${selectedCount === 60 ? 'active' : ''}" data-count="60">60 Soal</button>
-              <button class="chip ${selectedCount === 114 ? 'active' : ''}" data-count="114">114 Soal</button>
+              <button class="chip ${selectedCount === 120 ? 'active' : ''}" data-count="120">120 Soal</button>
+              <button class="chip ${selectedCount === 150 ? 'active' : ''}" data-count="150">150 Soal</button>
               <button class="chip ${selectedCount === maxAvailable ? 'active' : ''}" data-count="${maxAvailable}">Semua (${maxAvailable})</button>
             </div>
 
@@ -167,10 +168,10 @@ export function renderExam(container) {
       card.addEventListener('click', () => {
         selectedMode = card.dataset.mode;
         if (selectedMode === 'quick') {
-          selectedCount = 60;
-          selectedTimer = 45;
+          selectedCount = 120;
+          selectedTimer = 90;
         } else if (selectedMode === 'full') {
-          selectedCount = 114;
+          selectedCount = 120;
           selectedTimer = 90;
         } else if (selectedMode === 'review') {
           selectedTimer = 0;
@@ -479,16 +480,15 @@ export function renderExamQuiz(container, params) {
               </div>
             ` : ''}
           </div>
-          ${!confidence ? `
-            <div style="margin-top:var(--space-3);">
-              <div style="font-size:var(--text-xs);color:var(--color-ink-3);margin-bottom:var(--space-2);">Seberapa yakin?</div>
-              <div class="confidence-row">
-                <button class="confidence-btn yakin" data-conf="yakin">Yakin</button>
-                <button class="confidence-btn ragu" data-conf="ragu">Ragu</button>
-                <button class="confidence-btn tebak" data-conf="tebak">Tebakan</button>
-              </div>
+
+          <div style="margin-top:var(--space-3);">
+            <div style="font-size:var(--text-xs);color:var(--color-ink-3);margin-bottom:var(--space-2);">Tingkat Keyakinan (opsional):</div>
+            <div class="confidence-row">
+              <button class="confidence-btn yakin ${confidence === 'yakin' ? 'selected' : ''}" data-conf="yakin">🟢 Yakin</button>
+              <button class="confidence-btn ragu ${confidence === 'ragu' ? 'selected' : ''}" data-conf="ragu">🟡 Ragu</button>
+              <button class="confidence-btn tebak ${confidence === 'tebak' ? 'selected' : ''}" data-conf="tebak">🔴 Tebakan</button>
             </div>
-          ` : ''}
+          </div>
         ` : ''}
 
         <div class="action-bar">
@@ -496,7 +496,7 @@ export function renderExamQuiz(container, params) {
           ${!submitted ? `
             <button id="btn-submit" class="btn btn-primary" ${selected === null ? 'disabled' : ''}>Periksa</button>
           ` : `
-            <button id="btn-next" class="btn btn-primary" ${!confidence ? 'disabled' : ''}>${idx + 1 < total ? 'Lanjut' : 'Lihat Hasil'}</button>
+            <button id="btn-next" class="btn btn-primary">${idx + 1 < total ? 'Lanjut' : 'Lihat Hasil'}</button>
           `}
         </div>
       </div>
@@ -513,6 +513,9 @@ export function renderExamQuiz(container, params) {
       const isCorrect = selected === pool[idx].jawaban;
       if (isCorrect) score++;
       answers.push({ qId: pool[idx].id, topic: pool[idx].topic, isCorrect, selected });
+      confidence = isCorrect ? 'yakin' : 'ragu';
+      state.saveAnswer(pool[idx].id, isCorrect, confidence);
+      state.recordActivity?.();
       render();
     });
 
@@ -520,7 +523,7 @@ export function renderExamQuiz(container, params) {
       btn.addEventListener('click', () => {
         confidence = btn.dataset.conf;
         const isCorrect = selected === pool[idx].jawaban;
-        state.recordAnswer(pool[idx].id, pool[idx].topic, isCorrect, confidence);
+        state.saveAnswer(pool[idx].id, isCorrect, confidence);
         render();
       });
     });
@@ -547,12 +550,11 @@ export function renderExamQuiz(container, params) {
         render();
       } else if (!submitted && e.key === 'Enter' && selected !== null) {
         container.querySelector('#btn-submit')?.click();
-      } else if (submitted && !confidence) {
+      } else if (submitted) {
         if (e.key === '1') container.querySelector('.confidence-btn.yakin')?.click();
         else if (e.key === '2') container.querySelector('.confidence-btn.ragu')?.click();
         else if (e.key === '3') container.querySelector('.confidence-btn.tebak')?.click();
-      } else if (submitted && confidence && e.key === 'Enter') {
-        container.querySelector('#btn-next')?.click();
+        else if (e.key === 'Enter') container.querySelector('#btn-next')?.click();
       }
     };
     window.addEventListener('keydown', keyHandler);

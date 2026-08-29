@@ -41,7 +41,7 @@ export function renderDashboard(container) {
       <!-- Quick Actions -->
       <div style="display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-6);">
         <a href="#exam-play?mode=quick" class="btn btn-primary" style="text-decoration:none;text-align:center;">
-          Mulai Latihan Acak (60 soal)
+          Mulai Latihan Acak (120 soal)
         </a>
         ${dueReviews.length > 0 ? `
           <a href="#exam-play?mode=review" class="btn btn-ghost" style="text-decoration:none;text-align:center;">

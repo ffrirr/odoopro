@@ -79,6 +79,10 @@ export const state = {
     this.save();
   },
 
+  recordAnswer(qId, topic, isCorrect, confidence) {
+    this.saveAnswer(qId, isCorrect, confidence);
+  },
+
   getTopicMastery(topicId) {
     const all = this.getAll();
     const qs = QUESTIONS.filter(q => q.topic === topicId);

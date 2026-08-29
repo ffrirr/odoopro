@@ -5917,7 +5917,7 @@ export const QUESTIONS = [
 ];
 
 export const EXAM_PRESETS = {
-  full:  { nama: 'Full Exam',      count: 114, timerMin: 90, desc: 'Simulasi ujian sertifikasi asli (114 soal, 90 min)' },
-  quick: { nama: 'Practice Exam',  count: 60,  timerMin: 45, desc: '60 soal terdistribusi merata dari seluruh modul (45 min)' },
+  full:  { nama: 'Full Exam',      count: 120, timerMin: 90, desc: 'Simulasi ujian sertifikasi lengkap Odoo 19 (120 soal, 90 min)' },
+  quick: { nama: 'Practice Exam',  count: 120, timerMin: 90, desc: '120 soal terdistribusi merata dari seluruh modul (90 min)' },
   speed: { nama: 'Speed Run',      count: 0,   timerMin: 0,  desc: 'Semua soal tanpa batas waktu' },
 };

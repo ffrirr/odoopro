@@ -143,32 +143,42 @@ export function renderFlashcards(container, topicId) {
           </div>
         </div>
 
-        <!-- Actions -->
-        <div class="flashcard-actions">
-          <button id="btn-repeat" class="btn btn-ghost" style="flex:1;border-color:var(--color-wrong);color:var(--color-wrong);" aria-label="Belum hafal / ulangi kartu ini">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-            Belum Hafal [1]
+        <!-- Action Dock -->
+        <div class="flashcard-dock">
+          <button id="btn-repeat" class="fc-btn fc-btn-repeat" aria-label="Belum hafal / ulangi kartu ini">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span>Ulangi</span>
+            <kbd>1</kbd>
           </button>
-          <button id="btn-flip" class="btn btn-ghost" style="padding:var(--space-3) var(--space-4);" aria-label="Balik kartu">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 16 4 4 4-4"/><path d="M7 20V4"/><path d="m21 8-4-4-4 4"/><path d="M17 4v16"/></svg>
-            Balik [Spasi]
+
+          <button id="btn-flip" class="fc-btn fc-btn-flip" aria-label="Balik kartu">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 16 4 4 4-4"/><path d="M7 20V4"/><path d="m21 8-4-4-4 4"/><path d="M17 4v16"/></svg>
+            <span>${isFlipped ? 'Tutup' : 'Buka Kunci'}</span>
+            <kbd>Spasi</kbd>
           </button>
-          <button id="btn-master" class="btn btn-primary" style="flex:1;background:var(--color-correct);border-color:var(--color-correct);" aria-label="Sudah hafal kartu ini">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            Sudah Hafal [2]
+
+          <button id="btn-master" class="fc-btn fc-btn-master" aria-label="Sudah hafal kartu ini">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Sudah Hafal</span>
+            <kbd>2</kbd>
           </button>
         </div>
 
-        <!-- Navigation buttons -->
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:var(--space-5);">
-          <button id="btn-prev" class="btn btn-ghost" ${idx === 0 ? 'disabled' : ''} style="font-size:var(--text-xs);padding:var(--space-2) var(--space-4);">
-            ← Sebelumnya
+        <!-- Sub Navigation -->
+        <div class="fc-subnav">
+          <button id="btn-prev" class="fc-nav-btn" ${idx === 0 ? 'disabled' : ''}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            <span>Sebelumnya</span>
           </button>
-          <span style="font-size:var(--text-xs);color:var(--color-ink-3);font-family:var(--font-mono);">
-            ${qState.status === 'correct' ? '✅ Dikuasai' : qState.status === 'wrong' ? '❌ Perlu Review' : 'Belum Dicoba'}
+
+          <span class="fc-status-pill ${qState.status === 'correct' ? 'mastered' : qState.status === 'wrong' ? 'review' : 'new'}">
+            <span class="dot"></span>
+            <span>${qState.status === 'correct' ? 'Dikuasai' : qState.status === 'wrong' ? 'Perlu Review' : 'Belum Dicoba'}</span>
           </span>
-          <button id="btn-next" class="btn btn-ghost" ${idx + 1 >= total ? 'disabled' : ''} style="font-size:var(--text-xs);padding:var(--space-2) var(--space-4);">
-            Berikutnya →
+
+          <button id="btn-next" class="fc-nav-btn" ${idx + 1 >= total ? 'disabled' : ''}>
+            <span>Berikutnya</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
           </button>
         </div>
       </div>
