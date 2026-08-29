@@ -5917,7 +5917,7 @@ export const QUESTIONS = [
 ];
 
 export const EXAM_PRESETS = {
-  full:  { nama: 'Full Exam',   count: 114, timerMin: 90, desc: 'Simulasi ujian sertifikasi asli' },
-  quick: { nama: 'Quick Quiz',  count: 20,  timerMin: 0,  desc: '20 soal random campur topik' },
-  speed: { nama: 'Speed Run',   count: 0,   timerMin: 0,  desc: 'Semua soal, kejar kecepatan' },
+  full:  { nama: 'Full Exam',      count: 114, timerMin: 90, desc: 'Simulasi ujian sertifikasi asli (114 soal, 90 min)' },
+  quick: { nama: 'Practice Exam',  count: 60,  timerMin: 45, desc: '60 soal random campur topik (45 min)' },
+  speed: { nama: 'Speed Run',      count: 0,   timerMin: 0,  desc: 'Semua soal tanpa batas waktu' },
 };
