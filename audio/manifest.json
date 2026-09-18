@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T09:55:32+07:00",
+  "updatedAt": "2026-09-18T10:14:49+07:00",
   "mode": "bilingual",
   "voice_id": "id-ID-ArdiNeural",
   "voice_en": "en-US-BrianNeural",
@@ -23,27 +23,33 @@
     },
     "35": {
       "file": "audio/q_35.mp3",
-      "size": 308880
+      "size": 328032,
+      "mode": "bilingual"
     },
     "36": {
       "file": "audio/q_36.mp3",
-      "size": 294912
+      "size": 307872,
+      "mode": "bilingual"
     },
     "37": {
       "file": "audio/q_37.mp3",
-      "size": 238608
+      "size": 233568,
+      "mode": "bilingual"
     },
     "144": {
       "file": "audio/q_144.mp3",
-      "size": 253872
+      "size": 254448,
+      "mode": "bilingual"
     },
     "145": {
       "file": "audio/q_145.mp3",
-      "size": 357264
+      "size": 369360,
+      "mode": "bilingual"
     },
     "146": {
       "file": "audio/q_146.mp3",
-      "size": 227952
+      "size": 222912,
+      "mode": "bilingual"
     },
     "4": {
       "file": "audio/q_4.mp3",
@@ -53,6 +59,1561 @@
     "5": {
       "file": "audio/q_5.mp3",
       "size": 319104,
+      "mode": "bilingual"
+    },
+    "6": {
+      "file": "audio/q_6.mp3",
+      "size": 253440,
+      "mode": "bilingual"
+    },
+    "7": {
+      "file": "audio/q_7.mp3",
+      "size": 304128,
+      "mode": "bilingual"
+    },
+    "8": {
+      "file": "audio/q_8.mp3",
+      "size": 317088,
+      "mode": "bilingual"
+    },
+    "9": {
+      "file": "audio/q_9.mp3",
+      "size": 244656,
+      "mode": "bilingual"
+    },
+    "10": {
+      "file": "audio/q_10.mp3",
+      "size": 257328,
+      "mode": "bilingual"
+    },
+    "11": {
+      "file": "audio/q_11.mp3",
+      "size": 263664,
+      "mode": "bilingual"
+    },
+    "12": {
+      "file": "audio/q_12.mp3",
+      "size": 237744,
+      "mode": "bilingual"
+    },
+    "13": {
+      "file": "audio/q_13.mp3",
+      "size": 396288,
+      "mode": "bilingual"
+    },
+    "14": {
+      "file": "audio/q_14.mp3",
+      "size": 481104,
+      "mode": "bilingual"
+    },
+    "15": {
+      "file": "audio/q_15.mp3",
+      "size": 393696,
+      "mode": "bilingual"
+    },
+    "16": {
+      "file": "audio/q_16.mp3",
+      "size": 282528,
+      "mode": "bilingual"
+    },
+    "17": {
+      "file": "audio/q_17.mp3",
+      "size": 297216,
+      "mode": "bilingual"
+    },
+    "18": {
+      "file": "audio/q_18.mp3",
+      "size": 273600,
+      "mode": "bilingual"
+    },
+    "19": {
+      "file": "audio/q_19.mp3",
+      "size": 242064,
+      "mode": "bilingual"
+    },
+    "20": {
+      "file": "audio/q_20.mp3",
+      "size": 309744,
+      "mode": "bilingual"
+    },
+    "21": {
+      "file": "audio/q_21.mp3",
+      "size": 259776,
+      "mode": "bilingual"
+    },
+    "22": {
+      "file": "audio/q_22.mp3",
+      "size": 237888,
+      "mode": "bilingual"
+    },
+    "23": {
+      "file": "audio/q_23.mp3",
+      "size": 247248,
+      "mode": "bilingual"
+    },
+    "24": {
+      "file": "audio/q_24.mp3",
+      "size": 229680,
+      "mode": "bilingual"
+    },
+    "25": {
+      "file": "audio/q_25.mp3",
+      "size": 242928,
+      "mode": "bilingual"
+    },
+    "26": {
+      "file": "audio/q_26.mp3",
+      "size": 242928,
+      "mode": "bilingual"
+    },
+    "27": {
+      "file": "audio/q_27.mp3",
+      "size": 196704,
+      "mode": "bilingual"
+    },
+    "28": {
+      "file": "audio/q_28.mp3",
+      "size": 272016,
+      "mode": "bilingual"
+    },
+    "29": {
+      "file": "audio/q_29.mp3",
+      "size": 267696,
+      "mode": "bilingual"
+    },
+    "30": {
+      "file": "audio/q_30.mp3",
+      "size": 268128,
+      "mode": "bilingual"
+    },
+    "31": {
+      "file": "audio/q_31.mp3",
+      "size": 263808,
+      "mode": "bilingual"
+    },
+    "32": {
+      "file": "audio/q_32.mp3",
+      "size": 252288,
+      "mode": "bilingual"
+    },
+    "33": {
+      "file": "audio/q_33.mp3",
+      "size": 285264,
+      "mode": "bilingual"
+    },
+    "34": {
+      "file": "audio/q_34.mp3",
+      "size": 224640,
+      "mode": "bilingual"
+    },
+    "38": {
+      "file": "audio/q_38.mp3",
+      "size": 254448,
+      "mode": "bilingual"
+    },
+    "39": {
+      "file": "audio/q_39.mp3",
+      "size": 335376,
+      "mode": "bilingual"
+    },
+    "40": {
+      "file": "audio/q_40.mp3",
+      "size": 330048,
+      "mode": "bilingual"
+    },
+    "41": {
+      "file": "audio/q_41.mp3",
+      "size": 242640,
+      "mode": "bilingual"
+    },
+    "42": {
+      "file": "audio/q_42.mp3",
+      "size": 264384,
+      "mode": "bilingual"
+    },
+    "43": {
+      "file": "audio/q_43.mp3",
+      "size": 209808,
+      "mode": "bilingual"
+    },
+    "44": {
+      "file": "audio/q_44.mp3",
+      "size": 259632,
+      "mode": "bilingual"
+    },
+    "45": {
+      "file": "audio/q_45.mp3",
+      "size": 230976,
+      "mode": "bilingual"
+    },
+    "46": {
+      "file": "audio/q_46.mp3",
+      "size": 239328,
+      "mode": "bilingual"
+    },
+    "47": {
+      "file": "audio/q_47.mp3",
+      "size": 215712,
+      "mode": "bilingual"
+    },
+    "48": {
+      "file": "audio/q_48.mp3",
+      "size": 199872,
+      "mode": "bilingual"
+    },
+    "49": {
+      "file": "audio/q_49.mp3",
+      "size": 224352,
+      "mode": "bilingual"
+    },
+    "50": {
+      "file": "audio/q_50.mp3",
+      "size": 282528,
+      "mode": "bilingual"
+    },
+    "51": {
+      "file": "audio/q_51.mp3",
+      "size": 212400,
+      "mode": "bilingual"
+    },
+    "52": {
+      "file": "audio/q_52.mp3",
+      "size": 263664,
+      "mode": "bilingual"
+    },
+    "53": {
+      "file": "audio/q_53.mp3",
+      "size": 254592,
+      "mode": "bilingual"
+    },
+    "54": {
+      "file": "audio/q_54.mp3",
+      "size": 238464,
+      "mode": "bilingual"
+    },
+    "55": {
+      "file": "audio/q_55.mp3",
+      "size": 230544,
+      "mode": "bilingual"
+    },
+    "56": {
+      "file": "audio/q_56.mp3",
+      "size": 235296,
+      "mode": "bilingual"
+    },
+    "57": {
+      "file": "audio/q_57.mp3",
+      "size": 251136,
+      "mode": "bilingual"
+    },
+    "58": {
+      "file": "audio/q_58.mp3",
+      "size": 280656,
+      "mode": "bilingual"
+    },
+    "59": {
+      "file": "audio/q_59.mp3",
+      "size": 301104,
+      "mode": "bilingual"
+    },
+    "60": {
+      "file": "audio/q_60.mp3",
+      "size": 204192,
+      "mode": "bilingual"
+    },
+    "61": {
+      "file": "audio/q_61.mp3",
+      "size": 260928,
+      "mode": "bilingual"
+    },
+    "62": {
+      "file": "audio/q_62.mp3",
+      "size": 265968,
+      "mode": "bilingual"
+    },
+    "63": {
+      "file": "audio/q_63.mp3",
+      "size": 351072,
+      "mode": "bilingual"
+    },
+    "64": {
+      "file": "audio/q_64.mp3",
+      "size": 291600,
+      "mode": "bilingual"
+    },
+    "65": {
+      "file": "audio/q_65.mp3",
+      "size": 485568,
+      "mode": "bilingual"
+    },
+    "66": {
+      "file": "audio/q_66.mp3",
+      "size": 305280,
+      "mode": "bilingual"
+    },
+    "67": {
+      "file": "audio/q_67.mp3",
+      "size": 343296,
+      "mode": "bilingual"
+    },
+    "68": {
+      "file": "audio/q_68.mp3",
+      "size": 272160,
+      "mode": "bilingual"
+    },
+    "69": {
+      "file": "audio/q_69.mp3",
+      "size": 333648,
+      "mode": "bilingual"
+    },
+    "70": {
+      "file": "audio/q_70.mp3",
+      "size": 356688,
+      "mode": "bilingual"
+    },
+    "71": {
+      "file": "audio/q_71.mp3",
+      "size": 392688,
+      "mode": "bilingual"
+    },
+    "72": {
+      "file": "audio/q_72.mp3",
+      "size": 362592,
+      "mode": "bilingual"
+    },
+    "73": {
+      "file": "audio/q_73.mp3",
+      "size": 298512,
+      "mode": "bilingual"
+    },
+    "74": {
+      "file": "audio/q_74.mp3",
+      "size": 302832,
+      "mode": "bilingual"
+    },
+    "75": {
+      "file": "audio/q_75.mp3",
+      "size": 342432,
+      "mode": "bilingual"
+    },
+    "76": {
+      "file": "audio/q_76.mp3",
+      "size": 300672,
+      "mode": "bilingual"
+    },
+    "77": {
+      "file": "audio/q_77.mp3",
+      "size": 267264,
+      "mode": "bilingual"
+    },
+    "78": {
+      "file": "audio/q_78.mp3",
+      "size": 375696,
+      "mode": "bilingual"
+    },
+    "79": {
+      "file": "audio/q_79.mp3",
+      "size": 318672,
+      "mode": "bilingual"
+    },
+    "80": {
+      "file": "audio/q_80.mp3",
+      "size": 275472,
+      "mode": "bilingual"
+    },
+    "81": {
+      "file": "audio/q_81.mp3",
+      "size": 206208,
+      "mode": "bilingual"
+    },
+    "82": {
+      "file": "audio/q_82.mp3",
+      "size": 200592,
+      "mode": "bilingual"
+    },
+    "83": {
+      "file": "audio/q_83.mp3",
+      "size": 217152,
+      "mode": "bilingual"
+    },
+    "84": {
+      "file": "audio/q_84.mp3",
+      "size": 327168,
+      "mode": "bilingual"
+    },
+    "85": {
+      "file": "audio/q_85.mp3",
+      "size": 351504,
+      "mode": "bilingual"
+    },
+    "86": {
+      "file": "audio/q_86.mp3",
+      "size": 272304,
+      "mode": "bilingual"
+    },
+    "87": {
+      "file": "audio/q_87.mp3",
+      "size": 225504,
+      "mode": "bilingual"
+    },
+    "88": {
+      "file": "audio/q_88.mp3",
+      "size": 255024,
+      "mode": "bilingual"
+    },
+    "89": {
+      "file": "audio/q_89.mp3",
+      "size": 400896,
+      "mode": "bilingual"
+    },
+    "90": {
+      "file": "audio/q_90.mp3",
+      "size": 343152,
+      "mode": "bilingual"
+    },
+    "91": {
+      "file": "audio/q_91.mp3",
+      "size": 417456,
+      "mode": "bilingual"
+    },
+    "92": {
+      "file": "audio/q_92.mp3",
+      "size": 314640,
+      "mode": "bilingual"
+    },
+    "93": {
+      "file": "audio/q_93.mp3",
+      "size": 322560,
+      "mode": "bilingual"
+    },
+    "94": {
+      "file": "audio/q_94.mp3",
+      "size": 309888,
+      "mode": "bilingual"
+    },
+    "95": {
+      "file": "audio/q_95.mp3",
+      "size": 281376,
+      "mode": "bilingual"
+    },
+    "96": {
+      "file": "audio/q_96.mp3",
+      "size": 297360,
+      "mode": "bilingual"
+    },
+    "97": {
+      "file": "audio/q_97.mp3",
+      "size": 303264,
+      "mode": "bilingual"
+    },
+    "98": {
+      "file": "audio/q_98.mp3",
+      "size": 405792,
+      "mode": "bilingual"
+    },
+    "99": {
+      "file": "audio/q_99.mp3",
+      "size": 338400,
+      "mode": "bilingual"
+    },
+    "100": {
+      "file": "audio/q_100.mp3",
+      "size": 218448,
+      "mode": "bilingual"
+    },
+    "101": {
+      "file": "audio/q_101.mp3",
+      "size": 336672,
+      "mode": "bilingual"
+    },
+    "102": {
+      "file": "audio/q_102.mp3",
+      "size": 271152,
+      "mode": "bilingual"
+    },
+    "103": {
+      "file": "audio/q_103.mp3",
+      "size": 303696,
+      "mode": "bilingual"
+    },
+    "104": {
+      "file": "audio/q_104.mp3",
+      "size": 423504,
+      "mode": "bilingual"
+    },
+    "105": {
+      "file": "audio/q_105.mp3",
+      "size": 329040,
+      "mode": "bilingual"
+    },
+    "106": {
+      "file": "audio/q_106.mp3",
+      "size": 255024,
+      "mode": "bilingual"
+    },
+    "107": {
+      "file": "audio/q_107.mp3",
+      "size": 358416,
+      "mode": "bilingual"
+    },
+    "108": {
+      "file": "audio/q_108.mp3",
+      "size": 264096,
+      "mode": "bilingual"
+    },
+    "109": {
+      "file": "audio/q_109.mp3",
+      "size": 192384,
+      "mode": "bilingual"
+    },
+    "110": {
+      "file": "audio/q_110.mp3",
+      "size": 230832,
+      "mode": "bilingual"
+    },
+    "111": {
+      "file": "audio/q_111.mp3",
+      "size": 262656,
+      "mode": "bilingual"
+    },
+    "112": {
+      "file": "audio/q_112.mp3",
+      "size": 392832,
+      "mode": "bilingual"
+    },
+    "113": {
+      "file": "audio/q_113.mp3",
+      "size": 268704,
+      "mode": "bilingual"
+    },
+    "114": {
+      "file": "audio/q_114.mp3",
+      "size": 203328,
+      "mode": "bilingual"
+    },
+    "115": {
+      "file": "audio/q_115.mp3",
+      "size": 229104,
+      "mode": "bilingual"
+    },
+    "116": {
+      "file": "audio/q_116.mp3",
+      "size": 241344,
+      "mode": "bilingual"
+    },
+    "117": {
+      "file": "audio/q_117.mp3",
+      "size": 235152,
+      "mode": "bilingual"
+    },
+    "118": {
+      "file": "audio/q_118.mp3",
+      "size": 316512,
+      "mode": "bilingual"
+    },
+    "119": {
+      "file": "audio/q_119.mp3",
+      "size": 324000,
+      "mode": "bilingual"
+    },
+    "120": {
+      "file": "audio/q_120.mp3",
+      "size": 206064,
+      "mode": "bilingual"
+    },
+    "121": {
+      "file": "audio/q_121.mp3",
+      "size": 287712,
+      "mode": "bilingual"
+    },
+    "122": {
+      "file": "audio/q_122.mp3",
+      "size": 335664,
+      "mode": "bilingual"
+    },
+    "123": {
+      "file": "audio/q_123.mp3",
+      "size": 248400,
+      "mode": "bilingual"
+    },
+    "124": {
+      "file": "audio/q_124.mp3",
+      "size": 239760,
+      "mode": "bilingual"
+    },
+    "125": {
+      "file": "audio/q_125.mp3",
+      "size": 223200,
+      "mode": "bilingual"
+    },
+    "126": {
+      "file": "audio/q_126.mp3",
+      "size": 266256,
+      "mode": "bilingual"
+    },
+    "127": {
+      "file": "audio/q_127.mp3",
+      "size": 286704,
+      "mode": "bilingual"
+    },
+    "128": {
+      "file": "audio/q_128.mp3",
+      "size": 341136,
+      "mode": "bilingual"
+    },
+    "129": {
+      "file": "audio/q_129.mp3",
+      "size": 196272,
+      "mode": "bilingual"
+    },
+    "130": {
+      "file": "audio/q_130.mp3",
+      "size": 211104,
+      "mode": "bilingual"
+    },
+    "131": {
+      "file": "audio/q_131.mp3",
+      "size": 317952,
+      "mode": "bilingual"
+    },
+    "132": {
+      "file": "audio/q_132.mp3",
+      "size": 217008,
+      "mode": "bilingual"
+    },
+    "133": {
+      "file": "audio/q_133.mp3",
+      "size": 164160,
+      "mode": "bilingual"
+    },
+    "134": {
+      "file": "audio/q_134.mp3",
+      "size": 214128,
+      "mode": "bilingual"
+    },
+    "135": {
+      "file": "audio/q_135.mp3",
+      "size": 225504,
+      "mode": "bilingual"
+    },
+    "136": {
+      "file": "audio/q_136.mp3",
+      "size": 206208,
+      "mode": "bilingual"
+    },
+    "137": {
+      "file": "audio/q_137.mp3",
+      "size": 256464,
+      "mode": "bilingual"
+    },
+    "138": {
+      "file": "audio/q_138.mp3",
+      "size": 204912,
+      "mode": "bilingual"
+    },
+    "139": {
+      "file": "audio/q_139.mp3",
+      "size": 252720,
+      "mode": "bilingual"
+    },
+    "140": {
+      "file": "audio/q_140.mp3",
+      "size": 214560,
+      "mode": "bilingual"
+    },
+    "141": {
+      "file": "audio/q_141.mp3",
+      "size": 279504,
+      "mode": "bilingual"
+    },
+    "142": {
+      "file": "audio/q_142.mp3",
+      "size": 300960,
+      "mode": "bilingual"
+    },
+    "143": {
+      "file": "audio/q_143.mp3",
+      "size": 243216,
+      "mode": "bilingual"
+    },
+    "147": {
+      "file": "audio/q_147.mp3",
+      "size": 254880,
+      "mode": "bilingual"
+    },
+    "148": {
+      "file": "audio/q_148.mp3",
+      "size": 315504,
+      "mode": "bilingual"
+    },
+    "149": {
+      "file": "audio/q_149.mp3",
+      "size": 216864,
+      "mode": "bilingual"
+    },
+    "150": {
+      "file": "audio/q_150.mp3",
+      "size": 275328,
+      "mode": "bilingual"
+    },
+    "151": {
+      "file": "audio/q_151.mp3",
+      "size": 210672,
+      "mode": "bilingual"
+    },
+    "152": {
+      "file": "audio/q_152.mp3",
+      "size": 217872,
+      "mode": "bilingual"
+    },
+    "153": {
+      "file": "audio/q_153.mp3",
+      "size": 257040,
+      "mode": "bilingual"
+    },
+    "154": {
+      "file": "audio/q_154.mp3",
+      "size": 219168,
+      "mode": "bilingual"
+    },
+    "155": {
+      "file": "audio/q_155.mp3",
+      "size": 214416,
+      "mode": "bilingual"
+    },
+    "156": {
+      "file": "audio/q_156.mp3",
+      "size": 213840,
+      "mode": "bilingual"
+    },
+    "157": {
+      "file": "audio/q_157.mp3",
+      "size": 234144,
+      "mode": "bilingual"
+    },
+    "158": {
+      "file": "audio/q_158.mp3",
+      "size": 265392,
+      "mode": "bilingual"
+    },
+    "159": {
+      "file": "audio/q_159.mp3",
+      "size": 211824,
+      "mode": "bilingual"
+    },
+    "160": {
+      "file": "audio/q_160.mp3",
+      "size": 266688,
+      "mode": "bilingual"
+    },
+    "161": {
+      "file": "audio/q_161.mp3",
+      "size": 220896,
+      "mode": "bilingual"
+    },
+    "162": {
+      "file": "audio/q_162.mp3",
+      "size": 193536,
+      "mode": "bilingual"
+    },
+    "163": {
+      "file": "audio/q_163.mp3",
+      "size": 226080,
+      "mode": "bilingual"
+    },
+    "164": {
+      "file": "audio/q_164.mp3",
+      "size": 296928,
+      "mode": "bilingual"
+    },
+    "165": {
+      "file": "audio/q_165.mp3",
+      "size": 287568,
+      "mode": "bilingual"
+    },
+    "166": {
+      "file": "audio/q_166.mp3",
+      "size": 330912,
+      "mode": "bilingual"
+    },
+    "167": {
+      "file": "audio/q_167.mp3",
+      "size": 302832,
+      "mode": "bilingual"
+    },
+    "168": {
+      "file": "audio/q_168.mp3",
+      "size": 353664,
+      "mode": "bilingual"
+    },
+    "169": {
+      "file": "audio/q_169.mp3",
+      "size": 208656,
+      "mode": "bilingual"
+    },
+    "170": {
+      "file": "audio/q_170.mp3",
+      "size": 395568,
+      "mode": "bilingual"
+    },
+    "171": {
+      "file": "audio/q_171.mp3",
+      "size": 262512,
+      "mode": "bilingual"
+    },
+    "172": {
+      "file": "audio/q_172.mp3",
+      "size": 260352,
+      "mode": "bilingual"
+    },
+    "173": {
+      "file": "audio/q_173.mp3",
+      "size": 320400,
+      "mode": "bilingual"
+    },
+    "174": {
+      "file": "audio/q_174.mp3",
+      "size": 316512,
+      "mode": "bilingual"
+    },
+    "175": {
+      "file": "audio/q_175.mp3",
+      "size": 267984,
+      "mode": "bilingual"
+    },
+    "176": {
+      "file": "audio/q_176.mp3",
+      "size": 314928,
+      "mode": "bilingual"
+    },
+    "177": {
+      "file": "audio/q_177.mp3",
+      "size": 200592,
+      "mode": "bilingual"
+    },
+    "178": {
+      "file": "audio/q_178.mp3",
+      "size": 217584,
+      "mode": "bilingual"
+    },
+    "179": {
+      "file": "audio/q_179.mp3",
+      "size": 250272,
+      "mode": "bilingual"
+    },
+    "180": {
+      "file": "audio/q_180.mp3",
+      "size": 264384,
+      "mode": "bilingual"
+    },
+    "181": {
+      "file": "audio/q_181.mp3",
+      "size": 319248,
+      "mode": "bilingual"
+    },
+    "182": {
+      "file": "audio/q_182.mp3",
+      "size": 249984,
+      "mode": "bilingual"
+    },
+    "183": {
+      "file": "audio/q_183.mp3",
+      "size": 397728,
+      "mode": "bilingual"
+    },
+    "184": {
+      "file": "audio/q_184.mp3",
+      "size": 334080,
+      "mode": "bilingual"
+    },
+    "185": {
+      "file": "audio/q_185.mp3",
+      "size": 402048,
+      "mode": "bilingual"
+    },
+    "186": {
+      "file": "audio/q_186.mp3",
+      "size": 325584,
+      "mode": "bilingual"
+    },
+    "187": {
+      "file": "audio/q_187.mp3",
+      "size": 270864,
+      "mode": "bilingual"
+    },
+    "188": {
+      "file": "audio/q_188.mp3",
+      "size": 308304,
+      "mode": "bilingual"
+    },
+    "189": {
+      "file": "audio/q_189.mp3",
+      "size": 309600,
+      "mode": "bilingual"
+    },
+    "190": {
+      "file": "audio/q_190.mp3",
+      "size": 303408,
+      "mode": "bilingual"
+    },
+    "191": {
+      "file": "audio/q_191.mp3",
+      "size": 271872,
+      "mode": "bilingual"
+    },
+    "192": {
+      "file": "audio/q_192.mp3",
+      "size": 397584,
+      "mode": "bilingual"
+    },
+    "193": {
+      "file": "audio/q_193.mp3",
+      "size": 281088,
+      "mode": "bilingual"
+    },
+    "194": {
+      "file": "audio/q_194.mp3",
+      "size": 225072,
+      "mode": "bilingual"
+    },
+    "195": {
+      "file": "audio/q_195.mp3",
+      "size": 265968,
+      "mode": "bilingual"
+    },
+    "196": {
+      "file": "audio/q_196.mp3",
+      "size": 274752,
+      "mode": "bilingual"
+    },
+    "197": {
+      "file": "audio/q_197.mp3",
+      "size": 329760,
+      "mode": "bilingual"
+    },
+    "198": {
+      "file": "audio/q_198.mp3",
+      "size": 283392,
+      "mode": "bilingual"
+    },
+    "199": {
+      "file": "audio/q_199.mp3",
+      "size": 292464,
+      "mode": "bilingual"
+    },
+    "200": {
+      "file": "audio/q_200.mp3",
+      "size": 294480,
+      "mode": "bilingual"
+    },
+    "201": {
+      "file": "audio/q_201.mp3",
+      "size": 308880,
+      "mode": "bilingual"
+    },
+    "202": {
+      "file": "audio/q_202.mp3",
+      "size": 240768,
+      "mode": "bilingual"
+    },
+    "203": {
+      "file": "audio/q_203.mp3",
+      "size": 295776,
+      "mode": "bilingual"
+    },
+    "204": {
+      "file": "audio/q_204.mp3",
+      "size": 259056,
+      "mode": "bilingual"
+    },
+    "205": {
+      "file": "audio/q_205.mp3",
+      "size": 258768,
+      "mode": "bilingual"
+    },
+    "206": {
+      "file": "audio/q_206.mp3",
+      "size": 293904,
+      "mode": "bilingual"
+    },
+    "207": {
+      "file": "audio/q_207.mp3",
+      "size": 270576,
+      "mode": "bilingual"
+    },
+    "208": {
+      "file": "audio/q_208.mp3",
+      "size": 338112,
+      "mode": "bilingual"
+    },
+    "209": {
+      "file": "audio/q_209.mp3",
+      "size": 293040,
+      "mode": "bilingual"
+    },
+    "210": {
+      "file": "audio/q_210.mp3",
+      "size": 299088,
+      "mode": "bilingual"
+    },
+    "211": {
+      "file": "audio/q_211.mp3",
+      "size": 271872,
+      "mode": "bilingual"
+    },
+    "212": {
+      "file": "audio/q_212.mp3",
+      "size": 303408,
+      "mode": "bilingual"
+    },
+    "213": {
+      "file": "audio/q_213.mp3",
+      "size": 245088,
+      "mode": "bilingual"
+    },
+    "214": {
+      "file": "audio/q_214.mp3",
+      "size": 503424,
+      "mode": "bilingual"
+    },
+    "215": {
+      "file": "audio/q_215.mp3",
+      "size": 415584,
+      "mode": "bilingual"
+    },
+    "216": {
+      "file": "audio/q_216.mp3",
+      "size": 331920,
+      "mode": "bilingual"
+    },
+    "217": {
+      "file": "audio/q_217.mp3",
+      "size": 299376,
+      "mode": "bilingual"
+    },
+    "218": {
+      "file": "audio/q_218.mp3",
+      "size": 291024,
+      "mode": "bilingual"
+    },
+    "219": {
+      "file": "audio/q_219.mp3",
+      "size": 373680,
+      "mode": "bilingual"
+    },
+    "220": {
+      "file": "audio/q_220.mp3",
+      "size": 259200,
+      "mode": "bilingual"
+    },
+    "221": {
+      "file": "audio/q_221.mp3",
+      "size": 244512,
+      "mode": "bilingual"
+    },
+    "222": {
+      "file": "audio/q_222.mp3",
+      "size": 323856,
+      "mode": "bilingual"
+    },
+    "223": {
+      "file": "audio/q_223.mp3",
+      "size": 253872,
+      "mode": "bilingual"
+    },
+    "224": {
+      "file": "audio/q_224.mp3",
+      "size": 332208,
+      "mode": "bilingual"
+    },
+    "225": {
+      "file": "audio/q_225.mp3",
+      "size": 255312,
+      "mode": "bilingual"
+    },
+    "226": {
+      "file": "audio/q_226.mp3",
+      "size": 324000,
+      "mode": "bilingual"
+    },
+    "227": {
+      "file": "audio/q_227.mp3",
+      "size": 275040,
+      "mode": "bilingual"
+    },
+    "228": {
+      "file": "audio/q_228.mp3",
+      "size": 316656,
+      "mode": "bilingual"
+    },
+    "229": {
+      "file": "audio/q_229.mp3",
+      "size": 254880,
+      "mode": "bilingual"
+    },
+    "230": {
+      "file": "audio/q_230.mp3",
+      "size": 289008,
+      "mode": "bilingual"
+    },
+    "231": {
+      "file": "audio/q_231.mp3",
+      "size": 363168,
+      "mode": "bilingual"
+    },
+    "232": {
+      "file": "audio/q_232.mp3",
+      "size": 184752,
+      "mode": "bilingual"
+    },
+    "233": {
+      "file": "audio/q_233.mp3",
+      "size": 326160,
+      "mode": "bilingual"
+    },
+    "234": {
+      "file": "audio/q_234.mp3",
+      "size": 248976,
+      "mode": "bilingual"
+    },
+    "235": {
+      "file": "audio/q_235.mp3",
+      "size": 301680,
+      "mode": "bilingual"
+    },
+    "236": {
+      "file": "audio/q_236.mp3",
+      "size": 304128,
+      "mode": "bilingual"
+    },
+    "237": {
+      "file": "audio/q_237.mp3",
+      "size": 279504,
+      "mode": "bilingual"
+    },
+    "238": {
+      "file": "audio/q_238.mp3",
+      "size": 308736,
+      "mode": "bilingual"
+    },
+    "239": {
+      "file": "audio/q_239.mp3",
+      "size": 266832,
+      "mode": "bilingual"
+    },
+    "240": {
+      "file": "audio/q_240.mp3",
+      "size": 240048,
+      "mode": "bilingual"
+    },
+    "241": {
+      "file": "audio/q_241.mp3",
+      "size": 212256,
+      "mode": "bilingual"
+    },
+    "242": {
+      "file": "audio/q_242.mp3",
+      "size": 239328,
+      "mode": "bilingual"
+    },
+    "243": {
+      "file": "audio/q_243.mp3",
+      "size": 223200,
+      "mode": "bilingual"
+    },
+    "244": {
+      "file": "audio/q_244.mp3",
+      "size": 242496,
+      "mode": "bilingual"
+    },
+    "245": {
+      "file": "audio/q_245.mp3",
+      "size": 257616,
+      "mode": "bilingual"
+    },
+    "246": {
+      "file": "audio/q_246.mp3",
+      "size": 342864,
+      "mode": "bilingual"
+    },
+    "247": {
+      "file": "audio/q_247.mp3",
+      "size": 292320,
+      "mode": "bilingual"
+    },
+    "248": {
+      "file": "audio/q_248.mp3",
+      "size": 264816,
+      "mode": "bilingual"
+    },
+    "249": {
+      "file": "audio/q_249.mp3",
+      "size": 233424,
+      "mode": "bilingual"
+    },
+    "250": {
+      "file": "audio/q_250.mp3",
+      "size": 319968,
+      "mode": "bilingual"
+    },
+    "251": {
+      "file": "audio/q_251.mp3",
+      "size": 274032,
+      "mode": "bilingual"
+    },
+    "252": {
+      "file": "audio/q_252.mp3",
+      "size": 320688,
+      "mode": "bilingual"
+    },
+    "253": {
+      "file": "audio/q_253.mp3",
+      "size": 257904,
+      "mode": "bilingual"
+    },
+    "254": {
+      "file": "audio/q_254.mp3",
+      "size": 242784,
+      "mode": "bilingual"
+    },
+    "255": {
+      "file": "audio/q_255.mp3",
+      "size": 284400,
+      "mode": "bilingual"
+    },
+    "256": {
+      "file": "audio/q_256.mp3",
+      "size": 229104,
+      "mode": "bilingual"
+    },
+    "257": {
+      "file": "audio/q_257.mp3",
+      "size": 237888,
+      "mode": "bilingual"
+    },
+    "258": {
+      "file": "audio/q_258.mp3",
+      "size": 239184,
+      "mode": "bilingual"
+    },
+    "259": {
+      "file": "audio/q_259.mp3",
+      "size": 260496,
+      "mode": "bilingual"
+    },
+    "260": {
+      "file": "audio/q_260.mp3",
+      "size": 438768,
+      "mode": "bilingual"
+    },
+    "261": {
+      "file": "audio/q_261.mp3",
+      "size": 327312,
+      "mode": "bilingual"
+    },
+    "262": {
+      "file": "audio/q_262.mp3",
+      "size": 352656,
+      "mode": "bilingual"
+    },
+    "263": {
+      "file": "audio/q_263.mp3",
+      "size": 361872,
+      "mode": "bilingual"
+    },
+    "264": {
+      "file": "audio/q_264.mp3",
+      "size": 402768,
+      "mode": "bilingual"
+    },
+    "265": {
+      "file": "audio/q_265.mp3",
+      "size": 312480,
+      "mode": "bilingual"
+    },
+    "266": {
+      "file": "audio/q_266.mp3",
+      "size": 288576,
+      "mode": "bilingual"
+    },
+    "267": {
+      "file": "audio/q_267.mp3",
+      "size": 400176,
+      "mode": "bilingual"
+    },
+    "268": {
+      "file": "audio/q_268.mp3",
+      "size": 239760,
+      "mode": "bilingual"
+    },
+    "269": {
+      "file": "audio/q_269.mp3",
+      "size": 322272,
+      "mode": "bilingual"
+    },
+    "270": {
+      "file": "audio/q_270.mp3",
+      "size": 246384,
+      "mode": "bilingual"
+    },
+    "271": {
+      "file": "audio/q_271.mp3",
+      "size": 211824,
+      "mode": "bilingual"
+    },
+    "272": {
+      "file": "audio/q_272.mp3",
+      "size": 300096,
+      "mode": "bilingual"
+    },
+    "273": {
+      "file": "audio/q_273.mp3",
+      "size": 372672,
+      "mode": "bilingual"
+    },
+    "274": {
+      "file": "audio/q_274.mp3",
+      "size": 344592,
+      "mode": "bilingual"
+    },
+    "275": {
+      "file": "audio/q_275.mp3",
+      "size": 338544,
+      "mode": "bilingual"
+    },
+    "276": {
+      "file": "audio/q_276.mp3",
+      "size": 263520,
+      "mode": "bilingual"
+    },
+    "277": {
+      "file": "audio/q_277.mp3",
+      "size": 473040,
+      "mode": "bilingual"
+    },
+    "278": {
+      "file": "audio/q_278.mp3",
+      "size": 263520,
+      "mode": "bilingual"
+    },
+    "279": {
+      "file": "audio/q_279.mp3",
+      "size": 296352,
+      "mode": "bilingual"
+    },
+    "280": {
+      "file": "audio/q_280.mp3",
+      "size": 321696,
+      "mode": "bilingual"
+    },
+    "281": {
+      "file": "audio/q_281.mp3",
+      "size": 307872,
+      "mode": "bilingual"
+    },
+    "282": {
+      "file": "audio/q_282.mp3",
+      "size": 271008,
+      "mode": "bilingual"
+    },
+    "283": {
+      "file": "audio/q_283.mp3",
+      "size": 220176,
+      "mode": "bilingual"
+    },
+    "284": {
+      "file": "audio/q_284.mp3",
+      "size": 316656,
+      "mode": "bilingual"
+    },
+    "285": {
+      "file": "audio/q_285.mp3",
+      "size": 261648,
+      "mode": "bilingual"
+    },
+    "286": {
+      "file": "audio/q_286.mp3",
+      "size": 234288,
+      "mode": "bilingual"
+    },
+    "287": {
+      "file": "audio/q_287.mp3",
+      "size": 250272,
+      "mode": "bilingual"
+    },
+    "288": {
+      "file": "audio/q_288.mp3",
+      "size": 293328,
+      "mode": "bilingual"
+    },
+    "289": {
+      "file": "audio/q_289.mp3",
+      "size": 304272,
+      "mode": "bilingual"
+    },
+    "290": {
+      "file": "audio/q_290.mp3",
+      "size": 242928,
+      "mode": "bilingual"
+    },
+    "291": {
+      "file": "audio/q_291.mp3",
+      "size": 325296,
+      "mode": "bilingual"
+    },
+    "292": {
+      "file": "audio/q_292.mp3",
+      "size": 242928,
+      "mode": "bilingual"
+    },
+    "293": {
+      "file": "audio/q_293.mp3",
+      "size": 290160,
+      "mode": "bilingual"
+    },
+    "294": {
+      "file": "audio/q_294.mp3",
+      "size": 231408,
+      "mode": "bilingual"
+    },
+    "295": {
+      "file": "audio/q_295.mp3",
+      "size": 198720,
+      "mode": "bilingual"
+    },
+    "296": {
+      "file": "audio/q_296.mp3",
+      "size": 263376,
+      "mode": "bilingual"
+    },
+    "297": {
+      "file": "audio/q_297.mp3",
+      "size": 311328,
+      "mode": "bilingual"
+    },
+    "298": {
+      "file": "audio/q_298.mp3",
+      "size": 223920,
+      "mode": "bilingual"
+    },
+    "299": {
+      "file": "audio/q_299.mp3",
+      "size": 205056,
+      "mode": "bilingual"
+    },
+    "300": {
+      "file": "audio/q_300.mp3",
+      "size": 290304,
+      "mode": "bilingual"
+    },
+    "301": {
+      "file": "audio/q_301.mp3",
+      "size": 292176,
+      "mode": "bilingual"
+    },
+    "302": {
+      "file": "audio/q_302.mp3",
+      "size": 257328,
+      "mode": "bilingual"
+    },
+    "303": {
+      "file": "audio/q_303.mp3",
+      "size": 301680,
+      "mode": "bilingual"
+    },
+    "304": {
+      "file": "audio/q_304.mp3",
+      "size": 218448,
+      "mode": "bilingual"
+    },
+    "305": {
+      "file": "audio/q_305.mp3",
+      "size": 222768,
+      "mode": "bilingual"
+    },
+    "306": {
+      "file": "audio/q_306.mp3",
+      "size": 211968,
+      "mode": "bilingual"
+    },
+    "307": {
+      "file": "audio/q_307.mp3",
+      "size": 250704,
+      "mode": "bilingual"
+    },
+    "308": {
+      "file": "audio/q_308.mp3",
+      "size": 210672,
+      "mode": "bilingual"
+    },
+    "309": {
+      "file": "audio/q_309.mp3",
+      "size": 260496,
+      "mode": "bilingual"
+    },
+    "310": {
+      "file": "audio/q_310.mp3",
+      "size": 315648,
+      "mode": "bilingual"
+    },
+    "311": {
+      "file": "audio/q_311.mp3",
+      "size": 216288,
+      "mode": "bilingual"
+    },
+    "312": {
+      "file": "audio/q_312.mp3",
+      "size": 318240,
+      "mode": "bilingual"
+    },
+    "313": {
+      "file": "audio/q_313.mp3",
+      "size": 348480,
+      "mode": "bilingual"
+    },
+    "314": {
+      "file": "audio/q_314.mp3",
+      "size": 351648,
+      "mode": "bilingual"
+    },
+    "315": {
+      "file": "audio/q_315.mp3",
+      "size": 365040,
+      "mode": "bilingual"
+    },
+    "316": {
+      "file": "audio/q_316.mp3",
+      "size": 385776,
+      "mode": "bilingual"
+    },
+    "317": {
+      "file": "audio/q_317.mp3",
+      "size": 186768,
+      "mode": "bilingual"
+    },
+    "318": {
+      "file": "audio/q_318.mp3",
+      "size": 325152,
+      "mode": "bilingual"
+    },
+    "319": {
+      "file": "audio/q_319.mp3",
+      "size": 254592,
+      "mode": "bilingual"
+    },
+    "320": {
+      "file": "audio/q_320.mp3",
+      "size": 204480,
+      "mode": "bilingual"
+    },
+    "321": {
+      "file": "audio/q_321.mp3",
+      "size": 317808,
+      "mode": "bilingual"
+    },
+    "322": {
+      "file": "audio/q_322.mp3",
+      "size": 272592,
       "mode": "bilingual"
     }
   }
