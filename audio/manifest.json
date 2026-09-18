@@ -1,0 +1,59 @@
+{
+  "updatedAt": "2026-09-18T09:55:32+07:00",
+  "mode": "bilingual",
+  "voice_id": "id-ID-ArdiNeural",
+  "voice_en": "en-US-BrianNeural",
+  "rate": "+0%",
+  "totalQuestions": 322,
+  "audios": {
+    "1": {
+      "file": "audio/q_1.mp3",
+      "size": 293184,
+      "mode": "bilingual"
+    },
+    "2": {
+      "file": "audio/q_2.mp3",
+      "size": 257904,
+      "mode": "bilingual"
+    },
+    "3": {
+      "file": "audio/q_3.mp3",
+      "size": 372096,
+      "mode": "bilingual"
+    },
+    "35": {
+      "file": "audio/q_35.mp3",
+      "size": 308880
+    },
+    "36": {
+      "file": "audio/q_36.mp3",
+      "size": 294912
+    },
+    "37": {
+      "file": "audio/q_37.mp3",
+      "size": 238608
+    },
+    "144": {
+      "file": "audio/q_144.mp3",
+      "size": 253872
+    },
+    "145": {
+      "file": "audio/q_145.mp3",
+      "size": 357264
+    },
+    "146": {
+      "file": "audio/q_146.mp3",
+      "size": 227952
+    },
+    "4": {
+      "file": "audio/q_4.mp3",
+      "size": 353520,
+      "mode": "bilingual"
+    },
+    "5": {
+      "file": "audio/q_5.mp3",
+      "size": 319104,
+      "mode": "bilingual"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 // screens/quiz.js — Per-Topic Quiz Engine
 import { QUESTIONS, TOPICS } from '../data.js';
 import { state, showToast } from '../app.js';
+import { audioPlayer } from './audio_player.js';
 
 let keyHandler = null;
 
@@ -39,11 +40,14 @@ export function renderQuiz(container, topicId) {
 
     container.innerHTML = `
       <div class="app-container">
-        <div class="quiz-header">
+        <div class="quiz-header" style="display:flex;justify-content:space-between;align-items:center;">
           <div>
             <div class="quiz-topic-label">${topic.nama}</div>
             <div class="quiz-meta">Soal ${idx + 1} / ${total}</div>
           </div>
+          <button class="btn-listen-inline" id="btn-quiz-audio" data-qid="${q.id}" title="Dengarkan Audio Soal & Pembahasan">
+            🎧 Dengar
+          </button>
         </div>
 
         <div class="progress-track" style="margin-bottom:var(--space-6);">
@@ -122,6 +126,11 @@ export function renderQuiz(container, topicId) {
         </div>
       </div>
     `;
+
+    // Audio button
+    container.querySelector('#btn-quiz-audio')?.addEventListener('click', () => {
+      audioPlayer.playQuestion(q.id);
+    });
 
     // Option click
     container.querySelectorAll('.option-btn').forEach(btn => {

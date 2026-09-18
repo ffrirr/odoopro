@@ -1,5 +1,5 @@
 // sw.js — OdooPro Service Worker (Network-First with Offline Cache Fallback)
-const CACHE_NAME = 'odoopro-v1.1.8';
+const CACHE_NAME = 'odoopro-v1.2.0';
 
 const ASSETS = [
   './',
@@ -16,6 +16,8 @@ const ASSETS = [
   './screens/flashcard.js',
   './screens/hasil.js',
   './screens/progress.js',
+  './screens/audiobook.js',
+  './screens/audio_player.js',
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];
@@ -48,6 +50,16 @@ self.addEventListener('activate', (event) => {
 // Fetch: Network First, fallback to cache when offline
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+
+  const url = new URL(event.request.url);
+
+  // Audio files (.mp3) often use HTTP 206 Range requests; stream directly without forcing cache.put
+  if (url.pathname.endsWith('.mp3') || url.pathname.includes('/audio/')) {
+    event.respondWith(
+      fetch(event.request).catch(() => caches.match(event.request))
+    );
+    return;
+  }
 
   event.respondWith(
     fetch(event.request)

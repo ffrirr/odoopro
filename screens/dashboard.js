@@ -43,6 +43,9 @@ export function renderDashboard(container) {
         <a href="#exam-play?mode=quick" class="btn btn-primary" style="text-decoration:none;text-align:center;">
           Mulai Latihan Acak (120 soal)
         </a>
+        <a href="#audiobook" class="btn btn-ghost" style="text-decoration:none;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px;border-color:var(--color-accent-muted);">
+          <span>🎧 Mode Audiobook (Dengarkan Pembahasan Soal)</span>
+        </a>
         ${dueReviews.length > 0 ? `
           <a href="#exam-play?mode=review" class="btn btn-ghost" style="text-decoration:none;text-align:center;">
             Review Hari Ini (${dueReviews.length} soal)

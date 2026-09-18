@@ -1,6 +1,7 @@
 // screens/flashcard.js — 3D Interactive Flashcards with Spaced Repetition (Mobile-Optimized)
 import { QUESTIONS, TOPICS } from '../data.js';
 import { state, showToast } from '../app.js';
+import { audioPlayer } from './audio_player.js';
 
 let flashcardKeyHandler = null;
 
@@ -42,8 +43,11 @@ export function renderFlashcards(container, topicId) {
               ${topicName} · Kartu ${idx + 1} / ${total}
             </div>
           </div>
-          <!-- Topic selector dropdown / filter chip -->
-          <div>
+          <!-- Topic selector dropdown & audio listen button -->
+          <div style="display:flex;align-items:center;gap:var(--space-2);">
+            <button class="btn-listen-inline" id="btn-flashcard-audio" title="Dengarkan Audio Soal & Pembahasan">
+              🎧 Dengar
+            </button>
             <select id="topic-select" style="background:var(--color-paper-2);color:var(--color-ink);border:1px solid var(--color-border);padding:6px 10px;border-radius:var(--radius-md);font-size:var(--text-xs);cursor:pointer;" aria-label="Pilih Topik">
               <option value="" ${!topicId || topicId === 'all' ? 'selected' : ''}>Semua Topik (${QUESTIONS.length})</option>
               ${TOPICS.map(t => `<option value="${t.id}" ${topicId === t.id ? 'selected' : ''}>${t.nama} (${t.soalCount})</option>`).join('')}
@@ -185,6 +189,11 @@ export function renderFlashcards(container, topicId) {
     `;
 
     // Bind event listeners
+    container.querySelector('#btn-flashcard-audio')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      audioPlayer.playQuestion(q.id);
+    });
+
     const cardEl = container.querySelector('#main-flashcard');
     cardEl?.addEventListener('click', () => {
       isFlipped = !isFlipped;

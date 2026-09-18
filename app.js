@@ -6,6 +6,8 @@ import { renderExam, renderExamQuiz } from './screens/exam.js';
 import { renderFlashcards } from './screens/flashcard.js';
 import { renderHasil } from './screens/hasil.js';
 import { renderProgress } from './screens/progress.js';
+import { renderAudiobook } from './screens/audiobook.js';
+import { audioPlayer } from './screens/audio_player.js';
 import { QUESTIONS, TOPICS } from './data.js';
 
 // ===== TOAST =====
@@ -193,10 +195,81 @@ function updateBottomNav(hash) {
   document.querySelectorAll('.bottom-nav .nav-tab').forEach(t => t.classList.remove('active'));
   let tab = 'dashboard';
   if (hash.startsWith('#topics') || hash.startsWith('#quiz-')) tab = 'topics';
+  else if (hash.startsWith('#audiobook')) tab = 'audiobook';
   else if (hash.startsWith('#exam')) tab = 'exam';
   else if (hash.startsWith('#flashcard')) tab = 'flashcard';
   else if (hash.startsWith('#progress') || hash.startsWith('#hasil')) tab = 'progress';
   document.querySelector(`.bottom-nav [data-tab="${tab}"]`)?.classList.add('active');
+}
+
+// ===== MINI PLAYER SYNC =====
+function updateMiniPlayer() {
+  const mini = document.getElementById('audio-mini-player');
+  if (!mini) return;
+  const hash = window.location.hash || '';
+  const isAudioScreen = hash.startsWith('#audiobook');
+  const s = audioPlayer.getState();
+
+  if (s.isPlaying && !isAudioScreen && s.currentQuestion) {
+    mini.style.display = 'flex';
+    const titleEl = document.getElementById('mini-player-title');
+    const subEl = document.getElementById('mini-player-sub');
+    const toggleBtn = document.getElementById('mini-player-toggle');
+
+    if (titleEl) titleEl.textContent = `Soal #${s.currentQuestion.id}`;
+    if (subEl) subEl.textContent = `${s.currentTopic ? s.currentTopic.nama : ''} · ${s.currentQuestion.soal.slice(0, 40)}…`;
+    if (toggleBtn) {
+      toggleBtn.innerHTML = `
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+          <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+        </svg>
+      `;
+    }
+  } else if (!s.isPlaying && !isAudioScreen && s.currentQuestion && mini.style.display === 'flex') {
+    const toggleBtn = document.getElementById('mini-player-toggle');
+    if (toggleBtn) {
+      toggleBtn.innerHTML = `
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      `;
+    }
+  } else {
+    mini.style.display = 'none';
+  }
+}
+
+function initMiniPlayer() {
+  const miniInfo = document.getElementById('mini-player-info');
+  const miniToggle = document.getElementById('mini-player-toggle');
+  const miniClose = document.getElementById('mini-player-close');
+
+  if (miniInfo) {
+    miniInfo.addEventListener('click', () => {
+      window.location.hash = '#audiobook';
+    });
+  }
+
+  if (miniToggle) {
+    miniToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      audioPlayer.togglePlay();
+    });
+  }
+
+  if (miniClose) {
+    miniClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (audioPlayer.isPlaying) audioPlayer.togglePlay();
+      const mini = document.getElementById('audio-mini-player');
+      if (mini) mini.style.display = 'none';
+    });
+  }
+
+  audioPlayer.on('play', updateMiniPlayer);
+  audioPlayer.on('pause', updateMiniPlayer);
+  audioPlayer.on('change', updateMiniPlayer);
 }
 
 function router() {
@@ -205,6 +278,7 @@ function router() {
   if (!app) return;
 
   updateBottomNav(hash);
+  updateMiniPlayer();
   state.updateHeader();
   window.scrollTo({ top: 0, behavior: 'instant' });
 
@@ -215,6 +289,11 @@ function router() {
   } else if (hash.startsWith('#quiz-')) {
     const topicId = hash.replace('#quiz-', '');
     renderQuiz(app, topicId);
+  } else if (hash.startsWith('#audiobook')) {
+    const params = new URLSearchParams(hash.includes('?') ? hash.split('?')[1] : '');
+    const topicId = params.get('topic') || null;
+    const qId = params.get('q') || null;
+    renderAudiobook(app, topicId, qId);
   } else if (hash === '#exam') {
     renderExam(app);
   } else if (hash.startsWith('#exam-play')) {
@@ -236,6 +315,7 @@ function router() {
 // ===== INIT =====
 window.addEventListener('hashchange', router);
 window.addEventListener('DOMContentLoaded', () => {
+  initMiniPlayer();
   router();
   // Register service worker with auto-update
   if ('serviceWorker' in navigator) {
