@@ -5,7 +5,7 @@ export const TOPICS = [
     "id": "introduction",
     "nama": "Introduction",
     "icon": "home",
-    "soalCount": 45
+    "soalCount": 16
   },
   {
     "id": "sales",
@@ -17,43 +17,43 @@ export const TOPICS = [
     "id": "survey",
     "nama": "Survey",
     "icon": "file-text",
-    "soalCount": 8
+    "soalCount": 9
   },
   {
     "id": "crm",
     "nama": "CRM",
     "icon": "users",
-    "soalCount": 27
+    "soalCount": 24
   },
   {
     "id": "ai",
     "nama": "AI",
     "icon": "bot",
-    "soalCount": 12
+    "soalCount": 14
   },
   {
     "id": "marketing",
     "nama": "Marketing",
     "icon": "megaphone",
-    "soalCount": 6
+    "soalCount": 9
   },
   {
     "id": "website",
     "nama": "Website",
     "icon": "globe",
-    "soalCount": 10
+    "soalCount": 11
   },
   {
     "id": "ecommerce",
     "nama": "eCommerce",
     "icon": "shopping-bag",
-    "soalCount": 6
+    "soalCount": 11
   },
   {
     "id": "knowledge",
     "nama": "Knowledge",
     "icon": "book",
-    "soalCount": 7
+    "soalCount": 8
   },
   {
     "id": "project",
@@ -65,43 +65,43 @@ export const TOPICS = [
     "id": "timesheets",
     "nama": "Timesheets",
     "icon": "clock",
-    "soalCount": 6
+    "soalCount": 10
   },
   {
     "id": "accounting",
     "nama": "Accounting",
     "icon": "dollar-sign",
-    "soalCount": 24
+    "soalCount": 29
   },
   {
     "id": "spreadsheet",
     "nama": "Spreadsheet",
     "icon": "table",
-    "soalCount": 6
+    "soalCount": 7
   },
   {
     "id": "hr",
     "nama": "HR",
     "icon": "user",
-    "soalCount": 10
+    "soalCount": 13
   },
   {
     "id": "pos",
     "nama": "POS",
     "icon": "monitor",
-    "soalCount": 7
+    "soalCount": 6
   },
   {
     "id": "purchase",
     "nama": "Purchase",
     "icon": "truck",
-    "soalCount": 34
+    "soalCount": 18
   },
   {
     "id": "inventory",
     "nama": "Inventory",
     "icon": "archive",
-    "soalCount": 12
+    "soalCount": 33
   },
   {
     "id": "mrp",
@@ -113,7 +113,7 @@ export const TOPICS = [
     "id": "studio",
     "nama": "Studio",
     "icon": "pen-tool",
-    "soalCount": 10
+    "soalCount": 12
   }
 ];
 
@@ -200,7 +200,7 @@ export const QUESTIONS = [
       "From Settings > Users & Companies, update the follower lists for all related records."
     ],
     "jawaban": 0,
-    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
+    "penjelasan": "Di List View, pilih beberapa record sekaligus lalu buka menu Actions dan pilih Add/Remove Followers untuk mengelola follower secara massal, tanpa harus membuka tiap record satu per satu.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
@@ -236,7 +236,7 @@ export const QUESTIONS = [
       "$89.99"
     ],
     "jawaban": 1,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "Diskon 10% dari $99 menghasilkan $89,10, dibulatkan ke $1,00 terdekat menjadi $89,00, lalu extra fee -0,10 diterapkan setelah pembulatan sehingga harga akhir $88,90.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -254,7 +254,7 @@ export const QUESTIONS = [
       "Margins can only be viewed by going to the Reporting header and clicking \"Margins\""
     ],
     "jawaban": 1,
-    "penjelasan": "Margin penjualan dihitung dari selisih antara harga jual (Sales Price) dan harga pokok (Cost Price) pada Sales Order.",
+    "penjelasan": "Setelah opsi Margins diaktifkan di Sales > Configuration > Settings, margin (harga jual dikurangi cost) tampil langsung di sales order, baik per baris maupun totalnya.",
     "referensi": {
       "topikSpesifik": "Sales Margins & Cost Analysis",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/margin.html",
@@ -272,7 +272,7 @@ export const QUESTIONS = [
       "Click the \"Measures\" drop-down menu and select \"Margin\""
     ],
     "jawaban": 2,
-    "penjelasan": "Margin penjualan dihitung dari selisih antara harga jual (Sales Price) dan harga pokok (Cost Price) pada Sales Order.",
+    "penjelasan": "Di laporan Sales Analysis, margin tidak tampil secara default; buka dropdown Measures lalu pilih Margin untuk menambahkannya ke tampilan.",
     "referensi": {
       "topikSpesifik": "Sales Margins & Cost Analysis",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/margin.html",
@@ -282,7 +282,7 @@ export const QUESTIONS = [
   },
   {
     "id": 10,
-    "topic": "sales",
+    "topic": "inventory",
     "soal": "What condition must be true when using a default unit of measure and purchase unit of measure?",
     "pilihan": [
       "The two units of measure must share the same reference unit",
@@ -290,7 +290,7 @@ export const QUESTIONS = [
       "The two units of measure must have the same unit name as each other"
     ],
     "jawaban": 0,
-    "penjelasan": "Konversi satuan hanya dapat dilakukan antar Unit of Measure yang berada dalam Kategori Satuan (UoM Category) yang sama.",
+    "penjelasan": "Di Odoo 19, konversi antar satuan dihitung melalui reference unit, sehingga Unit of Measure default dan Purchase UoM harus memiliki reference unit yang sama (misalnya Units dan Dozens), sedangkan nama satuannya boleh berbeda.",
     "referensi": {
       "topikSpesifik": "Units of Measure (UoM) & Conversions",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/configure/uom.html",
@@ -308,7 +308,7 @@ export const QUESTIONS = [
       "Both are true"
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "Harga dari pricelist menggantikan Sales Price di form produk. Namun, mengganti pricelist pada quotation tidak otomatis menghitung ulang harga baris; harga baru diterapkan dengan tombol Update Prices, sehingga hanya pernyataan A yang benar.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -344,7 +344,7 @@ export const QUESTIONS = [
       "This should be set up with the Product Type \"Combo\", since the appraisal is a service but coming to the customer's location counts as a delivered good"
     ],
     "jawaban": 1,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
+    "penjelasan": "Kunjungan penilaian oleh konsultan bukan barang fisik, jadi Product Type-nya Service. Karena ditagih sebagai jasa sekali dengan harga tetap, Invoicing Policy yang sesuai adalah Prepaid/Fixed Price (berdasarkan ordered quantity).",
     "referensi": {
       "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
@@ -362,7 +362,7 @@ export const QUESTIONS = [
       "Create a Conditional Rule with the minimum purchase set to '50' and create a Reward with Reward Type set to 'Free Product.' Then, create or select 'Tote Bag' in the Product field"
     ],
     "jawaban": 2,
-    "penjelasan": "Program Loyalitas dan Kartu Hadiah (Gift Cards) dapat digunakan secara terintegrasi di modul Sales, POS, dan eCommerce.",
+    "penjelasan": "Untuk syarat belanja minimal $50, isi Minimum Purchase pada Conditional Rule. Pilih Reward Type 'Free Product' dan tentukan produk Tote Bag agar tas otomatis ditambahkan gratis ke pesanan, bukan hanya ditulis sebagai deskripsi.",
     "referensi": {
       "topikSpesifik": "eWallets, Gift Cards & Loyalty Programs",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/ewallets_giftcards.html",
@@ -380,7 +380,7 @@ export const QUESTIONS = [
       "The lunch menu, since you're letting customers choose items for a complete meal rather than selling them individual baked goods"
     ],
     "jawaban": 1,
-    "penjelasan": "Untuk bisnis toko fisik dan online, Odoo mengintegrasikan modul POS di kasir toko dan modul eCommerce di website dengan sinkronisasi inventaris terpusat.",
+    "penjelasan": "Product Type 'Service' dipakai untuk hal tak berwujud yang tidak dikelola stoknya. Kelas membuat roti di rumah adalah jasa atau pengalaman, sedangkan roti dan menu makan siang adalah barang fisik (menu pilihan lebih cocok sebagai Combo).",
     "referensi": {
       "topikSpesifik": "POS & eCommerce Multi-Channel Bakery Store",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
@@ -416,7 +416,7 @@ export const QUESTIONS = [
       "Enable the Score by time option in the Questions tab of the survey."
     ],
     "jawaban": 1,
-    "penjelasan": "Program Loyalitas dan Kartu Hadiah (Gift Cards) dapat digunakan secara terintegrasi di modul Sales, POS, dan eCommerce.",
+    "penjelasan": "Pada tab Options di form survey, bagian Live Session, aktifkan 'Reward quick answers' agar peserta yang menjawab lebih cepat mendapat poin lebih banyak.",
     "referensi": {
       "topikSpesifik": "eWallets, Gift Cards & Loyalty Programs",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/ewallets_giftcards.html",
@@ -452,7 +452,7 @@ export const QUESTIONS = [
       "The results are compared across multiple surveys."
     ],
     "jawaban": 1,
-    "penjelasan": "Odoo Spreadsheet memungkinkan analisis data dinamis langsung dari pivot view dengan sinkronisasi data live.",
+    "penjelasan": "Tombol See results > Analyze Results membuka hasil survey di Odoo Spreadsheet, sehingga jawaban dapat diolah lebih lanjut dengan pivot, grafik, dan formula.",
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
@@ -470,7 +470,7 @@ export const QUESTIONS = [
       "Odoo filters opportunities with a specific activity status across all stages (Planned, Today, Overdue)."
     ],
     "jawaban": 1,
-    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
+    "penjelasan": "Bar warna di atas kolom stage Kanban menunjukkan status aktivitas (hijau = planned, oranye = today, merah = overdue). Mengkliknya hanya menyaring opportunity di stage tersebut, bukan di semua stage.",
     "referensi": {
       "topikSpesifik": "Stages & Kanban Progress Bars",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
@@ -506,7 +506,7 @@ export const QUESTIONS = [
       "The date the opportunity record was removed from the database."
     ],
     "jawaban": 1,
-    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
+    "penjelasan": "Field Closed Date terisi otomatis saat opportunity ditandai Won atau Lost, sehingga mencatat kapan deal tersebut berakhir.",
     "referensi": {
       "topikSpesifik": "Convert Leads into Opportunities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -524,7 +524,7 @@ export const QUESTIONS = [
       "By creating a new opportunity and merging it with the sales order."
     ],
     "jawaban": 1,
-    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
+    "penjelasan": "Buka sales order, lalu pada tab Other Info pilih opportunity yang sudah ada di field Opportunity agar SO tersebut tertaut ke opportunity.",
     "referensi": {
       "topikSpesifik": "Convert Leads into Opportunities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -542,7 +542,7 @@ export const QUESTIONS = [
       "Enrich all leads automatically."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur Lead Enrichment secara otomatis melengkapi data profil perusahaan calon prospek menggunakan teknologi Odoo IAP.",
+    "penjelasan": "Pengaturan Lead Enrichment di CRM Settings hanya menyediakan dua pilihan, yaitu Enrich leads on demand only dan Enrich all leads automatically. Tidak ada opsi berdasarkan perilaku customer.",
     "referensi": {
       "topikSpesifik": "CRM Lead Enrichment & IAP",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/optimize/lead_enrichment.html",
@@ -560,7 +560,7 @@ export const QUESTIONS = [
       "Filter based on company revenue instead of size."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Di wizard Generate Leads (Lead Mining) terdapat opsi Filter on Size untuk membatasi hasil berdasarkan rentang jumlah karyawan perusahaan, dan opsi ini tidak memerlukan Developer Mode.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
@@ -578,7 +578,7 @@ export const QUESTIONS = [
       "Go to Sales > Opportunities and filter by team."
     ],
     "jawaban": 0,
-    "penjelasan": "Mengatur Sales Team dan tahapan pipeline (stages) membantu memonitor alur kerja dan pencapaian target penjualan tiap tim.",
+    "penjelasan": "Buka menu Sales > Teams untuk melihat dashboard Kanban tim penjualan, lalu klik tombol Pipeline pada kartu tim untuk membuka pipeline khusus tim tersebut.",
     "referensi": {
       "topikSpesifik": "Sales Teams & Pipeline Stages",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/manage_sales_teams.html",
@@ -632,7 +632,7 @@ export const QUESTIONS = [
       "They are assigned randomly to any available salesperson."
     ],
     "jawaban": 1,
-    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
+    "penjelasan": "Lead yang masuk dari sumber eksternal seperti email alias dibuat tanpa salesperson dan tetap unassigned sampai diambil secara manual oleh salesperson (atau diproses oleh rule-based assignment jika diaktifkan).",
     "referensi": {
       "topikSpesifik": "Customer Payment Follow-ups",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
@@ -686,7 +686,7 @@ export const QUESTIONS = [
       "In each Topic definition individually."
     ],
     "jawaban": 0,
-    "penjelasan": "Gaya respons AI (Creative, Balanced, Analytical) mengatur tingkat temperatur kreativitas model dalam menjawab pertanyaan.",
+    "penjelasan": "Gaya respons (Creative, Balanced, Analytical) diatur per agent langsung di form konfigurasi AI Agent, bukan di pengaturan global maupun di setiap Topic.",
     "referensi": {
       "topikSpesifik": "AI Response Styles & Temperature Settings",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
@@ -704,7 +704,7 @@ export const QUESTIONS = [
       "It only knows what's stored in its Sources."
     ],
     "jawaban": 1,
-    "penjelasan": "Saat memulai percakapan, AI Agent secara otomatis menerima konteks tentang identitas pengguna, hak akses, dan dokumen yang sedang dibuka.",
+    "penjelasan": "Saat percakapan dibuka dari sebuah record, AI Agent dapat membaca nilai field record yang sedang dilihat sebagai konteks, kecuali aksesnya dibatasi oleh konfigurasi. Jadi pengetahuannya tidak terbatas pada Sources saja.",
     "referensi": {
       "topikSpesifik": "AI Conversation Context & User Details",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
@@ -830,7 +830,7 @@ export const QUESTIONS = [
       "You cannot make any changes specific to the mobile version."
     ],
     "jawaban": 1,
-    "penjelasan": "Editor Website Odoo menyediakan tombol pratinjau mobile untuk menyesuaikan tata letak halaman agar pas di layar smartphone.",
+    "penjelasan": "Dalam mode preview mobile di editor Website, Anda dapat mengubah urutan elemen, ukuran kolom, dan menyembunyikan blok khusus untuk mobile tanpa mengubah layout desktop. Namun, halaman dan theme-nya tetap sama.",
     "referensi": {
       "topikSpesifik": "Responsive Website Design & Mobile Preview",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
@@ -866,7 +866,7 @@ export const QUESTIONS = [
       "On the product form in the backend, in the Attributes menu."
     ],
     "jawaban": 0,
-    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
+    "penjelasan": "Klik smart button Variants di form produk untuk membuka daftar varian. Setiap varian memiliki field Internal Reference sendiri yang dapat diisi berbeda-beda.",
     "referensi": {
       "topikSpesifik": "Product Variants & Attributes",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
@@ -974,7 +974,7 @@ export const QUESTIONS = [
       "Calendar"
     ],
     "jawaban": 2,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime pada dashboard proyek.",
+    "penjelasan": "Saat menjadwalkan ulang task dependen di Gantt view, Odoo memperhitungkan working hours dan time off assignee, tetapi tidak memperhitungkan event di Calendar mereka.",
     "referensi": {
       "topikSpesifik": "Project Management & Burndown Charts",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
@@ -1046,7 +1046,7 @@ export const QUESTIONS = [
       "Add and share custom views"
     ],
     "jawaban": 1,
-    "penjelasan": "Bilah navigasi atas (top bar) proyek menyediakan akses cepat ke ringkasan analitik, dokumen, dan konfigurasi proyek.",
+    "penjelasan": "Top bar proyek memberi akses ke record terkait (misalnya sales order, invoice, timesheet) dan memungkinkan menyimpan serta berbagi custom view. Perpindahan task antar stage secara otomatis diatur lewat automation, bukan dari top bar.",
     "referensi": {
       "topikSpesifik": "Project Navigation & Top Bar Actions",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management.html",
@@ -1064,7 +1064,7 @@ export const QUESTIONS = [
       "Kanban stages in the project"
     ],
     "jawaban": 1,
-    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
+    "penjelasan": "Proyek hanya dapat memiliki satu analytic account per analytic plan, sehingga jumlah analytic account yang bisa diisi dibatasi oleh jumlah analytic plan.",
     "referensi": {
       "topikSpesifik": "Stages & Kanban Progress Bars",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
@@ -1118,7 +1118,7 @@ export const QUESTIONS = [
       "Timesheets require validation by a supervisor before being used by the Payroll or Invoicing app"
     ],
     "jawaban": 2,
-    "penjelasan": "Work Entries di modul Payroll mencatat kehadiran, cuti, dan jam kerja aktual sebagai dasar kalkulasi slip gaji karyawan.",
+    "penjelasan": "Dengan Timesheet Validation aktif, timesheet harus divalidasi atasan terlebih dahulu sebelum dapat digunakan untuk proses selanjutnya seperti Payroll atau Invoicing.",
     "referensi": {
       "topikSpesifik": "Payroll & Work Entries",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/payroll/work_entries.html",
@@ -1136,7 +1136,7 @@ export const QUESTIONS = [
       "Never"
     ],
     "jawaban": 1,
-    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
+    "penjelasan": "Timesheet untuk cuti hanya dibuat otomatis jika opsi Time Off diaktifkan di pengaturan Timesheets. Setelah itu, time off yang disetujui akan tercatat sebagai baris timesheet.",
     "referensi": {
       "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
@@ -1226,7 +1226,7 @@ export const QUESTIONS = [
       "You can modify a single posted journal entry's number by going into developer mode and manually changing the number, or you can change them en masse by selecting the journal entries, resetting them to draft and selecting Resequence from the action menu."
     ],
     "jawaban": 0,
-    "penjelasan": "Untuk mengubah nomor entri jurnal yang sudah diposting (posted), pengguna dengan hak akses penomoran dapat mereset entri ke draft atau mengubah sequence jika diizinkan.",
+    "penjelasan": "Nomor satu entri posted dapat diubah dengan Reset to Draft lalu mengedit nomornya. Untuk banyak entri sekaligus, aktifkan developer mode, pilih entri di list view, lalu jalankan Resequence dari menu Actions.",
     "referensi": {
       "topikSpesifik": "Modifying Posted Journal Entry Numbers",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
@@ -1244,7 +1244,7 @@ export const QUESTIONS = [
       "The default payment terms, default payment method, and outstanding account."
     ],
     "jawaban": 0,
-    "penjelasan": "Pada form Kontak pelanggan, Anda dapat menentukan metode pembayaran default, preferensi pengiriman invoice (email/portal), dan syarat pembayaran (payment terms).",
+    "penjelasan": "Di tab Accounting/Sales & Purchase pada form kontak, Anda dapat menentukan default payment method, metode pengiriman invoice yang diinginkan, dan pengaturan invoice follow-up. Costing method diatur di kategori produk, bukan di kontak.",
     "referensi": {
       "topikSpesifik": "Contact Form Accounting & Invoicing Preferences",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/contacts.html",
@@ -1316,7 +1316,7 @@ export const QUESTIONS = [
       "In the Accounting tab of the customer form, click Send in the Invoice Follow-ups section and select the invoice that needs a reminder."
     ],
     "jawaban": 1,
-    "penjelasan": "Pada laporan Follow-up pelanggan, Anda dapat mengaktifkan pengingat untuk seluruh tagihan yang telah jatuh tempo (overdue invoices) sekaligus.",
+    "penjelasan": "Di laporan Follow-up pelanggan, aktifkan toggle pada kolom No Follow-up untuk invoice yang ingin dikecualikan, sehingga reminder hanya mencakup invoice overdue lainnya.",
     "referensi": {
       "topikSpesifik": "Overdue Invoices Customer Payment Follow-up",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
@@ -1334,7 +1334,7 @@ export const QUESTIONS = [
       "Generate a customizable audit report for that period, including a table of contents, attestations, the balance sheet, a profit and loss statement, annexes, and supporting documents."
     ],
     "jawaban": 1,
-    "penjelasan": "Fitur Audit Trail mencatat setiap riwayat modifikasi jurnal, pembuat transaksi, dan timestamp untuk kepatuhan audit.",
+    "penjelasan": "Fitur audit mencakup keduanya: meninjau working file per siklus dan membuat audit report yang dapat dikustomisasi, serta audit trail non-restriktif yang secara default dapat diakses semua user untuk melacak perubahan.",
     "referensi": {
       "topikSpesifik": "Accounting Audit Trail & Activity Logs",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/cheat_sheet.html",
@@ -1352,7 +1352,7 @@ export const QUESTIONS = [
       "Validating the receipt, confirming the vendor bill, validating the delivery order, and confirming the customer invoice."
     ],
     "jawaban": 2,
-    "penjelasan": "Dalam akuntansi perpetual, jurnal otomatis tercipta saat: validasi penerimaan barang gudang (receipt), validasi pengiriman barang (delivery), dan konfirmasi tagihan vendor (vendor bill).",
+    "penjelasan": "Pada perpetual valuation, validasi receipt (stok masuk), konfirmasi vendor bill, validasi delivery order (COGS/stok keluar), dan konfirmasi customer invoice masing-masing menghasilkan journal entry.",
     "referensi": {
       "topikSpesifik": "Perpetual Inventory Valuation Journal Creation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
@@ -1370,7 +1370,7 @@ export const QUESTIONS = [
       "By default, it is preserved in the same folder unless you check 'Send source file to trash'."
     ],
     "jawaban": 0,
-    "penjelasan": "Saat mengunggah file spreadsheet eksternal ke Odoo Spreadsheet, sistem mengonversinya menjadi dokumen spreadsheet interaktif di aplikasi Documents.",
+    "penjelasan": "Saat file Excel/CSV dibuka dengan Odoo Spreadsheet, file tersebut dikonversi menjadi spreadsheet Odoo dan file aslinya dihapus secara default, kecuali Anda memilih untuk menyimpannya.",
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheet CSV/Excel Upload Behavior",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
@@ -1460,7 +1460,7 @@ export const QUESTIONS = [
       "The Recruitment app automatically sends the 'Recruitment: Schedule Interview' email template when the candidate moves to the Qualified stage; there is no further configuration needed"
     ],
     "jawaban": 0,
-    "penjelasan": "Integrasi Recruitment dan Appointments memungkinkan pengiriman email otomatis berisi tautan bagi pelamar untuk memilih jadwal wawancara mandiri.",
+    "penjelasan": "Pada stage pipeline Recruitment, atur field Email Template ke 'Recruitment: Schedule interview' agar email tersebut otomatis terkirim saat pelamar dipindahkan ke stage itu.",
     "referensi": {
       "topikSpesifik": "Recruitment Interview Self-Scheduling Email",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/appointments.html",
@@ -1514,7 +1514,7 @@ export const QUESTIONS = [
       "Nothing, you proceed with the same order."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur Split Bill pada POS Restaurant membagi pesanan meja menjadi beberapa tagihan terpisah sesuai item yang dipilih pelanggan.",
+    "penjelasan": "Saat Split Bill, item yang dipilih dipindahkan ke order baru (sub-order) yang dibayar terpisah, sementara sisa item tetap berada di order asal.",
     "referensi": {
       "topikSpesifik": "Restaurant POS Bill Splitting & Table Orders",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
@@ -1532,7 +1532,7 @@ export const QUESTIONS = [
       "Customer account."
     ],
     "jawaban": 0,
-    "penjelasan": "Pada saat checkout kasir, sistem memilih metode pembayaran default (seperti Cash) jika kasir langsung menekan tombol bayar tanpa memilih opsi lain.",
+    "penjelasan": "Jika kasir tidak memilih metode pembayaran secara eksplisit, register menggunakan Cash sebagai metode pembayaran default.",
     "referensi": {
       "topikSpesifik": "POS Register Default Payment Method",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
@@ -1568,7 +1568,7 @@ export const QUESTIONS = [
       "The bill uploads and is automatically marked payable in full regardless of receipts"
     ],
     "jawaban": 0,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
+    "penjelasan": "Dengan 3-way matching, upload vendor bill tidak diblokir; bill tetap dibuat, tetapi field 'Should Be Paid' bernilai 'No' karena barang belum diterima, dan baru menjadi 'Yes' setelah kuantitas diterima sesuai tagihan.",
     "referensi": {
       "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
@@ -1586,7 +1586,7 @@ export const QUESTIONS = [
       "The vendor with the cheapest price"
     ],
     "jawaban": 0,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "RFQ otomatis (mis. dari reordering rule) menggunakan vendor pertama pada daftar vendor di tab Purchase produk yang memenuhi syarat minimum quantity; urutan baris menentukan prioritas, bukan harga termurah atau lead time terpendek.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -1604,7 +1604,7 @@ export const QUESTIONS = [
       "No"
     ],
     "jawaban": 0,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Dengan Average Cost (AVCO), setiap penerimaan barang menghitung ulang cost produk sebagai rata-rata tertimbang antara nilai stok yang ada dan harga barang yang masuk, sehingga cost di form produk berubah saat receipt divalidasi.",
     "referensi": {
       "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
@@ -1676,7 +1676,7 @@ export const QUESTIONS = [
       "It looks at quantities delivered over the past 7 days to compute daily demand, then multiplies by 15 and subtracts on-hand stock"
     ],
     "jawaban": 2,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Dengan 'Based On' Last 7 days, Odoo menghitung rata-rata permintaan harian dari kuantitas yang terkirim selama 7 hari terakhir, mengalikannya dengan 15 hari ('Replenish for'), lalu mengurangi stok on hand untuk menyarankan kuantitas pembelian.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -1686,7 +1686,7 @@ export const QUESTIONS = [
   },
   {
     "id": 93,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "Your warehouse is set up to deliver in three steps: pick, pack, and ship. In the 'Pick' step, you are supposed to pick 10 chairs and 5 desks, but you accidentally pick 15 chairs and 2 desks. You select 'No Backorder' during the process. What will be the result in the 'Pack' step?",
     "pilihan": [
       "15 chairs, 2 desks",
@@ -1694,7 +1694,7 @@ export const QUESTIONS = [
       "10 chairs, 2 desks"
     ],
     "jawaban": 0,
-    "penjelasan": "Pengiriman 3 langkah membagi proses menjadi: pengambilan barang di rak (Pick), pengepakan di meja pack (Pack), dan pengiriman ke kurir (Ship).",
+    "penjelasan": "Dengan 'No Backorder', langkah Pick divalidasi sesuai kuantitas yang benar-benar diambil (15 kursi, 2 meja) tanpa membuat backorder untuk kekurangannya, sehingga transfer Pack menerima persis 15 kursi dan 2 meja.",
     "referensi": {
       "topikSpesifik": "3-Step Delivery Route (Pick + Pack + Ship)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
@@ -1704,7 +1704,7 @@ export const QUESTIONS = [
   },
   {
     "id": 94,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "When performing an inventory adjustment that increases a product's stock from 0 to 5 units, what are the 'Location Types' of the locations involved in the resulting stock move?",
     "pilihan": [
       "A move from an 'Internal Location' to an 'Inventory Adjustment' location",
@@ -1722,7 +1722,7 @@ export const QUESTIONS = [
   },
   {
     "id": 96,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "If a product has been reserved for sales orders and you perform an 'Inventory Adjustment' to set the on-hand quantity to 0, what will happen to the forecasted quantity of that product?",
     "pilihan": [
       "The forecasted quantity is updated to 0",
@@ -1740,7 +1740,7 @@ export const QUESTIONS = [
   },
   {
     "id": 97,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "When you update on-hand quantities from 5 units to 4 for a specific product, what stock moves are created?",
     "pilihan": [
       "A move of 4 units from an 'Internal Location' to an 'Inventory Loss' location",
@@ -1758,7 +1758,7 @@ export const QUESTIONS = [
   },
   {
     "id": 98,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "You're configuring a packaging called \"Pack of 6\" to sell six soda bottles together. Soda's base unit of measure is units. You set the Package Type to Carton (representing the cardboard six-pack holder). On a delivery order for 6 units of soda and click \"Put in Pack\", what effect does this configuration have?",
     "pilihan": [
       "Create a new package with the Package Type \"Carton\", with all 6 sodas inside",
@@ -1766,7 +1766,7 @@ export const QUESTIONS = [
       "Creates one package containing all 6 sodas, but no Package Type is set, because it's not a thing"
     ],
     "jawaban": 0,
-    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
+    "penjelasan": "Karena packaging 'Pack of 6' memiliki Package Type Carton, 'Put in Pack' membuat package bertipe Carton berisi keenam soda; kuantitas di delivery order tetap tercatat 6 Units dan tidak dikonversi menjadi 1 'Pack of 6'.",
     "referensi": {
       "topikSpesifik": "Packages & Move Entire Package",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
@@ -1776,7 +1776,7 @@ export const QUESTIONS = [
   },
   {
     "id": 99,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "Where is the \"Count Entire Locations\" Barcode feature configured?",
     "pilihan": [
       "In Inventory > Configuration > Settings, under the Barcode section, enable the \"Count Entire Locations\" feature",
@@ -1794,7 +1794,7 @@ export const QUESTIONS = [
   },
   {
     "id": 100,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "What does the 'i' button on the Replenishment dashboard NOT do?",
     "pilihan": [
       "Display the forecasted arrival date of the product",
@@ -1838,7 +1838,7 @@ export const QUESTIONS = [
       "4 MOs with 30 each"
     ],
     "jawaban": 0,
-    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen, sub-rakitan (kit), dan produk sampingan (by-products) dalam proses manufaktur.",
+    "penjelasan": "MPS membagi kebutuhan sesuai Batch Size pada BoM, sehingga permintaan 110 unit menghasilkan dua MO berisi 40 unit dan satu MO berisi sisa 30 unit.",
     "referensi": {
       "topikSpesifik": "Bills of Materials (BoM) & Kits",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/kit_shipping.html",
@@ -1856,7 +1856,7 @@ export const QUESTIONS = [
       "You must manually create five separate Manufacturing Orders, each for quantity 1, so that Odoo assigns a serial number to each finished product individually"
     ],
     "jawaban": 0,
-    "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
+    "penjelasan": "Setelah Custom Lot/Serial diaktifkan pada produk, tombol 'Generate Serial' di MO membuat sekaligus lima serial number untuk seluruh produk jadi, tanpa perlu memecah MO atau membuat backorder.",
     "referensi": {
       "topikSpesifik": "Lots & Serial Numbers Traceability",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/product_tracking.html",
@@ -1874,7 +1874,7 @@ export const QUESTIONS = [
       "The demand forecast input in the MPS this time last year and two years ago respectively"
     ],
     "jawaban": 0,
-    "penjelasan": "MPS merencanakan kebutuhan produksi dan pengadaan jangka panjang berdasarkan ramalan penjualan (demand forecast).",
+    "penjelasan": "Baris Actual Demand Y-1 dan Y-2 di MPS menampilkan kuantitas produk yang terjual pada periode yang sama satu dan dua tahun sebelumnya sebagai pembanding forecast, bukan forecast MPS lama atau kuantitas yang dikirim.",
     "referensi": {
       "topikSpesifik": "Master Production Schedule (MPS)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/mps.html",
@@ -1892,7 +1892,7 @@ export const QUESTIONS = [
       "The work center that will finish the task the soonest"
     ],
     "jawaban": 2,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Jika work center memiliki Alternative Workcenters, Odoo menjadwalkan work order di work center yang dapat menyelesaikannya paling cepat berdasarkan ketersediaan, bukan yang kapasitasnya tertinggi atau biayanya terendah.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -1946,7 +1946,7 @@ export const QUESTIONS = [
       "The product being manufactured"
     ],
     "jawaban": 0,
-    "penjelasan": "Kartu MO di Shop Floor menampilkan nomor order produksi, produk jadi, daftar komponen yang diperlukan, dan tahapan instruksi kerja.",
+    "penjelasan": "Kartu MO di Shop Floor menampilkan nomor MO, produk yang dibuat beserta kuantitasnya, serta work order/komponennya, tetapi tidak menampilkan estimasi waktu penyelesaian MO.",
     "referensi": {
       "topikSpesifik": "Shop Floor Manufacturing Order Cards & Steps",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing.html",
@@ -1964,7 +1964,7 @@ export const QUESTIONS = [
       "Any employee is allowed to operate the work center"
     ],
     "jawaban": 2,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Jika field 'Allowed Employees' pada work center dikosongkan, tidak ada pembatasan sehingga semua karyawan boleh mengoperasikan work center tersebut.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -1982,7 +1982,7 @@ export const QUESTIONS = [
       "Manufacturing app -> Operations -> Work Orders -> select work order"
     ],
     "jawaban": 0,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Biaya pemrosesan tiap work order dilihat dari MO dengan membuka smart button Overview (MO Overview), pada bagian Operations yang merinci durasi dan biaya setiap operasi.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -2072,7 +2072,7 @@ export const QUESTIONS = [
       "Sequential Approval."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur Approvals pada tombol aksi mewajibkan persetujuan dari grup pengguna tertentu sebelum transaksi dapat diproses.",
+    "penjelasan": "Opsi 'Exclusive Approval' pada approval rule memastikan user yang sudah menyetujui satu langkah tidak dapat menyetujui langkah lain pada record yang sama, sehingga setiap langkah disetujui oleh orang berbeda.",
     "referensi": {
       "topikSpesifik": "Studio Button Approval Rules & User Access",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
@@ -2090,7 +2090,7 @@ export const QUESTIONS = [
       "Use the 'Send Email' action and set the action to 'Message'."
     ],
     "jawaban": 0,
-    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
+    "penjelasan": "Pada automation rule dengan trigger perubahan stage ke 'In Progress', action 'Add Followers' bertipe Dynamic Followers mengambil partner dari field record (mis. Customer) sehingga customer otomatis menjadi follower.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
@@ -2108,7 +2108,7 @@ export const QUESTIONS = [
       "Company and Not-for-Profit."
     ],
     "jawaban": 0,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
+    "penjelasan": "Saat membuat kontak, Odoo menyediakan dua tipe: Person (individu) dan Company (perusahaan); kontak Person dapat ditautkan ke sebuah Company.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
@@ -2126,7 +2126,7 @@ export const QUESTIONS = [
       "When a record is archived, nobody can ever modify it, it's frozen forever."
     ],
     "jawaban": 1,
-    "penjelasan": "Pelacakan lot/serial number memungkinkan penelusuran riwayat pergerakan produk dari penerimaan vendor hingga pengiriman ke customer.",
+    "penjelasan": "Record yang di-archive disembunyikan dari tampilan dan pencarian biasa (tidak aktif), tetapi datanya tetap tersimpan, bisa ditampilkan lewat filter Archived, dan dapat di-unarchive kapan saja.",
     "referensi": {
       "topikSpesifik": "Lots & Serial Numbers Traceability",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/product_tracking.html",
@@ -2144,7 +2144,7 @@ export const QUESTIONS = [
       "Open the Activities panel from the record header and use \"Add Activity\" to define the activity details."
     ],
     "jawaban": 0,
-    "penjelasan": "Pesan (Send Message) di chatter mengirim notifikasi ke followers dan customer, sedangkan Log Note hanya terlihat secara internal.",
+    "penjelasan": "Activity dijadwalkan dengan mengklik tombol 'Activity' di bagian atas chatter, lalu memilih activity type, due date, assignee, dan menambahkan catatan.",
     "referensi": {
       "topikSpesifik": "Chatter, Log Notes & Activities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/activities.html",
@@ -2180,7 +2180,7 @@ export const QUESTIONS = [
       "Either a target or achievement-based commission plan"
     ],
     "jawaban": 0,
-    "penjelasan": "Modul Commissions memungkinkan pengaturan skema komisi bagi tim penjualan berdasarkan target omzet atau pencapaian kuota.",
+    "penjelasan": "Target-based commission plan memberi komisi berdasarkan tingkat pencapaian terhadap target penjualan yang ditetapkan per periode (mis. per kuartal), sedangkan achievement-based menghitung komisi dari persentase nilai penjualan tanpa target tetap.",
     "referensi": {
       "topikSpesifik": "Sales Commissions Plans",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/commissions.html",
@@ -2216,7 +2216,7 @@ export const QUESTIONS = [
       "Submit partial payments and down payments for invoices (if the payment terms allow)"
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "Di customer portal, customer dapat melihat dan membayar invoice (termasuk pembayaran sebagian/down payment bila payment terms mengizinkan) serta mengisi eWallet, tetapi tidak dapat mengelola pricelist karena pricelist hanya diatur oleh internal user.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -2270,7 +2270,7 @@ export const QUESTIONS = [
       "Both"
     ],
     "jawaban": 2,
-    "penjelasan": "Program Loyalitas dan Kartu Hadiah (Gift Cards) dapat digunakan secara terintegrasi di modul Sales, POS, dan eCommerce.",
+    "penjelasan": "Gift card dapat di-generate untuk Anonymous Customers (tanpa pemilik tertentu) maupun untuk Selected Customers melalui tombol Generate Gift Cards pada program.",
     "referensi": {
       "topikSpesifik": "eWallets, Gift Cards & Loyalty Programs",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/ewallets_giftcards.html",
@@ -2298,7 +2298,7 @@ export const QUESTIONS = [
   },
   {
     "id": 131,
-    "topic": "sales",
+    "topic": "ecommerce",
     "soal": "How do you configure an upsell product to appear on the bottom of another product page in your eCommerce store?",
     "pilihan": [
       "In the 'Sales' tab of your eCommerce product, enter the upsell product in the 'Alternative Products' field",
@@ -2306,7 +2306,7 @@ export const QUESTIONS = [
       "There is no way to add an upsell product to the bottom a product page in the eCommerce store."
     ],
     "jawaban": 0,
-    "penjelasan": "Optional Products memungkinkan penawaran produk pelengkap atau alternatif kepada customer langsung di portal web customer.",
+    "penjelasan": "Produk upsell yang tampil di bagian bawah halaman produk eCommerce diatur dengan mengisi field 'Alternative Products' di tab Sales pada form produk.",
     "referensi": {
       "topikSpesifik": "Optional Products & Upselling",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/optional_products.html",
@@ -2360,7 +2360,7 @@ export const QUESTIONS = [
       "Matrix Questions."
     ],
     "jawaban": 0,
-    "penjelasan": "Pada mode Live Session, host dapat mengatur jeda waktu per pertanyaan, menampilkan papan skor langsung, dan mengunci jawaban.",
+    "penjelasan": "Live Session dikendalikan host pertanyaan demi pertanyaan (dengan batas waktu per pertanyaan), sehingga pengaturan batas waktu untuk keseluruhan survey (Survey time limit) tidak tersedia.",
     "referensi": {
       "topikSpesifik": "Survey Live Session Host Controls",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
@@ -2378,7 +2378,7 @@ export const QUESTIONS = [
       "They have the exact same tags"
     ],
     "jawaban": 0,
-    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
+    "penjelasan": "Odoo mendeteksi lead sebagai duplikat yang dapat di-merge jika memiliki alamat email yang sama; kesamaan nama opportunity atau tag tidak dijadikan kriteria duplikat.",
     "referensi": {
       "topikSpesifik": "Convert Leads into Opportunities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -2414,7 +2414,7 @@ export const QUESTIONS = [
       "Only opportunities that have scheduled activities."
     ],
     "jawaban": 0,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
+    "penjelasan": "Smart button Opportunities pada kontak perusahaan menampilkan semua opportunity milik perusahaan tersebut beserta kontak-kontak individunya, tanpa memfilter status won atau aktivitas terjadwal.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
@@ -2432,7 +2432,7 @@ export const QUESTIONS = [
       "All CRM users."
     ],
     "jawaban": 2,
-    "penjelasan": "Laporan Analisis CRM dan Pipeline dapat diakses oleh manajer penjualan untuk mengevaluasi performa konversi tim.",
+    "penjelasan": "Menu Reporting di app CRM tersedia untuk semua user CRM, bukan hanya manager atau administrator; data yang tampil mengikuti hak akses masing-masing user.",
     "referensi": {
       "topikSpesifik": "CRM Pipeline Reporting & Win/Loss Analysis",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/performance/win_loss.html",
@@ -2450,7 +2450,7 @@ export const QUESTIONS = [
       "When a salesperson wants to impress a client."
     ],
     "jawaban": 0,
-    "penjelasan": "Property fields memungkinkan penambahan field kustom tanpa mengubah struktur tabel database utama.",
+    "penjelasan": "Property field ditambahkan pada opportunity ketika tim sales perlu mencatat informasi spesifik yang tidak tersedia di field standar, dan property tersebut berlaku untuk opportunity di Sales Team yang sama.",
     "referensi": {
       "topikSpesifik": "Property Fields Configuration",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/property_fields.html",
@@ -2486,7 +2486,7 @@ export const QUESTIONS = [
       "Knowledge articles and docs from the Documents app only."
     ],
     "jawaban": 1,
-    "penjelasan": "Sumber basis data AI Agent dapat berupa artikel Knowledge, dokumen PDF, model database Odoo, atau URL eksternal.",
+    "penjelasan": "Sources AI Agent dapat berupa file yang diunggah, artikel Knowledge, dokumen dari app Documents, dan tautan website, yang menjadi dasar pengetahuan untuk jawaban agen.",
     "referensi": {
       "topikSpesifik": "AI Agent Knowledge Sources & Document Attachments",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
@@ -2540,7 +2540,7 @@ export const QUESTIONS = [
       "To insert dynamic values in the subject line."
     ],
     "jawaban": 2,
-    "penjelasan": "Tombol AI di samping subjek email menghasilkan variasi judul email yang menarik untuk meningkatkan open rate kampanye newsletter.",
+    "penjelasan": "Tombol di samping field Subject membuka pemilih dynamic placeholder untuk menyisipkan nilai dinamis (mis. nama penerima) ke dalam subjek email.",
     "referensi": {
       "topikSpesifik": "Email Marketing AI Subject Line Generator",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
@@ -2558,7 +2558,7 @@ export const QUESTIONS = [
       "Sending the same email to two different mailing lists, so the mailing list with the fewest open rates is archived."
     ],
     "jawaban": 0,
-    "penjelasan": "Modul Email Marketing mengelola pengiriman buletin massal, segmentasi mailing list, dan pelacakan tingkat keterbukaan email (open rate).",
+    "penjelasan": "A/B test mengirim beberapa versi email ke sebagian kecil penerima di mailing list; versi dengan performa terbaik (mis. open rate atau click rate tertinggi) kemudian dikirim ke sisa kontak.",
     "referensi": {
       "topikSpesifik": "Email Marketing & Mass Mailing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
@@ -2594,7 +2594,7 @@ export const QUESTIONS = [
       "By activating developer mode and enabling it in the website properties."
     ],
     "jawaban": 1,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Cookie bar yang dapat dikustomisasi diaktifkan dengan mencentang opsi Cookies Bar di Website > Configuration > Settings, bukan dari tab Style atau developer mode.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
@@ -2612,7 +2612,7 @@ export const QUESTIONS = [
       "By clicking Website > Site > Properties."
     ],
     "jawaban": 1,
-    "penjelasan": "Pengaturan popup newsletter di website memungkinkan penyesuaian teks ajakan, waktu muncul (delay), dan integrasi milis email.",
+    "penjelasan": "Popup tidak selalu muncul di mode Edit, sehingga untuk mengeditnya klik 'Newsletter Popup' pada bagian 'Invisible Elements' di bawah panel website editor.",
     "referensi": {
       "topikSpesifik": "Website Newsletter Popup Customization",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
@@ -2648,7 +2648,7 @@ export const QUESTIONS = [
       "You cannot link an image to a URL on your website."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Di website editor, pilih gambar lalu tambahkan URL melalui opsi link pada media tersebut sehingga gambar menjadi hyperlink, tanpa perlu developer mode.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
@@ -2666,7 +2666,7 @@ export const QUESTIONS = [
       "Optional products"
     ],
     "jawaban": 0,
-    "penjelasan": "Optional Products memungkinkan penawaran produk pelengkap atau alternatif kepada customer langsung di portal web customer.",
+    "penjelasan": "Alternative products ditampilkan di halaman produk untuk menawarkan produk serupa; optional products muncul saat produk ditambahkan ke keranjang, dan accessory products saat checkout.",
     "referensi": {
       "topikSpesifik": "Optional Products & Upselling",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/sales_quotations/optional_products.html",
@@ -2738,7 +2738,7 @@ export const QUESTIONS = [
       "You can still edit it, even if you're not the author."
     ],
     "jawaban": 1,
-    "penjelasan": "Mengunci artikel (Lock Article) di Workspace mencegah perubahan isi konten yang tidak disengaja oleh staf lain.",
+    "penjelasan": "Artikel Workspace yang dikunci menjadi read-only sehingga hanya bisa dibaca oleh siapa pun, sampai kuncinya dibuka kembali oleh user yang memiliki hak edit.",
     "referensi": {
       "topikSpesifik": "Knowledge Article Locking & Read-Only Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
@@ -2774,7 +2774,7 @@ export const QUESTIONS = [
       "Both when a task reaches a specific stage or on a periodic basis"
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo dapat secara otomatis mengirimkan email survei kepuasan bintang/rating kepada klien saat tugas mencapai stage tertentu.",
+    "penjelasan": "Permintaan rating task dapat dikirim otomatis ketika task mencapai stage tertentu (stage dengan rating email template) maupun secara periodik, misalnya setiap bulan.",
     "referensi": {
       "topikSpesifik": "Customer Ratings on Project Tasks",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/customer_ratings.html",
@@ -2810,7 +2810,7 @@ export const QUESTIONS = [
       "Only invited internal users and users with the access right \"Project Administrator\""
     ],
     "jawaban": 2,
-    "penjelasan": "Proyek privat hanya dapat dilihat oleh karyawan yang secara eksplisit diundang dan manajer proyek.",
+    "penjelasan": "Project private (visibility 'Invited internal users') hanya dapat dilihat oleh internal user yang diundang serta user dengan hak akses Project Administrator; portal user tidak dapat melihatnya.",
     "referensi": {
       "topikSpesifik": "Private Projects Access Rights",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management.html",
@@ -2828,7 +2828,7 @@ export const QUESTIONS = [
       "The number of canceled tasks"
     ],
     "jawaban": 0,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime pada dashboard proyek.",
+    "penjelasan": "Burndown chart menampilkan jumlah task di setiap stage pada titik waktu tertentu, sehingga terlihat progres task menuju stage akhir; grafik ini tidak menghitung rating atau task yang dibatalkan.",
     "referensi": {
       "topikSpesifik": "Project Management & Burndown Charts",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
@@ -2846,7 +2846,7 @@ export const QUESTIONS = [
       "Analytic items"
     ],
     "jawaban": 2,
-    "penjelasan": "Dashboard Overview proyek menampilkan grafik profitabilitas, jam kerja tercatat, dan dokumen terkait tugas.",
+    "penjelasan": "Top bar project dapat menampilkan elemen terkait seperti Products dan Sales Orders, tetapi Analytic Items tidak termasuk elemen yang dapat ditambahkan ke top bar.",
     "referensi": {
       "topikSpesifik": "Project Overview Dashboard Elements",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
@@ -2864,7 +2864,7 @@ export const QUESTIONS = [
       "15 minutes"
     ],
     "jawaban": 2,
-    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
+    "penjelasan": "Dengan pengaturan default Timesheets, entri dari timer memiliki durasi minimum 15 menit dan dibulatkan ke atas ke kelipatan 15 menit, sehingga timer 4 menit 30 detik tercatat sebagai 15 menit.",
     "referensi": {
       "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
@@ -2882,7 +2882,7 @@ export const QUESTIONS = [
       "Set the invoice's fiscal position to 'Detect Automatically'."
     ],
     "jawaban": 0,
-    "penjelasan": "Fiscal position secara otomatis memetakan akun dan jenis pajak berdasarkan lokasi geografis atau status perpajakan customer/vendor.",
+    "penjelasan": "Pada fiscal position, isi Country lalu aktifkan 'Detect Automatically'; Odoo akan menerapkannya otomatis ke kontak yang negaranya cocok. Opsi ini tidak ada di record customer maupun invoice.",
     "referensi": {
       "topikSpesifik": "Fiscal Positions & Tax Account Mapping",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/taxes/fiscal_positions.html",
@@ -2918,7 +2918,7 @@ export const QUESTIONS = [
       "In developer mode, go to the Advanced Settings tab of each journal that you want to cancel journal entries in, enable the Cancel Posted Entries With Hash field, and set the specific date."
     ],
     "jawaban": 0,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Mengisi Invoicing Switch Threshold di Accounting settings membuat semua journal entry bertanggal sebelum tanggal tersebut otomatis dibatalkan dan tidak lagi dihitung di akuntansi. Action > Cancel di list view bersifat manual, bukan otomatis.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
@@ -2972,7 +2972,7 @@ export const QUESTIONS = [
       "Set the Lock Purchases date."
     ],
     "jawaban": 2,
-    "penjelasan": "Lock dates mengunci periode pembukuan agar transaksi sebelum tanggal tersebut tidak dapat diubah oleh staf akuntansi.",
+    "penjelasan": "Lock Purchases mengunci entri purchase (vendor bills) sampai tanggal tersebut tanpa mengunci sales atau journal lain. Di Odoo 19 penguncian semua entri memakai Lock Everything, dan field 'Lock Bills' tidak ada.",
     "referensi": {
       "topikSpesifik": "Accounting Lock Dates & Year-End Closing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/reporting/year_end.html",
@@ -2990,7 +2990,7 @@ export const QUESTIONS = [
       "In perpetual accounting, vendor bills are recorded as expenses, and the inventory (stock valuation) is adjusted in the closing entry."
     ],
     "jawaban": 0,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Pada metode periodic, vendor bill dicatat langsung sebagai expense dan nilai persediaan (stock valuation) disesuaikan lewat closing entry di akhir periode. Mencatat bill sebagai aset lalu dibebankan saat terjual adalah ciri metode perpetual.",
     "referensi": {
       "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
@@ -3026,7 +3026,7 @@ export const QUESTIONS = [
       "The product is not available for delivery in the requested quantity."
     ],
     "jawaban": 1,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Baris PO berwarna merah menandakan baris tersebut akan melampaui analytic budget yang ditetapkan jika PO dikonfirmasi, sehingga pembeli dapat meninjaunya dulu.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -3044,7 +3044,7 @@ export const QUESTIONS = [
       "You can click on this icon to change the regional settings of spreadsheet if they don't match those of your own user profile."
     ],
     "jawaban": 1,
-    "penjelasan": "Odoo Spreadsheet memungkinkan analisis data dinamis langsung dari pivot view dengan sinkronisasi data live.",
+    "penjelasan": "Ikon globe biru muncul ketika regional settings spreadsheet (format tanggal, pemisah ribuan dan desimal) berbeda dengan pengaturan bahasa di profil user Anda; ikon ini hanya indikator informasi.",
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
@@ -3062,7 +3062,7 @@ export const QUESTIONS = [
       "Real−time data streaming shows live updates to the data while the chart is expanded."
     ],
     "jawaban": 1,
-    "penjelasan": "Dashboard Spreadsheet menyediakan filter rentang waktu interaktif untuk membatasi analisis data secara dinamis.",
+    "penjelasan": "Saat chart time-series di dashboard dibuka full screen, Anda dapat zoom ke rentang waktu tertentu dan menggeser maju-mundur sepanjang sumbu waktu. Sumber data tidak bisa diedit dari tampilan ini dan tidak ada streaming real-time.",
     "referensi": {
       "topikSpesifik": "Spreadsheet Time-Series Filters on Dashboard",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
@@ -3080,7 +3080,7 @@ export const QUESTIONS = [
       "It assigns the same goal to multiple employees at one time"
     ],
     "jawaban": 1,
-    "penjelasan": "Modul Email Marketing mengelola pengiriman buletin massal, segmentasi mailing list, dan pelacakan tingkat keterbukaan email (open rate).",
+    "penjelasan": "Tombol Launch Campaign di Appraisals memungkinkan penjadwalan banyak appraisal sekaligus untuk beberapa karyawan, tanpa membuatnya satu per satu.",
     "referensi": {
       "topikSpesifik": "Email Marketing & Mass Mailing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/email_marketing.html",
@@ -3116,7 +3116,7 @@ export const QUESTIONS = [
       "For returned products only."
     ],
     "jawaban": 0,
-    "penjelasan": "Kasir dapat mencetak struk belanja biasa atau membuat Invoice resmi Odoo jika pelanggan membutuhkan faktur penagihan formal.",
+    "penjelasan": "Global invoice dipakai untuk menggabungkan semua order POS dari customer yang sama ke dalam satu invoice, bukan dibuat per order.",
     "referensi": {
       "topikSpesifik": "POS Invoicing & Customer Sales Receipts",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
@@ -3134,7 +3134,7 @@ export const QUESTIONS = [
       "The purchase is automatically refunded."
     ],
     "jawaban": 1,
-    "penjelasan": "Credit note digunakan untuk membatalkan atau mengurangi tagihan customer saat terjadi retur barang atau koreksi harga.",
+    "penjelasan": "Metode pembayaran Customer Account mencatat pembelian sebagai piutang (utang customer) di akun kontaknya sampai customer melunasinya kemudian.",
     "referensi": {
       "topikSpesifik": "Credit Notes and Customer Refunds",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/credit_notes.html",
@@ -3152,7 +3152,7 @@ export const QUESTIONS = [
       "A new sales order must be created for the remaining amount."
     ],
     "jawaban": 0,
-    "penjelasan": "Uang muka (Down Payment) dapat ditagihkan dalam bentuk persentase atau nominal tetap sebelum barang dikirim.",
+    "penjelasan": "Saat melunasi sisa sales order di POS, down payment yang sudah dibayar otomatis dikurangkan sehingga customer hanya membayar sisa tagihan untuk menyelesaikan order.",
     "referensi": {
       "topikSpesifik": "Down Payments Invoicing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/down_payment.html",
@@ -3170,7 +3170,7 @@ export const QUESTIONS = [
       "The route on the product is set as 'Manufacture' and a quotation is created"
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "RFQ dibuat otomatis oleh reordering rule jika produk dapat dibeli (Purchase dicentang) dan memiliki vendor di vendor pricelist. Route Buy saja tidak membuat RFQ saat sales order dikonfirmasi tanpa MTO atau reordering rule.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -3188,7 +3188,7 @@ export const QUESTIONS = [
       "The one with the biggest quantity under the quantity ordered"
     ],
     "jawaban": 1,
-    "penjelasan": "Jika ada beberapa baris harga untuk vendor yang sama, Odoo memilih baris dengan kuantitas minimum yang paling sesuai dengan jumlah pesanan.",
+    "penjelasan": "Jika ada beberapa baris vendor pricelist untuk vendor yang sama, Odoo memilih harga termurah di antara baris yang syarat minimum quantity-nya terpenuhi oleh jumlah pesanan.",
     "referensi": {
       "topikSpesifik": "Vendor Pricelist Selection Hierarchy",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/agreements.html",
@@ -3224,7 +3224,7 @@ export const QUESTIONS = [
       "Yes, the Discount can be modified directly on the purchase order line when creating an RFQ"
     ],
     "jawaban": 2,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "Discount dari vendor pricelist hanya menjadi nilai default di baris RFQ; nilai Discount (%) tetap dapat diubah langsung pada purchase order line.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -3242,7 +3242,7 @@ export const QUESTIONS = [
       "Yes, by selecting two RFQs from the RFQs overview page, clicking the 'gear' icon, and clicking 'create alternative quotation'"
     ],
     "jawaban": 0,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Di RFQ, buka tab Alternatives, klik 'Create Alternative', pilih vendor lain dan centang 'Copy Products' untuk membuat RFQ alternatif dengan produk yang sama lalu membandingkan harganya.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -3252,7 +3252,7 @@ export const QUESTIONS = [
   },
   {
     "id": 186,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "The Forecasted report shows \"Time to Replenish = 8 days\" for a product with low on-hand quantity. The forecasted quantity will reach 0 in 8 days. What should you do based on this information?",
     "pilihan": [
       "Click \"Replenish\" to trigger replenishment to ensure the product arrives in 8 days",
@@ -3260,7 +3260,7 @@ export const QUESTIONS = [
       "Ignore the field, it only affects products managed by reordering rules"
     ],
     "jawaban": 0,
-    "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
+    "penjelasan": "Time to Replenish 8 hari berarti replenishment perlu 8 hari untuk tiba, sementara stok forecasted habis dalam 8 hari; klik Replenish sekarang agar barang datang tepat waktu.",
     "referensi": {
       "topikSpesifik": "Automated Reordering Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/reordering_rules.html",
@@ -3270,7 +3270,7 @@ export const QUESTIONS = [
   },
   {
     "id": 187,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "A delivery method is set to Based on Rules. (1) Order total < $50, Delivery fee = $13 (2) Order total > $50, Delivery fee = $0. Question: You confirm a sales order totalling $55. How much is delivery?",
     "pilihan": [
       "$13",
@@ -3278,7 +3278,7 @@ export const QUESTIONS = [
       "$55"
     ],
     "jawaban": 1,
-    "penjelasan": "Metode pengiriman berbasis aturan (Based on Rules) secara otomatis mengevaluasi total belanja keranjang untuk menentukan ongkos kirim.",
+    "penjelasan": "Dengan metode Based on Rules, Odoo mengevaluasi total order terhadap aturan: total $55 memenuhi aturan 'lebih dari $50', sehingga ongkos kirimnya $0.",
     "referensi": {
       "topikSpesifik": "Delivery Pricing Rules Computation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/setup_configuration/delivery_method.html",
@@ -3288,7 +3288,7 @@ export const QUESTIONS = [
   },
   {
     "id": 188,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "Which of the following is true about the Dispatch Management System?",
     "pilihan": [
       "You can get Google Maps directions to all delivery destinations for an in-progress batch or wave transfer",
@@ -3296,7 +3296,7 @@ export const QUESTIONS = [
       "It's not necessary to configure dock locations to load items onto a delivery vehicle"
     ],
     "jawaban": 0,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Dispatch Management System memungkinkan membuka petunjuk arah Google Maps ke semua alamat tujuan pengiriman dalam batch atau wave transfer yang sedang diproses.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -3306,7 +3306,7 @@ export const QUESTIONS = [
   },
   {
     "id": 191,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "Your product uses the FIFO costing method. You (1) receive 3 units at $20 each, (2) receive 1 unit at $50, then (3) deliver 2 units.Which of the following correctly describes the cost of your remaining stock?",
     "pilihan": [
       "Two remaining units, both valued at $20",
@@ -3314,7 +3314,7 @@ export const QUESTIONS = [
       "Two remaining units, both valued at $35"
     ],
     "jawaban": 1,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Pada FIFO, 2 unit yang dikirim diambil dari layer paling awal ($20), sehingga sisa stok adalah 1 unit $20 dan 1 unit $50. Nilai rata-rata $35 adalah ciri metode AVCO.",
     "referensi": {
       "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
@@ -3324,7 +3324,7 @@ export const QUESTIONS = [
   },
   {
     "id": 192,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "Your warehouse uses the \"Before Scheduled Date\" reservation method. In the Delivery Order operation settings, \"days before\" = 5, and \"days before when starred\" = 10. You have 2 deliveries for June 30, one starred, one not. Today is June 21. Which of the following best describes what happens?",
     "pilihan": [
       "Both deliveries are reserved, because they're within 10 days of the scheduled date",
@@ -3332,7 +3332,7 @@ export const QUESTIONS = [
       "Neither delivery is reserved, because the scheduled date hasn't yet arrived"
     ],
     "jawaban": 1,
-    "penjelasan": "Saat pesanan dikonfirmasi, sistem secara otomatis mereservasi stok yang tersedia untuk Delivery Order yang diproses.",
+    "penjelasan": "Dengan metode Before Scheduled Date, delivery yang di-star direservasi mulai 10 hari sebelum tanggal jadwal, sedangkan yang biasa baru 5 hari sebelumnya; 21 Juni berada 9 hari sebelum 30 Juni, jadi hanya delivery yang di-star yang direservasi.",
     "referensi": {
       "topikSpesifik": "Delivery Orders & Stock Reservation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
@@ -3342,7 +3342,7 @@ export const QUESTIONS = [
   },
   {
     "id": 194,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "Which of the following types of record(s) can NOT have barcodes added to them?",
     "pilihan": [
       "Products, Packagings, and Package Types",
@@ -3350,7 +3350,7 @@ export const QUESTIONS = [
       "Product Categories"
     ],
     "jawaban": 2,
-    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
+    "penjelasan": "Barcode dapat ditambahkan ke products, packagings, package types, locations, dan operation types, tetapi product categories tidak memiliki field barcode.",
     "referensi": {
       "topikSpesifik": "Packages & Move Entire Package",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
@@ -3360,7 +3360,7 @@ export const QUESTIONS = [
   },
   {
     "id": 195,
-    "topic": "purchase",
+    "topic": "inventory",
     "soal": "Can you enter barcodes manually in the Barcode app?",
     "pilihan": [
       "Yes, but only for products and packages",
@@ -3368,7 +3368,7 @@ export const QUESTIONS = [
       "No"
     ],
     "jawaban": 1,
-    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
+    "penjelasan": "Aplikasi Barcode menyediakan input barcode manual lewat keyboard, sehingga Anda dapat mengetik barcode produk, package, maupun dokumen seperti delivery order dan receipt.",
     "referensi": {
       "topikSpesifik": "Packages & Move Entire Package",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
@@ -3386,7 +3386,7 @@ export const QUESTIONS = [
       "When it needs to plan production based on seasonal or forecasted demand"
     ],
     "jawaban": 2,
-    "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
+    "penjelasan": "MPS dipakai untuk merencanakan produksi dan pengadaan berdasarkan forecast permintaan, misalnya permintaan musiman; reordering rules hanya menjaga level stok min/max tetap.",
     "referensi": {
       "topikSpesifik": "Automated Reordering Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/reordering_rules.html",
@@ -3404,7 +3404,7 @@ export const QUESTIONS = [
       "Finished products and by-products are recorded as revenue on the analytic account"
     ],
     "jawaban": 1,
-    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
+    "penjelasan": "Jika MO diberi analytic account, biaya komponen yang dikonsumsi dan biaya tenaga kerja (waktu work order dikali biaya work center/karyawan) dicatat sebagai biaya pada analytic account tersebut, bukan sebagai revenue.",
     "referensi": {
       "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
@@ -3440,7 +3440,7 @@ export const QUESTIONS = [
       "Add the 'Subcontract' route on the sales order that includes the product\\"
     ],
     "jawaban": 1,
-    "penjelasan": "Subkontrak memungkinkan pengiriman bahan baku ke pihak ketiga untuk diproduksi dan diterima kembali sebagai barang jadi.",
+    "penjelasan": "Subcontracting dikonfigurasi di BoM produk dengan memilih BoM Type 'Subcontracting' dan menentukan subcontractor-nya; tidak ada checkbox 'Subcontracted' di form produk.",
     "referensi": {
       "topikSpesifik": "Subcontracting in Manufacturing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/subcontracting.html",
@@ -3458,7 +3458,7 @@ export const QUESTIONS = [
       "Too many units have already been replenished"
     ],
     "jawaban": 0,
-    "penjelasan": "MPS merencanakan kebutuhan produksi dan pengadaan jangka panjang berdasarkan ramalan penjualan (demand forecast).",
+    "penjelasan": "Sel oranye di MPS berarti replenishment order sudah dibuat, tetapi jumlahnya belum cukup sehingga masih perlu memesan lebih banyak untuk mencapai Safety Stock Target.",
     "referensi": {
       "topikSpesifik": "Master Production Schedule (MPS)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/mps.html",
@@ -3476,7 +3476,7 @@ export const QUESTIONS = [
       "Any product"
     ],
     "jawaban": 2,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Saat mengerjakan work order, Anda dapat mencatat konsumsi komponen apa pun, termasuk produk di luar BoM, dan menyesuaikan kuantitasnya sesuai konsumsi aktual.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -3530,7 +3530,7 @@ export const QUESTIONS = [
       "The work center is processing multiple work orders"
     ],
     "jawaban": 1,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Sebuah work center dianggap 'fully productive' saat bisa menerima work order, komponennya tersedia, dan work order diproses dalam expected duration-nya; waktu yang melebihi expected duration dihitung sebagai reduced speed dalam OEE, bukan waktu fully productive.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -3548,7 +3548,7 @@ export const QUESTIONS = [
       "The search results are limited to the first 5 records for faster loading."
     ],
     "jawaban": 1,
-    "penjelasan": "Mengatur limit \"5\" pada field Many2Many di Odoo Studio membatasi tampilan dropdown pencarian hanya menampilkan maksimal 5 opsi teratas.",
+    "penjelasan": "Typeahead search bernilai 5 membuat hasil pencarian pada field Many2One/Many2Many baru muncul setelah user mengetik minimal 5 karakter. Opsi ini tidak membatasi jumlah hasil yang ditampilkan.",
     "referensi": {
       "topikSpesifik": "Studio Many2One / Many2Many Limit Property",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
@@ -3584,7 +3584,7 @@ export const QUESTIONS = [
       "After the basic approval rule is set up, create an automation rule to further define the circumstances in which it applies."
     ],
     "jawaban": 1,
-    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
+    "penjelasan": "Saat mengatur approval step di Studio, klik ikon filter pada rule tersebut dan tentukan domain kondisi agar approval hanya diminta dalam situasi tertentu.",
     "referensi": {
       "topikSpesifik": "Studio Automated Actions & Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
@@ -3602,7 +3602,7 @@ export const QUESTIONS = [
       "It specifies the user groups that are allowed to trigger the automation rule."
     ],
     "jawaban": 1,
-    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
+    "penjelasan": "Before Update Domain menentukan kondisi yang harus dipenuhi record sebelum trigger terjadi (misalnya status sebelum diubah), sedangkan domain 'Apply on' menyaring record setelah perubahan.",
     "referensi": {
       "topikSpesifik": "Studio Automated Actions & Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
@@ -3620,7 +3620,7 @@ export const QUESTIONS = [
       "Set the Trigger to 'Values Updated' and select 'Creation Date' as the field to watch."
     ],
     "jawaban": 0,
-    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
+    "penjelasan": "Trigger 'On create' menjalankan automation rule hanya saat record baru dibuat. Trigger 'On save' juga berjalan saat record diperbarui.",
     "referensi": {
       "topikSpesifik": "Studio Automated Actions & Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
@@ -3656,7 +3656,7 @@ export const QUESTIONS = [
       "Go to General Settings > Manage Companies > Select the company line (list view) > Action > Archive."
     ],
     "jawaban": 2,
-    "penjelasan": "Di Odoo multi-company, mengosongkan field \"Company\" pada kontak membuatnya bersifat global dan dapat diakses oleh seluruh cabang perusahaan.",
+    "penjelasan": "Company dapat diarsipkan: buka Settings > Manage Companies, pilih baris company di list view, lalu klik Action > Archive, tanpa perlu bantuan Odoo Support.",
     "referensi": {
       "topikSpesifik": "Multi-Company Setup & Records Sharing",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/companies/multi_companies.html",
@@ -3710,7 +3710,7 @@ export const QUESTIONS = [
       "When inventory for the product reaches 0, a Request for Quotation will be sent to a vendor to have them come and assemble more of the product in your warehouse"
     ],
     "jawaban": 1,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Kombinasi route Buy (Purchase) dan Replenish on Order (MTO) membuat Odoo otomatis membuat RFQ ke vendor saat sales order dikonfirmasi jika stok tidak mencukupi.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -3720,7 +3720,7 @@ export const QUESTIONS = [
   },
   {
     "id": 216,
-    "topic": "introduction",
+    "topic": "inventory",
     "soal": "What does it mean if the forecasted quantity of a product is higher than the quantity on hand?",
     "pilihan": [
       "You have enabled \"Include Components In Forecasts\" and your forecast is including potential units you may choose to manufacture at a future date",
@@ -3728,7 +3728,7 @@ export const QUESTIONS = [
       "A sales order has failed and product has not been removed from inventory"
     ],
     "jawaban": 1,
-    "penjelasan": "Stok Forecasted lebih tinggi dari On-Hand berarti ada pesanan pembelian masuk (incoming receipts) yang sedang dalam perjalanan.",
+    "penjelasan": "Forecasted quantity lebih tinggi dari On Hand berarti ada stok yang direncanakan masuk, misalnya dari purchase order, manufacturing order, atau retur, yang belum diterima.",
     "referensi": {
       "topikSpesifik": "Forecasted vs On-Hand Inventory Quantities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
@@ -3738,7 +3738,7 @@ export const QUESTIONS = [
   },
   {
     "id": 217,
-    "topic": "introduction",
+    "topic": "sales",
     "soal": "What does it mean when a product is labeled under the product type, \"Combo\"?",
     "pilihan": [
       "When purchasing this product type, the customer can choose one product amongst a selection of multiple",
@@ -3746,7 +3746,7 @@ export const QUESTIONS = [
       "When purchasing this product, the customer must choose multiple product variants to submit an order"
     ],
     "jawaban": 0,
-    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
+    "penjelasan": "Produk bertipe Combo memungkinkan customer memilih satu produk dari tiap pilihan combo (misalnya satu minuman dari beberapa opsi), bukan gabungan Good dan Service.",
     "referensi": {
       "topikSpesifik": "Product Variants & Attributes",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
@@ -3792,7 +3792,7 @@ export const QUESTIONS = [
   },
   {
     "id": 220,
-    "topic": "introduction",
+    "topic": "sales",
     "soal": "Which of the following is NOT a valid option when setting an achievement-based commission plan for your team?",
     "pilihan": [
       "A plan based on the total amount of sales invoiced",
@@ -3800,7 +3800,7 @@ export const QUESTIONS = [
       "A plan based on the total quantity of products sold"
     ],
     "jawaban": 1,
-    "penjelasan": "Modul Commissions memungkinkan pengaturan skema komisi bagi tim penjualan berdasarkan target omzet atau pencapaian kuota.",
+    "penjelasan": "Achievement-based commission plan dapat didasarkan pada jumlah atau kuantitas yang terjual maupun ditagih (sold/invoiced), bukan pada nilai quotation, karena quotation belum menjadi penjualan.",
     "referensi": {
       "topikSpesifik": "Sales Commissions Plans",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/commissions.html",
@@ -3836,7 +3836,7 @@ export const QUESTIONS = [
       "The opportunity is archived and removed from all dashboards but can still be accessed through advanced search options."
     ],
     "jawaban": 0,
-    "penjelasan": "Mencatat alasan kegagalan (Lost Reason) pada kesempatan penjualan membantu evaluasi dan analisis pipeline penjualan perusahaan.",
+    "penjelasan": "Opportunity yang ditandai Lost otomatis diarsipkan dan disembunyikan dari pipeline, tetapi masih dapat ditemukan melalui filter Lost di search.",
     "referensi": {
       "topikSpesifik": "Lost Opportunities & Reason Tracking",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/lost_opportunities.html",
@@ -3854,7 +3854,7 @@ export const QUESTIONS = [
       "Leads and opportunities have the same likelihood of being won."
     ],
     "jawaban": 1,
-    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
+    "penjelasan": "Lead adalah prospek awal yang belum dikualifikasi, sehingga peluang menangnya lebih kecil daripada opportunity yang sudah dikualifikasi dan masuk pipeline.",
     "referensi": {
       "topikSpesifik": "Convert Leads into Opportunities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -3872,7 +3872,7 @@ export const QUESTIONS = [
       "Deleting an opportunity and marking it as Lost both archive the record, but marking it as Lost also triggers a notification to the sales team."
     ],
     "jawaban": 1,
-    "penjelasan": "Mencatat alasan kegagalan (Lost Reason) pada kesempatan penjualan membantu evaluasi dan analisis pipeline penjualan perusahaan.",
+    "penjelasan": "Menandai opportunity sebagai Lost hanya mengarsipkan dan menyembunyikannya dari pipeline sehingga record dan riwayatnya tetap tersimpan, sedangkan Delete menghapus record secara permanen.",
     "referensi": {
       "topikSpesifik": "Lost Opportunities & Reason Tracking",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/pipeline/lost_opportunities.html",
@@ -3890,7 +3890,7 @@ export const QUESTIONS = [
       "It can be set or modified manually at any time."
     ],
     "jawaban": 2,
-    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
+    "penjelasan": "Expected Revenue adalah field yang dapat diisi atau diubah manual kapan saja di opportunity; nilainya tidak dikunci atau dihitung otomatis dari sales order.",
     "referensi": {
       "topikSpesifik": "Convert Leads into Opportunities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -3926,7 +3926,7 @@ export const QUESTIONS = [
       "To reference or update information from a specific record when interacting with the AI Agent."
     ],
     "jawaban": 2,
-    "penjelasan": "Sintaks /record menyisipkan seluruh data record aktif ke dalam konteks analisis AI Agent.",
+    "penjelasan": "Selektor /record di prompt AI Agent memungkinkan Anda merujuk record tertentu agar AI dapat membaca atau memperbarui informasinya saat berinteraksi.",
     "referensi": {
       "topikSpesifik": "AI Agent Prompt /record Context Selector",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
@@ -3936,7 +3936,7 @@ export const QUESTIONS = [
   },
   {
     "id": 228,
-    "topic": "introduction",
+    "topic": "ai",
     "soal": "How can you enable AI to transcribe meetings in Odoo?",
     "pilihan": [
       "In the Discuss app, go to Configuration > Voice & Video Settings and enable AI Transcription.",
@@ -3944,7 +3944,7 @@ export const QUESTIONS = [
       "Type \"/\" to open the command palette on an article, note tab, or description tab, and select Voice Transcript."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo AI dapat mentranskripsikan rekaman audio rapat menjadi teks notulen dan ringkasan tindakan secara otomatis.",
+    "penjelasan": "Transkripsi AI dilakukan dengan mengetik '/' untuk membuka powerbox di article, tab note, atau tab description, lalu memilih Voice Transcript.",
     "referensi": {
       "topikSpesifik": "AI Meeting Audio Transcription Integration",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
@@ -3954,7 +3954,7 @@ export const QUESTIONS = [
   },
   {
     "id": 229,
-    "topic": "introduction",
+    "topic": "ai",
     "soal": "What does the \"Ask AI Search\" feature do?",
     "pilihan": [
       "To turn a plain-language search into the right database filters automatically.",
@@ -3962,7 +3962,7 @@ export const QUESTIONS = [
       "To search only within Knowledge articles and uploaded files."
     ],
     "jawaban": 0,
-    "penjelasan": "Fitur Ask AI pada command palette memungkinkan pencarian semantik cerdas di seluruh basis data perusahaan.",
+    "penjelasan": "Ask AI Search mengubah pencarian berbahasa alami menjadi filter dan kriteria pencarian database yang tepat secara otomatis.",
     "referensi": {
       "topikSpesifik": "Ask AI Search Feature in Odoo Command Palette",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
@@ -3998,7 +3998,7 @@ export const QUESTIONS = [
       "LinkedIn"
     ],
     "jawaban": 0,
-    "penjelasan": "Snippet Social Wall di Website Builder menampilkan postingan media sosial perusahaan langsung di beranda website.",
+    "penjelasan": "Website Builder menyediakan snippet Instagram untuk menampilkan feed Instagram di halaman website; TikTok dan LinkedIn tidak memiliki snippet wall bawaan.",
     "referensi": {
       "topikSpesifik": "Website Social Media Wall Feeds Widget",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
@@ -4016,7 +4016,7 @@ export const QUESTIONS = [
       "You can add On Scroll & On Appearance animation on most text, images, and blocks. And you can add On Hover animation on images."
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur \"Animate\" pada blok website memberikan efek animasi masuk (seperti fade in atau slide up) saat pengunjung menggulir layar.",
+    "penjelasan": "Animasi On Scroll dan On Appearance dapat diterapkan pada sebagian besar teks, gambar, dan blok, sedangkan animasi On Hover hanya tersedia untuk gambar.",
     "referensi": {
       "topikSpesifik": "Website On-Scroll Animation Effects",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/website.html",
@@ -4026,7 +4026,7 @@ export const QUESTIONS = [
   },
   {
     "id": 234,
-    "topic": "introduction",
+    "topic": "website",
     "soal": "How can you hide the header and/or footer on pages?",
     "pilihan": [
       "You can do this upon activating developer mode.",
@@ -4034,7 +4034,7 @@ export const QUESTIONS = [
       "You can do this in the website editor, in the Blocks tab."
     ],
     "jawaban": 1,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Header dan footer dapat disembunyikan per halaman lewat website editor di tab Style (opsi visibility header/footer halaman), tanpa perlu developer mode.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
@@ -4044,7 +4044,7 @@ export const QUESTIONS = [
   },
   {
     "id": 235,
-    "topic": "introduction",
+    "topic": "sales",
     "soal": "All products with attribute value 'A' should be priced $50 higher than products with attribute value 'B'. How can you automate this price difference?",
     "pilihan": [
       "By changing the 'Default Extra Price' value in the backend of that attribute.",
@@ -4052,7 +4052,7 @@ export const QUESTIONS = [
       "This can only be done with a pricelist."
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "Isi 'Default Extra Price' pada nilai atribut 'A' di backend agar setiap varian dengan nilai itu otomatis bertambah $50 dibanding varian dengan nilai 'B', tanpa perlu pricelist.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -4062,7 +4062,7 @@ export const QUESTIONS = [
   },
   {
     "id": 236,
-    "topic": "introduction",
+    "topic": "ecommerce",
     "soal": "How can you allow customers to order online and then pay in person at your stores?",
     "pilihan": [
       "By enabling the \"Pay in Site\" payment provider.",
@@ -4070,7 +4070,7 @@ export const QUESTIONS = [
       "By activating the 'Pick-up in Store' feature in the website settings."
     ],
     "jawaban": 1,
-    "penjelasan": "Opsi Click & Collect memungkinkan pelanggan memesan produk di toko online dan memilih bayar serta ambil langsung di toko fisik.",
+    "penjelasan": "Aktifkan fitur Click & Collect, konfigurasikan lokasi pengambilan (picking site), dan aktifkan payment provider 'Pay in Site' agar customer memesan online lalu membayar dan mengambil barang di toko.",
     "referensi": {
       "topikSpesifik": "Click & Collect (Order Online, Pay & Pickup in Store)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
@@ -4080,7 +4080,7 @@ export const QUESTIONS = [
   },
   {
     "id": 237,
-    "topic": "introduction",
+    "topic": "ecommerce",
     "soal": "What other option is there to display a color variant of a product?",
     "pilihan": [
       "A video, a GIF, or a 3D render of the product can be used instead of a color.",
@@ -4088,7 +4088,7 @@ export const QUESTIONS = [
       "An image of the product or a GIF can be displayed instead of a color."
     ],
     "jawaban": 2,
-    "penjelasan": "Varian produk mempermudah pengelolaan atribut produk (seperti ukuran atau warna) dalam satu master template produk.",
+    "penjelasan": "Selain warna, varian warna produk dapat ditampilkan dengan gambar produk atau GIF sebagai pengganti swatch warna.",
     "referensi": {
       "topikSpesifik": "Product Variants & Attributes",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/variants.html",
@@ -4106,7 +4106,7 @@ export const QUESTIONS = [
       "Banner Info/Success/Warning/Danger"
     ],
     "jawaban": 0,
-    "penjelasan": "Knowledge memiliki perintah powerbox eksklusif seperti /article link, /index tabel konten, dan /card snippet.",
+    "penjelasan": "Perintah powerbox Index dan Item Kanban/Cards/List/Calendar hanya ada di Knowledge karena mengacu pada artikel anak dan artikel item. Separator, Checklist, Quote, dan Banner juga tersedia di editor aplikasi lain.",
     "referensi": {
       "topikSpesifik": "Knowledge Exclusive Powerbox Commands",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/knowledge.html",
@@ -4116,7 +4116,7 @@ export const QUESTIONS = [
   },
   {
     "id": 240,
-    "topic": "introduction",
+    "topic": "knowledge",
     "soal": "What can you do if you accidentally delete an article's section?",
     "pilihan": [
       "Restore the previous version of the article",
@@ -4142,7 +4142,7 @@ export const QUESTIONS = [
       "The project's profitability"
     ],
     "jawaban": 1,
-    "penjelasan": "Burndown chart memvisualisasikan sisa jam kerja terhadap tenggat waktu proyek secara realtime pada dashboard proyek.",
+    "penjelasan": "Dashboard (project update) menampilkan milestones dan profitability proyek, tetapi tidak menampilkan customer ratings.",
     "referensi": {
       "topikSpesifik": "Project Management & Burndown Charts",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/project_management/project_dashboard.html",
@@ -4152,7 +4152,7 @@ export const QUESTIONS = [
   },
   {
     "id": 242,
-    "topic": "crm",
+    "topic": "project",
     "soal": "How are the tasks in the \"My Tasks\" pipeline managed?",
     "pilihan": [
       "They are moved automatically across stages based on their deadline",
@@ -4160,7 +4160,7 @@ export const QUESTIONS = [
       "You move them manually across stages"
     ],
     "jawaban": 2,
-    "penjelasan": "Lead yang prospektif dapat dikonversi menjadi Opportunity dan ditautkan ke Sales Order baru maupun yang sudah ada.",
+    "penjelasan": "Tugas di pipeline My Tasks memakai personal stages milik user dan dipindahkan secara manual; tidak ada perpindahan otomatis berdasarkan deadline atau aktivitas.",
     "referensi": {
       "topikSpesifik": "Convert Leads into Opportunities",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -4178,7 +4178,7 @@ export const QUESTIONS = [
       "Task blocked by other tasks"
     ],
     "jawaban": 2,
-    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
+    "penjelasan": "Pada bar progress di atas kolom stage Kanban Project, warna biru mewakili tugas berstatus Waiting, yaitu tugas yang diblokir oleh tugas lain.",
     "referensi": {
       "topikSpesifik": "Stages & Kanban Progress Bars",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
@@ -4188,7 +4188,7 @@ export const QUESTIONS = [
   },
   {
     "id": 244,
-    "topic": "project",
+    "topic": "timesheets",
     "soal": "When entering timesheets, how is the timesheet cost generated?",
     "pilihan": [
       "By setting an hourly cost on the employee form",
@@ -4196,7 +4196,7 @@ export const QUESTIONS = [
       "By setting a timesheet cost on the task form"
     ],
     "jawaban": 0,
-    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
+    "penjelasan": "Biaya timesheet dihitung dari Hourly Cost yang diisi di form karyawan (tab Settings) dikalikan durasi timesheet, bukan dari biaya di produk atau task.",
     "referensi": {
       "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
@@ -4206,7 +4206,7 @@ export const QUESTIONS = [
   },
   {
     "id": 245,
-    "topic": "introduction",
+    "topic": "accounting",
     "soal": "What depreciation methods are available for an asset?",
     "pilihan": [
       "Declining, Straight line then Declining, and Straight line.",
@@ -4214,7 +4214,7 @@ export const QUESTIONS = [
       "Declining, Declining then Straight line, Straight line, and Progressive."
     ],
     "jawaban": 1,
-    "penjelasan": "Modul Fixed Assets mengelola jadwal depresiasi aset tetap secara otomatis ke dalam jurnal akuntansi sesuai metode penyusutan.",
+    "penjelasan": "Metode depresiasi aset di Odoo adalah Straight Line, Declining, dan Declining then Straight Line; metode 'Progressive' tidak tersedia.",
     "referensi": {
       "topikSpesifik": "Fixed Assets & Depreciation Management",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/vendor_bills/assets.html",
@@ -4224,7 +4224,7 @@ export const QUESTIONS = [
   },
   {
     "id": 247,
-    "topic": "introduction",
+    "topic": "accounting",
     "soal": "What happens if a currency is not set on an account in your chart of accounts?",
     "pilihan": [
       "The account can be used for transactions in any currency.",
@@ -4232,7 +4232,7 @@ export const QUESTIONS = [
       "Currency cannot be managed at account level, only at journal level."
     ],
     "jawaban": 0,
-    "penjelasan": "Bagan Akun (Chart of Accounts) mendefinisikan struktur akun keuangan standar (Asset, Liability, Equity, Revenue, Expense).",
+    "penjelasan": "Jika field Currency pada akun dikosongkan, akun tersebut tidak dibatasi ke satu mata uang sehingga bisa dipakai untuk transaksi dalam mata uang apa pun. Mengisi Currency justru membatasi akun hanya untuk mata uang itu.",
     "referensi": {
       "topikSpesifik": "Chart of Accounts & Journals Setup",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
@@ -4242,7 +4242,7 @@ export const QUESTIONS = [
   },
   {
     "id": 248,
-    "topic": "introduction",
+    "topic": "accounting",
     "soal": "How are follow-up actions triggered?",
     "pilihan": [
       "Based on the number of days overdue starting from the creation date of the invoice.",
@@ -4250,7 +4250,7 @@ export const QUESTIONS = [
       "Based on the number of days overdue starting from the invoice date of the invoice."
     ],
     "jawaban": 1,
-    "penjelasan": "Tindakan follow-up piutang otomatis mengirimkan surat pengingat atau email peringatan kepada pelanggan yang terlambat membayar.",
+    "penjelasan": "Follow-up level di Odoo dipicu berdasarkan jumlah hari keterlambatan yang dihitung dari due date invoice, bukan dari tanggal pembuatan atau invoice date.",
     "referensi": {
       "topikSpesifik": "Customer Payment Follow-ups",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/payment_follow_up.html",
@@ -4260,7 +4260,7 @@ export const QUESTIONS = [
   },
   {
     "id": 249,
-    "topic": "purchase",
+    "topic": "accounting",
     "soal": "Which feature allows you to automatically change the income or expense account that a product should use based on the customer or vendor?",
     "pilihan": [
       "Fiscal Positions.",
@@ -4286,7 +4286,7 @@ export const QUESTIONS = [
       "By adding an outstanding payments/receipts account to the payment method in the journal that is used to record the payment."
     ],
     "jawaban": 2,
-    "penjelasan": "Bagan Akun (Chart of Accounts) mendefinisikan struktur akun keuangan standar (Asset, Liability, Equity, Revenue, Expense).",
+    "penjelasan": "Payment baru membuat journal entry jika payment method di journal (tab Incoming/Outgoing Payments) memiliki Outstanding Receipts/Payments account. Tanpa akun itu, payment langsung direkonsiliasi lewat bank statement tanpa journal entry sendiri.",
     "referensi": {
       "topikSpesifik": "Chart of Accounts & Journals Setup",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/chart_of_accounts.html",
@@ -4304,7 +4304,7 @@ export const QUESTIONS = [
       "Bank, Cash, Credit card, Sales, and Purchase."
     ],
     "jawaban": 2,
-    "penjelasan": "Fitur Loans Management mengelola pinjaman bank, tabel amortisasi, dan pencatatan bunga pinjaman otomatis ke jurnal akuntansi.",
+    "penjelasan": "Selain Miscellaneous, tipe journal di Odoo adalah Sales, Purchase, Cash, Bank, dan Credit Card. Tidak ada tipe journal Loan maupun Tax.",
     "referensi": {
       "topikSpesifik": "Loans Management & Amortization",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/loans.html",
@@ -4322,7 +4322,7 @@ export const QUESTIONS = [
       "An external user who has read-only access can click the 'Request edit access' button."
     ],
     "jawaban": 1,
-    "penjelasan": "Odoo Spreadsheet memungkinkan analisis data dinamis langsung dari pivot view dengan sinkronisasi data live.",
+    "penjelasan": "Spreadsheet dengan data dinamis Odoo (formula yang menarik data live atau link ke view) membutuhkan akses ke database, sehingga user eksternal tidak dapat membukanya; hanya user internal dengan hak akses yang bisa.",
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
@@ -4350,7 +4350,7 @@ export const QUESTIONS = [
   },
   {
     "id": 254,
-    "topic": "introduction",
+    "topic": "hr",
     "soal": "In the Payroll application, what source creates Work Entries?",
     "pilihan": [
       "Working Schedules, Contracts, and Projects",
@@ -4358,7 +4358,7 @@ export const QUESTIONS = [
       "Working Schedules, Attendance, and Planning"
     ],
     "jawaban": 2,
-    "penjelasan": "Layar Kiosk Attendance memungkinkan karyawan melakukan check-in dan check-out mandiri menggunakan PIN atau pemindai barcode/RFID.",
+    "penjelasan": "Work Entries di Payroll dibuat dari Working Schedules (jadwal kerja karyawan), serta dari data Attendance dan Planning jika sumber tersebut dipilih sebagai dasar work entry.",
     "referensi": {
       "topikSpesifik": "Attendances & Kiosk Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosk_mode.html",
@@ -4376,7 +4376,7 @@ export const QUESTIONS = [
       "By being added as an Interviewer on either the job position or the applicant's record."
     ],
     "jawaban": 2,
-    "penjelasan": "Hak akses modul Recruitment dapat dikonfigurasi agar interviewer hanya melihat data lamaran pelamar tertentu tanpa membuka seluruh data lowongan.",
+    "penjelasan": "User yang ditambahkan sebagai Interviewer di job position atau di record applicant dapat melihat record applicant tersebut meskipun tidak punya hak akses penuh ke aplikasi Recruitment.",
     "referensi": {
       "topikSpesifik": "Recruitment Applicant Record Access Control",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr_and_attendance.html",
@@ -4386,7 +4386,7 @@ export const QUESTIONS = [
   },
   {
     "id": 256,
-    "topic": "introduction",
+    "topic": "hr",
     "soal": "What is this screen? (Shows \"Welcome to My Company (San Francisco)\", \"Check in\" button, and a QR code)",
     "pilihan": [
       "A Frontdesk kiosk",
@@ -4412,7 +4412,7 @@ export const QUESTIONS = [
       "Set the 'Book' field to 'Resources'."
     ],
     "jawaban": 2,
-    "penjelasan": "Modul Appointments memungkinkan klien menjadwalkan pertemuan atau reservasi secara mandiri melalui portal online.",
+    "penjelasan": "Di appointment type, set field Book ke 'Resources' agar pengunjung dapat memilih resource yang ada (misalnya meja restoran) saat booking, bukan memilih user/staf.",
     "referensi": {
       "topikSpesifik": "Online Appointments & Bookings",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/appointments.html",
@@ -4430,7 +4430,7 @@ export const QUESTIONS = [
       "Both answers above are true"
     ],
     "jawaban": 2,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Receipt otomatis dibuat saat RFQ dikonfirmasi hanya jika aplikasi Inventory terpasang dan RFQ berisi produk bertipe Goods (yang dilacak stoknya); produk Service tidak menghasilkan receipt. Kedua syarat berlaku sehingga jawabannya 'keduanya benar'.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -4448,7 +4448,7 @@ export const QUESTIONS = [
       "No, never"
     ],
     "jawaban": 0,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Setelah purchase order dikonfirmasi, baris baru masih bisa ditambahkan selama PO belum di-Lock. Status Locked mencegah perubahan lebih lanjut pada PO.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -4466,7 +4466,7 @@ export const QUESTIONS = [
       "A request for quotation will be created for the vendor set on your product. Once validated, a DS operation will be generated to directly send the product from the supplier to your customer"
     ],
     "jawaban": 2,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Dengan route Dropship, konfirmasi sales order membuat RFQ ke vendor produk; setelah PO dikonfirmasi, Odoo membuat operasi Dropship (DS) yang mengirim barang langsung dari vendor ke customer tanpa melewati gudang.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -4484,7 +4484,7 @@ export const QUESTIONS = [
       "It means the vendor rejected the order and it must be canceled or reissued"
     ],
     "jawaban": 0,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Status 'Not Acknowledged' berarti vendor belum mengonfirmasi bahwa ia akan memenuhi PO. Status berubah setelah vendor menerima/mengonfirmasi order (misalnya lewat portal) atau ditandai acknowledged secara manual.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -4502,7 +4502,7 @@ export const QUESTIONS = [
       "Both locations increase by +10 units"
     ],
     "jawaban": 1,
-    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
+    "penjelasan": "Setiap pergerakan stok mengurangi lokasi asal dan menambah lokasi tujuan. Receipt 10 unit dari Partners/Vendors ke WH/Stock membuat Vendor Location -10 (lokasi virtual boleh negatif) dan Internal Location +10.",
     "referensi": {
       "topikSpesifik": "Warehouse & Location Hierarchy",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
@@ -4512,7 +4512,7 @@ export const QUESTIONS = [
   },
   {
     "id": 263,
-    "topic": "mrp",
+    "topic": "inventory",
     "soal": "You want a product to be replenished automatically in two warehouses: one via buying and the other via manufacturing. How can this be configured in Odoo?",
     "pilihan": [
       "Create two products (one for each warehouse). For each reordering rule, set the Method to \"Buy\" and the alternative Method to \"Manufacture\"",
@@ -4520,7 +4520,7 @@ export const QUESTIONS = [
       "Create one reordering rule and assign multiple warehouses to it"
     ],
     "jawaban": 1,
-    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
+    "penjelasan": "Satu produk bisa punya beberapa reordering rule, masing-masing untuk warehouse berbeda dengan route berbeda (misalnya Buy di satu warehouse dan Manufacture di warehouse lain).",
     "referensi": {
       "topikSpesifik": "Warehouse & Location Hierarchy",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
@@ -4538,7 +4538,7 @@ export const QUESTIONS = [
       "Open to Inventory > Reporting > Valuation and expand the grouped by view of products to view the component's stock valuation layers"
     ],
     "jawaban": 1,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Di Inventory > Reporting > Stock, mengklik nilai Unit Cost sebuah produk menampilkan daftar stock move yang memengaruhi valuasinya, sehingga penyebab kenaikan average cost bisa ditelusuri.",
     "referensi": {
       "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
@@ -4574,7 +4574,7 @@ export const QUESTIONS = [
       "500.0"
     ],
     "jawaban": 0,
-    "penjelasan": "Dalam akuntansi perpetual (Automated Valuation), mutasi persediaan barang masuk dan keluar otomatis membentuk jurnal akuntansi realtime.",
+    "penjelasan": "Stok milik pihak lain (consignment, dengan Owner Azure Interior) tidak dihitung dalam valuasi perusahaan. Yang dinilai hanya 10 unit milik sendiri: 10 x $500 = $5.000.",
     "referensi": {
       "topikSpesifik": "Inventory Valuation & Perpetual Accounting",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/get_started/inventory_valuation.html",
@@ -4584,7 +4584,7 @@ export const QUESTIONS = [
   },
   {
     "id": 267,
-    "topic": "introduction",
+    "topic": "inventory",
     "soal": "Which of the following best describes the difference between a reservation method and a removal strategy?",
     "pilihan": [
       "A reservation method determines which orders receive available stock first, while a removal strategy determines which specific stock units are used to fulfill those orders",
@@ -4592,7 +4592,7 @@ export const QUESTIONS = [
       "A reservation method is required the Lots & Serial Numbers setting to be enabled, while removal strategy requires the Storage Locations setting"
     ],
     "jawaban": 0,
-    "penjelasan": "Removal strategy mengatur urutan lokasi pengambilan stok saat pengiriman barang (misal FEFO untuk produk berkadaluarsa).",
+    "penjelasan": "Reservation method menentukan kapan dan untuk order mana stok yang tersedia direservasi, sedangkan removal strategy (FIFO, LIFO, FEFO, dll.) menentukan unit/lot/lokasi spesifik mana yang diambil untuk memenuhinya.",
     "referensi": {
       "topikSpesifik": "Removal Strategies (FIFO, LIFO, FEFO)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/removal_strategies.html",
@@ -4610,7 +4610,7 @@ export const QUESTIONS = [
       "No"
     ],
     "jawaban": 0,
-    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
+    "penjelasan": "Keunikan serial number di Odoo berlaku per produk, sehingga dua produk berbeda boleh memakai serial number yang sama dan disimpan di lokasi berbeda tanpa setting tambahan.",
     "referensi": {
       "topikSpesifik": "Warehouse & Location Hierarchy",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
@@ -4628,7 +4628,7 @@ export const QUESTIONS = [
       "By defining a by-product on the routing"
     ],
     "jawaban": 0,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Untuk menghasilkan beberapa produk sekaligus, aktifkan setting By-Products di Manufacturing, lalu isi produk tambahan di tab By-products pada BoM. Kit BoM atau routing tidak bisa mendefinisikan by-product.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -4646,7 +4646,7 @@ export const QUESTIONS = [
       "When the manufacturing order is marked as done"
     ],
     "jawaban": 0,
-    "penjelasan": "MPS merencanakan kebutuhan produksi dan pengadaan jangka panjang berdasarkan ramalan penjualan (demand forecast).",
+    "penjelasan": "Saat manufacturing order dikonfirmasi, Odoo membuat stock move komponen sehingga forecasted quantity komponen langsung berkurang; on-hand baru berubah saat MO diselesaikan.",
     "referensi": {
       "topikSpesifik": "Master Production Schedule (MPS)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/mps.html",
@@ -4664,7 +4664,7 @@ export const QUESTIONS = [
       "Only when the 'BoM Kits' setting is enabled"
     ],
     "jawaban": 0,
-    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen, sub-rakitan (kit), dan produk sampingan (by-products) dalam proses manufaktur.",
+    "penjelasan": "Kit bisa dipakai sebagai komponen di BoM lain; saat MO dibuat, kit tersebut dipecah menjadi komponen-komponennya. Tidak ada setting khusus 'BoM Kits' yang perlu diaktifkan.",
     "referensi": {
       "topikSpesifik": "Bills of Materials (BoM) & Kits",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/kit_shipping.html",
@@ -4674,7 +4674,7 @@ export const QUESTIONS = [
   },
   {
     "id": 272,
-    "topic": "introduction",
+    "topic": "studio",
     "soal": "How can you access an existing PDF report in order to edit it?",
     "pilihan": [
       "Go to Settings app -> Technical -> Reports, then search for the name of the report.",
@@ -4682,7 +4682,7 @@ export const QUESTIONS = [
       "Use the '/report' command in any view's editor then enter the name of the report."
     ],
     "jawaban": 1,
-    "penjelasan": "Mengklik menu Studio saat melihat dokumen memungkinkan pengeditan langsung tata letak laporan PDF yang dicetak.",
+    "penjelasan": "Untuk mengedit laporan PDF yang ada, buka Studio, klik tab Reports, lalu cari laporan berdasarkan nama atau model dan buka di report editor.",
     "referensi": {
       "topikSpesifik": "Studio PDF Report Customizer & Editor",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio.html",
@@ -4700,7 +4700,7 @@ export const QUESTIONS = [
       "The email will use the updated field values, as actions are executed in the order they are defined."
     ],
     "jawaban": 2,
-    "penjelasan": "Automation Rule di Odoo Studio dapat memicu aksi otomatis (seperti Update Record, Kirim Email, atau Webhook) berdasarkan trigger tertentu.",
+    "penjelasan": "Action dalam automation rule dijalankan berurutan sesuai urutan definisinya, sehingga jika Update Record dijalankan lebih dulu, email yang dikirim sesudahnya memakai nilai field yang sudah diperbarui.",
     "referensi": {
       "topikSpesifik": "Studio Automated Actions & Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/studio/automated_actions.html",
@@ -4718,7 +4718,7 @@ export const QUESTIONS = [
       "Activate Developer Mode, open the debug menu, then toggle the Onboarding option, or click \"Stop Tour\" on the tour pop-up."
     ],
     "jawaban": 2,
-    "penjelasan": "Superuser mode memberikan akses bypass terhadap record rules dan hak akses keamanan untuk keperluan konfigurasi teknis.",
+    "penjelasan": "Onboarding tour dikendalikan dari debug menu setelah Developer Mode aktif (toggle Onboarding/tour), atau dihentikan langsung dengan tombol 'Stop Tour' di pop-up tour. Tidak ada opsi tersebut di Settings atau Preferences user.",
     "referensi": {
       "topikSpesifik": "Developer & Superuser Mode",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/developer_mode.html",
@@ -4736,7 +4736,7 @@ export const QUESTIONS = [
       "The Discount type allows you to set a validity period, while the Formula type is applied permanently once created."
     ],
     "jawaban": 0,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "Price type Discount hanya menerapkan persentase potongan dari harga dasar, sedangkan Formula bisa menggabungkan diskon, markup/surcharge, pembulatan, dan batas margin minimum/maksimum.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -4772,7 +4772,7 @@ export const QUESTIONS = [
       "When a sales order is confirmed, a delivery order is created, but no other documents are generated because Odoo will expect you to manually create a manufacturing order."
     ],
     "jawaban": 1,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Dengan route MTO dan BoM tersedia tetapi produk tidak bisa dibeli (Purchase tidak dicentang), route Buy tidak tersedia, sehingga konfirmasi sales order memicu pembuatan manufacturing order jika stok tidak cukup.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -4808,7 +4808,7 @@ export const QUESTIONS = [
       "The system will ask the user to choose which pricelist to apply."
     ],
     "jawaban": 1,
-    "penjelasan": "Pricelist Odoo mendukung aturan diskon persentase, formula berbasis cost/sales price, pembulatan harga, dan margin tambahan.",
+    "penjelasan": "Harga baris sales order diambil dari pricelist yang terpasang di quotation saat produk ditambahkan. Karena pricelist diganti ke 'Consumer' sebelum produk ditambahkan, harga dari pricelist Consumer yang dipakai.",
     "referensi": {
       "topikSpesifik": "Pricelists & Dynamic Pricing Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/prices/pricing.html",
@@ -4818,7 +4818,7 @@ export const QUESTIONS = [
   },
   {
     "id": 280,
-    "topic": "purchase",
+    "topic": "ecommerce",
     "soal": "When a customer finalizes a purchase in the online store:",
     "pilihan": [
       "Odoo automatically generates a sales order and invoice. The Sales app is not needed for handling online sales.",
@@ -4826,7 +4826,7 @@ export const QUESTIONS = [
       "Odoo automatically generates a sales order, which can then be viewed and managed from the Sales backend."
     ],
     "jawaban": 2,
-    "penjelasan": "Modul eCommerce mengintegrasikan katalog produk, keranjang belanja, proses checkout, dan pembuatan Sales Order otomatis.",
+    "penjelasan": "Saat customer menyelesaikan checkout di online shop, Odoo otomatis membuat sales order yang dapat dilihat dan dikelola dari backend aplikasi Sales.",
     "referensi": {
       "topikSpesifik": "eCommerce & Online Store Management",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
@@ -4836,7 +4836,7 @@ export const QUESTIONS = [
   },
   {
     "id": 281,
-    "topic": "sales",
+    "topic": "ecommerce",
     "soal": "I've configured a product under 'Sales' and can pull it onto a sales quotation, but it does not appear on my eCommerce shop. Why not?",
     "pilihan": [
       "It needs to be Published on the website first.",
@@ -4844,7 +4844,7 @@ export const QUESTIONS = [
       "Products cannot be visible on the eCommerce shop if they do not have a positive stock quantity."
     ],
     "jawaban": 0,
-    "penjelasan": "Produk yang diaktifkan untuk Sales harus dicentang opsi \"Available in POS\" jika ingin muncul di kasir Point of Sale.",
+    "penjelasan": "Produk hanya tampil di eCommerce shop jika sudah di-Publish di website. Produk dibuat sekali dan dipakai bersama oleh Sales dan Website, dan stok nol tidak otomatis menyembunyikan produk.",
     "referensi": {
       "topikSpesifik": "Product Sales Tab vs POS Availability",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/products_prices/products/import.html",
@@ -4862,7 +4862,7 @@ export const QUESTIONS = [
       "Enter a custom message in the End Message tab of the survey form."
     ],
     "jawaban": 2,
-    "penjelasan": "Di tab Options formulir survey, Anda dapat menuliskan pesan penutup kustom yang akan ditampilkan kepada responden setelah selesai.",
+    "penjelasan": "Pesan penutup kustom untuk peserta survey ditulis di tab End Message pada formulir survey dan ditampilkan setelah peserta menyelesaikan survey.",
     "referensi": {
       "topikSpesifik": "Survey Custom Thank You & End Messages",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
@@ -4872,7 +4872,7 @@ export const QUESTIONS = [
   },
   {
     "id": 283,
-    "topic": "crm",
+    "topic": "survey",
     "soal": "Which of the following question types cannot be used to generate leads on a Survey?",
     "pilihan": [
       "Multiple Choice: only one answer.",
@@ -4898,7 +4898,7 @@ export const QUESTIONS = [
       "The opportunity temporarily appears at the top of the stage until the page is refreshed."
     ],
     "jawaban": 0,
-    "penjelasan": "Bar warna di atas kolom stage Kanban menyaring record berdasarkan status aktivitas (hijau = selesai/on track, merah = overdue).",
+    "penjelasan": "Opportunity di Kanban pipeline diurutkan berdasarkan prioritas terlebih dahulu, sehingga opportunity dengan prioritas tinggi berada di atas stage-nya saat pipeline dimuat ulang.",
     "referensi": {
       "topikSpesifik": "Stages & Kanban Progress Bars",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/essentials/stages.html",
@@ -4916,7 +4916,7 @@ export const QUESTIONS = [
       "Only one quotation or sales order can be active at a time."
     ],
     "jawaban": 1,
-    "penjelasan": "Dari satu kesempatan penjualan (Opportunity), pengguna dapat membuat beberapa penawaran harga alternatif untuk customer yang sama.",
+    "penjelasan": "Dari satu opportunity Anda bisa membuat quotation sebanyak yang diperlukan dan mengonfirmasi lebih dari satu menjadi sales order; semuanya tetap terhubung ke opportunity tersebut.",
     "referensi": {
       "topikSpesifik": "Opportunity Quotations Multi-Creation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -4934,7 +4934,7 @@ export const QUESTIONS = [
       "You can still edit the opportunity."
     ],
     "jawaban": 2,
-    "penjelasan": "Setelah kesempatan penjualan ditandai sebagai \"Won\", pengguna dapat melanjutkan proses ke pembuatan Sales Order atau faktur.",
+    "penjelasan": "Opportunity yang ditandai Won tidak dikunci: field-nya masih bisa diedit, dan status Won tidak mengonfirmasi quotation yang terhubung secara otomatis.",
     "referensi": {
       "topikSpesifik": "Won Opportunities & Order Follow-ups",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/acquire_leads/convert.html",
@@ -4952,7 +4952,7 @@ export const QUESTIONS = [
       "The lead is in a newer stage of the pipeline."
     ],
     "jawaban": 2,
-    "penjelasan": "Aktivitas yang terlewat (overdue activities) atau stage yang terlalu lama tidak berubah akan menurunkan skor probabilitas AI pada opportunity.",
+    "penjelasan": "Predictive lead scoring memakai stage sebagai salah satu faktor; lead di stage awal (baru) pipeline memiliki peluang menang historis lebih kecil sehingga AI probability-nya turun, sedangkan email valid dan data kontak lengkap justru menaikkannya.",
     "referensi": {
       "topikSpesifik": "CRM AI Probability Scoring Negative Factors",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/crm/track_leads/lead_scoring.html",
@@ -4988,7 +4988,7 @@ export const QUESTIONS = [
       "Agents can make changes to the database unless the Restrict to Sources option is enabled."
     ],
     "jawaban": 0,
-    "penjelasan": "AI Agent membutuhkan konfirmasi pengguna atau hak akses database yang sesuai sebelum dapat mengubah data di sistem.",
+    "penjelasan": "AI Agent hanya bisa mengubah data jika diberi Topic yang berisi Tool untuk aksi database (misalnya Create Lead atau Add Tags). Tanpa Tool tersebut agent hanya menjawab pertanyaan.",
     "referensi": {
       "topikSpesifik": "AI Agent Action Approvals & DB Safety",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/general/ai.html",
@@ -4998,7 +4998,7 @@ export const QUESTIONS = [
   },
   {
     "id": 290,
-    "topic": "introduction",
+    "topic": "marketing",
     "soal": "How can you gather event attendee details, such as \"How did you hear about us?\"",
     "pilihan": [
       "With Odoo Studio.",
@@ -5016,7 +5016,7 @@ export const QUESTIONS = [
   },
   {
     "id": 291,
-    "topic": "introduction",
+    "topic": "marketing",
     "soal": "How would you automatically communicate information to an event attendee once they register?",
     "pilihan": [
       "Select an email template in the Communication tab of the event, with the trigger \"Before the event starts\".",
@@ -5024,7 +5024,7 @@ export const QUESTIONS = [
       "You can only email attendees if they select 'allow emails' on the event registration page."
     ],
     "jawaban": 1,
-    "penjelasan": "Marketing Automation mengotomatiskan pengiriman email berantai dan aksi lanjutan berdasarkan respons audiens pada event atau formulir.",
+    "penjelasan": "Di tab Communication pada event, pilih email template dengan trigger 'After each registration' agar email terkirim otomatis ke peserta segera setelah mereka mendaftar.",
     "referensi": {
       "topikSpesifik": "Marketing Automation Campaigns",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/marketing_automation.html",
@@ -5034,7 +5034,7 @@ export const QUESTIONS = [
   },
   {
     "id": 292,
-    "topic": "introduction",
+    "topic": "marketing",
     "soal": "Which of the following is NOT a valid Marketing Automation activity trigger?",
     "pilihan": [
       "1 week after an email has bounced.",
@@ -5042,7 +5042,7 @@ export const QUESTIONS = [
       "0 hours after an email has been clicked."
     ],
     "jawaban": 1,
-    "penjelasan": "Marketing Automation mengotomatiskan pengiriman email berantai dan aksi lanjutan berdasarkan respons audiens pada event atau formulir.",
+    "penjelasan": "Trigger activity di Marketing Automation berbasis event email seperti opened, not opened, replied, not replied, clicked, not clicked, dan bounced. Tidak ada trigger 'forwarded' karena Odoo tidak bisa melacak email yang diteruskan.",
     "referensi": {
       "topikSpesifik": "Marketing Automation Campaigns",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/marketing/marketing_automation.html",
@@ -5060,7 +5060,7 @@ export const QUESTIONS = [
       "Tags are not shared between tasks"
     ],
     "jawaban": 1,
-    "penjelasan": "Sub-task memecah tugas besar menjadi bagian-bagian kerja yang lebih kecil dan terorganisir di bawah Parent Task.",
+    "penjelasan": "Tag task bersifat global: tag yang dibuat di satu project bisa dipakai di semua task pada semua project.",
     "referensi": {
       "topikSpesifik": "Sub-tasks & Task Hierarchy",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/sub-tasks.html",
@@ -5078,7 +5078,7 @@ export const QUESTIONS = [
       "Assignees"
     ],
     "jawaban": 1,
-    "penjelasan": "Tugas berulang (Recurring Tasks) otomatis membuat salinan tugas baru pada interval tertentu tanpa menduplikasi log waktu lampau.",
+    "penjelasan": "Saat task berulang dibuat, field seperti tags dan assignees ikut disalin, tetapi activity yang dijadwalkan pada task asal tidak ikut terbawa ke task baru.",
     "referensi": {
       "topikSpesifik": "Recurring Tasks Configuration",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/project/tasks/recurring_tasks.html",
@@ -5106,7 +5106,7 @@ export const QUESTIONS = [
   },
   {
     "id": 297,
-    "topic": "introduction",
+    "topic": "timesheets",
     "soal": "What are hours billed at a fixed price?",
     "pilihan": [
       "These are sold hours coming from a sales order that still need to be timesheeted before being invoiced",
@@ -5114,7 +5114,7 @@ export const QUESTIONS = [
       "These are the actual timesheeted hours that cannot be invoiced from the sales order"
     ],
     "jawaban": 1,
-    "penjelasan": "Kebijakan faktur menentukan apakah penagihan dilakukan berdasarkan Ordered Quantities (sebelum kirim) atau Delivered Quantities (setelah pengiriman).",
+    "penjelasan": "Hours billed at a fixed price adalah jam timesheet yang terhubung ke sales order line dengan invoicing policy prepaid/fixed price, sehingga jam tersebut sudah ditagih di muka dan tidak menambah tagihan.",
     "referensi": {
       "topikSpesifik": "Invoicing Policies & Pro-Forma Invoices",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/sales/invoicing/invoicing_policy.html",
@@ -5124,7 +5124,7 @@ export const QUESTIONS = [
   },
   {
     "id": 298,
-    "topic": "crm",
+    "topic": "timesheets",
     "soal": "How can you display the rankings on the timesheet leaderboard?",
     "pilihan": [
       "By billing rate and hours invoiced",
@@ -5132,7 +5132,7 @@ export const QUESTIONS = [
       "By billing rate and total time"
     ],
     "jawaban": 2,
-    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
+    "penjelasan": "Timesheet leaderboard dapat menampilkan peringkat karyawan berdasarkan billing rate atau total time.",
     "referensi": {
       "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
@@ -5142,7 +5142,7 @@ export const QUESTIONS = [
   },
   {
     "id": 299,
-    "topic": "introduction",
+    "topic": "timesheets",
     "soal": "At which level do you define a billing time target?",
     "pilihan": [
       "At the company level",
@@ -5150,7 +5150,7 @@ export const QUESTIONS = [
       "At the project level"
     ],
     "jawaban": 1,
-    "penjelasan": "Timesheet mencatat jam kerja karyawan dan menghitung biaya tenaga kerja proyek serta target jam tagihan (billing rate).",
+    "penjelasan": "Billing Time Target diatur per karyawan di form employee (tab Settings) setelah Billing Rate Indicators diaktifkan, lalu dipakai untuk menghitung billing rate pada indikator dan leaderboard timesheet.",
     "referensi": {
       "topikSpesifik": "Timesheets Billing Rates & Leaderboards",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/services/timesheets/billing_rates.html",
@@ -5160,7 +5160,7 @@ export const QUESTIONS = [
   },
   {
     "id": 300,
-    "topic": "pos",
+    "topic": "accounting",
     "soal": "Is it possible to still make corrections after the Lock Everything lock date?",
     "pilihan": [
       "No, it represents an absolute block on everything before the date.",
@@ -5186,7 +5186,7 @@ export const QUESTIONS = [
       "Registering a payment for the full amount will automatically group all installments into one payment record."
     ],
     "jawaban": 1,
-    "penjelasan": "Tombol Register Payment pada invoice langsung mencatat penerimaan/pengeluaran kas dan mengubah status tagihan menjadi In Payment / Paid.",
+    "penjelasan": "Meskipun invoice memakai payment terms dengan beberapa installment, Anda tetap bisa klik Register Payment dan mencatat satu payment untuk jumlah penuh langsung dari invoice.",
     "referensi": {
       "topikSpesifik": "Registering Customer & Vendor Payments",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/customer_invoices/customer_payments.html",
@@ -5196,7 +5196,7 @@ export const QUESTIONS = [
   },
   {
     "id": 303,
-    "topic": "introduction",
+    "topic": "spreadsheet",
     "soal": "In the Data menu, what does a warning symbol beside the data source of an inserted list or pivot table mean?",
     "pilihan": [
       "There is a problem preventing the data in the list or pivot table being updated automatically.",
@@ -5204,7 +5204,7 @@ export const QUESTIONS = [
       "There is no list or pivot table related to that data source present in the spreadsheet."
     ],
     "jawaban": 2,
-    "penjelasan": "Odoo Spreadsheet memungkinkan analisis data dinamis langsung dari pivot view dengan sinkronisasi data live.",
+    "penjelasan": "Di menu Data, simbol peringatan di samping data source menandakan tidak ada lagi list atau pivot table di spreadsheet yang memakai data source tersebut (misalnya sudah dihapus).",
     "referensi": {
       "topikSpesifik": "Odoo Spreadsheets & Live Pivot Tables",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/productivity/spreadsheet.html",
@@ -5232,7 +5232,7 @@ export const QUESTIONS = [
   },
   {
     "id": 306,
-    "topic": "introduction",
+    "topic": "hr",
     "soal": "In the Payroll app, where can Pay Runs NOT be created?",
     "pilihan": [
       "The Work Entries dashboard",
@@ -5240,7 +5240,7 @@ export const QUESTIONS = [
       "The Employees dashboard"
     ],
     "jawaban": 2,
-    "penjelasan": "Work Entries di modul Payroll mencatat kehadiran, cuti, dan jam kerja aktual sebagai dasar kalkulasi slip gaji karyawan.",
+    "penjelasan": "Pay Run bisa dibuat dari dashboard Work Entries dan Payslips di aplikasi Payroll, tetapi tidak dari dashboard Employees.",
     "referensi": {
       "topikSpesifik": "Payroll & Work Entries",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/hr/payroll/work_entries.html",
@@ -5258,7 +5258,7 @@ export const QUESTIONS = [
       "Food truck, Restaurant, and Uber."
     ],
     "jawaban": 0,
-    "penjelasan": "Preset restoran di POS mencakup denah meja (floor plan), kontrol pesanan dapur (kitchen printer/display), dan pembagian pesanan per kursi.",
+    "penjelasan": "Untuk restoran, POS menyediakan preset bawaan Dine In, Takeout, dan Delivery untuk membedakan jenis pesanan (misalnya pricelist atau fiscal position berbeda).",
     "referensi": {
       "topikSpesifik": "POS Restaurant Floor Plan Presets",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale.html",
@@ -5276,7 +5276,7 @@ export const QUESTIONS = [
       "No"
     ],
     "jawaban": 0,
-    "penjelasan": "Purchase Agreement (Blanket Order) mengunci kesepakatan harga dan kuantitas jangka panjang dengan vendor untuk pemesanan bertahap.",
+    "penjelasan": "Blanket Order tidak membatasi kuantitas: Anda tetap bisa memesan melebihi kuantitas di Purchase Agreement, dan jumlah yang sudah dipesan hanya dilacak terhadap kuantitas yang disepakati.",
     "referensi": {
       "topikSpesifik": "Purchase Agreements & Blanket Orders",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/agreements.html",
@@ -5294,7 +5294,7 @@ export const QUESTIONS = [
       "Never. Each product supports only one rule"
     ],
     "jawaban": 0,
-    "penjelasan": "Aturan Reordering otomatis memicu pembuatan RFQ atau Order Produksi saat stok menyentuh batas Minimum Quantity.",
+    "penjelasan": "Satu produk bisa memiliki beberapa reordering rule selama tiap rule berlaku untuk warehouse, lokasi, atau route yang berbeda.",
     "referensi": {
       "topikSpesifik": "Automated Reordering Rules",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/product_management/reordering_rules.html",
@@ -5312,7 +5312,7 @@ export const QUESTIONS = [
       "To email the confirmed purchase order to the vendor so they can acknowledge the order and send the vendor bill"
     ],
     "jawaban": 2,
-    "penjelasan": "Saat RFQ dikonfirmasi menjadi Purchase Order resmi, Odoo secara otomatis membuat dokumen Penerimaan Barang (Receipt) di modul Inventory.",
+    "penjelasan": "Tombol Send PO mengirim email purchase order yang sudah dikonfirmasi ke vendor, agar vendor dapat mengonfirmasi (acknowledge) order dan kemudian mengirim vendor bill. Tombol ini tidak membuat bill atau meminta approval.",
     "referensi": {
       "topikSpesifik": "Requests for Quotation (RFQ) & PO Workflow",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/purchase/manage_deals/rfq.html",
@@ -5340,7 +5340,7 @@ export const QUESTIONS = [
   },
   {
     "id": 312,
-    "topic": "introduction",
+    "topic": "inventory",
     "soal": "What does 'move entire package' do when activated under the operation types?",
     "pilihan": [
       "When moving a package, all items within that package must be moved together to the new destination.",
@@ -5348,7 +5348,7 @@ export const QUESTIONS = [
       "When moving a package, a new pack is automatically created at the destination location, and all items are transferred into the new pack."
     ],
     "jawaban": 0,
-    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
+    "penjelasan": "Jika Move Entire Package diaktifkan di operation type, memindahkan package berarti semua isi package ikut dipindahkan bersama ke lokasi tujuan tanpa membuat package baru.",
     "referensi": {
       "topikSpesifik": "Packages & Move Entire Package",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
@@ -5358,7 +5358,7 @@ export const QUESTIONS = [
   },
   {
     "id": 313,
-    "topic": "introduction",
+    "topic": "mrp",
     "soal": "You're reviewing a \"Pack\" operation and want to perform a one-time quality check -- without creating a rule that forces quality checks for all packing operations. How can you do this?",
     "pilihan": [
       "Quality checks cannot be added ad-hoc; you must configure Quality Control Points in the Quality app, locate a location, and create an operation type.",
@@ -5366,7 +5366,7 @@ export const QUESTIONS = [
       "Create an operation type named \"Quality Check\" and link it to the default packing operation."
     ],
     "jawaban": 1,
-    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
+    "penjelasan": "Quality check sekali pakai bisa dibuat langsung dari operasi Pack dengan tombol untuk menambah quality check ad-hoc, tanpa perlu membuat Quality Control Point yang berlaku untuk semua operasi packing.",
     "referensi": {
       "topikSpesifik": "Packages & Move Entire Package",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
@@ -5376,7 +5376,7 @@ export const QUESTIONS = [
   },
   {
     "id": 314,
-    "topic": "mrp",
+    "topic": "inventory",
     "soal": "You create two automatic reordering rules for the same product-one for Warehouse A (Buy route) and one for Warehouse B (Manufacturing route). What happens when stock drops below the minimum in Warehouse B?",
     "pilihan": [
       "Odoo defaults to the Buy route, since Buy is prioritized over Manufacturing.",
@@ -5384,7 +5384,7 @@ export const QUESTIONS = [
       "A proposed manufacturing order is created for the product in Warehouse B."
     ],
     "jawaban": 2,
-    "penjelasan": "Hierarki lokasi gudang (Internal, Customer, Vendor, Production) memungkinkan pemetaan penempatan stok secara terstruktur.",
+    "penjelasan": "Reordering rule berlaku per warehouse dan route-nya, sehingga saat stok Warehouse B di bawah minimum, Odoo mengusulkan manufacturing order sesuai route Manufacture pada rule Warehouse B.",
     "referensi": {
       "topikSpesifik": "Warehouse & Location Hierarchy",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
@@ -5402,7 +5402,7 @@ export const QUESTIONS = [
       "Both deliveries remain unreserved until more stock is received."
     ],
     "jawaban": 0,
-    "penjelasan": "Saat pesanan dikonfirmasi, sistem secara otomatis mereservasi stok yang tersedia untuk Delivery Order yang diproses.",
+    "penjelasan": "Memberi bintang (starred) pada picking menaikkan prioritasnya, sehingga saat reservasi dicek ulang stok yang terbatas direservasi lebih dulu untuk picking berbintang.",
     "referensi": {
       "topikSpesifik": "Delivery Orders & Stock Reservation",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
@@ -5420,7 +5420,7 @@ export const QUESTIONS = [
       "The products in this category don't have expiration dates, which are required for LIFO."
     ],
     "jawaban": 0,
-    "penjelasan": "Removal strategy mengatur urutan lokasi pengambilan stok saat pengiriman barang (misal FEFO untuk produk berkadaluarsa).",
+    "penjelasan": "Removal strategy yang diatur di product category lebih diutamakan daripada removal strategy di lokasi, sehingga kategori dengan FIFO akan mengabaikan LIFO di WH/Stock.",
     "referensi": {
       "topikSpesifik": "Removal Strategies (FIFO, LIFO, FEFO)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage/removal_strategies.html",
@@ -5430,7 +5430,7 @@ export const QUESTIONS = [
   },
   {
     "id": 317,
-    "topic": "introduction",
+    "topic": "inventory",
     "soal": "I CANNOT set the capacity on a location by:",
     "pilihan": [
       "Product",
@@ -5438,7 +5438,7 @@ export const QUESTIONS = [
       "Volume"
     ],
     "jawaban": 2,
-    "penjelasan": "Opsi Move Entire Package memungkinkan pemindahan seluruh boks/palet sekaligus tanpa perlu memindai satu per satu barang di dalamnya.",
+    "penjelasan": "Kapasitas lokasi diatur lewat storage category, yang bisa membatasi berdasarkan berat (max weight), per produk, atau per package type. Tidak ada opsi kapasitas berdasarkan volume.",
     "referensi": {
       "topikSpesifik": "Packages & Move Entire Package",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/packages.html",
@@ -5448,7 +5448,7 @@ export const QUESTIONS = [
   },
   {
     "id": 318,
-    "topic": "introduction",
+    "topic": "mrp",
     "soal": "You manufacture a product using either standard materials or premium materials. How can this be modeled in Odoo?",
     "pilihan": [
       "Create multiple BoMs for the same product, each with a different component list",
@@ -5456,7 +5456,7 @@ export const QUESTIONS = [
       "Create one BoM and change the components manually for each order"
     ],
     "jawaban": 0,
-    "penjelasan": "Bill of Materials (BoM) mendefinisikan daftar komponen, sub-rakitan (kit), dan produk sampingan (by-products) dalam proses manufaktur.",
+    "penjelasan": "Satu produk bisa memiliki beberapa BoM dengan daftar komponen berbeda (misalnya standar dan premium), lalu BoM yang sesuai dipilih di manufacturing order.",
     "referensi": {
       "topikSpesifik": "Bills of Materials (BoM) & Kits",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/kit_shipping.html",
@@ -5474,7 +5474,7 @@ export const QUESTIONS = [
       "Yes, but only if the 'Work Orders' setting is NOT enabled"
     ],
     "jawaban": 1,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Setiap operation di BoM wajib memiliki work center; field Work Center bersifat mandatory, jadi operation tanpa work center tidak dapat disimpan.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -5492,7 +5492,7 @@ export const QUESTIONS = [
       "No, you must create different work centers"
     ],
     "jawaban": 0,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Di form work center, tab Product Capacities memungkinkan Anda menentukan kapasitas serta Setup Time dan Cleanup Time khusus per produk, sehingga tidak perlu membuat work center terpisah.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -5510,7 +5510,7 @@ export const QUESTIONS = [
       "Work order dependencies must be activated in the Manufacturing settings, as well as on the 'Miscellaneous' tab for each specific BoM"
     ],
     "jawaban": 2,
-    "penjelasan": "Work Center mengatur kapasitas mesin/stasiun kerja, estimasi waktu operasi, dan pelacakan efisiensi produksi (OEE).",
+    "penjelasan": "Work order dependencies harus diaktifkan dulu di Manufacturing > Configuration > Settings, lalu diaktifkan per BoM lewat opsi Operation Dependencies di tab Miscellaneous.",
     "referensi": {
       "topikSpesifik": "Work Centers, Routings & Capacity",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/work_center_capacity.html",
@@ -5520,7 +5520,7 @@ export const QUESTIONS = [
   },
   {
     "id": 322,
-    "topic": "introduction",
+    "topic": "studio",
     "soal": "How can you ensure users can only choose a year and a month in a date selector, rather than a day?",
     "pilihan": [
       "Set the Date format to Numeric and disable 'Show Day'.",
