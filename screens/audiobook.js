@@ -53,14 +53,14 @@ export function renderAudiobook(container, initialTopicId = 'all', initialQuesti
             </span>
           </div>
           <p class="section-subtitle" style="margin:0;">
-            Dengarkan pembahasan 322 soal Odoo 19 dengan dual speaker (Indonesia + English native).
+            Dengarkan pembahasan ${QUESTIONS.length} soal Odoo 19 dengan dual speaker (Indonesia + English native).
           </p>
         </div>
 
         <!-- Topic Tabs (Horizontal Scrollable) -->
         <div class="audio-topic-scroll" style="margin-bottom:var(--space-4);">
           <button class="audio-topic-chip ${audioPlayer.currentTopicId === 'all' ? 'active' : ''}" data-topic="all">
-            Semua Soal (322)
+            Semua Soal (${QUESTIONS.length})
           </button>
           ${TOPICS.map(t => `
             <button class="audio-topic-chip ${audioPlayer.currentTopicId === t.id ? 'active' : ''}" data-topic="${t.id}">

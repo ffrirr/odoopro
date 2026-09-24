@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-18T10:14:49+07:00",
+  "updatedAt": "2026-09-24T14:57:16+07:00",
   "mode": "bilingual",
   "voice_id": "id-ID-ArdiNeural",
   "voice_en": "en-US-BrianNeural",
   "rate": "+0%",
-  "totalQuestions": 322,
+  "totalQuestions": 301,
   "audios": {
     "1": {
       "file": "audio/q_1.mp3",
@@ -18,22 +18,22 @@
     },
     "3": {
       "file": "audio/q_3.mp3",
-      "size": 372096,
+      "size": 390816,
       "mode": "bilingual"
     },
     "35": {
       "file": "audio/q_35.mp3",
-      "size": 328032,
+      "size": 336096,
       "mode": "bilingual"
     },
     "36": {
       "file": "audio/q_36.mp3",
-      "size": 307872,
+      "size": 329904,
       "mode": "bilingual"
     },
     "37": {
       "file": "audio/q_37.mp3",
-      "size": 233568,
+      "size": 248400,
       "mode": "bilingual"
     },
     "144": {
@@ -93,7 +93,7 @@
     },
     "12": {
       "file": "audio/q_12.mp3",
-      "size": 237744,
+      "size": 265824,
       "mode": "bilingual"
     },
     "13": {
@@ -113,7 +113,7 @@
     },
     "16": {
       "file": "audio/q_16.mp3",
-      "size": 282528,
+      "size": 332352,
       "mode": "bilingual"
     },
     "17": {
@@ -168,12 +168,12 @@
     },
     "27": {
       "file": "audio/q_27.mp3",
-      "size": 196704,
+      "size": 204624,
       "mode": "bilingual"
     },
     "28": {
       "file": "audio/q_28.mp3",
-      "size": 272016,
+      "size": 253872,
       "mode": "bilingual"
     },
     "29": {
@@ -203,7 +203,7 @@
     },
     "34": {
       "file": "audio/q_34.mp3",
-      "size": 224640,
+      "size": 226800,
       "mode": "bilingual"
     },
     "38": {
@@ -213,7 +213,7 @@
     },
     "39": {
       "file": "audio/q_39.mp3",
-      "size": 335376,
+      "size": 416016,
       "mode": "bilingual"
     },
     "40": {
@@ -223,7 +223,7 @@
     },
     "41": {
       "file": "audio/q_41.mp3",
-      "size": 242640,
+      "size": 255024,
       "mode": "bilingual"
     },
     "42": {
@@ -231,19 +231,14 @@
       "size": 264384,
       "mode": "bilingual"
     },
-    "43": {
-      "file": "audio/q_43.mp3",
-      "size": 209808,
-      "mode": "bilingual"
-    },
     "44": {
       "file": "audio/q_44.mp3",
-      "size": 259632,
+      "size": 285696,
       "mode": "bilingual"
     },
     "45": {
       "file": "audio/q_45.mp3",
-      "size": 230976,
+      "size": 225936,
       "mode": "bilingual"
     },
     "46": {
@@ -253,22 +248,12 @@
     },
     "47": {
       "file": "audio/q_47.mp3",
-      "size": 215712,
+      "size": 213408,
       "mode": "bilingual"
     },
     "48": {
       "file": "audio/q_48.mp3",
-      "size": 199872,
-      "mode": "bilingual"
-    },
-    "49": {
-      "file": "audio/q_49.mp3",
-      "size": 224352,
-      "mode": "bilingual"
-    },
-    "50": {
-      "file": "audio/q_50.mp3",
-      "size": 282528,
+      "size": 212400,
       "mode": "bilingual"
     },
     "51": {
@@ -288,7 +273,7 @@
     },
     "54": {
       "file": "audio/q_54.mp3",
-      "size": 238464,
+      "size": 250704,
       "mode": "bilingual"
     },
     "55": {
@@ -303,12 +288,12 @@
     },
     "57": {
       "file": "audio/q_57.mp3",
-      "size": 251136,
+      "size": 284976,
       "mode": "bilingual"
     },
     "58": {
       "file": "audio/q_58.mp3",
-      "size": 280656,
+      "size": 278064,
       "mode": "bilingual"
     },
     "59": {
@@ -328,12 +313,12 @@
     },
     "62": {
       "file": "audio/q_62.mp3",
-      "size": 265968,
+      "size": 263088,
       "mode": "bilingual"
     },
     "63": {
       "file": "audio/q_63.mp3",
-      "size": 351072,
+      "size": 364464,
       "mode": "bilingual"
     },
     "64": {
@@ -353,12 +338,12 @@
     },
     "67": {
       "file": "audio/q_67.mp3",
-      "size": 343296,
+      "size": 351504,
       "mode": "bilingual"
     },
     "68": {
       "file": "audio/q_68.mp3",
-      "size": 272160,
+      "size": 302976,
       "mode": "bilingual"
     },
     "69": {
@@ -388,7 +373,7 @@
     },
     "74": {
       "file": "audio/q_74.mp3",
-      "size": 302832,
+      "size": 308880,
       "mode": "bilingual"
     },
     "75": {
@@ -403,7 +388,7 @@
     },
     "77": {
       "file": "audio/q_77.mp3",
-      "size": 267264,
+      "size": 293904,
       "mode": "bilingual"
     },
     "78": {
@@ -413,12 +398,12 @@
     },
     "79": {
       "file": "audio/q_79.mp3",
-      "size": 318672,
+      "size": 317952,
       "mode": "bilingual"
     },
     "80": {
       "file": "audio/q_80.mp3",
-      "size": 275472,
+      "size": 269856,
       "mode": "bilingual"
     },
     "81": {
@@ -431,14 +416,9 @@
       "size": 200592,
       "mode": "bilingual"
     },
-    "83": {
-      "file": "audio/q_83.mp3",
-      "size": 217152,
-      "mode": "bilingual"
-    },
     "84": {
       "file": "audio/q_84.mp3",
-      "size": 327168,
+      "size": 343728,
       "mode": "bilingual"
     },
     "85": {
@@ -463,22 +443,17 @@
     },
     "89": {
       "file": "audio/q_89.mp3",
-      "size": 400896,
+      "size": 381888,
       "mode": "bilingual"
     },
     "90": {
       "file": "audio/q_90.mp3",
-      "size": 343152,
+      "size": 347184,
       "mode": "bilingual"
     },
     "91": {
       "file": "audio/q_91.mp3",
       "size": 417456,
-      "mode": "bilingual"
-    },
-    "92": {
-      "file": "audio/q_92.mp3",
-      "size": 314640,
       "mode": "bilingual"
     },
     "93": {
@@ -488,22 +463,17 @@
     },
     "94": {
       "file": "audio/q_94.mp3",
-      "size": 309888,
-      "mode": "bilingual"
-    },
-    "95": {
-      "file": "audio/q_95.mp3",
-      "size": 281376,
+      "size": 313200,
       "mode": "bilingual"
     },
     "96": {
       "file": "audio/q_96.mp3",
-      "size": 297360,
+      "size": 344880,
       "mode": "bilingual"
     },
     "97": {
       "file": "audio/q_97.mp3",
-      "size": 303264,
+      "size": 311184,
       "mode": "bilingual"
     },
     "98": {
@@ -513,17 +483,12 @@
     },
     "99": {
       "file": "audio/q_99.mp3",
-      "size": 338400,
+      "size": 372384,
       "mode": "bilingual"
     },
     "100": {
       "file": "audio/q_100.mp3",
-      "size": 218448,
-      "mode": "bilingual"
-    },
-    "101": {
-      "file": "audio/q_101.mp3",
-      "size": 336672,
+      "size": 231408,
       "mode": "bilingual"
     },
     "102": {
@@ -551,19 +516,14 @@
       "size": 255024,
       "mode": "bilingual"
     },
-    "107": {
-      "file": "audio/q_107.mp3",
-      "size": 358416,
-      "mode": "bilingual"
-    },
     "108": {
       "file": "audio/q_108.mp3",
-      "size": 264096,
+      "size": 272448,
       "mode": "bilingual"
     },
     "109": {
       "file": "audio/q_109.mp3",
-      "size": 192384,
+      "size": 168048,
       "mode": "bilingual"
     },
     "110": {
@@ -583,7 +543,7 @@
     },
     "113": {
       "file": "audio/q_113.mp3",
-      "size": 268704,
+      "size": 270720,
       "mode": "bilingual"
     },
     "114": {
@@ -611,11 +571,6 @@
       "size": 316512,
       "mode": "bilingual"
     },
-    "119": {
-      "file": "audio/q_119.mp3",
-      "size": 324000,
-      "mode": "bilingual"
-    },
     "120": {
       "file": "audio/q_120.mp3",
       "size": 206064,
@@ -633,7 +588,7 @@
     },
     "123": {
       "file": "audio/q_123.mp3",
-      "size": 248400,
+      "size": 254448,
       "mode": "bilingual"
     },
     "124": {
@@ -658,7 +613,7 @@
     },
     "128": {
       "file": "audio/q_128.mp3",
-      "size": 341136,
+      "size": 346464,
       "mode": "bilingual"
     },
     "129": {
@@ -678,12 +633,12 @@
     },
     "132": {
       "file": "audio/q_132.mp3",
-      "size": 217008,
+      "size": 234288,
       "mode": "bilingual"
     },
     "133": {
       "file": "audio/q_133.mp3",
-      "size": 164160,
+      "size": 240912,
       "mode": "bilingual"
     },
     "134": {
@@ -733,7 +688,7 @@
     },
     "143": {
       "file": "audio/q_143.mp3",
-      "size": 243216,
+      "size": 251424,
       "mode": "bilingual"
     },
     "147": {
@@ -763,7 +718,7 @@
     },
     "152": {
       "file": "audio/q_152.mp3",
-      "size": 217872,
+      "size": 250128,
       "mode": "bilingual"
     },
     "153": {
@@ -771,14 +726,9 @@
       "size": 257040,
       "mode": "bilingual"
     },
-    "154": {
-      "file": "audio/q_154.mp3",
-      "size": 219168,
-      "mode": "bilingual"
-    },
     "155": {
       "file": "audio/q_155.mp3",
-      "size": 214416,
+      "size": 229536,
       "mode": "bilingual"
     },
     "156": {
@@ -798,7 +748,7 @@
     },
     "159": {
       "file": "audio/q_159.mp3",
-      "size": 211824,
+      "size": 243216,
       "mode": "bilingual"
     },
     "160": {
@@ -828,7 +778,7 @@
     },
     "165": {
       "file": "audio/q_165.mp3",
-      "size": 287568,
+      "size": 282672,
       "mode": "bilingual"
     },
     "166": {
@@ -838,12 +788,12 @@
     },
     "167": {
       "file": "audio/q_167.mp3",
-      "size": 302832,
+      "size": 307584,
       "mode": "bilingual"
     },
     "168": {
       "file": "audio/q_168.mp3",
-      "size": 353664,
+      "size": 370800,
       "mode": "bilingual"
     },
     "169": {
@@ -858,7 +808,7 @@
     },
     "171": {
       "file": "audio/q_171.mp3",
-      "size": 262512,
+      "size": 280656,
       "mode": "bilingual"
     },
     "172": {
@@ -879,11 +829,6 @@
     "175": {
       "file": "audio/q_175.mp3",
       "size": 267984,
-      "mode": "bilingual"
-    },
-    "176": {
-      "file": "audio/q_176.mp3",
-      "size": 314928,
       "mode": "bilingual"
     },
     "177": {
@@ -918,7 +863,7 @@
     },
     "183": {
       "file": "audio/q_183.mp3",
-      "size": 397728,
+      "size": 423792,
       "mode": "bilingual"
     },
     "184": {
@@ -946,16 +891,6 @@
       "size": 308304,
       "mode": "bilingual"
     },
-    "189": {
-      "file": "audio/q_189.mp3",
-      "size": 309600,
-      "mode": "bilingual"
-    },
-    "190": {
-      "file": "audio/q_190.mp3",
-      "size": 303408,
-      "mode": "bilingual"
-    },
     "191": {
       "file": "audio/q_191.mp3",
       "size": 271872,
@@ -964,11 +899,6 @@
     "192": {
       "file": "audio/q_192.mp3",
       "size": 397584,
-      "mode": "bilingual"
-    },
-    "193": {
-      "file": "audio/q_193.mp3",
-      "size": 281088,
       "mode": "bilingual"
     },
     "194": {
@@ -993,17 +923,12 @@
     },
     "198": {
       "file": "audio/q_198.mp3",
-      "size": 283392,
+      "size": 262224,
       "mode": "bilingual"
     },
     "199": {
       "file": "audio/q_199.mp3",
       "size": 292464,
-      "mode": "bilingual"
-    },
-    "200": {
-      "file": "audio/q_200.mp3",
-      "size": 294480,
       "mode": "bilingual"
     },
     "201": {
@@ -1018,12 +943,12 @@
     },
     "203": {
       "file": "audio/q_203.mp3",
-      "size": 295776,
+      "size": 289728,
       "mode": "bilingual"
     },
     "204": {
       "file": "audio/q_204.mp3",
-      "size": 259056,
+      "size": 244224,
       "mode": "bilingual"
     },
     "205": {
@@ -1038,7 +963,7 @@
     },
     "207": {
       "file": "audio/q_207.mp3",
-      "size": 270576,
+      "size": 250272,
       "mode": "bilingual"
     },
     "208": {
@@ -1073,7 +998,7 @@
     },
     "214": {
       "file": "audio/q_214.mp3",
-      "size": 503424,
+      "size": 474912,
       "mode": "bilingual"
     },
     "215": {
@@ -1093,12 +1018,12 @@
     },
     "218": {
       "file": "audio/q_218.mp3",
-      "size": 291024,
+      "size": 303552,
       "mode": "bilingual"
     },
     "219": {
       "file": "audio/q_219.mp3",
-      "size": 373680,
+      "size": 371520,
       "mode": "bilingual"
     },
     "220": {
@@ -1156,11 +1081,6 @@
       "size": 289008,
       "mode": "bilingual"
     },
-    "231": {
-      "file": "audio/q_231.mp3",
-      "size": 363168,
-      "mode": "bilingual"
-    },
     "232": {
       "file": "audio/q_232.mp3",
       "size": 184752,
@@ -1189,11 +1109,6 @@
     "237": {
       "file": "audio/q_237.mp3",
       "size": 279504,
-      "mode": "bilingual"
-    },
-    "238": {
-      "file": "audio/q_238.mp3",
-      "size": 308736,
       "mode": "bilingual"
     },
     "239": {
@@ -1229,11 +1144,6 @@
     "245": {
       "file": "audio/q_245.mp3",
       "size": 257616,
-      "mode": "bilingual"
-    },
-    "246": {
-      "file": "audio/q_246.mp3",
-      "size": 342864,
       "mode": "bilingual"
     },
     "247": {
@@ -1283,7 +1193,7 @@
     },
     "256": {
       "file": "audio/q_256.mp3",
-      "size": 229104,
+      "size": 268992,
       "mode": "bilingual"
     },
     "257": {
@@ -1328,7 +1238,7 @@
     },
     "265": {
       "file": "audio/q_265.mp3",
-      "size": 312480,
+      "size": 323568,
       "mode": "bilingual"
     },
     "266": {
@@ -1383,7 +1293,7 @@
     },
     "276": {
       "file": "audio/q_276.mp3",
-      "size": 263520,
+      "size": 278496,
       "mode": "bilingual"
     },
     "277": {
@@ -1418,7 +1328,7 @@
     },
     "283": {
       "file": "audio/q_283.mp3",
-      "size": 220176,
+      "size": 236448,
       "mode": "bilingual"
     },
     "284": {
@@ -1466,11 +1376,6 @@
       "size": 242928,
       "mode": "bilingual"
     },
-    "293": {
-      "file": "audio/q_293.mp3",
-      "size": 290160,
-      "mode": "bilingual"
-    },
     "294": {
       "file": "audio/q_294.mp3",
       "size": 231408,
@@ -1483,7 +1388,7 @@
     },
     "296": {
       "file": "audio/q_296.mp3",
-      "size": 263376,
+      "size": 285264,
       "mode": "bilingual"
     },
     "297": {
@@ -1503,7 +1408,7 @@
     },
     "300": {
       "file": "audio/q_300.mp3",
-      "size": 290304,
+      "size": 340704,
       "mode": "bilingual"
     },
     "301": {
@@ -1511,19 +1416,9 @@
       "size": 292176,
       "mode": "bilingual"
     },
-    "302": {
-      "file": "audio/q_302.mp3",
-      "size": 257328,
-      "mode": "bilingual"
-    },
     "303": {
       "file": "audio/q_303.mp3",
       "size": 301680,
-      "mode": "bilingual"
-    },
-    "304": {
-      "file": "audio/q_304.mp3",
-      "size": 218448,
       "mode": "bilingual"
     },
     "305": {
@@ -1558,7 +1453,7 @@
     },
     "311": {
       "file": "audio/q_311.mp3",
-      "size": 216288,
+      "size": 212400,
       "mode": "bilingual"
     },
     "312": {
@@ -1613,7 +1508,7 @@
     },
     "322": {
       "file": "audio/q_322.mp3",
-      "size": 272592,
+      "size": 318240,
       "mode": "bilingual"
     }
   }
