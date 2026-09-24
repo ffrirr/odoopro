@@ -4,7 +4,7 @@
   "voice_id": "id-ID-ArdiNeural",
   "voice_en": "en-US-BrianNeural",
   "rate": "+0%",
-  "totalQuestions": 301,
+  "totalQuestions": 300,
   "audios": {
     "1": {
       "file": "audio/q_1.mp3",
@@ -933,7 +933,7 @@
     },
     "201": {
       "file": "audio/q_201.mp3",
-      "size": 318528,
+      "size": 319824,
       "mode": "bilingual"
     },
     "202": {
@@ -1103,7 +1103,7 @@
     },
     "236": {
       "file": "audio/q_236.mp3",
-      "size": 335232,
+      "size": 335520,
       "mode": "bilingual"
     },
     "237": {
@@ -1469,11 +1469,6 @@
     "314": {
       "file": "audio/q_314.mp3",
       "size": 360000,
-      "mode": "bilingual"
-    },
-    "315": {
-      "file": "audio/q_315.mp3",
-      "size": 380304,
       "mode": "bilingual"
     },
     "316": {

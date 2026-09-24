@@ -1,4 +1,4 @@
-// data.js — 301 soal sertifikasi Odoo 19 (100% Validated Deep Pedagogical References)
+// data.js — 300 soal sertifikasi Odoo 19 (100% Validated Deep Pedagogical References)
 
 export const TOPICS = [
   {
@@ -101,7 +101,7 @@ export const TOPICS = [
     "id": "inventory",
     "nama": "Inventory",
     "icon": "archive",
-    "soalCount": 33
+    "soalCount": 32
   },
   {
     "id": "mrp",
@@ -3451,14 +3451,14 @@ export const QUESTIONS = [
   {
     "id": 201,
     "topic": "mrp",
-    "soal": "In the MPS, what does an orange-colored cell indicate about replenishment?",
+    "soal": "In the MPS, what does a yellow-colored cell indicate about replenishment?",
     "pilihan": [
       "A replenishment order has already been generated, but more quantities need to be ordered to meet the Safety Stock Target",
       "The forecasted demand is higher than the actual demand, so the quantity to replenish is uncertain",
       "Too many units have already been replenished"
     ],
     "jawaban": 0,
-    "penjelasan": "Sel oranye di MPS berarti replenishment order sudah dibuat, tetapi jumlahnya belum cukup sehingga masih perlu memesan lebih banyak untuk mencapai Safety Stock Target.",
+    "penjelasan": "Sel kuning di MPS berarti replenishment order sudah dibuat, tetapi jumlahnya belum cukup sehingga masih perlu memesan lebih banyak untuk mencapai Safety Stock Target.",
     "referensi": {
       "topikSpesifik": "Master Production Schedule (MPS)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/management/mps.html",
@@ -4065,12 +4065,12 @@ export const QUESTIONS = [
     "topic": "ecommerce",
     "soal": "How can you allow customers to order online and then pay in person at your stores?",
     "pilihan": [
-      "By enabling the \"Pay in Site\" payment provider.",
-      "By enabling the 'Click & Collect' feature, configuring a picking site, and activating the 'Pay in Site' payment provider.",
+      "By enabling the \"Pay on Site\" payment provider.",
+      "By enabling the 'Click & Collect' feature, configuring a picking site, and activating the 'Pay on Site' payment provider.",
       "By activating the 'Pick-up in Store' feature in the website settings."
     ],
     "jawaban": 1,
-    "penjelasan": "Aktifkan fitur Click & Collect, konfigurasikan lokasi pengambilan (picking site), dan aktifkan payment provider 'Pay in Site' agar customer memesan online lalu membayar dan mengambil barang di toko.",
+    "penjelasan": "Aktifkan fitur Click & Collect, konfigurasikan lokasi pengambilan (picking site), dan aktifkan payment provider 'Pay on Site' agar customer memesan online lalu membayar dan mengambil barang di toko.",
     "referensi": {
       "topikSpesifik": "Click & Collect (Order Online, Pay & Pickup in Store)",
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/websites/ecommerce.html",
@@ -5390,24 +5390,6 @@ export const QUESTIONS = [
       "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/warehouses_storage.html",
       "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Warehouses+and+Locations+Tutorial",
       "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Warehouse+%26+Location+Hierarchy+Odoo+19"
-    }
-  },
-  {
-    "id": 315,
-    "topic": "inventory",
-    "soal": "Two delivery orders are waiting for the same product. Your warehouse uses the \"At Confirmation\" reservation method. Only one delivery can be fulfilled immediately because stock is limited. You decide to star one of the pickings in the Delivery Orders list view. What happens when you check reservations again?",
-    "pilihan": [
-      "The starred picking gets priority, and the product is reserved for it first.",
-      "The starred picking is fulfilled first only if it has an earlier 'Scheduled Date'.",
-      "Both deliveries remain unreserved until more stock is received."
-    ],
-    "jawaban": 0,
-    "penjelasan": "Memberi bintang (starred) pada picking menaikkan prioritasnya, sehingga saat reservasi dicek ulang stok yang terbatas direservasi lebih dulu untuk picking berbintang.",
-    "referensi": {
-      "topikSpesifik": "Delivery Orders & Stock Reservation",
-      "docsUrl": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/daily_operations/receipts_delivery_orders.html",
-      "videoUrl": "https://www.youtube.com/results?search_query=Odoo+19+Delivery+Orders+Stock+Reservation+Tutorial",
-      "searchUrl": "https://www.google.com/search?q=site:odoo.com/documentation/19.0+Delivery+Orders+%26+Stock+Reservation+Odoo+19"
     }
   },
   {
