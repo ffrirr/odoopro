@@ -3985,19 +3985,20 @@ a:hover { color: var(--color-accent-hover); }
   width: 100%;
   height: 52px;
   background: var(--color-accent);
-  color: #FFFFFF;
+  color: var(--color-on-accent, #0B0F19);
   border-radius: 14px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   margin-bottom: var(--space-6);
-  box-shadow: 0 4px 20px -2px rgba(124, 58, 237, 0.4);
+  box-shadow: 0 4px 20px -2px rgba(0, 210, 211, 0.35);
   transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out);
 }
 
 .simple-primary-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 24px -2px rgba(124, 58, 237, 0.5);
+  background: var(--color-accent-hover);
+  box-shadow: 0 6px 24px -2px rgba(0, 210, 211, 0.5);
 }
 
 .simple-primary-cta:active {
@@ -4047,7 +4048,7 @@ a:hover { color: var(--color-accent-hover); }
 }
 
 .simple-feature-card:hover {
-  border-color: rgba(124, 58, 237, 0.4);
+  border-color: rgba(0, 210, 211, 0.4);
   transform: translateY(-2px);
 }
 
@@ -4358,7 +4359,7 @@ a:hover { color: var(--color-accent-hover); }
   }
 
   .simple-action-row:hover {
-    border-color: rgba(124, 58, 237, 0.4);
+    border-color: rgba(0, 210, 211, 0.4);
     transform: translateX(2px);
   }
 
@@ -4372,7 +4373,7 @@ a:hover { color: var(--color-accent-hover); }
     width: 32px;
     height: 32px;
     border-radius: 8px;
-    background: rgba(124, 58, 237, 0.12);
+    background: rgba(0, 210, 211, 0.12);
     color: var(--color-accent);
     display: flex;
     align-items: center;
