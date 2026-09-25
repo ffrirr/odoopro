@@ -1,50 +1,68 @@
-/* Hallmark · pre-emit critique: P5 H4 E5 S5 R5 V5
- * macrostructure: Dashboard App · genre: modern-minimal
- * theme: custom (vibe: "technical certification dark utilitarian"
- *   paper oklch(8% 0.01 260) · accent oklch(52% 0.12 320) purple
- *   Inter + JetBrains Mono)
- * nav: N/A (bottom-tab PWA) · footer: N/A (app, not page)
- * axes: dark / grotesk-sans / cool-purple
+/* tokens.css: OdooPro Design System & Tokens
+ * Inspired by pen.dev modern dark mobile design
  */
 
 :root {
-  /* ─── PAPER (backgrounds) ─── */
-  --color-paper:     oklch(8% 0.01 260);
-  --color-paper-2:   oklch(12% 0.012 260);
-  --color-paper-3:   oklch(16% 0.015 260);
-  --color-paper-4:   oklch(20% 0.018 260);
+  /* ─── PAPER & BACKGROUNDS ─── */
+  --color-paper:       #0B0F19;
+  --color-paper-1:     #111827;
+  --color-paper-2:     #161F30;
+  --color-paper-3:     #1F2937;
+  --color-paper-4:     #2D3748;
+  
+  /* ─── CARD SURFACES & ELEVATION ─── */
+  --color-card:        #111827;
+  --color-card-subtle: #161F30;
+  --color-card-active: #1F2937;
+  --card-border:       1px solid #1F2937;
+  --card-border-hover: 1px solid rgba(124, 58, 237, 0.4);
+  --card-shadow:       0 8px 30px -4px rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  --card-shadow-sm:    0 4px 16px -2px rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 0.03);
 
-  /* ─── INK (text) ─── */
-  --color-ink:       oklch(93% 0.01 260);
-  --color-ink-2:     oklch(70% 0.012 260);
-  --color-ink-3:     oklch(50% 0.01 260);
+  /* ─── INK & TEXT (WCAG AA/AAA Compliant) ─── */
+  --color-ink:         #F8FAFC;  /* 18.2:1 AAA: Primary Headings & Prompts */
+  --color-ink-2:       #CBD5E1;  /* 11.5:1 AAA: Subtitles, Body, Active Options */
+  --color-ink-3:       #94A3B8;  /* 6.8:1  AA: Metadata, Timestamps, Captions */
+  --color-ink-4:       #64748B;  /* 3.8:1  AA Large: Subtle Borders & Disabled icons */
+  --color-ink-muted:   rgba(255, 255, 255, 0.65); /* 7.2:1 AA for transparent overlays */
 
-  /* ─── ACCENT (Odoo purple family) ─── */
-  --color-accent:       oklch(52% 0.12 320);
-  --color-accent-hover: oklch(58% 0.14 320);
-  --color-accent-muted: oklch(35% 0.08 320);
-  --color-on-accent:    oklch(98% 0.005 320);
+  /* ─── ACCENTS & GRADIENTS ─── */
+  --color-accent:         #7C3AED;
+  --color-accent-hover:   #8B5CF6;
+  --color-accent-muted:   rgba(124, 58, 237, 0.15);
+  --color-on-accent:      #FFFFFF;
+  --color-accent-gradient: linear-gradient(135deg, #7C3AED 0%, #9333EA 100%);
 
-  /* ─── SEMANTIC ─── */
-  --color-correct:      oklch(72% 0.18 155);
-  --color-correct-bg:   oklch(25% 0.06 155);
-  --color-wrong:        oklch(62% 0.22 25);
-  --color-wrong-bg:     oklch(22% 0.06 25);
-  --color-warning:      oklch(78% 0.16 85);
-  --color-warning-bg:   oklch(25% 0.06 85);
+  /* ─── CYAN / READINESS / AUDIO ─── */
+  --color-cyan:           #06B6D4;
+  --color-cyan-hover:     #22D3EE;
+  --color-cyan-glow:      rgba(6, 182, 212, 0.35);
+  --color-cyan-bg:        rgba(6, 182, 212, 0.12);
+
+  /* ─── SEMANTIC STATUS ─── */
+  --color-correct:        #10B981;
+  --color-correct-bg:     rgba(16, 185, 129, 0.12);
+  --color-correct-border: rgba(16, 185, 129, 0.4);
+  --color-wrong:          #EF4444;
+  --color-wrong-bg:       rgba(239, 68, 68, 0.12);
+  --color-wrong-border:   rgba(239, 68, 68, 0.4);
+  --color-warning:        #F59E0B;
+  --color-warning-bg:     rgba(245, 158, 11, 0.14);
+  --color-warning-border: rgba(245, 158, 11, 0.4);
 
   /* ─── BORDERS & RINGS ─── */
-  --color-border:    oklch(22% 0.015 260);
-  --color-border-2:  oklch(28% 0.02 260);
-  --color-focus:     oklch(65% 0.15 320);
-  --color-ring:      oklch(52% 0.12 320);
+  --color-border:      rgba(255, 255, 255, 0.08);
+  --color-border-2:    rgba(255, 255, 255, 0.14);
+  --color-focus:       #8B5CF6;
+  --color-ring:        rgba(139, 92, 246, 0.5);
 
   /* ─── TYPOGRAPHY ─── */
-  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono:    'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
 
-  /* ─── TYPE SCALE (major third — 1.25) ─── */
+  /* ─── TYPE SCALE ─── */
+  --text-2xs:     0.6875rem;  /* 11px */
   --text-xs:      0.75rem;    /* 12px */
   --text-sm:      0.875rem;   /* 14px */
   --text-base:    1rem;       /* 16px */
@@ -67,24 +85,23 @@
   --space-12: 3rem;      /* 48px */
   --space-16: 4rem;      /* 64px */
 
-  /* ─── EASING ─── */
+  /* ─── EASING & TIMING ─── */
   --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
 
-  /* ─── DURATION ─── */
-  --dur-fast:    120ms;
-  --dur-normal:  200ms;
-  --dur-slow:    350ms;
+  --dur-fast:    140ms;
+  --dur-normal:  220ms;
+  --dur-slow:    360ms;
 
   /* ─── RADII ─── */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
-  --radius-xl: 20px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
   --radius-full: 9999px;
 
-  /* ─── RULES (decorative lines) ─── */
+  /* ─── RULES ─── */
   --rule-thin:  1px solid var(--color-border);
   --rule-thick: 2px solid var(--color-border-2);
 }

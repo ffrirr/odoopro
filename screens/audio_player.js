@@ -1,4 +1,4 @@
-// screens/audio_player.js — Global Singleton Audio Engine & MediaSession Controller
+// screens/audio_player.js: Global Singleton Audio Engine & MediaSession Controller
 import { QUESTIONS, TOPICS } from '../data.js';
 
 const STORAGE_RATE_KEY = 'odoopro_audio_rate';

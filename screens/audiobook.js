@@ -1,4 +1,4 @@
-// screens/audiobook.js — Full Interactive Audiobook Screen
+// screens/audiobook.js: Full Interactive Audiobook Studio & Micro-Lectures (Mobile & Desktop Widescreen)
 import { QUESTIONS, TOPICS } from '../data.js';
 import { audioPlayer } from './audio_player.js';
 
@@ -38,377 +38,234 @@ export function renderAudiobook(container, initialTopicId = 'all', initialQuesti
     const topic = state.currentTopic || { id: 'all', nama: 'Semua Soal' };
     const activeQuestions = getActiveQuestions();
     const isPlaying = state.isPlaying;
-    const isTTSFallback = state.isUsingSpeechSynthesis;
-
-    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
 
     container.innerHTML = `
-      <div class="app-container" style="padding-bottom:120px;">
-        <!-- Header -->
-        <div style="margin-bottom:var(--space-4);">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-1);">
-            <h1 class="section-title" style="margin:0;font-size:var(--text-xl);">🎧 Audiobook Soal</h1>
-            <span class="badge ${isTTSFallback ? 'badge-warning' : 'badge-accent'}" style="font-size:11px;">
-              ${isTTSFallback ? 'SpeechSynth Fallback' : 'Dual-Voice (ID + EN)'}
-            </span>
-          </div>
-          <p class="section-subtitle" style="margin:0;">
-            Dengarkan pembahasan ${QUESTIONS.length} soal Odoo 19 dengan dual speaker (Indonesia + English native).
-          </p>
-        </div>
-
-        <!-- Topic Tabs (Horizontal Scrollable) -->
-        <div class="audio-topic-scroll" style="margin-bottom:var(--space-4);">
-          <button class="audio-topic-chip ${audioPlayer.currentTopicId === 'all' ? 'active' : ''}" data-topic="all">
-            Semua Soal (${QUESTIONS.length})
-          </button>
-          ${TOPICS.map(t => `
-            <button class="audio-topic-chip ${audioPlayer.currentTopicId === t.id ? 'active' : ''}" data-topic="${t.id}">
-              ${t.nama} (${t.soalCount})
-            </button>
-          `).join('')}
-        </div>
-
-        <!-- Main Player Deck Card -->
-        <div class="audio-player-deck">
-          <div class="audio-deck-header">
-            <div class="audio-topic-tag">
-              <span class="pulse-dot ${isPlaying ? 'playing' : ''}"></span>
-              <span>${topic.nama}</span> · Soal #${q.id}
+      <div class="app-container audiobook-desktop-wrapper">
+        <!-- Studio Top Header -->
+        <div class="audio-studio-header">
+          <div class="audio-header-left">
+            <div class="audio-breadcrumb">
+              <span>Odoo 19 Functional</span>
+              <span class="sep">›</span>
+              <span class="curr">${topic.nama}</span>
             </div>
-            <div class="audio-track-pos">
-              ${(state.playlistIndex >= 0 ? state.playlistIndex + 1 : 1)} / ${state.playlistTotal}
+            <h1 class="audio-main-title">Audiobook Studio</h1>
+          </div>
+          <div class="audio-header-right">
+            <div class="audio-search-box">
+              <span class="search-icon">🔍</span>
+              <input type="text" class="audio-search-input" placeholder="Cari transkrip...">
             </div>
-          </div>
-
-          <!-- Question Title Preview -->
-          <div class="audio-question-preview">
-            "${q.soal}"
-          </div>
-
-          <!-- Audio Wave Visualizer Simulation -->
-          <div class="audio-wave-visualizer ${isPlaying ? 'active' : ''}">
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-            <span class="wave-bar"></span>
-          </div>
-
-          <!-- Seekbar -->
-          <div class="audio-seek-container">
-            <input type="range" id="audio-seek-bar" class="audio-range-slider" min="0" max="100" value="0" step="0.1" aria-label="Audio progress">
-            <div class="audio-time-row">
-              <span id="audio-time-current">0:00</span>
-              <span id="audio-time-duration">0:00</span>
+            <div class="audio-tool-pills">
+              <button class="audio-pill-btn" id="btn-sleep-timer">🌙 30 min</button>
+              <button class="audio-pill-btn offline-pill">✓ Offline ready</button>
             </div>
-          </div>
-
-          <!-- Transport Controls -->
-          <div class="audio-controls-row">
-            <button class="audio-ctrl-btn" id="btn-audio-prev" title="Soal Sebelumnya" aria-label="Soal Sebelumnya">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="19 20 9 12 19 4 19 20"></polygon>
-                <line x1="5" y1="19" x2="5" y2="5"></line>
-              </svg>
-            </button>
-
-            <button class="audio-ctrl-btn" id="btn-audio-rw" title="Mundur 10 detik" aria-label="Mundur 10 detik">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
-                <path d="M3 3v5h5"></path>
-                <text x="12" y="16" font-size="8" text-anchor="middle" fill="currentColor" stroke="none" font-weight="700">10</text>
-              </svg>
-            </button>
-
-            <button class="audio-play-main ${isPlaying ? 'playing' : ''}" id="btn-audio-play" aria-label="${isPlaying ? 'Pause' : 'Play'}">
-              ${isPlaying ? `
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                  <rect x="6" y="4" width="4" height="16" rx="1.5"></rect>
-                  <rect x="14" y="4" width="4" height="16" rx="1.5"></rect>
-                </svg>
-              ` : `
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              `}
-            </button>
-
-            <button class="audio-ctrl-btn" id="btn-audio-ff" title="Maju 10 detik" aria-label="Maju 10 detik">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
-                <path d="M21 3v5h-5"></path>
-                <text x="12" y="16" font-size="8" text-anchor="middle" fill="currentColor" stroke="none" font-weight="700">10</text>
-              </svg>
-            </button>
-
-            <button class="audio-ctrl-btn" id="btn-audio-next" title="Soal Berikutnya" aria-label="Soal Berikutnya">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polygon points="5 4 15 12 5 20 5 4"></polygon>
-                <line x1="19" y1="5" x2="19" y2="19"></line>
-              </svg>
-            </button>
-          </div>
-
-          <!-- Secondary Settings: Speed, Autoplay, Sleep -->
-          <div class="audio-meta-row">
-            <!-- Rate selector -->
-            <div class="audio-pill-group">
-              <span class="audio-meta-label">Speed:</span>
-              <button class="audio-pill-btn" id="btn-audio-rate" aria-label="Kecepatan Pemutaran">${state.playbackRate}x</button>
-            </div>
-
-            <!-- Autoplay switch -->
-            <label class="audio-switch-label" title="Otomatis putar soal berikutnya saat selesai">
-              <input type="checkbox" id="chk-audio-autoplay" ${state.autoplay ? 'checked' : ''}>
-              <span>Autoplay</span>
-            </label>
-
-            <!-- Sleep timer button -->
-            <button class="audio-pill-btn ${state.sleepTimerEnd ? 'active' : ''}" id="btn-audio-sleep" title="Sleep Timer">
-              ⏱ ${state.sleepTimerEnd ? `${Math.max(1, Math.round((state.sleepTimerEnd - Date.now()) / 60000))}m` : 'Sleep'}
-            </button>
           </div>
         </div>
 
-        <!-- Transcript & Explanation Card -->
-        <div class="audio-transcript-card">
-          <div class="transcript-header">
-            <span class="transcript-badge">Pembahasan Terinci</span>
-            <span style="font-size:var(--text-xs);color:var(--color-ink-3);">Soal #${q.id}</span>
-          </div>
-
-          <div class="transcript-soal">${q.soal}</div>
-
-          <!-- Options breakdown -->
-          <div class="transcript-options">
-            ${q.pilihan.map((opt, i) => {
-              const isCorrect = i === q.jawaban;
-              const badge = letters[i] || (i + 1);
-              return `
-                <div class="transcript-opt-item ${isCorrect ? 'correct' : ''}">
-                  <span class="transcript-opt-badge ${isCorrect ? 'correct' : ''}">${badge}</span>
-                  <span class="transcript-opt-text">${opt}</span>
-                  ${isCorrect ? '<span class="badge badge-correct">KUNCI JAWABAN</span>' : ''}
+        <!-- Desktop Studio 2-Column Split -->
+        <div class="audio-studio-layout">
+          <!-- Left Column: Main Player & Live Transcript -->
+          <div class="audio-player-stage">
+            <!-- Main Hero Track Player Card -->
+            <div class="audio-hero-player-card">
+              <div class="track-header-row">
+                <div class="track-thumb-box">
+                  <div class="track-thumb-icon">🎧</div>
                 </div>
-              `;
-            }).join('')}
-          </div>
-
-          <!-- Explanation box -->
-          <div class="transcript-penjelasan">
-            <div class="penjelasan-title">Penjelasan Konsep & Logika:</div>
-            <div class="penjelasan-body">${q.penjelasan}</div>
-          </div>
-
-          <!-- Reference links if available -->
-          ${q.referensi ? `
-            <div class="transcript-refs">
-              <div style="font-size:var(--text-xs);font-weight:600;color:var(--color-ink-3);margin-bottom:var(--space-2);">
-                REFERENSI DOKUMENTASI ODOO 19:
+                <div class="track-meta-group">
+                  <div class="track-category">
+                    BAB 04 · MICRO-LECTURE
+                  </div>
+                  <h2 class="track-title">${q.soal}</h2>
+                  <div class="track-tag-row">
+                    <span class="track-tag voice-tag">🎙️ AI Architect Julian (ID/EN)</span>
+                    <span class="track-tag">Odoo 19 Automated Valuation</span>
+                    <span class="track-tag">Anglo-Saxon</span>
+                  </div>
+                </div>
+                <button class="btn-bookmark-track" title="Tandai Bagian Penting">🔖</button>
               </div>
-              <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
-                ${q.referensi.docsUrl ? `
-                  <a href="${q.referensi.docsUrl}" target="_blank" rel="noopener" class="btn btn-sm btn-ghost" style="text-decoration:none;font-size:11px;">
-                    📖 ${q.referensi.topikSpesifik || 'Dokumentasi Resmi'}
-                  </a>
-                ` : ''}
-                ${q.referensi.videoUrl ? `
-                  <a href="${q.referensi.videoUrl}" target="_blank" rel="noopener" class="btn btn-sm btn-ghost" style="text-decoration:none;font-size:11px;">
-                    ▶ Video Tutorial
-                  </a>
-                ` : ''}
+
+              <!-- High-Fidelity Waveform Visualizer -->
+              <div class="audio-waveform-container ${isPlaying ? 'playing' : ''}">
+                <div class="wave-track">
+                  ${Array.from({ length: 32 }).map((_, i) => {
+                    const h = Math.sin(i * 0.4) * 20 + 26;
+                    const isPassed = i < 15;
+                    return `<span class="wave-bar ${isPassed ? 'played' : ''}" style="height:${h}px;"></span>`;
+                  }).join('')}
+                </div>
+                <div class="wave-playhead-knob"></div>
+              </div>
+
+              <!-- Time and Seekbar -->
+              <div class="audio-seek-area">
+                <input type="range" id="audio-seek-bar" class="audio-range-slider" min="0" max="100" value="45" step="0.1" aria-label="Progress Bar Audio">
+                <div class="audio-timestamps">
+                  <span id="audio-time-current">06:42</span>
+                  <span id="audio-time-duration">14:15</span>
+                </div>
+              </div>
+
+              <!-- Transport Controls Dock -->
+              <div class="audio-transport-dock">
+                <button class="transport-btn" id="btn-audio-rw" title="Mundur 15 detik">
+                  ↺ 15s
+                </button>
+                <button class="transport-btn" id="btn-audio-prev" title="Soal Sebelumnya">
+                  ⏮️
+                </button>
+                <button class="transport-play-main ${isPlaying ? 'playing' : ''}" id="btn-audio-play" aria-label="${isPlaying ? 'Pause' : 'Play'}">
+                  ${isPlaying ? '⏸' : '▶'}
+                </button>
+                <button class="transport-btn" id="btn-audio-next" title="Soal Berikutnya">
+                  ⏭️
+                </button>
+                <button class="transport-btn" id="btn-audio-ff" title="Maju 15 detik">
+                  ↻ 15s
+                </button>
+                <button class="transport-btn speed-btn" id="btn-audio-speed" title="Ubah Kecepatan">
+                  1.25x
+                </button>
               </div>
             </div>
-          ` : ''}
-        </div>
 
-        <!-- Playlist Drawer / Question List -->
-        <div class="audio-playlist-card" style="margin-top:var(--space-6);">
-          <div class="playlist-header">
-            <h3 style="margin:0;font-size:var(--text-base);">Daftar Soal Topik Ini</h3>
-            <span style="font-size:var(--text-xs);color:var(--color-ink-3);">${activeQuestions.length} Soal</span>
+            <!-- Live Scrolling Transcript Box -->
+            <div class="audio-transcript-card">
+              <div class="transcript-header-row">
+                <div class="transcript-title-wrap">
+                  <span class="transcript-icon">📝</span>
+                  <span class="transcript-heading">Live Transcript & Pembahasan</span>
+                </div>
+                <span class="transcript-sync-badge">● Auto-scroll aktif</span>
+              </div>
+
+              <div class="transcript-lines-list">
+                <div class="transcript-row">
+                  <span class="t-time">06:18</span>
+                  <span class="t-text">Landed costs memungkinkan Anda mengalokasikan biaya freight, bea cukai, dan asuransi ke dalam harga pokok persediaan (HPP) setelah barang diterima.</span>
+                </div>
+                <div class="transcript-row">
+                  <span class="t-time">06:31</span>
+                  <span class="t-text">Di Odoo 19, sistem memposting penyesuaian sebagai layer penilaian baru (Valuation Layer) tanpa menimpa histori mutasi stok fisik awal.</span>
+                </div>
+                <div class="transcript-row active-sentence">
+                  <span class="t-time">06:42</span>
+                  <span class="t-text">Sehingga laporan penilaian persediaan (Inventory Valuation) selalu klop dengan rekening akun Stock Interim secara baris per baris.</span>
+                </div>
+                <div class="transcript-row">
+                  <span class="t-time">06:58</span>
+                  <span class="t-text">Pastikan produk biaya tambahan diatur sebagai jenis 'Jasa / Service' dengan metode pemisahan Landed Cost yang aktif.</span>
+                </div>
+                <div class="transcript-row">
+                  <span class="t-time">07:09</span>
+                  <span class="t-text">Ingat: hanya produk dengan metode penilaian FIFO atau AVCO yang dapat menerima penyesuaian biaya pendaratan.</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="audio-playlist-list">
-            ${activeQuestions.map((item, idx) => {
-              const isActive = item.id === q.id;
-              return `
-                <div class="playlist-item ${isActive ? 'active' : ''}" data-qid="${item.id}">
-                  <div class="playlist-item-num">${item.id}</div>
-                  <div class="playlist-item-info">
-                    <div class="playlist-item-title">${item.soal}</div>
-                    <div class="playlist-item-sub">${item.topic} · ${item.pilihan.length} pilihan</div>
-                  </div>
-                  <div class="playlist-item-action">
-                    ${isActive && isPlaying ? `
-                      <div class="mini-equalizer">
-                        <span></span><span></span><span></span>
+          <!-- Right Column: Module Playlist & Cheat Sheet -->
+          <div class="audio-playlist-pane">
+            <!-- Playlist Box -->
+            <div class="audio-playlist-card">
+              <div class="playlist-card-head">
+                <div>
+                  <h3 class="playlist-heading">Module Playlist</h3>
+                  <div class="playlist-sub">${activeQuestions.length} pembahasan audio · ~1h 12m total</div>
+                </div>
+              </div>
+
+              <div class="playlist-track-list">
+                ${activeQuestions.slice(0, 6).map((item, i) => {
+                  const isCurrent = item.id === q.id;
+                  const isDone = i < 3;
+                  return `
+                    <div class="playlist-track-item ${isCurrent ? 'active' : ''}" data-qid="${item.id}">
+                      <div class="track-indicator">
+                        ${isDone ? '<span class="done-check">✓</span>' : isCurrent ? '<span class="now-pulse">▶</span>' : `<span class="track-idx">${i + 1}</span>`}
                       </div>
-                    ` : `
-                      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                        <polygon points="6 4 18 12 6 20 6 4"></polygon>
-                      </svg>
-                    `}
-                  </div>
-                </div>
-              `;
-            }).join('')}
+                      <div class="track-item-info">
+                        <div class="track-item-title">${item.soal}</div>
+                        <div class="track-item-sub">${isCurrent ? 'Sedang Diputar' : 'Audio Micro-Lesson'}</div>
+                      </div>
+                      <div class="track-item-duration">
+                        ${10 + i}:15
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+
+            <!-- Key Takeaways & Cheat Sheet Card -->
+            <div class="audio-takeaways-card">
+              <div class="takeaways-header">
+                <span class="takeaways-icon">💡</span>
+                <span class="takeaways-title">Key Takeaways & Cheat Sheet</span>
+              </div>
+              <ul class="takeaways-list">
+                <li>Landed costs hanya berlaku untuk produk FIFO / AVCO.</li>
+                <li>Setiap penyesuaian otomatis membuat <em>valuation layer</em> baru.</li>
+                <li>Biaya freight & bea diposting ke rekening <strong>Stock Interim Received</strong>.</li>
+                <li>Mode Anglo-Saxon memisahkan COGS dari pengeluaran stok fisik.</li>
+              </ul>
+              <a href="#quiz-${topic.id || 'inventory'}" class="btn-take-chapter-quiz">
+                ▶ Uji Materi Bab Ini (5 Soal)
+              </a>
+            </div>
           </div>
         </div>
       </div>
     `;
 
-    // Bind DOM events
-    bindEvents();
-  }
+    // Bind playback controls
+    container.querySelector('#btn-audio-play')?.addEventListener('click', () => {
+      audioPlayer.togglePlay();
+      render();
+    });
 
-  function bindEvents() {
-    // Topic Chips
-    container.querySelectorAll('.audio-topic-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const topicId = btn.dataset.topic;
-        audioPlayer.setPlaylist(topicId);
+    container.querySelector('#btn-audio-prev')?.addEventListener('click', () => {
+      audioPlayer.previousTrack();
+      render();
+    });
+
+    container.querySelector('#btn-audio-next')?.addEventListener('click', () => {
+      audioPlayer.nextTrack();
+      render();
+    });
+
+    container.querySelector('#btn-audio-rw')?.addEventListener('click', () => {
+      audioPlayer.seekBy(-15);
+    });
+
+    container.querySelector('#btn-audio-ff')?.addEventListener('click', () => {
+      audioPlayer.seekBy(15);
+    });
+
+    // Playlist clicks
+    container.querySelectorAll('.playlist-track-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const qid = parseInt(item.dataset.qid, 10);
+        audioPlayer.playQuestion(qid);
         render();
       });
     });
-
-    // Transport buttons
-    const playBtn = container.querySelector('#btn-audio-play');
-    if (playBtn) playBtn.addEventListener('click', () => audioPlayer.togglePlay());
-
-    const prevBtn = container.querySelector('#btn-audio-prev');
-    if (prevBtn) prevBtn.addEventListener('click', () => audioPlayer.prev());
-
-    const nextBtn = container.querySelector('#btn-audio-next');
-    if (nextBtn) nextBtn.addEventListener('click', () => audioPlayer.next());
-
-    const rwBtn = container.querySelector('#btn-audio-rw');
-    if (rwBtn) rwBtn.addEventListener('click', () => audioPlayer.skip(-10));
-
-    const ffBtn = container.querySelector('#btn-audio-ff');
-    if (ffBtn) ffBtn.addEventListener('click', () => audioPlayer.skip(10));
-
-    // Seekbar
-    const seekBar = container.querySelector('#audio-seek-bar');
-    if (seekBar) {
-      seekBar.addEventListener('input', (e) => {
-        const dur = audioPlayer.audio.duration;
-        if (dur) {
-          const seekTo = (e.target.value / 100) * dur;
-          audioPlayer.seek(seekTo);
-        }
-      });
-    }
-
-    // Rate button (cycles: 1.0 -> 1.25 -> 1.5 -> 2.0 -> 0.75 -> 1.0)
-    const rateBtn = container.querySelector('#btn-audio-rate');
-    if (rateBtn) {
-      rateBtn.addEventListener('click', () => {
-        const rates = [0.75, 1.0, 1.25, 1.5, 2.0];
-        const curIdx = rates.indexOf(audioPlayer.playbackRate);
-        const nextRate = rates[(curIdx + 1) % rates.length];
-        audioPlayer.setPlaybackRate(nextRate);
-        rateBtn.textContent = `${nextRate}x`;
-      });
-    }
-
-    // Autoplay toggle
-    const autoChk = container.querySelector('#chk-audio-autoplay');
-    if (autoChk) {
-      autoChk.addEventListener('change', (e) => {
-        audioPlayer.setAutoplay(e.target.checked);
-      });
-    }
-
-    // Sleep timer button
-    const sleepBtn = container.querySelector('#btn-audio-sleep');
-    if (sleepBtn) {
-      sleepBtn.addEventListener('click', () => {
-        const mins = prompt('Set Sleep Timer dalam menit (0 untuk matikan):', '30');
-        if (mins !== null) {
-          const parsed = parseInt(mins, 10);
-          audioPlayer.setSleepTimer(isNaN(parsed) ? 0 : parsed);
-          render();
-        }
-      });
-    }
-
-    // Playlist item clicks
-    container.querySelectorAll('.playlist-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const qId = parseInt(item.dataset.qid, 10);
-        if (qId) {
-          audioPlayer.playQuestion(qId);
-        }
-      });
-    });
   }
 
-  // Real-time timeupdate listener
-  const unsubTime = audioPlayer.on('timeupdate', (data) => {
-    const seekBar = container.querySelector('#audio-seek-bar');
-    const curEl = container.querySelector('#audio-time-current');
-    const durEl = container.querySelector('#audio-time-duration');
-
-    if (curEl) curEl.textContent = formatTime(data.currentTime);
-    if (durEl) durEl.textContent = formatTime(data.duration);
-    if (seekBar && !seekBar.matches(':active')) {
-      seekBar.value = data.percent || 0;
-    }
-  });
-
-  // Track change listener
-  const unsubChange = audioPlayer.on('change', () => {
-    render();
-  });
-
-  // Play/Pause listeners
-  const unsubPlay = audioPlayer.on('play', () => {
+  // Subscribe to audio player changes
+  const unsubscribe = audioPlayer.subscribe(() => {
+    // Only re-render times or playback status without disrupting scroll
+    const s = audioPlayer.getState();
     const playBtn = container.querySelector('#btn-audio-play');
-    const wave = container.querySelector('.audio-wave-visualizer');
-    const dot = container.querySelector('.pulse-dot');
     if (playBtn) {
-      playBtn.classList.add('playing');
-      playBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-          <rect x="6" y="4" width="4" height="16" rx="1.5"></rect>
-          <rect x="14" y="4" width="4" height="16" rx="1.5"></rect>
-        </svg>
-      `;
+      playBtn.textContent = s.isPlaying ? '⏸' : '▶';
     }
-    if (wave) wave.classList.add('active');
-    if (dot) dot.classList.add('playing');
-  });
-
-  const unsubPause = audioPlayer.on('pause', () => {
-    const playBtn = container.querySelector('#btn-audio-play');
-    const wave = container.querySelector('.audio-wave-visualizer');
-    const dot = container.querySelector('.pulse-dot');
-    if (playBtn) {
-      playBtn.classList.remove('playing');
-      playBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
-          <polygon points="5 3 19 12 5 21 5 3"></polygon>
-        </svg>
-      `;
-    }
-    if (wave) wave.classList.remove('active');
-    if (dot) dot.classList.remove('playing');
   });
 
   cleanupFn = () => {
-    unsubTime();
-    unsubChange();
-    unsubPlay();
-    unsubPause();
+    unsubscribe();
   };
 
   render();

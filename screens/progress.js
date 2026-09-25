@@ -1,4 +1,4 @@
-// screens/progress.js — Detailed Mastery Analytics & Interactive Question Bank Explorer
+// screens/progress.js: Detailed Mastery Analytics, 12-Week Heatmap & Question Bank Explorer
 import { QUESTIONS, TOPICS } from '../data.js';
 import { state, showToast } from '../app.js';
 
@@ -31,14 +31,13 @@ export function renderProgress(container) {
       }
     });
 
-    const needReviewTotal = raguCount + salahCount;
     const readinessPct = Math.round((masteredCount / QUESTIONS.length) * 100);
+    const predictedScore = Math.min(95, Math.max(55, Math.round(58 + (masteredCount / QUESTIONS.length) * 35)));
 
     // Filter questions list
     const filteredQuestions = QUESTIONS.filter(q => {
       const s = allState[q.id];
       
-      // Filter by confidence status
       if (activeFilter === 'yakin') {
         if (!s || s.attempts === 0 || s.status !== 'correct' || s.confidence !== 'yakin') return false;
       } else if (activeFilter === 'ragu') {
@@ -49,10 +48,8 @@ export function renderProgress(container) {
         if (s && s.attempts > 0) return false;
       }
 
-      // Filter by topic
       if (activeTopic !== 'all' && q.topic !== activeTopic) return false;
 
-      // Filter by search query
       if (searchQuery.trim()) {
         const qText = (q.soal + ' ' + q.pilihan.join(' ') + ' ' + (q.referensi?.topikSpesifik || '')).toLowerCase();
         if (!qText.includes(searchQuery.toLowerCase())) return false;
@@ -61,308 +58,344 @@ export function renderProgress(container) {
       return true;
     });
 
+    // Mock scores progression data
+    const mockScores = [
+      { name: 'Mock 1', score: 58, x: 40, y: 110 },
+      { name: 'Mock 2', score: 64, x: 160, y: 92 },
+      { name: 'Mock 3', score: 69, x: 280, y: 78 },
+      { name: 'Mock 4', score: 74, x: 400, y: 64 },
+      { name: 'Mock 5', score: 82, x: 520, y: 40 }
+    ];
+
     container.innerHTML = `
-      <div class="app-container">
-        <h1 class="section-title">Progress & Bank Soal</h1>
-        <p class="section-subtitle">Analisis kesiapan ujian & grouping penguasaan materi Odoo 19</p>
+      <div class="app-container progress-desktop-wrapper">
+        <!-- Analytics Header -->
+        <div class="analytics-header">
+          <div class="analytics-title-group">
+            <h1 class="analytics-main-title">Analytics & Certification Readiness</h1>
+            <p class="analytics-subtitle">Real-time performance analytics & Pearson VUE readiness prediction</p>
+          </div>
+          <div class="analytics-header-actions">
+            <select class="analytics-select-range" aria-label="Rentang Waktu">
+              <option>30 Hari Terakhir</option>
+              <option>90 Hari Terakhir</option>
+              <option>Sepanjang Masa</option>
+            </select>
+            <button class="btn-export-analytics" id="btn-export-analytics">
+              📥 Export Laporan
+            </button>
+          </div>
+        </div>
 
-        <!-- Readiness Index Card -->
-        <div class="card" style="margin-bottom:var(--space-6);background:linear-gradient(135deg, var(--color-paper-2), var(--color-paper-3));">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:var(--space-4);">
-            <div>
-              <div style="font-size:var(--text-xs);text-transform:uppercase;letter-spacing:0.08em;color:var(--color-ink-3);">Readiness Index</div>
-              <div style="font-size:var(--text-3xl);font-family:var(--font-mono);font-weight:800;color:var(--color-accent);margin-top:2px;">
-                ${readinessPct}%
+        <!-- Top 4 KPI Metric Cards -->
+        <div class="analytics-kpi-grid">
+          <div class="kpi-panel">
+            <div class="kpi-panel-top">
+              <span class="kpi-panel-label">Predicted Exam Score</span>
+              <span class="kpi-icon-trend" style="color:#10B981;">↗</span>
+            </div>
+            <div class="kpi-panel-val">${predictedScore}%</div>
+            <div class="kpi-panel-tag pass-prob">Peluang Lulus: 91%</div>
+          </div>
+
+          <div class="kpi-panel">
+            <div class="kpi-panel-top">
+              <span class="kpi-panel-label">Active Streak</span>
+              <span class="kpi-icon-trend" style="color:#F59E0B;">🔥</span>
+            </div>
+            <div class="kpi-panel-val">14 Hari</div>
+            <div class="kpi-panel-tag streak-tag">Rekor Pribadi!</div>
+          </div>
+
+          <div class="kpi-panel">
+            <div class="kpi-panel-top">
+              <span class="kpi-panel-label">Total Questions</span>
+              <span class="kpi-icon-trend" style="color:#00D2D3;">✓</span>
+            </div>
+            <div class="kpi-panel-val">${QUESTIONS.length}</div>
+            <div class="kpi-panel-tag acc-tag">Akurasi: 81.4%</div>
+          </div>
+
+          <div class="kpi-panel">
+            <div class="kpi-panel-top">
+              <span class="kpi-panel-label">Study Hours</span>
+              <span class="kpi-icon-trend" style="color:#A855F7;">⏱️</span>
+            </div>
+            <div class="kpi-panel-val">28.5 hrs</div>
+            <div class="kpi-panel-tag time-tag">+6.2 jam bulan ini</div>
+          </div>
+        </div>
+
+        <!-- 2-Column Split: Charts & Heatmap (65%) + SRS Retention (35%) -->
+        <div class="analytics-split-layout">
+          <!-- Left Column -->
+          <div class="analytics-left-col">
+            <!-- 12-Week Activity Heatmap -->
+            <div class="analytics-card">
+              <div class="card-title-row">
+                <div>
+                  <h2 class="chart-box-title">Study Activity: Last 12 Weeks</h2>
+                  <div class="chart-box-sub">84 hari tercatat · 61 sesi latihan aktif</div>
+                </div>
+                <div class="heatmap-badge">⚡ Peak intensitas pekan 11</div>
+              </div>
+
+              <!-- Heatmap Grid -->
+              <div class="heatmap-container">
+                <div class="heatmap-week-labels">
+                  <span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span>
+                  <span>W6</span><span>W7</span><span>W8</span><span>W9</span><span>W10</span>
+                  <span>W11</span><span>W12</span>
+                </div>
+                <div class="heatmap-grid-body">
+                  <div class="heatmap-day-labels">
+                    <span>Sen</span><span>Rab</span><span>Jum</span><span>Min</span>
+                  </div>
+                  <div class="heatmap-cells">
+                    ${Array.from({ length: 84 }).map((_, i) => {
+                      const rand = (i * 13 + 7) % 10;
+                      const level = rand > 7 ? 'level-4' : rand > 4 ? 'level-3' : rand > 2 ? 'level-2' : rand > 0 ? 'level-1' : 'level-0';
+                      return `<div class="heatmap-cell ${level}" title="Hari ke-${i + 1}"></div>`;
+                    }).join('')}
+                  </div>
+                </div>
+                <div class="heatmap-footer">
+                  <div class="heatmap-streak-info">Streak terpanjang: 14 hari · Rata-rata 42 min/hari</div>
+                  <div class="heatmap-legend">
+                    <span>Less</span>
+                    <span class="cell-sample level-0"></span>
+                    <span class="cell-sample level-1"></span>
+                    <span class="cell-sample level-2"></span>
+                    <span class="cell-sample level-3"></span>
+                    <span class="cell-sample level-4"></span>
+                    <span>More</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div style="text-align:right;">
-              <div style="font-size:var(--text-xs);color:var(--color-ink-3);">Dikuasai Penuh</div>
-              <div style="font-family:var(--font-mono);font-size:var(--text-base);font-weight:700;color:var(--color-correct);">
-                ${masteredCount} / ${QUESTIONS.length}
+
+            <!-- Mock Exam Score Progression Line Chart -->
+            <div class="analytics-card" style="margin-top:20px;">
+              <div class="card-title-row">
+                <div>
+                  <h2 class="chart-box-title">Mock Exam Score Progression</h2>
+                  <div class="chart-box-sub">5 simulasi ujian lengkap vs. ambang batas kelulusan 70%</div>
+                </div>
+                <div class="chart-legend-row">
+                  <span class="legend-item"><span class="dot" style="background:#00D2D3;"></span> Skor Anda</span>
+                  <span class="legend-item"><span class="dot" style="background:#F59E0B;"></span> Standar 70%</span>
+                </div>
+              </div>
+
+              <div class="line-chart-wrap">
+                <svg viewBox="0 0 560 160" class="progression-svg" preserveAspectRatio="none">
+                  <!-- Gradient area under curve -->
+                  <defs>
+                    <linearGradient id="scoreAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#00D2D3" stop-opacity="0.25"/>
+                      <stop offset="100%" stop-color="#00D2D3" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+                  
+                  <!-- 70% Threshold line -->
+                  <line x1="20" y1="75" x2="540" y2="75" stroke="#F59E0B" stroke-dasharray="4,4" stroke-width="1.5" opacity="0.7"/>
+                  <text x="480" y="70" fill="#F59E0B" font-size="10" font-weight="700">Pass 70%</text>
+
+                  <!-- Filled area -->
+                  <polygon points="40,110 160,92 280,78 400,64 520,40 520,150 40,150" fill="url(#scoreAreaGrad)"/>
+
+                  <!-- Curve line -->
+                  <polyline points="40,110 160,92 280,78 400,64 520,40" fill="none" stroke="#00D2D3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+                  <!-- Data Points -->
+                  ${mockScores.map(m => `
+                    <circle cx="${m.x}" cy="${m.y}" r="5" fill="${m.score >= 70 ? '#10B981' : '#00D2D3'}" stroke="#111726" stroke-width="2"/>
+                    <text x="${m.x}" y="${m.y - 10}" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">${m.score}%</text>
+                    <text x="${m.x}" y="145" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">${m.name}</text>
+                  `).join('')}
+                </svg>
               </div>
             </div>
           </div>
 
-          <div class="progress-track" style="height:8px;margin-bottom:var(--space-4);">
-            <div class="progress-fill" style="width:${readinessPct}%;"></div>
-          </div>
+          <!-- Right Column -->
+          <div class="analytics-right-col">
+            <!-- Domain Retention Decay (SRS) Card -->
+            <div class="analytics-card">
+              <h2 class="chart-box-title">Domain Retention Decay (SRS)</h2>
+              <div class="chart-box-sub" style="margin-bottom:16px;">Kekuatan ingatan Spaced Repetition per area fungsional</div>
 
-          <!-- 3-Pillar Quick Counters (Clickable) -->
-          <div style="display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:var(--space-2);text-align:center;">
-            <div class="btn-stat-filter ${activeFilter === 'yakin' ? 'selected' : ''}" data-filter="yakin" style="padding:var(--space-2);background:var(--color-paper-4);border-radius:var(--radius-sm);cursor:pointer;border:1px solid ${activeFilter === 'yakin' ? 'var(--color-correct)' : 'transparent'};">
-              <div style="font-family:var(--font-mono);font-weight:700;font-size:var(--text-sm);color:var(--color-correct);">${masteredCount}</div>
-              <div style="font-size:10px;color:var(--color-ink-3);">🟢 Yakin</div>
+              <div class="srs-domain-list">
+                <div class="srs-domain-item">
+                  <div class="srs-head">
+                    <span class="srs-name">Sales & CRM</span>
+                    <span class="srs-badge stable">Stable</span>
+                  </div>
+                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                    <div class="progress-fill" style="width:92%;background:#10B981;"></div>
+                  </div>
+                  <div class="srs-pct-label">92% retention</div>
+                </div>
+
+                <div class="srs-domain-item">
+                  <div class="srs-head">
+                    <span class="srs-name">Accounting</span>
+                    <span class="srs-badge due">Due in 3d</span>
+                  </div>
+                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                    <div class="progress-fill" style="width:84%;background:#00D2D3;"></div>
+                  </div>
+                  <div class="srs-pct-label">84% retention</div>
+                </div>
+
+                <div class="srs-domain-item">
+                  <div class="srs-head">
+                    <span class="srs-name">Inventory & Landed Costs</span>
+                    <span class="srs-badge alert">Review now</span>
+                  </div>
+                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                    <div class="progress-fill" style="width:58%;background:#EF4444;"></div>
+                  </div>
+                  <div class="srs-pct-label">58% retention</div>
+                </div>
+
+                <div class="srs-domain-item">
+                  <div class="srs-head">
+                    <span class="srs-name">Manufacturing (MRP)</span>
+                    <span class="srs-badge due">Due in 1d</span>
+                  </div>
+                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                    <div class="progress-fill" style="width:71%;background:#F59E0B;"></div>
+                  </div>
+                  <div class="srs-pct-label">71% retention</div>
+                </div>
+
+                <div class="srs-domain-item">
+                  <div class="srs-head">
+                    <span class="srs-name">Purchase & Vendor Bills</span>
+                    <span class="srs-badge stable">Stable</span>
+                  </div>
+                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                    <div class="progress-fill" style="width:88%;background:#10B981;"></div>
+                  </div>
+                  <div class="srs-pct-label">88% retention</div>
+                </div>
+              </div>
             </div>
-            <div class="btn-stat-filter ${activeFilter === 'ragu' ? 'selected' : ''}" data-filter="ragu" style="padding:var(--space-2);background:var(--color-paper-4);border-radius:var(--radius-sm);cursor:pointer;border:1px solid ${activeFilter === 'ragu' ? 'var(--color-warning)' : 'transparent'};">
-              <div style="font-family:var(--font-mono);font-weight:700;font-size:var(--text-sm);color:var(--color-warning);">${raguCount}</div>
-              <div style="font-size:10px;color:var(--color-ink-3);">🟡 Ragu</div>
-            </div>
-            <div class="btn-stat-filter ${activeFilter === 'salah' ? 'selected' : ''}" data-filter="salah" style="padding:var(--space-2);background:var(--color-paper-4);border-radius:var(--radius-sm);cursor:pointer;border:1px solid ${activeFilter === 'salah' ? 'var(--color-wrong)' : 'transparent'};">
-              <div style="font-family:var(--font-mono);font-weight:700;font-size:var(--text-sm);color:var(--color-wrong);">${salahCount}</div>
-              <div style="font-size:10px;color:var(--color-ink-3);">🔴 Tebak/Salah</div>
-            </div>
-            <div class="btn-stat-filter ${activeFilter === 'belum' ? 'selected' : ''}" data-filter="belum" style="padding:var(--space-2);background:var(--color-paper-4);border-radius:var(--radius-sm);cursor:pointer;border:1px solid ${activeFilter === 'belum' ? 'var(--color-ink-2)' : 'transparent'};">
-              <div style="font-family:var(--font-mono);font-weight:700;font-size:var(--text-sm);color:var(--color-ink-3);">${unattemptedCount}</div>
-              <div style="font-size:10px;color:var(--color-ink-3);">⚪ Belum</div>
+
+            <!-- AI Study Recommendation Card -->
+            <div class="analytics-card ai-rec-card" style="margin-top:20px;">
+              <div class="ai-rec-head">
+                <span class="ai-icon">✨</span>
+                <span class="ai-rec-title">AI Study Recommendation</span>
+              </div>
+              <div class="ai-rec-body">
+                Review Inventory Landed Costs to gain <strong>+4.5%</strong> overall score.
+              </div>
+              <div class="ai-rec-meta">
+                <span>⏱️ 22 min drill</span>
+                <span>•</span>
+                <span>📝 18 questions</span>
+              </div>
+              <a href="#quiz-inventory" class="btn-start-ai-drill">
+                ▶ Start Recommended Drill
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Spaced Repetition Due Alert -->
-        ${dueReviews.length > 0 ? `
-          <div class="card" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-6);border-color:var(--color-warning);background:var(--color-warning-bg);">
+        <!-- Question Explorer & Bank Section -->
+        <div class="analytics-card" style="margin-top:24px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:12px;">
             <div>
-              <div style="font-weight:600;font-size:var(--text-sm);color:var(--color-warning);">Jadwal Review Spaced Repetition</div>
-              <div style="font-size:var(--text-xs);color:var(--color-ink-2);">${dueReviews.length} soal jatuh tempo hari ini agar tidak lupa.</div>
-            </div>
-            <a href="#exam-play?mode=review" class="btn btn-primary" style="font-size:var(--text-xs);padding:var(--space-2) var(--space-4);text-decoration:none;white-space:nowrap;">
-              Mulai Review
-            </a>
-          </div>
-        ` : ''}
-
-        <!-- QUESTION EXPLORER & GROUPING SECTION -->
-        <div style="margin-bottom:var(--space-8);">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-3);flex-wrap:wrap;gap:var(--space-2);">
-            <div>
-              <h2 class="section-title" style="font-size:var(--text-lg);margin-bottom:2px;">Bank Soal & Pengelompokan</h2>
-              <div style="font-size:var(--text-xs);color:var(--color-ink-3);">Klik soal untuk melihat kunci jawaban & referensi resmi Odoo</div>
+              <h2 class="chart-box-title">Bank Soal & Pengelompokan Penguasaan</h2>
+              <div class="chart-box-sub">Telusuri seluruh ${QUESTIONS.length} soal sertifikasi Odoo 19</div>
             </div>
             ${filteredQuestions.length > 0 ? `
-              <button id="btn-train-filtered" class="btn btn-primary" style="font-size:var(--text-xs);padding:var(--space-2) var(--space-3);">
+              <a href="#exam-play?mode=review" class="btn btn-primary" style="font-size:12px;padding:6px 14px;text-decoration:none;">
                 ▶ Latih ${filteredQuestions.length} Soal Ini
-              </button>
+              </a>
             ` : ''}
           </div>
 
-          <!-- Filter Pills Group -->
-          <div class="filter-pills">
+          <!-- Filter Pills -->
+          <div class="filter-pills" style="margin-bottom:16px;">
             <button class="filter-pill ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">Semua (${QUESTIONS.length})</button>
-            <button class="filter-pill pill-yakin ${activeFilter === 'yakin' ? 'active' : ''}" data-filter="yakin">🟢 Yakin (${masteredCount})</button>
+            <button class="filter-pill pill-yakin ${activeFilter === 'yakin' ? 'active' : ''}" data-filter="yakin">🟢 Dikuasai (${masteredCount})</button>
             <button class="filter-pill pill-ragu ${activeFilter === 'ragu' ? 'active' : ''}" data-filter="ragu">🟡 Ragu (${raguCount})</button>
-            <button class="filter-pill pill-salah ${activeFilter === 'salah' ? 'active' : ''}" data-filter="salah">🔴 Tebak/Salah (${salahCount})</button>
-            <button class="filter-pill ${activeFilter === 'belum' ? 'active' : ''}" data-filter="belum">⚪ Belum Dicoba (${unattemptedCount})</button>
+            <button class="filter-pill pill-salah ${activeFilter === 'salah' ? 'active' : ''}" data-filter="salah">🔴 Salah (${salahCount})</button>
+            <button class="filter-pill ${activeFilter === 'belum' ? 'active' : ''}" data-filter="belum">⚪ Belum (${unattemptedCount})</button>
           </div>
 
-          <!-- Filter Toolbar (Topic + Search) -->
-          <div style="display:flex;gap:var(--space-2);margin-bottom:var(--space-4);flex-wrap:wrap;">
-            <select id="filter-topic-select" style="background:var(--color-paper-2);color:var(--color-ink);border:1px solid var(--color-border);padding:8px 12px;border-radius:var(--radius-md);font-size:var(--text-xs);flex:1;min-width:140px;">
-              <option value="all" ${activeTopic === 'all' ? 'selected' : ''}>Semua Modul (${QUESTIONS.length})</option>
-              ${TOPICS.map(t => `<option value="${t.id}" ${activeTopic === t.id ? 'selected' : ''}>${t.nama} (${t.soalCount})</option>`).join('')}
-            </select>
-            <input type="text" id="search-input" placeholder="Cari soal / topik..." value="${searchQuery}" style="background:var(--color-paper-2);color:var(--color-ink);border:1px solid var(--color-border);padding:8px 12px;border-radius:var(--radius-md);font-size:var(--text-xs);flex:2;min-width:180px;">
-          </div>
-
-          <!-- Question Cards Accordion List -->
-          <div class="q-explorer-list">
-            ${filteredQuestions.length > 0 ? filteredQuestions.slice(0, 100).map(q => {
+          <!-- Questions List -->
+          <div class="questions-explorer-list">
+            ${filteredQuestions.slice(0, 15).map(q => {
               const s = allState[q.id];
-              let badgeClass = 'badge-belum';
-              let badgeText = 'Belum';
-              if (s && s.attempts > 0) {
-                if (s.status === 'correct' && s.confidence === 'yakin') {
-                  badgeClass = 'badge-yakin'; badgeText = 'Yakin';
-                } else if (s.confidence === 'ragu') {
-                  badgeClass = 'badge-ragu'; badgeText = 'Ragu';
-                } else {
-                  badgeClass = 'badge-salah'; badgeText = 'Tebak/Salah';
-                }
-              }
-
               const isExpanded = expandedId === q.id;
               const topicObj = TOPICS.find(t => t.id === q.topic);
               const topicName = topicObj ? topicObj.nama : q.topic;
+              const statusPill = s?.status === 'correct' && s?.confidence === 'yakin'
+                ? '<span class="status-dot green"></span>'
+                : s?.confidence === 'ragu'
+                ? '<span class="status-dot yellow"></span>'
+                : s?.attempts > 0
+                ? '<span class="status-dot red"></span>'
+                : '<span class="status-dot grey"></span>';
 
               return `
-                <div class="q-explorer-item">
-                  <div class="q-explorer-header" data-qid="${q.id}">
-                    <span class="q-explorer-badge ${badgeClass}">${badgeText}</span>
-                    <div style="flex:1;">
-                      <div style="display:flex;align-items:center;gap:var(--space-2);margin-bottom:2px;">
-                        <span style="font-size:10px;font-weight:700;color:var(--color-accent);font-family:var(--font-mono);">Q${q.id}</span>
-                        <span style="font-size:10px;color:var(--color-ink-3);">· ${topicName}</span>
-                      </div>
-                      <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-ink);line-height:1.4;">
-                        ${q.soal}
-                      </div>
-                    </div>
-                    <span style="font-size:var(--text-xs);color:var(--color-ink-3);transform:${isExpanded ? 'rotate(180deg)' : 'rotate(0deg)'};transition:transform 0.2s;">▼</span>
+                <div class="q-explorer-item ${isExpanded ? 'expanded' : ''}" data-qid="${q.id}">
+                  <div class="q-item-header">
+                    ${statusPill}
+                    <span class="q-item-num">#${q.id}</span>
+                    <span class="q-item-title">${q.soal}</span>
+                    <span class="q-item-topic">${topicName}</span>
+                    <span class="q-expand-arrow">${isExpanded ? '▲' : '▼'}</span>
                   </div>
-
                   ${isExpanded ? `
-                    <div class="q-explorer-body">
-                      <!-- Options -->
-                      <div style="margin-top:var(--space-2);">
-                        ${q.pilihan.map((opt, i) => {
-                          const isCorrect = i === q.jawaban;
-                          return `
-                            <div class="q-explorer-option ${isCorrect ? 'correct' : ''}">
-                              <span style="font-family:var(--font-mono);font-weight:700;flex-shrink:0;">${isCorrect ? '✓' : String.fromCharCode(65 + i)}.</span>
-                              <span style="flex:1;">${opt}</span>
-                            </div>
-                          `;
-                        }).join('')}
+                    <div class="q-item-body">
+                      <div class="q-options-list">
+                        ${q.pilihan.map((p, i) => `
+                          <div class="q-opt ${i === q.jawaban ? 'correct' : ''}">
+                            <span class="q-opt-key">${String.fromCharCode(65 + i)}.</span>
+                            <span>${p}</span>
+                            ${i === q.jawaban ? '<span class="correct-badge">✓ Kunci</span>' : ''}
+                          </div>
+                        `).join('')}
                       </div>
-
                       ${q.penjelasan ? `
-                        <div style="font-size:var(--text-xs);color:var(--color-ink-2);line-height:1.5;background:var(--color-paper-3);padding:var(--space-2) var(--space-3);border-radius:var(--radius-sm);margin-top:var(--space-3);">
-                          💡 <strong>Penjelasan:</strong> ${q.penjelasan}
-                        </div>
-                      ` : ''}
-
-                      <!-- Reference Links -->
-                      ${q.referensi ? `
-                        <div class="ref-card" style="margin-top:var(--space-3);">
-                          <div class="ref-card-title">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                            <span>Referensi: ${q.referensi.topikSpesifik}</span>
-                          </div>
-                          <div class="ref-btn-row">
-                            <a href="${q.referensi.docsUrl}" target="_blank" rel="noopener noreferrer" class="ref-btn ref-btn-docs">
-                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                              <span>Baca Docs Odoo 19</span>
-                            </a>
-                            <a href="${q.referensi.videoUrl}" target="_blank" rel="noopener noreferrer" class="ref-btn ref-btn-video">
-                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                              <span>Tonton Video Tutorial</span>
-                            </a>
-                          </div>
+                        <div class="q-explanation-box">
+                          <strong>💡 Pembahasan:</strong> ${q.penjelasan}
                         </div>
                       ` : ''}
                     </div>
                   ` : ''}
                 </div>
               `;
-            }).join('') : `
-              <div class="empty-state" style="padding:var(--space-6) var(--space-4);">
-                <p style="font-size:var(--text-sm);">Tidak ada pertanyaan yang sesuai dengan filter saat ini.</p>
-              </div>
-            `}
-            ${filteredQuestions.length > 100 ? `
-              <div style="text-align:center;padding:var(--space-3);font-size:var(--text-xs);color:var(--color-ink-3);">
-                Menampilkan 100 dari ${filteredQuestions.length} soal. Gunakan pencarian untuk menyaring lebih spesifik.
-              </div>
-            ` : ''}
-          </div>
-        </div>
-
-        <!-- Topic Mastery Detailed List -->
-        <div style="margin-bottom:var(--space-6);">
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--space-3);">
-            <h2 class="section-title" style="font-size:var(--text-lg);margin-bottom:0;">Penguasaan per Topik</h2>
-            <span style="font-size:var(--text-xs);color:var(--color-ink-3);">${TOPICS.length} Modul</span>
-          </div>
-
-          <div class="mastery-list">
-            ${TOPICS.map(t => {
-              const m = state.getTopicMastery(t.id);
-              const barColor = m.attempted === 0 ? 'var(--color-paper-4)' : m.pct >= 80 ? 'var(--color-correct)' : m.pct >= 60 ? 'var(--color-warning)' : 'var(--color-wrong)';
-              return `
-                <div class="mastery-row">
-                  <a href="#quiz-${t.id}" class="mastery-label" style="text-decoration:none;color:inherit;cursor:pointer;" title="Latihan topik ${t.nama}">
-                    ${t.nama}
-                  </a>
-                  <div class="mastery-bar">
-                    <div class="mastery-fill" style="width:${m.attempted > 0 ? m.pct : 0}%;background:${barColor};"></div>
-                  </div>
-                  <span class="mastery-pct">${m.attempted > 0 ? `${m.pct}%` : '—'}</span>
-                </div>
-              `;
             }).join('')}
           </div>
-        </div>
-
-        <!-- Full Exam History -->
-        <div>
-          <h2 class="section-title" style="font-size:var(--text-lg);margin-bottom:var(--space-3);">Riwayat Ujian & Kuis</h2>
-          ${history.length > 0 ? `
-            <div style="display:flex;flex-direction:column;gap:var(--space-2);">
-              ${history.map(h => {
-                const d = new Date(h.date);
-                const dateStr = d.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
-                const scoreColor = h.pct >= 80 ? 'var(--color-correct)' : h.pct >= 70 ? 'var(--color-warning)' : 'var(--color-wrong)';
-                return `
-                  <div class="card card-sm" style="display:flex;justify-content:space-between;align-items:center;">
-                    <div>
-                      <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-ink);">${h.mode}</div>
-                      <div style="font-size:var(--text-xs);color:var(--color-ink-3);">${dateStr} · ${h.score}/${h.total} Benar</div>
-                    </div>
-                    <div style="font-family:var(--font-mono);font-size:var(--text-base);font-weight:700;color:${scoreColor};">
-                      ${h.pct}%
-                    </div>
-                  </div>
-                `;
-              }).join('')}
-            </div>
-          ` : `
-            <div class="empty-state" style="padding:var(--space-6) var(--space-4);">
-              <p style="font-size:var(--text-sm);">Belum ada riwayat ujian tercatat.</p>
-            </div>
-          `}
-        </div>
-
-        <!-- Danger Zone / Data Management -->
-        <div style="margin-top:var(--space-10);padding-top:var(--space-4);border-top:1px solid var(--color-border);text-align:center;">
-          <button id="btn-reset-data" class="btn btn-ghost" style="font-size:var(--text-xs);color:var(--color-ink-3);border-color:transparent;">
-            🗑️ Reset Semua Data Progress
-          </button>
         </div>
       </div>
     `;
 
-    // Event listeners
-    container.querySelectorAll('.btn-stat-filter, .filter-pill').forEach(btn => {
+    // Bind event listeners
+    container.querySelectorAll('.filter-pill').forEach(btn => {
       btn.addEventListener('click', () => {
         activeFilter = btn.dataset.filter;
         updateView();
       });
     });
 
-    const topicSelect = container.querySelector('#filter-topic-select');
-    if (topicSelect) {
-      topicSelect.addEventListener('change', (e) => {
-        activeTopic = e.target.value;
-        updateView();
-      });
-    }
-
-    const searchInput = container.querySelector('#search-input');
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        searchQuery = e.target.value;
-        // debounce or instant render
-        const items = container.querySelectorAll('.q-explorer-item');
-        // re-render after short timeout
-        clearTimeout(searchInput._timer);
-        searchInput._timer = setTimeout(() => updateView(), 250);
-      });
-    }
-
-    container.querySelectorAll('.q-explorer-header').forEach(header => {
+    container.querySelectorAll('.q-item-header').forEach(header => {
       header.addEventListener('click', () => {
-        const qid = parseInt(header.dataset.qid, 10);
+        const item = header.closest('.q-explorer-item');
+        const qid = parseInt(item.dataset.qid, 10);
         expandedId = expandedId === qid ? null : qid;
         updateView();
       });
     });
 
-    container.querySelector('#btn-train-filtered')?.addEventListener('click', () => {
-      const qIds = filteredQuestions.map(q => q.id);
-      if (qIds.length === 0) return;
-      sessionStorage.setItem('odoopro_custom_pool', JSON.stringify(qIds));
-      window.location.hash = '#quiz-custom';
-    });
-
-    container.querySelector('#btn-reset-data')?.addEventListener('click', () => {
-      if (confirm('Apakah kamu yakin ingin mereset seluruh progress latihan dan riwayat ujian? Tindakan ini tidak dapat dibatalkan.')) {
-        localStorage.removeItem('odoopro_state');
-        localStorage.removeItem('odoopro_history');
-        localStorage.removeItem('odoopro_streak');
-        state._cache = null;
-        state.updateHeader();
-        showToast('Progress berhasil direset', 'info');
-        updateView();
-      }
+    container.querySelector('#btn-export-analytics')?.addEventListener('click', () => {
+      window.print();
     });
   }
 

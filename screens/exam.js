@@ -1,4 +1,4 @@
-// screens/exam.js — Exam Simulator with Fully Flexible Question Count & Timer Controls
+// screens/exam.js: Exam Simulator with Fully Flexible Question Count & Timer Controls
 import { QUESTIONS, TOPICS, EXAM_PRESETS } from '../data.js';
 import { state, showToast } from '../app.js';
 

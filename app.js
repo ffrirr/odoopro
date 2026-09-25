@@ -1,4 +1,4 @@
-// app.js — OdooPro Router, State Manager & Gamification
+// app.js: OdooPro Router, State Manager & Gamification
 import { renderDashboard } from './screens/dashboard.js';
 import { renderTopics } from './screens/topics.js';
 import { renderQuiz } from './screens/quiz.js';
@@ -184,22 +184,25 @@ export const state = {
 
   updateHeader() {
     const xpEl = document.getElementById('xp-pill');
+    const streakNum = document.getElementById('streak-num');
     const streakEl = document.getElementById('streak-pill');
     if (xpEl) xpEl.textContent = `${this.getTotalXP()} XP`;
-    if (streakEl) streakEl.textContent = `${this.getStreak()}`;
+    if (streakNum) streakNum.textContent = `${this.getStreak()}`;
+    else if (streakEl) streakEl.textContent = `${this.getStreak()}`;
   }
 };
 
 // ===== ROUTER =====
 function updateBottomNav(hash) {
-  document.querySelectorAll('.bottom-nav .nav-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.bottom-nav .nav-tab, .sidebar-nav .sidebar-link').forEach(t => t.classList.remove('active'));
   let tab = 'dashboard';
   if (hash.startsWith('#topics') || hash.startsWith('#quiz-')) tab = 'topics';
   else if (hash.startsWith('#audiobook')) tab = 'audiobook';
   else if (hash.startsWith('#exam')) tab = 'exam';
-  else if (hash.startsWith('#flashcard')) tab = 'flashcard';
+  else if (hash.startsWith('#flashcard')) tab = 'flashcards';
   else if (hash.startsWith('#progress') || hash.startsWith('#hasil')) tab = 'progress';
   document.querySelector(`.bottom-nav [data-tab="${tab}"]`)?.classList.add('active');
+  document.querySelector(`.sidebar-nav [data-tab="${tab}"]`)?.classList.add('active');
 }
 
 // ===== MINI PLAYER SYNC =====

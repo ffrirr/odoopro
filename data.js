@@ -1,4 +1,4 @@
-// data.js — 300 soal sertifikasi Odoo 19 (100% Validated Deep Pedagogical References)
+// data.js: 300 soal sertifikasi Odoo 19 (100% Validated Deep Pedagogical References)
 
 export const TOPICS = [
   {
