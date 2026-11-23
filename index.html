@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>OdooPro: Latihan Sertifikasi Odoo 19</title>
   <meta name="description" content="321 soal sertifikasi Odoo 19 dengan quiz interaktif, flashcard, exam simulator, dan spaced repetition.">
-  <meta name="theme-color" content="#0A0D14">
+  <meta name="theme-color" content="#FFFFFF">
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <link rel="stylesheet" href="style.css?v=2.1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2.2.0">
 </head>
 <body>
 <div class="app-layout">
@@ -28,6 +31,10 @@
 
     <div class="sidebar-menu-label">WORKSPACE</div>
     <nav class="sidebar-nav" aria-label="Desktop Navigation">
+      <a href="#landing" class="sidebar-link" data-tab="landing">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Landing Page</span>
+      </a>
       <a href="#dashboard" class="sidebar-link active" data-tab="dashboard">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
         <span>Dashboard</span>
@@ -114,10 +121,16 @@
       </div>
     </div>
     <div class="mini-player-controls">
+      <button id="mini-player-prev" class="mini-player-btn" aria-label="Soal Sebelumnya" title="Soal Sebelumnya">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5" stroke="currentColor" stroke-width="2"/></svg>
+      </button>
       <button id="mini-player-toggle" class="mini-player-btn" aria-label="Play/Pause">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
           <polygon points="5 3 19 12 5 21 5 3"></polygon>
         </svg>
+      </button>
+      <button id="mini-player-next" class="mini-player-btn" aria-label="Soal Berikutnya" title="Soal Berikutnya">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2"/></svg>
       </button>
       <button id="mini-player-close" class="mini-player-btn btn-close" aria-label="Tutup Player">
         ✕

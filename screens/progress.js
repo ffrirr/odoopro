@@ -192,26 +192,26 @@ export function renderProgress(container) {
                   <!-- Gradient area under curve -->
                   <defs>
                     <linearGradient id="scoreAreaGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="#00D2D3" stop-opacity="0.25"/>
-                      <stop offset="100%" stop-color="#00D2D3" stop-opacity="0.0"/>
+                      <stop offset="0%" stop-color="#29CC57" stop-opacity="0.25"/>
+                      <stop offset="100%" stop-color="#29CC57" stop-opacity="0.0"/>
                     </linearGradient>
                   </defs>
                   
                   <!-- 70% Threshold line -->
-                  <line x1="20" y1="75" x2="540" y2="75" stroke="#F59E0B" stroke-dasharray="4,4" stroke-width="1.5" opacity="0.7"/>
-                  <text x="480" y="70" fill="#F59E0B" font-size="10" font-weight="700">Pass 70%</text>
+                  <line x1="20" y1="75" x2="540" y2="75" stroke="#D97706" stroke-dasharray="4,4" stroke-width="1.5" opacity="0.8"/>
+                  <text x="480" y="70" fill="#D97706" font-size="10" font-weight="700">Pass 70%</text>
 
                   <!-- Filled area -->
                   <polygon points="40,110 160,92 280,78 400,64 520,40 520,150 40,150" fill="url(#scoreAreaGrad)"/>
 
                   <!-- Curve line -->
-                  <polyline points="40,110 160,92 280,78 400,64 520,40" fill="none" stroke="#00D2D3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polyline points="40,110 160,92 280,78 400,64 520,40" fill="none" stroke="#29CC57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
                   <!-- Data Points -->
                   ${mockScores.map(m => `
-                    <circle cx="${m.x}" cy="${m.y}" r="5" fill="${m.score >= 70 ? '#10B981' : '#00D2D3'}" stroke="#111726" stroke-width="2"/>
-                    <text x="${m.x}" y="${m.y - 10}" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">${m.score}%</text>
-                    <text x="${m.x}" y="145" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">${m.name}</text>
+                    <circle cx="${m.x}" cy="${m.y}" r="5" fill="${m.score >= 70 ? '#009B2B' : '#29CC57'}" stroke="#FFFFFF" stroke-width="2"/>
+                    <text x="${m.x}" y="${m.y - 10}" fill="#1E1E1E" font-size="11" font-weight="700" text-anchor="middle">${m.score}%</text>
+                    <text x="${m.x}" y="145" fill="#666666" font-size="10" text-anchor="middle">${m.name}</text>
                   `).join('')}
                 </svg>
               </div>
@@ -231,7 +231,7 @@ export function renderProgress(container) {
                     <span class="srs-name">Sales & CRM</span>
                     <span class="srs-badge stable">Stable</span>
                   </div>
-                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                  <div class="progress-track" style="height:6px;background:var(--color-paper-3);margin-top:6px;">
                     <div class="progress-fill" style="width:92%;background:#10B981;"></div>
                   </div>
                   <div class="srs-pct-label">92% retention</div>
@@ -242,7 +242,7 @@ export function renderProgress(container) {
                     <span class="srs-name">Accounting</span>
                     <span class="srs-badge due">Due in 3d</span>
                   </div>
-                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                  <div class="progress-track" style="height:6px;background:var(--color-paper-3);margin-top:6px;">
                     <div class="progress-fill" style="width:84%;background:#00D2D3;"></div>
                   </div>
                   <div class="srs-pct-label">84% retention</div>
@@ -253,7 +253,7 @@ export function renderProgress(container) {
                     <span class="srs-name">Inventory & Landed Costs</span>
                     <span class="srs-badge alert">Review now</span>
                   </div>
-                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                  <div class="progress-track" style="height:6px;background:var(--color-paper-3);margin-top:6px;">
                     <div class="progress-fill" style="width:58%;background:#EF4444;"></div>
                   </div>
                   <div class="srs-pct-label">58% retention</div>
@@ -264,7 +264,7 @@ export function renderProgress(container) {
                     <span class="srs-name">Manufacturing (MRP)</span>
                     <span class="srs-badge due">Due in 1d</span>
                   </div>
-                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                  <div class="progress-track" style="height:6px;background:var(--color-paper-3);margin-top:6px;">
                     <div class="progress-fill" style="width:71%;background:#F59E0B;"></div>
                   </div>
                   <div class="srs-pct-label">71% retention</div>
@@ -275,7 +275,7 @@ export function renderProgress(container) {
                     <span class="srs-name">Purchase & Vendor Bills</span>
                     <span class="srs-badge stable">Stable</span>
                   </div>
-                  <div class="progress-track" style="height:6px;background:rgba(255,255,255,0.06);margin-top:6px;">
+                  <div class="progress-track" style="height:6px;background:var(--color-paper-3);margin-top:6px;">
                     <div class="progress-fill" style="width:88%;background:#10B981;"></div>
                   </div>
                   <div class="srs-pct-label">88% retention</div>

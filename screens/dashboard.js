@@ -1,4 +1,4 @@
-// screens/dashboard.js: Simple Minimalist Dashboard based on pen.dev OdooPro Simple
+// screens/dashboard.js: Bento Grid Edition (Adapted from Landfolio #11 Bento)
 import { QUESTIONS, TOPICS } from '../data.js';
 import { state } from '../app.js';
 
@@ -24,224 +24,245 @@ export function renderDashboard(container) {
   // Active topic for "Lanjut Belajar"
   const activeTopic = weakTopics.length > 0 ? weakTopics[0] : TOPICS[0];
 
-  // Priority modules
+  // Priority modules with mastery status
   const priorityTopics = TOPICS.slice(0, 4).map(t => {
     const m = state.getTopicMastery(t.id);
-    return { ...t, ...m };
+    const pct = m.pct || 0;
+    let badgeText = 'In Progress';
+    let badgeClass = 'badge-progress';
+    if (pct >= 70) {
+      badgeText = 'Mastered';
+      badgeClass = 'badge-mastered';
+    } else if (pct > 0 && pct < 60) {
+      badgeText = 'Needs Focus';
+      badgeClass = 'badge-warning';
+    }
+    return { ...t, ...m, pct, badgeText, badgeClass };
   });
 
+  // Soundwave mock heights
+  const waveBars = [12, 24, 18, 32, 28, 16, 22, 36, 14, 26, 30, 20, 15, 28, 34, 18];
+
   container.innerHTML = `
-    <div class="app-container simple-dashboard-container">
-      <!-- 1. Simple Header -->
-      <header class="simple-dash-header" aria-label="Profil Pengguna">
-        <div class="simple-greeting-wrap">
-          <h1 class="simple-greeting-title">Hai Feri</h1>
-          <div class="simple-greeting-sub">Odoo 19 Functional</div>
+    <div class="app-container bento-dashboard-container">
+      <!-- 1. Header Bar -->
+      <header class="bento-header" aria-label="Profil Pengguna">
+        <div class="bento-greeting-wrap">
+          <h1 class="bento-greeting-title">Hai Feri 👋</h1>
+          <div class="bento-greeting-sub">Odoo 19 Functional Consultant Mastery</div>
         </div>
-        <div class="simple-streak-pill" title="Konsistensi Belajar">
-          <span class="simple-streak-fire">🔥</span>
-          <span class="simple-streak-days">${streak} hari</span>
-        </div>
-        <div class="simple-desktop-exam-badge">
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span class="simple-exam-date">16 Oktober 2026</span>
-          <span class="simple-exam-sep">·</span>
-          <span class="simple-exam-days">21 hari lagi</span>
+        <div class="bento-header-badges">
+          <div class="bento-streak-pill" title="Konsistensi Belajar">
+            <span class="bento-streak-fire">🔥</span>
+            <span class="bento-streak-days">${streak} hari streak</span>
+          </div>
+          <div class="bento-exam-pill">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Pearson VUE: 21 hari lagi</span>
+          </div>
         </div>
       </header>
 
-      <!-- 2. Simple Readiness Hero -->
-      <section class="simple-readiness-hero" aria-label="Kesiapan Ujian">
-        <div class="simple-hero-top-row">
-          <div class="simple-hero-score-wrap">
-            <div class="simple-hero-eyebrow">KESIAPAN UJIAN</div>
-            <div class="simple-hero-score-row">
-              <div class="simple-hero-score">${readiness}%</div>
-              <div class="simple-hero-label">Siap</div>
+      <!-- 2. BENTO GRID SYSTEM (Landfolio #11 Apple-Style) -->
+      <div class="bento-grid">
+        
+        <!-- CARD 1: Hero Main (Span 3) -->
+        <article class="bento-card bento-hero-card span-3" aria-label="Hero Sertifikasi">
+          <div class="bento-card-accent-top"></div>
+          <div class="bento-hero-badge-row">
+            <span class="bento-badge bento-badge-cyan">🎯 100% EXAM ALIGNED</span>
+            <span class="bento-badge bento-badge-aubergine">OFFICIAL PREP</span>
+          </div>
+          <h2 class="bento-hero-headline">Kuasai Seluruh Skenario Fungsional Odoo 19</h2>
+          <p class="bento-hero-desc">
+            Uji pemahaman alur bisnis nyata: akuntansi perpetual FIFO/AVCO, landed cost, multi-step routing, BOM manufaktur, dan rekonsiliasi bank.
+          </p>
+
+          <div class="bento-hero-pills-row">
+            <div class="bento-stat-chip">
+              <span class="chip-val">${totalQuestions} Soal</span>
+              <span class="chip-lbl">Bank Terverifikasi</span>
+            </div>
+            <div class="bento-stat-chip">
+              <span class="chip-val">70% Skor</span>
+              <span class="chip-lbl">Ambang Lulus Resmi</span>
+            </div>
+            <div class="bento-stat-chip">
+              <span class="chip-val">6 Modul</span>
+              <span class="chip-lbl">Kurikulum Lengkap</span>
             </div>
           </div>
 
-          <!-- Desktop Hero CTA -->
-          <a href="#quiz-${activeTopic.id}" class="simple-primary-cta desktop-only-cta" aria-label="Lanjut belajar modul ${activeTopic.nama}">
-            <span>Lanjut Belajar: ${activeTopic.nama}</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
+          <div class="bento-hero-ctas">
+            <a href="#exam-play?mode=standard" class="bento-btn bento-btn-primary" aria-label="Mulai simulasi tryout">
+              <span>⚡ Simulasi Ujian Cepat</span>
+            </a>
+            <a href="#quiz-${activeTopic.id}" class="bento-btn bento-btn-secondary" aria-label="Lanjut belajar modul ${activeTopic.nama}">
+              <span>Lanjut: ${activeTopic.nama} →</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- CARD 2: Readiness Radar (Span 1) -->
+        <article class="bento-card bento-readiness-card span-1" aria-label="Indeks Kesiapan">
+          <div class="bento-card-label">INDEX KESIAPAN RIIL</div>
+          <div class="bento-readiness-score-row">
+            <div class="bento-big-score">${readiness}%</div>
+            <div class="bento-score-meta">
+              <span class="bento-score-tag ${readiness >= 70 ? 'text-success' : 'text-cyan'}">
+                ${readiness >= 70 ? 'SIAP UJIAN ✅' : 'MENUJU SIAP 🎯'}
+              </span>
+              <span class="bento-score-target">Ambang: 70%</span>
+            </div>
+          </div>
+
+          <div class="bento-progress-wrap">
+            <div class="bento-progress-track">
+              <div class="bento-progress-fill" style="width: ${Math.min(100, Math.max(4, readiness))}%;"></div>
+              <div class="bento-target-marker" title="Target Lulus 70%"></div>
+            </div>
+          </div>
+
+          <div class="bento-countdown-box">
+            <div class="bento-cd-title">Voucher Pearson VUE Terjadwal</div>
+            <div class="bento-cd-days">⏱️ Sisa 21 Hari Lagi Menuju Ujian</div>
+            <div class="bento-cd-trend text-success">+5% akurasi dari evaluasi tryout</div>
+          </div>
+        </article>
+
+        <!-- CARD 3: Spaced Repetition SM-2 (Span 1) -->
+        <article class="bento-card bento-sm2-card span-1" aria-label="Spaced Repetition">
+          <div class="bento-card-badge-row">
+            <span class="bento-badge bento-badge-amber">SPACED REPETITION SM-2</span>
+          </div>
+          <div class="bento-card-val text-warning">${dueReviews.length} Kartu Due</div>
+          <p class="bento-card-desc">
+            Algoritma SuperMemo SM-2 melacak daya ingat dan menjadwalkan review adaptif tepat sebelum materi terlupakan.
+          </p>
+          <a href="#flashcards" class="bento-card-link text-warning" aria-label="Mulai sesi drill flashcard">
+            <span>Mulai Sesi Drill 5 Menit →</span>
           </a>
-        </div>
+        </article>
 
-        <div class="simple-progress-wrap">
-          <div class="simple-progress-track">
-            <div class="simple-progress-fill" style="width: ${Math.min(100, Math.max(4, readiness))}%;"></div>
-            <div class="simple-target-marker" title="Target lulus 70%"></div>
+        <!-- CARD 4: Audiobook Studio (Span 1) -->
+        <article class="bento-card bento-audio-card span-1" aria-label="Audiobook Studio">
+          <div class="bento-card-badge-row">
+            <span class="bento-badge bento-badge-cyan">AUDIOBOOK STUDIO</span>
           </div>
-          <div class="simple-progress-labels">
-            <span class="simple-label-muted">${totalQuestions} bank soal terverifikasi</span>
-            <span class="simple-label-target">Target lulus 70%</span>
+          <div class="bento-card-val">4.8 Jam Audio</div>
+          <p class="bento-card-desc">
+            Belajar on-the-go tanpa menatap layar saat commuting. Penjelasan konsep mendalam modul akuntansi & inventory.
+          </p>
+          <div class="bento-waveform-wrap">
+            <div class="bento-waveform">
+              ${waveBars.map(h => `<span class="wave-bar" style="height:${h}px"></span>`).join('')}
+            </div>
+            <a href="#audiobook" class="bento-card-link text-cyan" aria-label="Buka audiobook player">
+              <span>▶ Play Bab 4</span>
+            </a>
           </div>
-        </div>
-      </section>
+        </article>
 
-      <!-- 3. Mobile Primary CTA Button -->
-      <a href="#quiz-${activeTopic.id}" class="simple-primary-cta mobile-only-cta" aria-label="Lanjut belajar modul ${activeTopic.nama}">
-        <span>Lanjut Belajar: ${activeTopic.nama}</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
-
-      <!-- 4. Desktop 3-Card Stat Summary (Visible on Desktop) -->
-      <section class="simple-desktop-stats" aria-label="Statistik Ujian">
-        <div class="simple-stat-box">
-          <div class="simple-stat-label">Soal Dikuasai</div>
-          <div class="simple-stat-val">${attempted}/${totalQuestions}</div>
-          <div class="simple-stat-sub">${completionRate}% dari bank soal</div>
-        </div>
-
-        <div class="simple-stat-box">
-          <div class="simple-stat-label">Akurasi Rata-rata</div>
-          <div class="simple-stat-val">${accuracy}%</div>
-          <div class="simple-stat-sub">${accuracy >= 70 ? 'Melewati ambang lulus' : 'Target lulus 70%'}</div>
-        </div>
-
-        <div class="simple-stat-box">
-          <div class="simple-stat-label">Tryout Lulus</div>
-          <div class="simple-stat-val">${tryoutsPassed}/${tryoutsTotal || 0}</div>
-          <div class="simple-stat-sub">${tryoutsPassed > 0 ? `${tryoutsPassed} tryout berhasil lulus` : 'Mulai tryout pertama'}</div>
-        </div>
-      </section>
-
-      <!-- 5. Feature Cards (Mobile 3-Column Grid) -->
-      <section class="simple-features-grid" aria-label="Fitur Utama">
-        <a href="#exam-play?mode=standard" class="simple-feature-card">
-          <div class="simple-feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-              <path d="m9 14 2 2 4-4"></path>
-            </svg>
+        <!-- CARD 5: Consistency Streak (Span 1) -->
+        <article class="bento-card bento-streak-card span-1" aria-label="Konsistensi Belajar">
+          <div class="bento-card-badge-row">
+            <span class="bento-badge bento-badge-aubergine">KONSISTENSI BELAJAR</span>
           </div>
-          <div class="simple-feature-body">
-            <div class="simple-feature-title">Simulasi Ujian</div>
-            <div class="simple-feature-sub">60 soal</div>
+          <div class="bento-card-val text-warning">🔥 ${streak} Hari Streak</div>
+          <p class="bento-card-desc">
+            Komitmen belajar konsisten 15 menit setiap hari menaikkan peluang lulus sertifikasi hingga 3.2x lipat.
+          </p>
+          <div class="bento-streak-dots-row" title="Riwayat konsistensi 7 hari terakhir">
+            ${['S', 'S', 'R', 'K', 'J', 'S', 'M'].map((d, i) => `
+              <div class="bento-streak-dot ${i < 6 ? 'active' : 'today'}">
+                <span>✓</span>
+              </div>
+            `).join('')}
           </div>
-        </a>
+        </article>
 
-        <a href="#flashcards" class="simple-feature-card">
-          <div class="simple-feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path>
-              <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path>
-              <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path>
-            </svg>
+        <!-- CARD 6: Interactive Exam Simulator Teaser (Span 2) -->
+        <article class="bento-card bento-exam-card span-2" aria-label="Simulasi Ujian Realtime">
+          <div class="bento-card-head-between">
+            <h3 class="bento-card-title">Simulasi Ujian Realtime & Interaksi</h3>
+            <span class="bento-timer-badge">⏱️ 47:35 Menit</span>
           </div>
-          <div class="simple-feature-body">
-            <div class="simple-feature-title">Flashcards</div>
-            <div class="simple-feature-sub">${dueReviews.length > 0 ? `${dueReviews.length} due` : 'Kartu hafalan'}</div>
-          </div>
-        </a>
-
-        <a href="#audiobook" class="simple-feature-card">
-          <div class="simple-feature-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
-            </svg>
-          </div>
-          <div class="simple-feature-body">
-            <div class="simple-feature-title">Audiobook</div>
-            <div class="simple-feature-sub">Audio modul</div>
-          </div>
-        </a>
-      </section>
-
-      <!-- 6. Bottom Split: Modul Prioritas + Desktop Aksi Cepat -->
-      <div class="simple-bottom-split">
-        <!-- Modul Prioritas -->
-        <section class="simple-priority-section" aria-label="Modul Prioritas">
-          <div class="simple-section-head">
-            <h2 class="simple-section-title">Modul Prioritas</h2>
-            <a href="#topics" class="simple-section-link">Semua</a>
+          
+          <div class="bento-question-snippet">
+            <div class="bento-q-stem">
+              Soal #14: Pada metode Automated Valuation FIFO Odoo 19, akun apa yang di-kredit saat Goods Receipt?
+            </div>
+            <div class="bento-options-demo">
+              <div class="bento-opt-item default">
+                <span class="opt-badge">A</span>
+                <span class="opt-text">Accounts Payable (Vendor Liability)</span>
+              </div>
+              <div class="bento-opt-item selected">
+                <span class="opt-badge">B</span>
+                <span class="opt-text">Stock Interim Account (Received) — Terpilih ✓</span>
+                <span class="opt-status text-success">BENAR 100%</span>
+              </div>
+              <div class="bento-opt-item hover">
+                <span class="opt-badge">C</span>
+                <span class="opt-text">Cost of Goods Sold (COGS)</span>
+                <span class="opt-status text-cyan">HOVER STATE 👆</span>
+              </div>
+              <div class="bento-opt-item default">
+                <span class="opt-badge">D</span>
+                <span class="opt-text">Inventory Loss Account</span>
+              </div>
+            </div>
           </div>
 
-          <div class="simple-module-list">
+          <div class="bento-exam-cta-row">
+            <a href="#exam-play?mode=standard" class="bento-btn bento-btn-primary" aria-label="Mulai simulasi lengkap">
+              <span>Buka Full Mock Exam 50 Soal →</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- CARD 7: 4 Pillars Modules Mastery (Span 2) -->
+        <article class="bento-card bento-modules-card span-2" aria-label="Penguasaan Modul">
+          <div class="bento-card-head-between">
+            <div>
+              <h3 class="bento-card-title">Target Penguasaan 4 Pilar Modul</h3>
+              <div class="bento-card-sub">Bobot penilaian resmi ujian Pearson VUE</div>
+            </div>
+            <a href="#topics" class="bento-section-link">Semua Modul →</a>
+          </div>
+
+          <div class="bento-modules-list">
             ${priorityTopics.map(t => `
-              <a href="#quiz-${t.id}" class="simple-module-row" style="text-decoration:none;">
-                <div class="simple-module-info">
-                  <span class="simple-module-name">${t.nama}</span>
-                  <span class="simple-module-pct">${t.pct}%</span>
+              <a href="#quiz-${t.id}" class="bento-module-row" style="text-decoration:none;">
+                <div class="bento-mod-info-row">
+                  <div class="bento-mod-left">
+                    <span class="bento-mod-name">${t.nama}</span>
+                    <span class="bento-mod-badge ${t.badgeClass}">${t.badgeText}</span>
+                  </div>
+                  <span class="bento-mod-pct ${t.badgeClass}">${t.pct}%</span>
                 </div>
-                <div class="simple-module-track">
-                  <div class="simple-module-fill" style="width: ${Math.max(4, t.pct)}%;"></div>
+                <div class="bento-mod-track">
+                  <div class="bento-mod-fill ${t.badgeClass}" style="width: ${Math.max(4, t.pct)}%;"></div>
                 </div>
               </a>
             `).join('')}
           </div>
-        </section>
+        </article>
 
-        <!-- Desktop Aksi Cepat (Visible on Desktop) -->
-        <section class="simple-quick-actions-desktop" aria-label="Aksi Cepat">
-          <h2 class="simple-section-title">Aksi Cepat</h2>
-          <div class="simple-actions-list">
-            <a href="#exam-play?mode=standard" class="simple-action-row" style="text-decoration:none;">
-              <div class="simple-action-left">
-                <div class="simple-action-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                    <path d="m9 14 2 2 4-4"></path>
-                  </svg>
-                </div>
-                <div class="simple-action-info">
-                  <div class="simple-action-name">Simulasi Ujian</div>
-                  <div class="simple-action-sub">60 soal · 90 menit</div>
-                </div>
-              </div>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="simple-action-chevron">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </a>
-
-            <a href="#flashcards" class="simple-action-row" style="text-decoration:none;">
-              <div class="simple-action-left">
-                <div class="simple-action-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path>
-                    <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path>
-                    <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path>
-                  </svg>
-                </div>
-                <div class="simple-action-info">
-                  <div class="simple-action-name">Flashcards</div>
-                  <div class="simple-action-sub">${dueReviews.length > 0 ? `${dueReviews.length} kartu due` : 'Kartu hafalan review'}</div>
-                </div>
-              </div>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="simple-action-chevron">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </a>
-
-            <a href="#audiobook" class="simple-action-row" style="text-decoration:none;">
-              <div class="simple-action-left">
-                <div class="simple-action-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
-                    <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
-                  </svg>
-                </div>
-                <div class="simple-action-info">
-                  <div class="simple-action-name">Audiobook Studio</div>
-                  <div class="simple-action-sub">Bab 4: Inventory Valuation · 24 mnt</div>
-                </div>
-              </div>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="simple-action-chevron">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
+        <!-- CARD 8: Full-Width Bottom CTA Banner (Span 4) -->
+        <article class="bento-card bento-cta-card span-4" aria-label="Panggilan Aksi">
+          <div class="bento-cta-inner">
+            <span class="bento-badge bento-badge-cyan">🎯 GARANSI KESIAPAN KELULUSAN 100%</span>
+            <h2 class="bento-cta-title">Mulai Latihan Sekarang & Raih Gelar Konsultan Resmi</h2>
+            <p class="bento-cta-sub">
+              Akses 321 bank soal terverifikasi, simulator ujian Pearson VUE, dan audio modul lengkap.
+            </p>
+            <a href="#exam-play?mode=standard" class="bento-btn bento-btn-primary bento-btn-large" aria-label="Mulai sekarang gratis">
+              <span>Mulai Belajar Sekarang (Gratis)</span>
             </a>
           </div>
-        </section>
+        </article>
+
       </div>
     </div>
   `;

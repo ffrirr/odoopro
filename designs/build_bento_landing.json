@@ -1,0 +1,2492 @@
+[
+  {
+    "as": "canvas",
+    "command": "node.create",
+    "params": {
+      "type": "frame",
+      "name": "Desktop 1440 - OdooPro Bento Landing",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1400,
+      "props": {
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Navbar BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 72,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav Logo Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 130,
+      "y": 18,
+      "width": 36,
+      "height": 36,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Logo OP",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 138,
+      "y": 26,
+      "text": "OP",
+      "props": {
+        "fontSize": 16,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Brand Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 176,
+      "y": 24,
+      "text": "OdooPro",
+      "props": {
+        "fontSize": 20,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Link Kurikulum",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 480,
+      "y": 28,
+      "text": "Kurikulum",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Link Simulasi Ujian",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 580,
+      "y": 28,
+      "text": "Simulasi Ujian",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Link Audiobook Studio",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 700,
+      "y": 28,
+      "text": "Audiobook Studio",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Link Spaced Repetition",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 840,
+      "y": 28,
+      "text": "Spaced Repetition",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Link Harga & Voucher",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 980,
+      "y": 28,
+      "text": "Harga & Voucher",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav CTA BTN",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1140,
+      "y": 16,
+      "width": 170,
+      "height": 40,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav CTA Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1162,
+      "y": 28,
+      "text": "Mulai Belajar Gratis",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Header Tag BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 600,
+      "y": 104,
+      "width": 240,
+      "height": 26,
+      "props": {
+        "fill": "#714B6730",
+        "stroke": "#714B67",
+        "cornerRadius": 13
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Header Tag Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 612,
+      "y": 110,
+      "text": "BENTO-POWERED LEARNING SYSTEM",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#E2D9F3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Main Header Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 340,
+      "y": 142,
+      "text": "Satu Platform Modular Menuju Sertifikasi Odoo 19",
+      "props": {
+        "fontSize": 32,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Main Header Sub",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 360,
+      "y": 186,
+      "text": "321 bank soal terverifikasi, simulator ujian Pearson VUE, dan algoritma memori SuperMemo SM-2",
+      "props": {
+        "fontSize": 14,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 1 Hero BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 130,
+      "y": 230,
+      "width": 770,
+      "height": 300,
+      "props": {
+        "fill": "#161E2E",
+        "stroke": "#2B384E",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 1 Accent",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 130,
+      "y": 230,
+      "width": 770,
+      "height": 4,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 1 Pill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 256,
+      "width": 160,
+      "height": 22,
+      "props": {
+        "fill": "#00D2D315",
+        "stroke": "#00D2D340",
+        "cornerRadius": 11
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 1 Pill Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 172,
+      "y": 260,
+      "text": "\ud83c\udfaf 100% EXAM ALIGNED",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 1 Headline",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 292,
+      "text": "Kuasai Seluruh Skenario Fungsional Odoo 19",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 1 Desc 1",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 328,
+      "text": "Bukan sekadar bank soal statis. Uji pemahaman transaksi akuntansi perpetual,",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 1 Desc 2",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 350,
+      "text": "perhitungan landed cost, multi-step routing inventory, hingga alur manufaktur BOM.",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Pill BG 321 Soal",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 390,
+      "width": 150,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Pill Val 321 Soal",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 174,
+      "y": 398,
+      "text": "321 Soal",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Pill Lbl 321 Soal",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 174,
+      "y": 420,
+      "text": "Bank Terverifikasi",
+      "props": {
+        "fontSize": 10,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Pill BG 70% Skor",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 330,
+      "y": 390,
+      "width": 150,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Pill Val 70% Skor",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 344,
+      "y": 398,
+      "text": "70% Skor",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Pill Lbl 70% Skor",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 344,
+      "y": 420,
+      "text": "Ambang Lulus Resmi",
+      "props": {
+        "fontSize": 10,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Pill BG 6 Modul",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 500,
+      "y": 390,
+      "width": 150,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Pill Val 6 Modul",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 514,
+      "y": 398,
+      "text": "6 Modul",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Pill Lbl 6 Modul",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 514,
+      "y": 420,
+      "text": "Kurikulum Lengkap",
+      "props": {
+        "fontSize": 10,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 1 BTN",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 462,
+      "width": 210,
+      "height": 44,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 1 BTN Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 182,
+      "y": 476,
+      "text": "\u26a1 Coba Simulasi Ujian Cepat",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 2 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 920,
+      "y": 230,
+      "width": 390,
+      "height": 300,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 Tag",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 950,
+      "y": 256,
+      "text": "INDEX KESIAPAN RIIL",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 Score",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 950,
+      "y": 284,
+      "text": "78%",
+      "props": {
+        "fontSize": 56,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 Status",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1100,
+      "y": 306,
+      "text": "SIAP UJIAN \u2705",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 Sub",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1100,
+      "y": 330,
+      "text": "Ambang Lulus: 70%",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 2 Track",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 950,
+      "y": 364,
+      "width": 330,
+      "height": 8,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 2 Fill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 950,
+      "y": 364,
+      "width": 257,
+      "height": 8,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 2 Marker",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1181,
+      "y": 360,
+      "width": 3,
+      "height": 16,
+      "props": {
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 Marker Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1140,
+      "y": 384,
+      "text": "Target 70%",
+      "props": {
+        "fontSize": 10,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 2 Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 950,
+      "y": 414,
+      "width": 330,
+      "height": 84,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#2D3B54",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 VUE Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 966,
+      "y": 428,
+      "text": "Voucher Pearson VUE Terjadwal",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 VUE Days",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 966,
+      "y": 452,
+      "text": "\u23f1\ufe0f Sisa 21 Hari Lagi Menuju Hari Ujian",
+      "props": {
+        "fontSize": 12,
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 2 VUE Trend",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 966,
+      "y": 472,
+      "text": "Progres: +5% akurasi dari evaluasi tryout terakhir",
+      "props": {
+        "fontSize": 11,
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 3 SM2 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 130,
+      "y": 550,
+      "width": 373,
+      "height": 240,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 3 Badge",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 154,
+      "y": 574,
+      "width": 140,
+      "height": 22,
+      "props": {
+        "fill": "#F59E0B20",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 3 Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 164,
+      "y": 578,
+      "text": "SPACED REPETITION",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 3 Val",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 154,
+      "y": 608,
+      "text": "18 Kartu Due",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 3 Desc 1",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 154,
+      "y": 644,
+      "text": "Algoritma SuperMemo SM-2 melacak",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 3 Desc 2",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 154,
+      "y": 666,
+      "text": "daya ingat dan menjadwalkan review tepat",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 3 Desc 3",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 154,
+      "y": 688,
+      "text": "sebelum materi terlupakan.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 3 CTA",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 154,
+      "y": 734,
+      "text": "Mulai Sesi Drill 5 Menit \u2192",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 4 Audio BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 523,
+      "y": 550,
+      "width": 373,
+      "height": 240,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 4 Badge",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 547,
+      "y": 574,
+      "width": 140,
+      "height": 22,
+      "props": {
+        "fill": "#00D2D320",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 4 Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 557,
+      "y": 578,
+      "text": "AUDIOBOOK STUDIO",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 4 Val",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 547,
+      "y": 608,
+      "text": "4.8 Jam Audio",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 4 Desc 1",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 547,
+      "y": 644,
+      "text": "Belajar on-the-go tanpa layar saat",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 4 Desc 2",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 547,
+      "y": 666,
+      "text": "commuting. Penjelasan konsep mendalam",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 4 Desc 3",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 547,
+      "y": 688,
+      "text": "dengan audio voice profesional.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 0",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 547,
+      "y": 738,
+      "width": 4,
+      "height": 12,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 1",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 555,
+      "y": 732,
+      "width": 4,
+      "height": 24,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 2",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 563,
+      "y": 735,
+      "width": 4,
+      "height": 18,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 3",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 571,
+      "y": 728,
+      "width": 4,
+      "height": 32,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 4",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 579,
+      "y": 730,
+      "width": 4,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 5",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 587,
+      "y": 736,
+      "width": 4,
+      "height": 16,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 6",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 595,
+      "y": 733,
+      "width": 4,
+      "height": 22,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 7",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 603,
+      "y": 726,
+      "width": 4,
+      "height": 36,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 8",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 611,
+      "y": 737,
+      "width": 4,
+      "height": 14,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 9",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 619,
+      "y": 731,
+      "width": 4,
+      "height": 26,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 10",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 627,
+      "y": 729,
+      "width": 4,
+      "height": 30,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 11",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 635,
+      "y": 734,
+      "width": 4,
+      "height": 20,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 12",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 643,
+      "y": 737,
+      "width": 4,
+      "height": 15,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 13",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 651,
+      "y": 730,
+      "width": 4,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 14",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 659,
+      "y": 727,
+      "width": 4,
+      "height": 34,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Wave 15",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 667,
+      "y": 735,
+      "width": 4,
+      "height": 18,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Wave Status",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 690,
+      "y": 734,
+      "text": "\u25b6 Play Bab 4",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 5 Streak BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 916,
+      "y": 550,
+      "width": 373,
+      "height": 240,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 5 Badge",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 940,
+      "y": 574,
+      "width": 140,
+      "height": 22,
+      "props": {
+        "fill": "#714B6730",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 5 Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 950,
+      "y": 578,
+      "text": "KONSISTENSI BELAJAR",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#E2D9F3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 5 Val",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 940,
+      "y": 608,
+      "text": "\ud83d\udd25 14 Hari Streak",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 5 Desc 1",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 940,
+      "y": 644,
+      "text": "Komitmen belajar konsisten 15 menit",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 5 Desc 2",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 940,
+      "y": 666,
+      "text": "setiap hari menaikkan peluang lulus",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 5 Desc 3",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 940,
+      "y": 688,
+      "text": "sertifikasi hingga 3.2x lipat.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot BG 0",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 940,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot Lbl 0",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 950,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot BG 1",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 982,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot Lbl 1",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 992,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot BG 2",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot Lbl 2",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1034,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot BG 3",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1066,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot Lbl 3",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1076,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot BG 4",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1108,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot Lbl 4",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1118,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot BG 5",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1150,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot Lbl 5",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1160,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot BG 6",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1192,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot Lbl 6",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1202,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 6 Exam BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 130,
+      "y": 810,
+      "width": 680,
+      "height": 330,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 6 Header",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 834,
+      "text": "Simulasi Ujian Realtime & Feedback Instan",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 6 Timer",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 670,
+      "y": 834,
+      "text": "\u23f1\ufe0f 47:35 Menit",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Q Stem Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 866,
+      "width": 620,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#2B384E",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Q Stem Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 174,
+      "y": 880,
+      "text": "Soal #14: Pada metode Automated Valuation FIFO Odoo 19, akun apa yang di-kredit saat Goods Receipt?",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Opt 1 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 928,
+      "width": 620,
+      "height": 40,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Opt 1 Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 180,
+      "y": 940,
+      "text": "A.  Accounts Payable (Vendor Liability)",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Opt 2 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 978,
+      "width": 620,
+      "height": 44,
+      "props": {
+        "fill": "#00D2D315",
+        "stroke": "#00D2D3",
+        "strokeWeight": 2,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Opt 2 Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 180,
+      "y": 992,
+      "text": "B.  Stock Interim Account (Received) \u2014 Terpilih \u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Opt 2 Badge",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 680,
+      "y": 992,
+      "text": "BENAR 100%",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Opt 3 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 1032,
+      "width": 620,
+      "height": 40,
+      "props": {
+        "fill": "#1F2B3E",
+        "stroke": "#00D2D380",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Opt 3 Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 180,
+      "y": 1044,
+      "text": "C.  Cost of Goods Sold (COGS)",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Opt 4 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 160,
+      "y": 1082,
+      "width": 620,
+      "height": 40,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Opt 4 Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 180,
+      "y": 1094,
+      "text": "D.  Inventory Loss Account",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 7 Mod BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 830,
+      "y": 810,
+      "width": 480,
+      "height": 330,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 7 Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 834,
+      "text": "Target Penguasaan 4 Pilar Modul",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 7 Sub",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 858,
+      "text": "Bobot penilaian resmi ujian Pearson VUE",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod T Accounting & Invoicing",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 884,
+      "text": "Accounting & Invoicing",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Pct Accounting & Invoicing",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1210,
+      "y": 884,
+      "text": "92%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Track Accounting & Invoicing",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 906,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Fill Accounting & Invoicing",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 906,
+      "width": 393,
+      "height": 6,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod T Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 942,
+      "text": "Sales, CRM & Point of Sale",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Pct Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1210,
+      "y": 942,
+      "text": "74%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Track Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 964,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Fill Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 964,
+      "width": 316,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod T Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 1000,
+      "text": "Inventory, Logistics & MRP",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Pct Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1210,
+      "y": 1000,
+      "text": "58%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Track Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 1022,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Fill Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 1022,
+      "width": 248,
+      "height": 6,
+      "props": {
+        "fill": "#F59E0B",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod T Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 1058,
+      "text": "Purchasing & 3-Way Match",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Pct Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1210,
+      "y": 1058,
+      "text": "88%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Track Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 1080,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mod Fill Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 856,
+      "y": 1080,
+      "width": 376,
+      "height": 6,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bento 8 CTA BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 130,
+      "y": 1160,
+      "width": 1180,
+      "height": 180,
+      "props": {
+        "fill": "#161E2E",
+        "stroke": "#2B384E",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 8 Tag",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 480,
+      "y": 1184,
+      "text": "\ud83c\udfaf GARANSI KESIAPAN KELULUSAN 100%",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 8 Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 380,
+      "y": 1210,
+      "text": "Mulai Latihan Sekarang & Raih Gelar Konsultan Resmi",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bento 8 Sub",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 410,
+      "y": 1244,
+      "text": "Akses 321 bank soal terverifikasi, simulator ujian Pearson VUE, dan audio modul lengkap.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Final CTA BTN",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 570,
+      "y": 1274,
+      "width": 280,
+      "height": 46,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 23
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Final CTA Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 606,
+      "y": 1288,
+      "text": "Mulai Belajar Sekarang (Gratis)",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  }
+]

@@ -1,0 +1,2439 @@
+[
+  {
+    "as": "canvas",
+    "command": "node.create",
+    "params": {
+      "type": "frame",
+      "name": "Desktop 1440 - OdooPro True Brilliant Template",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 2250,
+      "props": {
+        "fill": "#FFFFFF"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Navbar BG",
+      "x": 0,
+      "y": 0,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 1440,
+      "height": 72,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Logo Mark",
+      "x": 80,
+      "y": 22,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\u2726",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#29CC57"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Brand Name",
+      "x": 112,
+      "y": 24,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Odoo",
+      "props": {
+        "fontSize": 22,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Brand Accent",
+      "x": 168,
+      "y": 24,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Pro",
+      "props": {
+        "fontSize": 22,
+        "fontStyle": "Bold",
+        "fill": "#29CC57"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Kurikulum",
+      "x": 340,
+      "y": 27,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Kurikulum",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Simulator Ujian",
+      "x": 460,
+      "y": 27,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Simulator Ujian",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav AI Tutor",
+      "x": 600,
+      "y": 27,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "AI Tutor",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Audiobook (321 Soal)",
+      "x": 710,
+      "y": 27,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Audiobook (321 Soal)",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Untuk Perusahaan",
+      "x": 890,
+      "y": 27,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Untuk Perusahaan",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Login Link",
+      "x": 1160,
+      "y": 27,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Masuk",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav CTA Pill",
+      "x": 1230,
+      "y": 16,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 130,
+      "height": 40,
+      "props": {
+        "fill": "#29CC57",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav CTA Text",
+      "x": 1252,
+      "y": 27,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Mulai Gratis",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#FFFFFF"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Eyebrow Pill",
+      "x": 80,
+      "y": 115,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 290,
+      "height": 30,
+      "props": {
+        "fill": "#F4FCF7",
+        "stroke": "#D4F5DD",
+        "strokeWeight": 1,
+        "cornerRadius": 15
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Eyebrow Text",
+      "x": 96,
+      "y": 122,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "TUTOR PERSONAL SERTIFIKASI ODOO 19",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#009B2B",
+        "letterSpacing": 0.5
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero H1 Line 1",
+      "x": 80,
+      "y": 165,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Tutor personal Anda untuk",
+      "props": {
+        "fontSize": 46,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E",
+        "lineHeight": 54
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero H1 Line 2",
+      "x": 80,
+      "y": 222,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "ujian sertifikasi Odoo 19",
+      "props": {
+        "fontSize": 46,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E",
+        "lineHeight": 54
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero H1 Accent",
+      "x": 80,
+      "y": 280,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "dan penguasaan workflow.",
+      "props": {
+        "fontSize": 46,
+        "fontStyle": "Bold",
+        "fill": "#29CC57",
+        "lineHeight": 54
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Subhead",
+      "x": 80,
+      "y": 350,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Pembelajaran visual dan interaktif dari konsep dasar hingga mahir.\nKuasai akuntansi double-entry, inventory perpetual, manufaktur,\nhingga Python ORM dengan simulasi nyata, bukan sekadar menghafal.",
+      "props": {
+        "fontSize": 16,
+        "fill": "#666666",
+        "lineHeight": 26
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Primary CTA Btn",
+      "x": 80,
+      "y": 440,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 230,
+      "height": 52,
+      "props": {
+        "fill": "#29CC57",
+        "cornerRadius": 26
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Primary CTA Text",
+      "x": 115,
+      "y": 456,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Mulai Belajar Sekarang \u2192",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#FFFFFF"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Ghost Btn",
+      "x": 325,
+      "y": 440,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 180,
+      "height": 52,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#CCCCCC",
+        "strokeWeight": 1,
+        "cornerRadius": 26
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Ghost Text",
+      "x": 355,
+      "y": 456,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Jelajahi 321 Soal",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Medium",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Guarantees",
+      "x": 80,
+      "y": 515,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\u2713 321 Soal Pearson VUE   \u00b7   \u2713 Umpan Balik Instan   \u00b7   \u2713 Gratis Diakses",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Interactive Card Shadow",
+      "x": 740,
+      "y": 115,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 620,
+      "height": 440,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 24
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Problem Tag BG",
+      "x": 770,
+      "y": 140,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 140,
+      "height": 26,
+      "props": {
+        "fill": "#F4FCF7",
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Problem Tag Text",
+      "x": 782,
+      "y": 146,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "AKUNTANSI ODOO 19",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Problem Question Number",
+      "x": 1240,
+      "y": 145,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Tantangan 1",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Problem Title",
+      "x": 770,
+      "y": 182,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Bagaimana Odoo mencatat Penjualan Kredit?",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Problem Subtitle",
+      "x": 770,
+      "y": 210,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Lengkapi pasangan jurnal saat Customer Invoice divalidasi:",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Journal Row 1",
+      "x": 770,
+      "y": 240,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 560,
+      "height": 46,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Journal Row 1 Debit",
+      "x": 790,
+      "y": 254,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Debit",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Journal Row 1 Account",
+      "x": 840,
+      "y": 254,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Account Receivable (Piutang Usaha)",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Medium",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Journal Row 1 Val",
+      "x": 1230,
+      "y": 254,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Rp 11.100.000",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Journal Row 2",
+      "x": 770,
+      "y": 296,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 560,
+      "height": 46,
+      "props": {
+        "fill": "#FAFAFA",
+        "stroke": "#29CC57",
+        "strokeWeight": 2,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Journal Row 2 Kredit",
+      "x": 790,
+      "y": 310,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Kredit",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Journal Row 2 Account",
+      "x": 840,
+      "y": 310,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Product Sales & Tax Payable ...................",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Journal Row 2 Val",
+      "x": 1220,
+      "y": 310,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Rp 11.100.000 \u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Choice Option 1",
+      "x": 770,
+      "y": 355,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 175,
+      "height": 42,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Choice 1 Text",
+      "x": 805,
+      "y": 368,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Rp 10.000.000",
+      "props": {
+        "fontSize": 12,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Choice Option 2 (Selected)",
+      "x": 960,
+      "y": 355,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 180,
+      "height": 42,
+      "props": {
+        "fill": "#F4FCF7",
+        "stroke": "#29CC57",
+        "strokeWeight": 2,
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Choice 2 Text",
+      "x": 990,
+      "y": 368,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Rp 11.100.000 \u2713",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Choice Option 3",
+      "x": 1155,
+      "y": 355,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 175,
+      "height": 42,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Choice 3 Text",
+      "x": 1190,
+      "y": 368,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Rp 12.210.000",
+      "props": {
+        "fontSize": 12,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Result Success Tag",
+      "x": 770,
+      "y": 412,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 560,
+      "height": 46,
+      "props": {
+        "fill": "#EAFCEE",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Result Success Text",
+      "x": 870,
+      "y": 426,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\ud83c\udf89 Benar! Total Debit dan Kredit seimbang sempurna.",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#007C23"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Trust Bar Canvas",
+      "x": 0,
+      "y": 590,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 1440,
+      "height": 100,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeTopWeight": 1,
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Bar Title",
+      "x": 80,
+      "y": 630,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "DIPERCAYA OLEH 1,200+ AKUNTAN, KONSULTAN ODOO & KAMPUS TERKEMUKA",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#666666",
+        "letterSpacing": 1.2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Stat 321 Soal",
+      "x": 780,
+      "y": 620,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "321 Soal",
+      "props": {
+        "fontSize": 16,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Sub 321 Soal",
+      "x": 780,
+      "y": 642,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Odoo 19 & 18",
+      "props": {
+        "fontSize": 11,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Stat 88%",
+      "x": 950,
+      "y": 620,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "88%",
+      "props": {
+        "fontSize": 16,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Sub 88%",
+      "x": 950,
+      "y": 642,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Lulus Ujian Pertama",
+      "props": {
+        "fontSize": 11,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Stat 4.9 \u2605",
+      "x": 1130,
+      "y": 620,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "4.9 \u2605",
+      "props": {
+        "fontSize": 16,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Sub 4.9 \u2605",
+      "x": 1130,
+      "y": 642,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Ulasan Pengguna",
+      "props": {
+        "fontSize": 11,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Stat 100%",
+      "x": 1280,
+      "y": 620,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "100%",
+      "props": {
+        "fontSize": 16,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Trust Sub 100%",
+      "x": 1280,
+      "y": 642,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Simulasi Visual",
+      "props": {
+        "fontSize": 11,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tutor Section Eyebrow",
+      "x": 580,
+      "y": 735,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "TUTOR VISUAL PRIBADI ANDA",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#29CC57",
+        "letterSpacing": 1.0
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tutor Section Heading",
+      "x": 410,
+      "y": 760,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Tutor Interaktif, Bukan Mesin Pencontek",
+      "props": {
+        "fontSize": 32,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tutor Section Sub",
+      "x": 430,
+      "y": 804,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "OdooPro membimbing Anda memahami alur bisnis ERP langkah demi langkah\ndengan analogi visual, bukan memberi jawaban mentah tanpa pemahaman.",
+      "props": {
+        "fontSize": 15,
+        "fill": "#666666",
+        "lineHeight": 24
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Feature BG Bimbingan Bertahap Saat Macet",
+      "x": 80,
+      "y": 860,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 400,
+      "height": 240,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Feature Icon Box Bimbingan Bertahap Saat Macet",
+      "x": 108,
+      "y": 888,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 48,
+      "height": 48,
+      "props": {
+        "fill": "#F4FCF7",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Icon Bimbingan Bertahap Saat Macet",
+      "x": 122,
+      "y": 902,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\ud83d\udca1",
+      "props": {
+        "fontSize": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Title Bimbingan Bertahap Saat Macet",
+      "x": 108,
+      "y": 955,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Bimbingan Bertahap Saat Macet",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Desc Bimbingan Bertahap Saat Macet",
+      "x": 108,
+      "y": 988,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Ketika Anda keliru, AI tidak langsung membocorkan kunci jawaban, melainkan memberikan petunjuk teknis bertahap.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666",
+        "lineHeight": 22
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Feature BG Simulasi Workflow Nyata",
+      "x": 520,
+      "y": 860,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 400,
+      "height": 240,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Feature Icon Box Simulasi Workflow Nyata",
+      "x": 548,
+      "y": 888,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 48,
+      "height": 48,
+      "props": {
+        "fill": "#F4FCF7",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Icon Simulasi Workflow Nyata",
+      "x": 562,
+      "y": 902,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\u2699\ufe0f",
+      "props": {
+        "fontSize": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Title Simulasi Workflow Nyata",
+      "x": 548,
+      "y": 955,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Simulasi Workflow Nyata",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Desc Simulasi Workflow Nyata",
+      "x": 548,
+      "y": 988,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Pelajari siklus Purchase-to-Pay, Order-to-Cash, dan Manufacturing Routing secara visual layaknya di sistem Odoo asli.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666",
+        "lineHeight": 22
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Feature BG Diagnosis Kesiapan Ujian",
+      "x": 960,
+      "y": 860,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 400,
+      "height": 240,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Feature Icon Box Diagnosis Kesiapan Ujian",
+      "x": 988,
+      "y": 888,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 48,
+      "height": 48,
+      "props": {
+        "fill": "#F4FCF7",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Icon Diagnosis Kesiapan Ujian",
+      "x": 1002,
+      "y": 902,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\ud83c\udfaf",
+      "props": {
+        "fontSize": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Title Diagnosis Kesiapan Ujian",
+      "x": 988,
+      "y": 955,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Diagnosis Kesiapan Ujian",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Feature Desc Diagnosis Kesiapan Ujian",
+      "x": 988,
+      "y": 988,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Algoritma mengevaluasi skor di setiap topik sehingga Anda tahu persis kapan siap mendaftar ujian Pearson VUE resmi.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666",
+        "lineHeight": 22
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Section Eyebrow",
+      "x": 80,
+      "y": 1150,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "JELAJAHI MATERI",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#29CC57",
+        "letterSpacing": 1.0
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Section Heading",
+      "x": 80,
+      "y": 1175,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Dari Fondasi ERP Hingga Arsitektur Lanjutan",
+      "props": {
+        "fontSize": 30,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Tab Semua Modul (321 Soal)",
+      "x": 80,
+      "y": 1225,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 185,
+      "height": 38,
+      "props": {
+        "fill": "#1E1E1E",
+        "cornerRadius": 19
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tab Text Semua Modul (321 Soal)",
+      "x": 98,
+      "y": 1236,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Semua Modul (321 Soal)",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#FFFFFF"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Tab Akuntansi & Finansial (85)",
+      "x": 280,
+      "y": 1225,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 180,
+      "height": 38,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 19
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tab Text Akuntansi & Finansial (85)",
+      "x": 298,
+      "y": 1236,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Akuntansi & Finansial (85)",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Tab Inventory & Gudang (72)",
+      "x": 490,
+      "y": 1225,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 180,
+      "height": 38,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 19
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tab Text Inventory & Gudang (72)",
+      "x": 508,
+      "y": 1236,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Inventory & Gudang (72)",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Tab Manufacturing & MRP (58)",
+      "x": 680,
+      "y": 1225,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 180,
+      "height": 38,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 19
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tab Text Manufacturing & MRP (58)",
+      "x": 698,
+      "y": 1236,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Manufacturing & MRP (58)",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Tab Technical & ORM (56)",
+      "x": 880,
+      "y": 1225,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 180,
+      "height": 38,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 19
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tab Text Technical & ORM (56)",
+      "x": 898,
+      "y": 1236,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Technical & ORM (56)",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Medium",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum BG ACC-19",
+      "x": 80,
+      "y": 1285,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 620,
+      "height": 165,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum Badge ACC-19",
+      "x": 104,
+      "y": 1305,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 95,
+      "height": 22,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text ACC-19",
+      "x": 112,
+      "y": 1310,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Paling Populer",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#29CC57"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Count ACC-19",
+      "x": 560,
+      "y": 1309,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "85 Latihan Interaktif",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Title ACC-19",
+      "x": 104,
+      "y": 1337,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Akuntansi & Finansial Odoo 19",
+      "props": {
+        "fontSize": 17,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Desc ACC-19",
+      "x": 104,
+      "y": 1363,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Chart of Accounts, Jurnal Otomatis, Rekonsiliasi Bank, Anglo-Saxon COGS, dan Pelaporan Pajak.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666",
+        "lineHeight": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum CTA ACC-19",
+      "x": 104,
+      "y": 1413,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Mulai Topik Ini \u2192",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum BG INV-19",
+      "x": 740,
+      "y": 1285,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 620,
+      "height": 165,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum Badge INV-19",
+      "x": 764,
+      "y": 1305,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 95,
+      "height": 22,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text INV-19",
+      "x": 772,
+      "y": 1310,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Krusial",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Count INV-19",
+      "x": 1220,
+      "y": 1309,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "72 Latihan Interaktif",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Title INV-19",
+      "x": 764,
+      "y": 1337,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Inventory, Multi-Warehouse & Barcode",
+      "props": {
+        "fontSize": 17,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Desc INV-19",
+      "x": 764,
+      "y": 1363,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Penerimaan 3-Langkah, Multi-Company Routing, Reordering Rules, dan Real-time Valuation.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666",
+        "lineHeight": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum CTA INV-19",
+      "x": 764,
+      "y": 1413,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Mulai Topik Ini \u2192",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum BG MRP-19",
+      "x": 80,
+      "y": 1475,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 620,
+      "height": 165,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum Badge MRP-19",
+      "x": 104,
+      "y": 1495,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 95,
+      "height": 22,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text MRP-19",
+      "x": 112,
+      "y": 1500,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Lanjutan",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#755600"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Count MRP-19",
+      "x": 560,
+      "y": 1499,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "58 Latihan Interaktif",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Title MRP-19",
+      "x": 104,
+      "y": 1527,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Manufaktur, BOM & Work Centers",
+      "props": {
+        "fontSize": 17,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Desc MRP-19",
+      "x": 104,
+      "y": 1553,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Bill of Materials Multi-Level, Subcontracting, Work Order Routing, dan Cost Calculation.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666",
+        "lineHeight": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum CTA MRP-19",
+      "x": 104,
+      "y": 1603,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Mulai Topik Ini \u2192",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum BG DEV-19",
+      "x": 740,
+      "y": 1475,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 620,
+      "height": 165,
+      "props": {
+        "fill": "#FFFFFF",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Curriculum Badge DEV-19",
+      "x": 764,
+      "y": 1495,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 95,
+      "height": 22,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text DEV-19",
+      "x": 772,
+      "y": 1500,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Teknikal",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#294BC6"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Count DEV-19",
+      "x": 1220,
+      "y": 1499,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "56 Latihan Interaktif",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Title DEV-19",
+      "x": 764,
+      "y": 1527,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Python ORM, Model & QWeb Report",
+      "props": {
+        "fontSize": 17,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum Desc DEV-19",
+      "x": 764,
+      "y": 1553,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Field dependencies, compute inverse, security ACL, record rules, dan template printout PDF.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#666666",
+        "lineHeight": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Curriculum CTA DEV-19",
+      "x": 764,
+      "y": 1603,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Mulai Topik Ini \u2192",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#009B2B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testimonial Eyebrow",
+      "x": 80,
+      "y": 1690,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "CERITA KELULUSAN",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#29CC57",
+        "letterSpacing": 1.0
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testimonial Title",
+      "x": 80,
+      "y": 1715,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Dicintai oleh Konsultan, Akuntan, dan Developer",
+      "props": {
+        "fontSize": 28,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Testi BG Budi Santoso",
+      "x": 80,
+      "y": 1765,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 400,
+      "height": 180,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Quote Budi Santoso",
+      "x": 104,
+      "y": 1785,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\u201cFormat soal interaktif OdooPro sangat mirip dengan ujian sertifikasi resmi Pearson VUE. Saya lulus Odoo 19 dengan skor 86% pada kesempatan pertama.\u201d",
+      "props": {
+        "fontSize": 12.5,
+        "fill": "#4C4C4C",
+        "lineHeight": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Name Budi Santoso",
+      "x": 104,
+      "y": 1875,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Budi Santoso",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Role Budi Santoso",
+      "x": 104,
+      "y": 1898,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Senior ERP Consultant \u00b7 Jakarta",
+      "props": {
+        "fontSize": 11,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Testi BG Siti Rahmawati, Ak.",
+      "x": 520,
+      "y": 1765,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 400,
+      "height": 180,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Quote Siti Rahmawati, Ak.",
+      "x": 544,
+      "y": 1785,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\u201cPenjelasan di balik penyeimbangan jurnal akuntansi dan Anglo-Saxon di sini jauh lebih jelas daripada membaca dokumentasi tebal ratusan halaman.\u201d",
+      "props": {
+        "fontSize": 12.5,
+        "fill": "#4C4C4C",
+        "lineHeight": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Name Siti Rahmawati, Ak.",
+      "x": 544,
+      "y": 1875,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Siti Rahmawati, Ak.",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Role Siti Rahmawati, Ak.",
+      "x": 544,
+      "y": 1898,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Accounting Lead \u00b7 Surabaya",
+      "props": {
+        "fontSize": 11,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Testi BG David Pratama",
+      "x": 960,
+      "y": 1765,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 400,
+      "height": 180,
+      "props": {
+        "fill": "#F8F8F8",
+        "stroke": "#E5E5E5",
+        "strokeWeight": 1,
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Quote David Pratama",
+      "x": 984,
+      "y": 1785,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "\u201cFitur Audiobook Studio sangat membantu saat sedang macet di jalan. Konsep ORM dan workflow Odoo jadi nempel permanen di kepala.\u201d",
+      "props": {
+        "fontSize": 12.5,
+        "fill": "#4C4C4C",
+        "lineHeight": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Name David Pratama",
+      "x": 984,
+      "y": 1875,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "David Pratama",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#1E1E1E"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Testi Role David Pratama",
+      "x": 984,
+      "y": 1898,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Odoo Technical Developer \u00b7 Bandung",
+      "props": {
+        "fontSize": 11,
+        "fill": "#666666"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Closing CTA BG",
+      "x": 80,
+      "y": 1990,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 1280,
+      "height": 180,
+      "props": {
+        "fill": "#004E16",
+        "cornerRadius": 24
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Closing CTA Heading",
+      "x": 130,
+      "y": 2035,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Tutor terbaik yang pernah Anda miliki sudah ada di sini.",
+      "props": {
+        "fontSize": 30,
+        "fontStyle": "Bold",
+        "fill": "#FFFFFF"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Closing CTA Subhead",
+      "x": 130,
+      "y": 2080,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Bergabunglah dengan ribuan profesional yang lulus sertifikasi Odoo resmi dengan rasa percaya diri penuh.",
+      "props": {
+        "fontSize": 15,
+        "fill": "#D4F5DD"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Closing Action Btn",
+      "x": 1080,
+      "y": 2050,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "width": 230,
+      "height": 56,
+      "props": {
+        "fill": "#29CC57",
+        "cornerRadius": 28
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Closing Action Text",
+      "x": 1118,
+      "y": 2068,
+      "parent": {
+        "$ref": "canvas"
+      },
+      "text": "Mulai Belajar Sekarang \u2192",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#FFFFFF"
+      }
+    }
+  }
+]

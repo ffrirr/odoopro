@@ -23,8 +23,8 @@ DATA_JS = ROOT_DIR / "data.js"
 AUDIO_DIR = ROOT_DIR / "audio"
 MANIFEST_FILE = AUDIO_DIR / "manifest.json"
 
-DEFAULT_VOICE_ID = "id-ID-ArdiNeural"
-DEFAULT_VOICE_EN = "en-US-BrianNeural"
+DEFAULT_VOICE_ID = "id-ID-GadisNeural"
+DEFAULT_VOICE_EN = "en-US-JennyNeural"
 LETTERS = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
 

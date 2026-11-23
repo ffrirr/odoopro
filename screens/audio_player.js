@@ -3,25 +3,34 @@ import { QUESTIONS, TOPICS } from '../data.js';
 
 const STORAGE_RATE_KEY = 'odoopro_audio_rate';
 const STORAGE_AUTOPLAY_KEY = 'odoopro_audio_autoplay';
+const STORAGE_VOLUME_KEY = 'odoopro_audio_volume';
+const STORAGE_REPEAT_KEY = 'odoopro_audio_repeat';
+const STORAGE_SHUFFLE_KEY = 'odoopro_audio_shuffle';
 
 class AudioPlayerEngine {
   constructor() {
     const isBrowser = typeof window !== 'undefined';
     this.audio = isBrowser && typeof Audio !== 'undefined' ? new Audio() : {
       addEventListener: () => {},
+      removeEventListener: () => {},
       play: async () => {},
       pause: () => {},
       duration: 0,
       currentTime: 0,
       playbackRate: 1.0,
+      volume: 1.0,
       preload: 'metadata'
     };
     this.currentQuestionId = null;
     this.currentTopicId = 'all';
-    this.playlist = QUESTIONS.map(q => q.id);
+    this.originalPlaylist = QUESTIONS.map(q => q.id);
+    this.playlist = [...this.originalPlaylist];
     this.isPlaying = false;
     this.playbackRate = isBrowser && typeof localStorage !== 'undefined' ? parseFloat(localStorage.getItem(STORAGE_RATE_KEY) || '1.0') : 1.0;
-    this.autoplay = isBrowser && typeof localStorage !== 'undefined' ? (localStorage.getItem(STORAGE_AUTOPLAY_KEY) !== 'false') : true;
+    this.volume = isBrowser && typeof localStorage !== 'undefined' ? parseFloat(localStorage.getItem(STORAGE_VOLUME_KEY) || '1.0') : 1.0;
+    this.repeatMode = isBrowser && typeof localStorage !== 'undefined' ? (localStorage.getItem(STORAGE_REPEAT_KEY) || 'all') : 'all'; // 'all', 'one', 'off'
+    this.isShuffle = isBrowser && typeof localStorage !== 'undefined' ? (localStorage.getItem(STORAGE_SHUFFLE_KEY) === 'true') : false;
+    this.autoplay = this.repeatMode !== 'off';
     this.sleepTimerId = null;
     this.sleepTimerEnd = null;
     this.manifest = null;
@@ -32,6 +41,7 @@ class AudioPlayerEngine {
     if (isBrowser) {
       this.audio.preload = 'metadata';
       this.audio.playbackRate = this.playbackRate;
+      this.audio.volume = this.volume;
       this._bindAudioEvents();
       this._setupMediaSession();
       this.loadManifest();
@@ -45,7 +55,6 @@ class AudioPlayerEngine {
         this.manifest = await res.json();
       }
     } catch (e) {
-      // Manifest not yet available or offline
       this.manifest = { audios: {} };
     }
   }
@@ -54,11 +63,13 @@ class AudioPlayerEngine {
     this.audio.addEventListener('play', () => {
       this.isPlaying = true;
       this._emit('play', this.getState());
+      this._emit('change', this.getState());
     });
 
     this.audio.addEventListener('pause', () => {
       this.isPlaying = false;
       this._emit('pause', this.getState());
+      this._emit('change', this.getState());
     });
 
     this.audio.addEventListener('timeupdate', () => {
@@ -69,22 +80,37 @@ class AudioPlayerEngine {
       });
     });
 
+    this.audio.addEventListener('loadedmetadata', () => {
+      this._emit('loadedmetadata', {
+        duration: this.audio.duration || 0,
+        currentTime: this.audio.currentTime || 0
+      });
+      this._emit('change', this.getState());
+    });
+
+    this.audio.addEventListener('canplay', () => {
+      this._emit('canplay', this.getState());
+    });
+
     this.audio.addEventListener('ended', () => {
       this._emit('ended', this.getState());
-      if (this.autoplay) {
+      if (this.repeatMode === 'one') {
+        this.audio.currentTime = 0;
+        this.audio.play().catch(e => console.warn(e));
+      } else if (this.repeatMode === 'all' || this.autoplay) {
         this.next();
       } else {
         this.isPlaying = false;
         this._emit('pause', this.getState());
+        this._emit('change', this.getState());
       }
     });
 
     this.audio.addEventListener('error', (e) => {
-      console.warn('HTML5 Audio playback error, falling back to Web Speech Synthesis:', e);
-      // Fallback to speech synthesis if audio file not found
-      if (this.currentQuestionId) {
-        this._playWithSpeechSynthesis(this.currentQuestionId);
-      }
+      console.warn('HTML5 Audio playback error for src:', this.audio.src, e);
+      this.isPlaying = false;
+      this._emit('pause', this.getState());
+      this._emit('change', this.getState());
     });
   }
 
@@ -96,10 +122,10 @@ class AudioPlayerEngine {
     navigator.mediaSession.setActionHandler('previoustrack', () => this.prev());
     navigator.mediaSession.setActionHandler('nexttrack', () => this.next());
     navigator.mediaSession.setActionHandler('seekbackward', (details) => {
-      this.seek(Math.max(this.audio.currentTime - (details.seekOffset || 10), 0));
+      this.skip(-(details.seekOffset || 10));
     });
     navigator.mediaSession.setActionHandler('seekforward', (details) => {
-      this.seek(Math.min(this.audio.currentTime + (details.seekOffset || 10), this.audio.duration || 9999));
+      this.skip(details.seekOffset || 10);
     });
   }
 
@@ -108,7 +134,7 @@ class AudioPlayerEngine {
 
     navigator.mediaSession.metadata = new MediaMetadata({
       title: `Soal #${question.id}: ${question.soal.slice(0, 50)}…`,
-      artist: 'OdooPro Audiobook',
+      artist: 'OdooPro MP3 Audiobook',
       album: topic ? topic.nama : 'Sertifikasi Odoo 19',
       artwork: [
         { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
@@ -120,14 +146,79 @@ class AudioPlayerEngine {
   setPlaylist(topicId = 'all', startQuestionId = null) {
     this.currentTopicId = topicId;
     if (topicId === 'all' || !topicId) {
-      this.playlist = QUESTIONS.map(q => q.id);
+      this.originalPlaylist = QUESTIONS.map(q => q.id);
     } else {
-      this.playlist = QUESTIONS.filter(q => q.topic === topicId).map(q => q.id);
+      this.originalPlaylist = QUESTIONS.filter(q => q.topic === topicId).map(q => q.id);
+    }
+
+    if (this.isShuffle) {
+      this._applyShuffle();
+    } else {
+      this.playlist = [...this.originalPlaylist];
     }
 
     if (startQuestionId && this.playlist.includes(startQuestionId)) {
       this.playQuestion(startQuestionId);
+    } else if (!this.currentQuestionId || !this.playlist.includes(this.currentQuestionId)) {
+      if (this.playlist.length > 0) {
+        this.currentQuestionId = this.playlist[0];
+        const q = this.getQuestion(this.currentQuestionId);
+        const topic = this.getTopic(q?.topic);
+        this._updateMediaSessionMetadata(q, topic);
+      }
     }
+    this._emit('playlistchange', this.getState());
+    this._emit('change', this.getState());
+  }
+
+  _applyShuffle() {
+    const list = [...this.originalPlaylist];
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+    // Put current song first if available
+    if (this.currentQuestionId) {
+      const idx = list.indexOf(this.currentQuestionId);
+      if (idx > -1) {
+        list.splice(idx, 1);
+        list.unshift(this.currentQuestionId);
+      }
+    }
+    this.playlist = list;
+  }
+
+  toggleShuffle() {
+    this.isShuffle = !this.isShuffle;
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(STORAGE_SHUFFLE_KEY, this.isShuffle.toString());
+    }
+    if (this.isShuffle) {
+      this._applyShuffle();
+    } else {
+      this.playlist = [...this.originalPlaylist];
+    }
+    this._emit('shufflechange', this.isShuffle);
+    this._emit('change', this.getState());
+    return this.isShuffle;
+  }
+
+  toggleRepeatMode() {
+    // all -> one -> off -> all
+    if (this.repeatMode === 'all') {
+      this.repeatMode = 'one';
+    } else if (this.repeatMode === 'one') {
+      this.repeatMode = 'off';
+    } else {
+      this.repeatMode = 'all';
+    }
+    this.autoplay = (this.repeatMode !== 'off');
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(STORAGE_REPEAT_KEY, this.repeatMode);
+    }
+    this._emit('repeatchange', this.repeatMode);
+    this._emit('change', this.getState());
+    return this.repeatMode;
   }
 
   getQuestion(qId) {
@@ -146,7 +237,6 @@ class AudioPlayerEngine {
     const topic = this.getTopic(q.topic);
     this._updateMediaSessionMetadata(q, topic);
 
-    // Stop speech synth if running
     if (window.speechSynthesis && window.speechSynthesis.speaking) {
       window.speechSynthesis.cancel();
     }
@@ -155,14 +245,17 @@ class AudioPlayerEngine {
     const audioSrc = `audio/q_${qId}.mp3`;
     this.audio.src = audioSrc;
     this.audio.playbackRate = this.playbackRate;
+    this.audio.volume = this.volume;
 
     try {
       await this.audio.play();
       this.isPlaying = true;
       this._emit('change', this.getState());
     } catch (err) {
-      console.warn(`Cannot play ${audioSrc}, trying SpeechSynthesis fallback:`, err);
-      this._playWithSpeechSynthesis(qId);
+      console.warn(`HTML5 Audio play failed for ${audioSrc}:`, err);
+      this.isPlaying = false;
+      this._emit('pause', this.getState());
+      this._emit('change', this.getState());
     }
   }
 
@@ -170,6 +263,7 @@ class AudioPlayerEngine {
     if (!('speechSynthesis' in window)) {
       this.isPlaying = false;
       this._emit('pause', this.getState());
+      this._emit('change', this.getState());
       return;
     }
 
@@ -206,11 +300,14 @@ class AudioPlayerEngine {
       if (currentIdx >= segments.length) {
         this.isUsingSpeechSynthesis = false;
         this._emit('ended', this.getState());
-        if (this.autoplay) {
+        if (this.repeatMode === 'one') {
+          this._playWithSpeechSynthesis(qId);
+        } else if (this.repeatMode === 'all' || this.autoplay) {
           this.next();
         } else {
           this.isPlaying = false;
           this._emit('pause', this.getState());
+          this._emit('change', this.getState());
         }
         return;
       }
@@ -238,6 +335,7 @@ class AudioPlayerEngine {
         this.isUsingSpeechSynthesis = false;
         this.isPlaying = false;
         this._emit('pause', this.getState());
+        this._emit('change', this.getState());
       };
 
       this.synthUtterance = utter;
@@ -249,7 +347,6 @@ class AudioPlayerEngine {
 
   togglePlay() {
     if (!this.currentQuestionId) {
-      // Start with first in playlist
       const firstId = this.playlist[0] || 1;
       this.playQuestion(firstId);
       return;
@@ -269,6 +366,7 @@ class AudioPlayerEngine {
       } else {
         this._playWithSpeechSynthesis(this.currentQuestionId);
       }
+      this._emit('change', this.getState());
       return;
     }
 
@@ -286,16 +384,29 @@ class AudioPlayerEngine {
       const nextId = this.playlist[currentIndex + 1];
       this.playQuestion(nextId);
     } else {
-      // Loop back to start or stop
-      this.playQuestion(this.playlist[0]);
+      if (this.repeatMode === 'all') {
+        this.playQuestion(this.playlist[0]);
+      } else {
+        this.isPlaying = false;
+        this._emit('pause', this.getState());
+        this._emit('change', this.getState());
+      }
     }
+  }
+
+  nextTrack() {
+    this.next();
   }
 
   prev() {
     if (!this.playlist.length) return;
-    // If more than 3s played, restart current track
     if (!this.isUsingSpeechSynthesis && this.audio.currentTime > 3) {
       this.audio.currentTime = 0;
+      this._emit('timeupdate', {
+        currentTime: 0,
+        duration: this.audio.duration || 0,
+        percent: 0
+      });
       return;
     }
     const currentIndex = this.playlist.indexOf(this.currentQuestionId);
@@ -307,10 +418,19 @@ class AudioPlayerEngine {
     }
   }
 
+  previousTrack() {
+    this.prev();
+  }
+
   seek(seconds) {
     if (this.isUsingSpeechSynthesis) return;
     if (isFinite(seconds)) {
       this.audio.currentTime = Math.max(0, Math.min(seconds, this.audio.duration || 0));
+      this._emit('timeupdate', {
+        currentTime: this.audio.currentTime,
+        duration: this.audio.duration || 0,
+        percent: this.audio.duration ? (this.audio.currentTime / this.audio.duration) * 100 : 0
+      });
     }
   }
 
@@ -319,17 +439,24 @@ class AudioPlayerEngine {
     this.seek(this.audio.currentTime + delta);
   }
 
+  seekBy(delta) {
+    this.skip(delta);
+  }
+
   setPlaybackRate(rate) {
     this.playbackRate = rate;
     if (typeof localStorage !== 'undefined') localStorage.setItem(STORAGE_RATE_KEY, rate.toString());
     this.audio.playbackRate = rate;
     this._emit('ratechange', rate);
+    this._emit('change', this.getState());
   }
 
-  setAutoplay(enabled) {
-    this.autoplay = !!enabled;
-    if (typeof localStorage !== 'undefined') localStorage.setItem(STORAGE_AUTOPLAY_KEY, this.autoplay.toString());
-    this._emit('autoplaychange', this.autoplay);
+  setVolume(vol) {
+    this.volume = Math.max(0, Math.min(1, vol));
+    if (typeof localStorage !== 'undefined') localStorage.setItem(STORAGE_VOLUME_KEY, this.volume.toString());
+    this.audio.volume = this.volume;
+    this._emit('volumechange', this.volume);
+    this._emit('change', this.getState());
   }
 
   setSleepTimer(minutes) {
@@ -341,6 +468,7 @@ class AudioPlayerEngine {
 
     if (!minutes || minutes <= 0) {
       this._emit('sleeptimer', null);
+      this._emit('change', this.getState());
       return;
     }
 
@@ -353,9 +481,11 @@ class AudioPlayerEngine {
       this.sleepTimerId = null;
       this.sleepTimerEnd = null;
       this._emit('sleeptimer', null);
+      this._emit('change', this.getState());
     }, ms);
 
     this._emit('sleeptimer', { minutes, endsAt: this.sleepTimerEnd });
+    this._emit('change', this.getState());
   }
 
   getState() {
@@ -373,6 +503,9 @@ class AudioPlayerEngine {
       playlistTotal: this.playlist.length,
       isPlaying: this.isPlaying,
       playbackRate: this.playbackRate,
+      volume: this.volume,
+      repeatMode: this.repeatMode,
+      isShuffle: this.isShuffle,
       autoplay: this.autoplay,
       currentTime: this.audio.currentTime || 0,
       duration: this.audio.duration || 0,
@@ -387,6 +520,21 @@ class AudioPlayerEngine {
     }
     this.listeners.get(event).add(callback);
     return () => this.listeners.get(event)?.delete(callback);
+  }
+
+  subscribe(callback) {
+    const unsub1 = this.on('play', callback);
+    const unsub2 = this.on('pause', callback);
+    const unsub3 = this.on('timeupdate', callback);
+    const unsub4 = this.on('change', callback);
+    const unsub5 = this.on('ratechange', callback);
+    const unsub6 = this.on('sleeptimer', callback);
+    const unsub7 = this.on('volumechange', callback);
+    const unsub8 = this.on('repeatchange', callback);
+    const unsub9 = this.on('shufflechange', callback);
+    return () => {
+      unsub1(); unsub2(); unsub3(); unsub4(); unsub5(); unsub6(); unsub7(); unsub8(); unsub9();
+    };
   }
 
   _emit(event, data) {

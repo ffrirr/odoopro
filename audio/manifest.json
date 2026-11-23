@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-09-24T14:57:16+07:00",
+  "updatedAt": "2026-11-11T05:22:55+07:00",
   "mode": "bilingual",
-  "voice_id": "id-ID-ArdiNeural",
-  "voice_en": "en-US-BrianNeural",
+  "voice_id": "id-ID-GadisNeural",
+  "voice_en": "en-US-JennyNeural",
   "rate": "+0%",
   "totalQuestions": 300,
   "audios": {
     "1": {
       "file": "audio/q_1.mp3",
-      "size": 293184,
+      "size": 311616,
       "mode": "bilingual"
     },
     "2": {
       "file": "audio/q_2.mp3",
-      "size": 257904,
+      "size": 286272,
       "mode": "bilingual"
     },
     "3": {
       "file": "audio/q_3.mp3",
-      "size": 390816,
+      "size": 419616,
       "mode": "bilingual"
     },
     "35": {
@@ -53,37 +53,37 @@
     },
     "4": {
       "file": "audio/q_4.mp3",
-      "size": 353520,
+      "size": 373680,
       "mode": "bilingual"
     },
     "5": {
       "file": "audio/q_5.mp3",
-      "size": 332352,
+      "size": 352224,
       "mode": "bilingual"
     },
     "6": {
       "file": "audio/q_6.mp3",
-      "size": 253440,
+      "size": 324720,
       "mode": "bilingual"
     },
     "7": {
       "file": "audio/q_7.mp3",
-      "size": 342576,
+      "size": 389664,
       "mode": "bilingual"
     },
     "8": {
       "file": "audio/q_8.mp3",
-      "size": 330048,
+      "size": 356976,
       "mode": "bilingual"
     },
     "9": {
       "file": "audio/q_9.mp3",
-      "size": 245664,
+      "size": 271872,
       "mode": "bilingual"
     },
     "10": {
       "file": "audio/q_10.mp3",
-      "size": 301680,
+      "size": 336528,
       "mode": "bilingual"
     },
     "11": {
@@ -103,7 +103,7 @@
     },
     "14": {
       "file": "audio/q_14.mp3",
-      "size": 517104,
+      "size": 524160,
       "mode": "bilingual"
     },
     "15": {

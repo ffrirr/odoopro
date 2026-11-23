@@ -1,0 +1,2330 @@
+[
+  {
+    "as": "canvas",
+    "command": "node.create",
+    "params": {
+      "type": "frame",
+      "name": "Desktop 1440 - OdooPro Learning Platform",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 960,
+      "props": {
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Sidebar BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 0,
+      "y": 0,
+      "width": 260,
+      "height": 960,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "strokeRightWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Logo Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 24,
+      "y": 24,
+      "width": 38,
+      "height": 38,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Logo Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 32,
+      "y": 32,
+      "text": "OP",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Brand Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 72,
+      "y": 24,
+      "text": "OdooPro",
+      "props": {
+        "fontSize": 20,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Brand Subtitle",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 72,
+      "y": 48,
+      "text": "CERTIFICATION ENGINE",
+      "props": {
+        "fontSize": 9,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Sidebar Divider",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 24,
+      "y": 78,
+      "width": 212,
+      "height": 1,
+      "props": {
+        "fill": "#232E42"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Section Label",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 24,
+      "y": 96,
+      "text": "WORKSPACE",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#64748B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav Dashboard BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 16,
+      "y": 120,
+      "width": 228,
+      "height": 42,
+      "props": {
+        "fill": "#1E2738",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav Dashboard Indicator",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 16,
+      "y": 120,
+      "width": 4,
+      "height": 42,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Dashboard Label",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 36,
+      "y": 132,
+      "text": "\u26a1  Dashboard",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Learning Path",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 36,
+      "y": 178,
+      "text": "\ud83d\udcd6  Learning Path",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Practice Exams",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 36,
+      "y": 224,
+      "text": "\ud83d\udcdd  Simulasi Ujian",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav Badge Exams BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 184,
+      "y": 220,
+      "width": 48,
+      "height": 20,
+      "props": {
+        "fill": "#00D2D325",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Badge Exams Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 192,
+      "y": 224,
+      "text": "321 Q",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Audiobook",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 36,
+      "y": 270,
+      "text": "\ud83c\udfa7  Audiobook Studio",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Flashcards",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 36,
+      "y": 316,
+      "text": "\ud83d\uddc2\ufe0f  Flashcard SM-2",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav Badge Flashcards BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 182,
+      "y": 312,
+      "width": 50,
+      "height": 20,
+      "props": {
+        "fill": "#F59E0B25",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Badge Flashcards Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 189,
+      "y": 316,
+      "text": "18 Due",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Analytics",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 36,
+      "y": 362,
+      "text": "\ud83d\udcca  Analitik Skor",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Countdown Card BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 16,
+      "y": 732,
+      "width": 228,
+      "height": 96,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Countdown Tag",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 30,
+      "y": 746,
+      "text": "PEARSON VUE VOUCHER",
+      "props": {
+        "fontSize": 9,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Countdown Days",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 30,
+      "y": 764,
+      "text": "21 Hari Menuju Ujian",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Countdown Sub",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 30,
+      "y": 786,
+      "text": "Kesiapan: 78% (Target min. 70%)",
+      "props": {
+        "fontSize": 11,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Countdown Progress Track",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 30,
+      "y": 808,
+      "width": 200,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Countdown Progress Fill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 30,
+      "y": 808,
+      "width": 156,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "User Card BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 16,
+      "y": 844,
+      "width": 228,
+      "height": 64,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "User Avatar",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 28,
+      "y": 856,
+      "width": 40,
+      "height": 40,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "User Initials",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 38,
+      "y": 867,
+      "text": "FR",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "User Name",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 78,
+      "y": 858,
+      "text": "Feri Irawan",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "User Role",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 78,
+      "y": 880,
+      "text": "Odoo 19 Specialist",
+      "props": {
+        "fontSize": 11,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Header BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 260,
+      "y": 0,
+      "width": 1180,
+      "height": 72,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Search Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 16,
+      "width": 400,
+      "height": 40,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Search Placeholder",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 312,
+      "y": 28,
+      "text": "\ud83d\udd0d  Cari materi, 321 soal, jurnal akuntansi, BOM...",
+      "props": {
+        "fontSize": 13,
+        "fill": "#64748B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Streak Pill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 860,
+      "y": 18,
+      "width": 140,
+      "height": 36,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Streak Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 876,
+      "y": 27,
+      "text": "\ud83d\udd25 14 Hari Streak",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Readiness Pill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1014,
+      "y": 18,
+      "width": 144,
+      "height": 36,
+      "props": {
+        "fill": "#00D2D315",
+        "stroke": "#00D2D340",
+        "cornerRadius": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Readiness Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1030,
+      "y": 27,
+      "text": "\ud83c\udfaf 78% Kesiapan",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Quick Action BTN",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1172,
+      "y": 18,
+      "width": 160,
+      "height": 36,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Quick Action Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1194,
+      "y": 27,
+      "text": "\u26a1 Simulasi Ujian",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Card BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 96,
+      "width": 1116,
+      "height": 160,
+      "props": {
+        "fill": "#161E2E",
+        "stroke": "#2B384E",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Accent Stripe",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 96,
+      "width": 1116,
+      "height": 4,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Tag BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 320,
+      "y": 116,
+      "width": 168,
+      "height": 22,
+      "props": {
+        "fill": "#714B6735",
+        "stroke": "#714B67",
+        "cornerRadius": 11
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Tag Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 330,
+      "y": 120,
+      "text": "ODOO 19 OFFICIAL PREP",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#E2D9F3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 320,
+      "y": 146,
+      "text": "Sertifikasi Odoo 19: Functional Consultant Mastery",
+      "props": {
+        "fontSize": 20,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Subtitle",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 320,
+      "y": 174,
+      "text": "321 bank soal terverifikasi \u00b7 Spaced repetition adaptif \u00b7 73 soal butuh pengulangan minggu ini",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero CTA 1 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 320,
+      "y": 204,
+      "width": 200,
+      "height": 36,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero CTA 1 Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 340,
+      "y": 214,
+      "text": "Lanjutkan Belajar (Accounting)",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero CTA 2 BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 532,
+      "y": 204,
+      "width": 180,
+      "height": 36,
+      "props": {
+        "fill": "#232E42",
+        "stroke": "#32405A",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero CTA 2 Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 552,
+      "y": 214,
+      "text": "Simulasi Tryout 50 Soal",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Hero Score Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1238,
+      "y": 116,
+      "width": 144,
+      "height": 120,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#2D3B54",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Score Value",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1272,
+      "y": 132,
+      "text": "78%",
+      "props": {
+        "fontSize": 32,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Score Label",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1252,
+      "y": 178,
+      "text": "KESIAPAN UJIAN",
+      "props": {
+        "fontSize": 9,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Hero Score Trend",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1262,
+      "y": 200,
+      "text": "+5% minggu ini",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "KPI TOTAL SOAL DIKUASAI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 276,
+      "width": 261,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Title TOTAL SOAL DIKUASAI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 310,
+      "y": 292,
+      "text": "TOTAL SOAL DIKUASAI",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Val TOTAL SOAL DIKUASAI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 310,
+      "y": 312,
+      "text": "248 / 321",
+      "props": {
+        "fontSize": 22,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Sub TOTAL SOAL DIKUASAI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 310,
+      "y": 344,
+      "text": "77% kurikulum selesai",
+      "props": {
+        "fontSize": 11,
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "KPI RATA-RATA TRYOUT",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 577,
+      "y": 276,
+      "width": 261,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Title RATA-RATA TRYOUT",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 595,
+      "y": 292,
+      "text": "RATA-RATA TRYOUT",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Val RATA-RATA TRYOUT",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 595,
+      "y": 312,
+      "text": "82.4%",
+      "props": {
+        "fontSize": 22,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Sub RATA-RATA TRYOUT",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 595,
+      "y": 344,
+      "text": "Target lulus: min 70%",
+      "props": {
+        "fontSize": 11,
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "KPI AUDIOBOOK STUDI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 862,
+      "y": 276,
+      "width": 261,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Title AUDIOBOOK STUDI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 880,
+      "y": 292,
+      "text": "AUDIOBOOK STUDI",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Val AUDIOBOOK STUDI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 880,
+      "y": 312,
+      "text": "4.8 Jam",
+      "props": {
+        "fontSize": 22,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Sub AUDIOBOOK STUDI",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 880,
+      "y": 344,
+      "text": "6 playlist bab diselesaikan",
+      "props": {
+        "fontSize": 11,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "KPI SPACED REPETITION",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1147,
+      "y": 276,
+      "width": 261,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Title SPACED REPETITION",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1165,
+      "y": 292,
+      "text": "SPACED REPETITION",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Val SPACED REPETITION",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1165,
+      "y": 312,
+      "text": "18 Kartu",
+      "props": {
+        "fontSize": 22,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "KPI Sub SPACED REPETITION",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1165,
+      "y": 344,
+      "text": "Perlu diulang hari ini",
+      "props": {
+        "fontSize": 11,
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Modules Header",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 396,
+      "text": "Modul Pembelajaran & Learning Path",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Modules Subheader",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 422,
+      "text": "Progres penguasaan per area fungsional Odoo 19",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Exam Header",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1002,
+      "y": 396,
+      "text": "Aktivitas Simulasi Ujian",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Exam Subheader",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1002,
+      "y": 422,
+      "text": "Histori tryout dan latihan terjadwal",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Module Accounting & Financial Management",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 448,
+      "width": 686,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Icon Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 310,
+      "y": 466,
+      "width": 42,
+      "height": 42,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Icon Emoji",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 322,
+      "y": 478,
+      "text": "\ud83d\udcca",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 466,
+      "text": "Accounting & Financial Management",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Meta",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 488,
+      "text": "68 / 74 Soal dikuasai \u00b7 Jurnal, Rekonsiliasi Bank, Multi-currency",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Track",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 516,
+      "width": 460,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Fill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 516,
+      "width": 423,
+      "height": 6,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Progress Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 836,
+      "y": 512,
+      "text": "92%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Badge BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 884,
+      "y": 464,
+      "width": 80,
+      "height": 22,
+      "props": {
+        "fill": "#10B98120",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 894,
+      "y": 468,
+      "text": "Mastered",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Module Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 556,
+      "width": 686,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Icon Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 310,
+      "y": 574,
+      "width": 42,
+      "height": 42,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Icon Emoji",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 322,
+      "y": 586,
+      "text": "\ud83d\udcbc",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 574,
+      "text": "Sales, CRM & Point of Sale",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Meta",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 596,
+      "text": "45 / 61 Soal dikuasai \u00b7 Lead Pipeline, Pricelist, Quotation Matrix",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Track",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 624,
+      "width": 460,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Fill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 624,
+      "width": 340,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Progress Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 836,
+      "y": 620,
+      "text": "74%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Badge BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 884,
+      "y": 572,
+      "width": 80,
+      "height": 22,
+      "props": {
+        "fill": "#00D2D320",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 894,
+      "y": 576,
+      "text": "In Progress",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Module Inventory, Logistics & Manufacturing (MRP)",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 664,
+      "width": 686,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Icon Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 310,
+      "y": 682,
+      "width": 42,
+      "height": 42,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Icon Emoji",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 322,
+      "y": 694,
+      "text": "\ud83d\udce6",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 682,
+      "text": "Inventory, Logistics & Manufacturing (MRP)",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Meta",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 704,
+      "text": "38 / 65 Soal dikuasai \u00b7 Lot/Serial, Reordering Rules, Landed Cost, BOM",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Track",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 732,
+      "width": 460,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Fill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 732,
+      "width": 266,
+      "height": 6,
+      "props": {
+        "fill": "#F59E0B",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Progress Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 836,
+      "y": 728,
+      "text": "58%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Badge BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 884,
+      "y": 680,
+      "width": 80,
+      "height": 22,
+      "props": {
+        "fill": "#F59E0B20",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 894,
+      "y": 684,
+      "text": "Needs Focus",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Module Purchasing, RFQ & Three-Way Matching",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 292,
+      "y": 772,
+      "width": 686,
+      "height": 96,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Icon Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 310,
+      "y": 790,
+      "width": 42,
+      "height": 42,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Icon Emoji",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 322,
+      "y": 802,
+      "text": "\ud83d\uded2",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 790,
+      "text": "Purchasing, RFQ & Three-Way Matching",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mod Meta",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 812,
+      "text": "42 / 48 Soal dikuasai \u00b7 Vendor Bills, Purchase Agreement, Dropshipping",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Track",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 840,
+      "width": 460,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Progress Fill",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 366,
+      "y": 840,
+      "width": 404,
+      "height": 6,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Progress Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 836,
+      "y": 836,
+      "text": "88%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Badge BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 884,
+      "y": 788,
+      "width": 80,
+      "height": 22,
+      "props": {
+        "fill": "#10B98120",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 894,
+      "y": 792,
+      "text": "Mastered",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mock Exam Result Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1002,
+      "y": 448,
+      "width": 406,
+      "height": 204,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Status Badge BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 466,
+      "width": 116,
+      "height": 22,
+      "props": {
+        "fill": "#10B98120",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Status Badge Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1032,
+      "y": 470,
+      "text": "STATUS: LULUS \u2705",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Exam Name",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 498,
+      "text": "Full Mock Exam #4 (50 Soal)",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Exam Meta",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 520,
+      "text": "Waktu tempuh: 42 mnt / 60 mnt \u00b7 Kemarin, 21:30 WIB",
+      "props": {
+        "fontSize": 12,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Score Subbox",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 546,
+      "width": 362,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#2B384E",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Score Large Val",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1042,
+      "y": 558,
+      "text": "84",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Score Denom",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1076,
+      "y": 564,
+      "text": "/ 100 Poin (Passing grade Odoo: 70)",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Exam Detail Link",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 618,
+      "text": "Lihat Pembahasan Detail Soal \u2192",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Flashcard Drill Box",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1002,
+      "y": 664,
+      "width": 406,
+      "height": 204,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Drill Tag BG",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 682,
+      "width": 140,
+      "height": 22,
+      "props": {
+        "fill": "#F59E0B20",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Drill Tag Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1032,
+      "y": 686,
+      "text": "SPACED REPETITION",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Drill Title",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 714,
+      "text": "18 Kartu Siap Diulang Hari Ini",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Drill Desc",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 738,
+      "text": "Algoritma SuperMemo SM-2 mendeteksi daya ingat melemah pada materi Valuation FIFO vs AVCO & Automated Inventory.",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Drill BTN",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1024,
+      "y": 802,
+      "width": 362,
+      "height": 44,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Drill BTN Text",
+      "parent": {
+        "$ref": "canvas"
+      },
+      "x": 1104,
+      "y": 816,
+      "text": "Mulai Review Flashcard (5 Menit)",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  }
+]

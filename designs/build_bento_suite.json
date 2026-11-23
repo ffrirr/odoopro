@@ -1,0 +1,3614 @@
+[
+  {
+    "as": "d_bento",
+    "command": "node.create",
+    "params": {
+      "type": "frame",
+      "name": "Desktop 1440 - Bento Grid (Live States)",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1420,
+      "props": {
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav BG",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 72,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Logo Box",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 130,
+      "y": 18,
+      "width": 36,
+      "height": 36,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Logo Text",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 138,
+      "y": 26,
+      "text": "OP",
+      "props": {
+        "fontSize": 16,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Brand",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 176,
+      "y": 24,
+      "text": "OdooPro",
+      "props": {
+        "fontSize": 20,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "NL Kurikulum",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 480,
+      "y": 28,
+      "text": "Kurikulum",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "NL Simulasi Ujian",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 580,
+      "y": 28,
+      "text": "Simulasi Ujian",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "NL Audiobook",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 700,
+      "y": 28,
+      "text": "Audiobook",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "NL Flashcards",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 830,
+      "y": 28,
+      "text": "Flashcards",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "NL Voucher VUE",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 960,
+      "y": 28,
+      "text": "Voucher VUE",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav BTN",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1140,
+      "y": 16,
+      "width": 170,
+      "height": 40,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav BTN Text",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1162,
+      "y": 28,
+      "text": "Mulai Belajar Gratis",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Header Tag BG",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 590,
+      "y": 104,
+      "width": 260,
+      "height": 26,
+      "props": {
+        "fill": "#714B6730",
+        "stroke": "#714B67",
+        "cornerRadius": 13
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Header Tag Text",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 602,
+      "y": 110,
+      "text": "BENTO MODULAR LEARNING ECOSYSTEM",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#E2D9F3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Main Title",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 340,
+      "y": 142,
+      "text": "Satu Platform Modular Menuju Sertifikasi Odoo 19",
+      "props": {
+        "fontSize": 32,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Main Sub",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 360,
+      "y": 186,
+      "text": "321 bank soal terverifikasi, simulator ujian Pearson VUE, dan spaced repetition SM-2",
+      "props": {
+        "fontSize": 14,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C1 Hero",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 130,
+      "y": 230,
+      "width": 770,
+      "height": 300,
+      "props": {
+        "fill": "#161E2E",
+        "stroke": "#2B384E",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C1 Accent",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 130,
+      "y": 230,
+      "width": 770,
+      "height": 4,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C1 Head",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 280,
+      "text": "Kuasai Seluruh Skenario Fungsional Odoo 19",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C1 Sub",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 318,
+      "text": "Uji pemahaman alur bisnis nyata: akuntansi perpetual, landed cost, BOM manufaktur, dan rekonsiliasi bank.",
+      "props": {
+        "fontSize": 14,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Pill 321 Soal",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 380,
+      "width": 150,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "PV 321 Soal",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 174,
+      "y": 388,
+      "text": "321 Soal",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "PL 321 Soal",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 174,
+      "y": 410,
+      "text": "Bank Terverifikasi",
+      "props": {
+        "fontSize": 10,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Pill 70% Skor",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 330,
+      "y": 380,
+      "width": 150,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "PV 70% Skor",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 344,
+      "y": 388,
+      "text": "70% Skor",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "PL 70% Skor",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 344,
+      "y": 410,
+      "text": "Ambang Lulus",
+      "props": {
+        "fontSize": 10,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Pill 6 Modul",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 500,
+      "y": 380,
+      "width": 150,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "PV 6 Modul",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 514,
+      "y": 388,
+      "text": "6 Modul",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "PL 6 Modul",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 514,
+      "y": 410,
+      "text": "Kurikulum Lengkap",
+      "props": {
+        "fontSize": 10,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C1 BTN",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 456,
+      "width": 210,
+      "height": 44,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C1 BTN Text",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 182,
+      "y": 470,
+      "text": "\u26a1 Coba Simulasi Ujian Cepat",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C2 Hover Card",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 920,
+      "y": 226,
+      "width": 390,
+      "height": 304,
+      "props": {
+        "fill": "#192436",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1.5,
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C2 Hover Pill",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1170,
+      "y": 242,
+      "width": 120,
+      "height": 22,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 11
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 Hover Text",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1184,
+      "y": 246,
+      "text": "HOVER STATE \ud83d\udc46",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 Tag",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 950,
+      "y": 256,
+      "text": "INDEX KESIAPAN RIIL",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 Score",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 950,
+      "y": 284,
+      "text": "78%",
+      "props": {
+        "fontSize": 56,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 Status",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1100,
+      "y": 306,
+      "text": "SIAP UJIAN \u2705",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 Sub",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1100,
+      "y": 330,
+      "text": "Ambang Lulus: 70%",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C2 Track",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 950,
+      "y": 364,
+      "width": 330,
+      "height": 8,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C2 Fill",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 950,
+      "y": 364,
+      "width": 257,
+      "height": 8,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C2 Box",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 950,
+      "y": 414,
+      "width": 330,
+      "height": 84,
+      "props": {
+        "fill": "#1E2A3C",
+        "stroke": "#00D2D350",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 VUE Title",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 966,
+      "y": 428,
+      "text": "Voucher Pearson VUE Terjadwal",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 VUE Days",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 966,
+      "y": 452,
+      "text": "\u23f1\ufe0f Sisa 21 Hari Lagi Menuju Hari Ujian",
+      "props": {
+        "fontSize": 12,
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C2 VUE Trend",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 966,
+      "y": 472,
+      "text": "Elevasi Hover: transform -4px & cyan glow 20px",
+      "props": {
+        "fontSize": 11,
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C3 SM2",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 130,
+      "y": 550,
+      "width": 373,
+      "height": 240,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C3 T",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 154,
+      "y": 574,
+      "text": "SPACED REPETITION SM-2",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C3 V",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 154,
+      "y": 604,
+      "text": "18 Kartu Due",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C3 Sub",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 154,
+      "y": 640,
+      "text": "Review adaptif menagih memori sebelum terlupakan.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C3 Link",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 154,
+      "y": 734,
+      "text": "Mulai Sesi Drill 5 Menit \u2192",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C4 Audio",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 523,
+      "y": 550,
+      "width": 373,
+      "height": 240,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C4 T",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 547,
+      "y": 574,
+      "text": "AUDIOBOOK STUDIO",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C4 V",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 547,
+      "y": 604,
+      "text": "4.8 Jam Audio",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C4 Sub",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 547,
+      "y": 640,
+      "text": "Belajar on-the-go tanpa layar saat commuting.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 0",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 547,
+      "y": 738,
+      "width": 4,
+      "height": 12,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 1",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 555,
+      "y": 732,
+      "width": 4,
+      "height": 24,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 2",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 563,
+      "y": 735,
+      "width": 4,
+      "height": 18,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 3",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 571,
+      "y": 728,
+      "width": 4,
+      "height": 32,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 4",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 579,
+      "y": 730,
+      "width": 4,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 5",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 587,
+      "y": 736,
+      "width": 4,
+      "height": 16,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 6",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 595,
+      "y": 733,
+      "width": 4,
+      "height": 22,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 7",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 603,
+      "y": 726,
+      "width": 4,
+      "height": 36,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 8",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 611,
+      "y": 737,
+      "width": 4,
+      "height": 14,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 9",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 619,
+      "y": 731,
+      "width": 4,
+      "height": 26,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 10",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 627,
+      "y": 729,
+      "width": 4,
+      "height": 30,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 11",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 635,
+      "y": 734,
+      "width": 4,
+      "height": 20,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 12",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 643,
+      "y": 737,
+      "width": 4,
+      "height": 15,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 13",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 651,
+      "y": 730,
+      "width": 4,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 14",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 659,
+      "y": 727,
+      "width": 4,
+      "height": 34,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "W 15",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 667,
+      "y": 735,
+      "width": 4,
+      "height": 18,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "W Play",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 690,
+      "y": 734,
+      "text": "\u25b6 Play Bab 4",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C5 Streak",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 916,
+      "y": 550,
+      "width": 373,
+      "height": 240,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C5 T",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 940,
+      "y": 574,
+      "text": "KONSISTENSI BELAJAR",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#E2D9F3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C5 V",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 940,
+      "y": 604,
+      "text": "\ud83d\udd25 14 Hari Streak",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C5 Sub",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 940,
+      "y": 640,
+      "text": "15 menit konsisten tiap hari menaikkan peluang lulus 3.2x.",
+      "props": {
+        "fontSize": 13,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot 0",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 940,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot T 0",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 950,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot 1",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 982,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot T 1",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 992,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot 2",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1024,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot T 2",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1034,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot 3",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1066,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot T 3",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1076,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot 4",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1108,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot T 4",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1118,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot 5",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1150,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot T 5",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1160,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Dot 6",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1192,
+      "y": 724,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Dot T 6",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1202,
+      "y": 732,
+      "text": "\u2713",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C6 Exam",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 130,
+      "y": 810,
+      "width": 680,
+      "height": 330,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C6 Title",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 834,
+      "text": "Simulasi Ujian Realtime & Interaksi Jawaban",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C6 Time",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 670,
+      "y": 834,
+      "text": "\u23f1\ufe0f 47:35 Menit",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C6 QBox",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 866,
+      "width": 620,
+      "height": 52,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#2B384E",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C6 QText",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 174,
+      "y": 880,
+      "text": "Soal #14: Pada metode Automated Valuation FIFO Odoo 19, akun apa yang di-kredit saat Goods Receipt?",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C6 O1",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 928,
+      "width": 620,
+      "height": 40,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C6 O1T",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 180,
+      "y": 940,
+      "text": "A.  Accounts Payable (Vendor Liability) \u2014 [Default State]",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C6 O2",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 978,
+      "width": 620,
+      "height": 44,
+      "props": {
+        "fill": "#00D2D315",
+        "stroke": "#00D2D3",
+        "strokeWeight": 2,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C6 O2T",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 180,
+      "y": 992,
+      "text": "B.  Stock Interim Account (Received) \u2014 [Selected Active State] \u2713",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C6 O3",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 1032,
+      "width": 620,
+      "height": 42,
+      "props": {
+        "fill": "#1F2B3E",
+        "stroke": "#00D2D380",
+        "strokeWeight": 1.5,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C6 O3T",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 180,
+      "y": 1046,
+      "text": "C.  Cost of Goods Sold (COGS) \u2014 [Hover State \ud83d\udc46 Cyan Glow]",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C6 O4",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 160,
+      "y": 1084,
+      "width": 620,
+      "height": 40,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C6 O4T",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 180,
+      "y": 1096,
+      "text": "D.  Inventory Loss Account \u2014 [Default State]",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C7 Mod",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 830,
+      "y": 810,
+      "width": 480,
+      "height": 330,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C7 Title",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 834,
+      "text": "Target Penguasaan 4 Pilar Modul",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMT Accounting & Invoicing",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 884,
+      "text": "Accounting & Invoicing",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMP Accounting & Invoicing",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1210,
+      "y": 884,
+      "text": "92%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMTR Accounting & Invoicing",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 906,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMFL Accounting & Invoicing",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 906,
+      "width": 393,
+      "height": 6,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMT Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 942,
+      "text": "Sales, CRM & Point of Sale",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMP Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1210,
+      "y": 942,
+      "text": "74%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMTR Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 964,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMFL Sales, CRM & Point of Sale",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 964,
+      "width": 316,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMT Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 1000,
+      "text": "Inventory, Logistics & MRP",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMP Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1210,
+      "y": 1000,
+      "text": "58%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMTR Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 1022,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMFL Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 1022,
+      "width": 248,
+      "height": 6,
+      "props": {
+        "fill": "#F59E0B",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMT Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 1058,
+      "text": "Purchasing & 3-Way Match",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "BMP Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 1210,
+      "y": 1058,
+      "text": "88%",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMTR Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 1080,
+      "width": 428,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "BMFL Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 856,
+      "y": 1080,
+      "width": 376,
+      "height": 6,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C8 CTA",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 130,
+      "y": 1160,
+      "width": 1180,
+      "height": 180,
+      "props": {
+        "fill": "#161E2E",
+        "stroke": "#2B384E",
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C8 Tag",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 480,
+      "y": 1184,
+      "text": "\ud83c\udfaf GARANSI KESIAPAN KELULUSAN 100%",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C8 Title",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 380,
+      "y": 1210,
+      "text": "Mulai Latihan Sekarang & Raih Gelar Konsultan Resmi",
+      "props": {
+        "fontSize": 24,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "C8 BTN",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 570,
+      "y": 1264,
+      "width": 280,
+      "height": 46,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 23
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "C8 BTN Text",
+      "parent": {
+        "$ref": "d_bento"
+      },
+      "x": 606,
+      "y": 1278,
+      "text": "Mulai Belajar Sekarang (Gratis)",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "as": "m_bento",
+    "command": "node.create",
+    "params": {
+      "type": "frame",
+      "name": "Mobile 390 - Bento Responsive Reflow",
+      "x": 1520,
+      "y": 0,
+      "width": 390,
+      "height": 1640,
+      "props": {
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Header",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 60,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Logo",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 16,
+      "y": 14,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Logo T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 23,
+      "y": 21,
+      "text": "OP",
+      "props": {
+        "fontSize": 14,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Brand",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 56,
+      "y": 20,
+      "text": "OdooPro",
+      "props": {
+        "fontSize": 17,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Streak Pill",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 278,
+      "y": 14,
+      "width": 96,
+      "height": 32,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Streak T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 290,
+      "y": 22,
+      "text": "\ud83d\udd25 14 Hari",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C1",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 16,
+      "y": 76,
+      "width": 358,
+      "height": 220,
+      "props": {
+        "fill": "#161E2E",
+        "stroke": "#2B384E",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C1 Tag",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 94,
+      "text": "\ud83c\udfaf 100% EXAM ALIGNED",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C1 Title",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 116,
+      "text": "Sertifikasi Odoo 19 Fungsional",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C1 Desc",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 142,
+      "text": "321 bank soal terverifikasi, latihan alur jurnal akuntansi, landed cost, dan BOM.",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C1 BTN",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 234,
+      "width": 326,
+      "height": 44,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C1 BTN T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 114,
+      "y": 248,
+      "text": "\u26a1 Coba Simulasi Ujian Gratis",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C2",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 16,
+      "y": 312,
+      "width": 358,
+      "height": 180,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C2 Tag",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 328,
+      "text": "INDEX KESIAPAN RIIL",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C2 Val",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 350,
+      "text": "78%",
+      "props": {
+        "fontSize": 42,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C2 Stat",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 140,
+      "y": 362,
+      "text": "SIAP UJIAN \u2705 (Target 70%)",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C2 Days",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 140,
+      "y": 384,
+      "text": "\u23f1\ufe0f Sisa 21 Hari ke Pearson VUE",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C2 Track",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 418,
+      "width": 326,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C2 Fill",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 418,
+      "width": 254,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C2 Sub",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 444,
+      "text": "73 soal butuh pengulangan minggu ini untuk menjaga daya ingat.",
+      "props": {
+        "fontSize": 11,
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB SM2",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 16,
+      "y": 508,
+      "width": 173,
+      "height": 130,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB SM2 T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 28,
+      "y": 522,
+      "text": "SPACED REPETITION",
+      "props": {
+        "fontSize": 9,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB SM2 V",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 28,
+      "y": 544,
+      "text": "18 Kartu",
+      "props": {
+        "fontSize": 20,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB SM2 S",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 28,
+      "y": 576,
+      "text": "Wajib diulang hari ini",
+      "props": {
+        "fontSize": 11,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB SM2 Link",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 28,
+      "y": 604,
+      "text": "Drill 5 Mnt \u2192",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Aud",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 201,
+      "y": 508,
+      "width": 173,
+      "height": 130,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Aud T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 213,
+      "y": 522,
+      "text": "AUDIO STUDIO",
+      "props": {
+        "fontSize": 9,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Aud V",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 213,
+      "y": 544,
+      "text": "4.8 Jam",
+      "props": {
+        "fontSize": 20,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Aud S",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 213,
+      "y": 576,
+      "text": "Belajar saat commute",
+      "props": {
+        "fontSize": 11,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Aud Link",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 213,
+      "y": 604,
+      "text": "\u25b6 Play Bab 4",
+      "props": {
+        "fontSize": 11,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C6 Exam",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 16,
+      "y": 654,
+      "width": 358,
+      "height": 320,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C6 Head",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 672,
+      "text": "Simulasi Ujian Realtime",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C6 Tim",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 270,
+      "y": 672,
+      "text": "\u23f1\ufe0f 47:35",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Q1",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 700,
+      "text": "Soal #14: Di Odoo 19 FIFO Perpetual Valuation,",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Q2",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 718,
+      "text": "akun apa yang di-kredit saat Goods Receipt?",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Opt 1",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 744,
+      "width": 326,
+      "height": 44,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Opt 1T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 48,
+      "y": 758,
+      "text": "A.  Accounts Payable (Vendor)",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Opt 2",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 796,
+      "width": 326,
+      "height": 44,
+      "props": {
+        "fill": "#00D2D315",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1.5,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Opt 2T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 48,
+      "y": 810,
+      "text": "B.  Stock Interim Account (Received) \u2713",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Opt 3",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 848,
+      "width": 326,
+      "height": 44,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Opt 3T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 48,
+      "y": 862,
+      "text": "C.  Cost of Goods Sold (COGS)",
+      "props": {
+        "fontSize": 12,
+        "fill": "#CBD5E1"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Feedback",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 912,
+      "text": "Jawaban Benar! Akun interim menampung penerimaan fisik sebelum Vendor Bill.",
+      "props": {
+        "fontSize": 11,
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C7 Mods",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 16,
+      "y": 990,
+      "width": 358,
+      "height": 280,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C7 Head",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1010,
+      "text": "Penguasaan 4 Pilar Modul",
+      "props": {
+        "fontSize": 15,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMT Accounting & Finance",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1042,
+      "text": "Accounting & Finance",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMP Accounting & Finance",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 324,
+      "y": 1042,
+      "text": "92%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMTR Accounting & Finance",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1062,
+      "width": 326,
+      "height": 4,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMFL Accounting & Finance",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1062,
+      "width": 299,
+      "height": 4,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMT Sales, CRM & POS",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1098,
+      "text": "Sales, CRM & POS",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMP Sales, CRM & POS",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 324,
+      "y": 1098,
+      "text": "74%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMTR Sales, CRM & POS",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1118,
+      "width": 326,
+      "height": 4,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMFL Sales, CRM & POS",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1118,
+      "width": 241,
+      "height": 4,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMT Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1154,
+      "text": "Inventory, Logistics & MRP",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMP Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 324,
+      "y": 1154,
+      "text": "58%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F59E0B"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMTR Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1174,
+      "width": 326,
+      "height": 4,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMFL Inventory, Logistics & MRP",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1174,
+      "width": 189,
+      "height": 4,
+      "props": {
+        "fill": "#F59E0B",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMT Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1210,
+      "text": "Purchasing & 3-Way Match",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MMP Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 324,
+      "y": 1210,
+      "text": "88%",
+      "props": {
+        "fontSize": 12,
+        "fontStyle": "Bold",
+        "fill": "#10B981"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMTR Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1230,
+      "width": 326,
+      "height": 4,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MMFL Purchasing & 3-Way Match",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1230,
+      "width": 286,
+      "height": 4,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C8 CTA",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 16,
+      "y": 1286,
+      "width": 358,
+      "height": 180,
+      "props": {
+        "fill": "#161E2E",
+        "stroke": "#2B384E",
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C8 Tag",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 80,
+      "y": 1308,
+      "text": "\ud83c\udfaf GARANSI LULUS SERTIFIKASI",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C8 Tit",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 48,
+      "y": 1332,
+      "text": "Raih Gelar Konsultan Resmi",
+      "props": {
+        "fontSize": 18,
+        "fontStyle": "Bold",
+        "fill": "#F8FAFC"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB C8 BTN",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 32,
+      "y": 1386,
+      "width": 326,
+      "height": 46,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 23
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB C8 BTN T",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 104,
+      "y": 1400,
+      "text": "Mulai Belajar Sekarang (Gratis)",
+      "props": {
+        "fontSize": 13,
+        "fontStyle": "Bold",
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MB Nav Bar",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 0,
+      "y": 1568,
+      "width": 390,
+      "height": 72,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "strokeTopWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab I Bento",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 24,
+      "y": 1582,
+      "text": "\u26a1",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab L Bento",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 20,
+      "y": 1604,
+      "text": "Bento",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "Bold",
+        "fill": "#00D2D3"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab I Materi",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 102,
+      "y": 1582,
+      "text": "\ud83d\udcd6",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab L Materi",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 98,
+      "y": 1604,
+      "text": "Materi",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "normal",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab I Ujian",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 180,
+      "y": 1582,
+      "text": "\ud83d\udcdd",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab L Ujian",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 176,
+      "y": 1604,
+      "text": "Ujian",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "normal",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab I Audio",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 258,
+      "y": 1582,
+      "text": "\ud83c\udfa7",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab L Audio",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 254,
+      "y": 1604,
+      "text": "Audio",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "normal",
+        "fill": "#94A3B8"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab I Profil",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 336,
+      "y": 1582,
+      "text": "\ud83d\udc64",
+      "props": {
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "MB Tab L Profil",
+      "parent": {
+        "$ref": "m_bento"
+      },
+      "x": 332,
+      "y": 1604,
+      "text": "Profil",
+      "props": {
+        "fontSize": 10,
+        "fontStyle": "normal",
+        "fill": "#94A3B8"
+      }
+    }
+  }
+]

@@ -1,4 +1,5 @@
 // app.js: OdooPro Router, State Manager & Gamification
+import { renderLanding } from './screens/landing.js';
 import { renderDashboard } from './screens/dashboard.js';
 import { renderTopics } from './screens/topics.js';
 import { renderQuiz } from './screens/quiz.js';
@@ -247,6 +248,8 @@ function initMiniPlayer() {
   const miniInfo = document.getElementById('mini-player-info');
   const miniToggle = document.getElementById('mini-player-toggle');
   const miniClose = document.getElementById('mini-player-close');
+  const miniPrev = document.getElementById('mini-player-prev');
+  const miniNext = document.getElementById('mini-player-next');
 
   if (miniInfo) {
     miniInfo.addEventListener('click', () => {
@@ -254,10 +257,24 @@ function initMiniPlayer() {
     });
   }
 
+  if (miniPrev) {
+    miniPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      audioPlayer.prev();
+    });
+  }
+
   if (miniToggle) {
     miniToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       audioPlayer.togglePlay();
+    });
+  }
+
+  if (miniNext) {
+    miniNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      audioPlayer.next();
     });
   }
 
@@ -276,16 +293,25 @@ function initMiniPlayer() {
 }
 
 function router() {
-  const hash = window.location.hash || '#dashboard';
+  const hash = window.location.hash || '#landing';
   const app = document.getElementById('app');
   if (!app) return;
+
+  // Manage landing mode styling (hides student sidebar/header on public landing)
+  if (hash === '#landing' || hash === '' || hash === '#') {
+    document.body.classList.add('landing-mode');
+  } else {
+    document.body.classList.remove('landing-mode');
+  }
 
   updateBottomNav(hash);
   updateMiniPlayer();
   state.updateHeader();
   window.scrollTo({ top: 0, behavior: 'instant' });
 
-  if (hash === '#dashboard' || hash === '' || hash === '#') {
+  if (hash === '#landing' || hash === '' || hash === '#') {
+    renderLanding(app);
+  } else if (hash === '#dashboard') {
     renderDashboard(app);
   } else if (hash === '#topics') {
     renderTopics(app);

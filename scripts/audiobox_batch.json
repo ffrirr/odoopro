@@ -1,0 +1,4083 @@
+[
+  {
+    "as": "desktop",
+    "command": "node.create",
+    "params": {
+      "type": "frame",
+      "name": "Desktop 1440 - Audio Box Studio",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1120,
+      "props": {
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Navbar BG",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 64,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Nav Logo Box",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 80,
+      "y": 16,
+      "width": 32,
+      "height": 32,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Logo Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 87,
+      "y": 23,
+      "text": "OP",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 14,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Nav Brand Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 122,
+      "y": 22,
+      "text": "OdooPro Audio Studio",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 15,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Vocal Mode Pill",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 880,
+      "y": 16,
+      "width": 340,
+      "height": 32,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1,
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Vocal Mode Pill Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 894,
+      "y": 23,
+      "text": "\ud83c\udf99\ufe0f Vokal: Gadis Neural (Natural Explainer) \u2713",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 11.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Offline Pill",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1235,
+      "y": 16,
+      "width": 125,
+      "height": 32,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Offline Pill Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1248,
+      "y": 23,
+      "text": "\u26a1 192kbps Hi-Fi",
+      "props": {
+        "fill": "#10B981",
+        "fontSize": 11,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "as": "player_card",
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Audio Box Player Card",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 80,
+      "y": 88,
+      "width": 800,
+      "height": 590,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 24
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Accent Top Stripe",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 80,
+      "y": 88,
+      "width": 800,
+      "height": 4,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Badge Chapter",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 112,
+      "width": 160,
+      "height": 26,
+      "props": {
+        "fill": "#201726",
+        "stroke": "#714B67",
+        "strokeWeight": 1,
+        "cornerRadius": 13
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Chapter Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 118,
+      "y": 118,
+      "text": "BAB 04 \u00b7 MICRO-LECTURE",
+      "props": {
+        "fill": "#E0B0D5",
+        "fontSize": 10.5,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Badge Question Num",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 278,
+      "y": 112,
+      "width": 135,
+      "height": 26,
+      "props": {
+        "fill": "#0D252F",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1,
+        "cornerRadius": 13
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Badge Question Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 288,
+      "y": 118,
+      "text": "SOAL #14 DARI 300",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 10.5,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bitrate Pill",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 688,
+      "y": 112,
+      "width": 164,
+      "height": 26,
+      "props": {
+        "fill": "#101622",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 13
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Bitrate Dot",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 700,
+      "y": 121,
+      "width": 8,
+      "height": 8,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Bitrate Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 716,
+      "y": 118,
+      "text": "192 KBPS NATURAL STEREO",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Vinyl Outer Disc",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 158,
+      "width": 130,
+      "height": 130,
+      "props": {
+        "fill": "#0A0D14",
+        "stroke": "#232E42",
+        "strokeWeight": 3,
+        "cornerRadius": 65
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Vinyl Groove",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 120,
+      "y": 170,
+      "width": 106,
+      "height": 106,
+      "props": {
+        "fill": "#121824",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 53
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Vinyl Center Core",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 147,
+      "y": 197,
+      "width": 52,
+      "height": 52,
+      "props": {
+        "fill": "#714B67",
+        "stroke": "#00D2D3",
+        "strokeWeight": 2,
+        "cornerRadius": 26
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Vinyl Center Label",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 158,
+      "y": 213,
+      "text": "\ud83c\udfa7 #14",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 11,
+        "fontWeight": 900
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Track Module Cat",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 262,
+      "y": 162,
+      "text": "INVENTORY & ACCOUNTING AUTOMATED VALUATION",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 11,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Track Main Question",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 262,
+      "y": 186,
+      "text": "Pada metode Automated Valuation FIFO Odoo 19, akun apa yang\ndi-kredit saat Goods Receipt dari Vendor?",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 17,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Narrator Feature Chip",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 262,
+      "y": 252,
+      "width": 460,
+      "height": 30,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Narrator Feature Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 274,
+      "y": 260,
+      "text": "\ud83c\udf99\ufe0f Narasi: Gadis Neural (Penjelasan Konsep ID) + Jenny Neural (Soal EN)",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 11.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Equalizer Track Container",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 306,
+      "width": 744,
+      "height": 60,
+      "props": {
+        "fill": "#0D111A",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_0",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 124,
+      "y": 323,
+      "width": 8,
+      "height": 26,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_1",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 144,
+      "y": 320,
+      "width": 8,
+      "height": 33,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_2",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 164,
+      "y": 317,
+      "width": 8,
+      "height": 38,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_3",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 184,
+      "y": 315,
+      "width": 8,
+      "height": 42,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_4",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 204,
+      "y": 315,
+      "width": 8,
+      "height": 43,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_5",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 224,
+      "y": 315,
+      "width": 8,
+      "height": 42,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_6",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 244,
+      "y": 317,
+      "width": 8,
+      "height": 38,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_7",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 264,
+      "y": 320,
+      "width": 8,
+      "height": 32,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_8",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 284,
+      "y": 324,
+      "width": 8,
+      "height": 24,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_9",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 304,
+      "y": 327,
+      "width": 8,
+      "height": 18,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_10",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 324,
+      "y": 330,
+      "width": 8,
+      "height": 12,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_11",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 344,
+      "y": 332,
+      "width": 8,
+      "height": 8,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_12",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 364,
+      "y": 332,
+      "width": 8,
+      "height": 8,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_13",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 384,
+      "y": 331,
+      "width": 8,
+      "height": 10,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_14",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 404,
+      "y": 329,
+      "width": 8,
+      "height": 14,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_15",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 424,
+      "y": 326,
+      "width": 8,
+      "height": 20,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_16",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 444,
+      "y": 322,
+      "width": 8,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_17",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 464,
+      "y": 319,
+      "width": 8,
+      "height": 34,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_18",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 484,
+      "y": 316,
+      "width": 8,
+      "height": 40,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_19",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 504,
+      "y": 315,
+      "width": 8,
+      "height": 43,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_20",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 524,
+      "y": 315,
+      "width": 8,
+      "height": 43,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_21",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 544,
+      "y": 316,
+      "width": 8,
+      "height": 41,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_22",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 564,
+      "y": 318,
+      "width": 8,
+      "height": 36,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_23",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 584,
+      "y": 321,
+      "width": 8,
+      "height": 30,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_24",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 604,
+      "y": 325,
+      "width": 8,
+      "height": 22,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_25",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 624,
+      "y": 328,
+      "width": 8,
+      "height": 16,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_26",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 644,
+      "y": 331,
+      "width": 8,
+      "height": 11,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_27",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 664,
+      "y": 332,
+      "width": 8,
+      "height": 8,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_28",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 684,
+      "y": 332,
+      "width": 8,
+      "height": 8,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_29",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 704,
+      "y": 331,
+      "width": 8,
+      "height": 11,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_30",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 724,
+      "y": 328,
+      "width": 8,
+      "height": 16,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_31",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 744,
+      "y": 325,
+      "width": 8,
+      "height": 23,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_32",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 764,
+      "y": 321,
+      "width": 8,
+      "height": 30,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_33",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 784,
+      "y": 318,
+      "width": 8,
+      "height": 36,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_34",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 804,
+      "y": 316,
+      "width": 8,
+      "height": 41,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "EqBar_35",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 824,
+      "y": 315,
+      "width": 8,
+      "height": 43,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Current Time",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 384,
+      "text": "0:14",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 12.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Scrubber BG Track",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 154,
+      "y": 390,
+      "width": 648,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Scrubber Progress",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 154,
+      "y": 390,
+      "width": 210,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Scrubber Thumb",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 358,
+      "y": 385,
+      "width": 16,
+      "height": 16,
+      "props": {
+        "fill": "#00D2D3",
+        "stroke": "#FFFFFF",
+        "strokeWeight": 2,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Total Duration",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 816,
+      "y": 384,
+      "text": "0:48",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 12.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Btn Shuffle",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 230,
+      "y": 420,
+      "width": 44,
+      "height": 44,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1,
+        "cornerRadius": 22
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Shuffle Icon",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 243,
+      "y": 432,
+      "text": "\ud83d\udd00",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Btn Rewind 10s",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 294,
+      "y": 420,
+      "width": 44,
+      "height": 44,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 22
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Rewind Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 302,
+      "y": 435,
+      "text": "\u21ba10s",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 11.5,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Btn Previous",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 358,
+      "y": 417,
+      "width": 50,
+      "height": 50,
+      "props": {
+        "fill": "#1F283B",
+        "stroke": "#2E3D56",
+        "strokeWeight": 1,
+        "cornerRadius": 25
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Prev Icon",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 373,
+      "y": 431,
+      "text": "\u23ee",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Btn Master Play",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 428,
+      "y": 408,
+      "width": 68,
+      "height": 68,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 34
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Master Play Icon",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 453,
+      "y": 425,
+      "text": "\u23f8",
+      "props": {
+        "fill": "#0B0F19",
+        "fontSize": 26,
+        "fontWeight": 900
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Btn Next",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 516,
+      "y": 417,
+      "width": 50,
+      "height": 50,
+      "props": {
+        "fill": "#1F283B",
+        "stroke": "#2E3D56",
+        "strokeWeight": 1,
+        "cornerRadius": 25
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Next Icon",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 532,
+      "y": 431,
+      "text": "\u23ed",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Btn Forward 10s",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 586,
+      "y": 420,
+      "width": 44,
+      "height": 44,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 22
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Forward Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 594,
+      "y": 435,
+      "text": "\u21bb10s",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 11.5,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Btn Repeat",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 650,
+      "y": 420,
+      "width": 64,
+      "height": 44,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1,
+        "cornerRadius": 22
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Repeat Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 662,
+      "y": 435,
+      "text": "\ud83d\udd01 All",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 11,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Aux Divider",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 498,
+      "width": 744,
+      "height": 1,
+      "props": {
+        "fill": "#232E42"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Aux Vocal Select",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 516,
+      "width": 260,
+      "height": 36,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Aux Vocal Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 120,
+      "y": 526,
+      "text": "\ud83c\udf99\ufe0f Vokal: Gadis Neural (Explainer) \u25bc",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 11.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Aux Speed Pill",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 384,
+      "y": 516,
+      "width": 95,
+      "height": 36,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Aux Speed Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 402,
+      "y": 526,
+      "text": "\u26a1 1.25x",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Aux Volume Pill",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 495,
+      "y": 516,
+      "width": 150,
+      "height": 36,
+      "props": {
+        "fill": "#1A2232",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Aux Volume Icon",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 507,
+      "y": 526,
+      "text": "\ud83d\udd0a",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Vol BG",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 535,
+      "y": 532,
+      "width": 90,
+      "height": 4,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Vol Fill",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 535,
+      "y": 532,
+      "width": 75,
+      "height": 4,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 2
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Aux Sleep Pill",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 660,
+      "y": 516,
+      "width": 105,
+      "height": 36,
+      "props": {
+        "fill": "#261E13",
+        "stroke": "#F59E0B",
+        "strokeWeight": 1,
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Aux Sleep Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 675,
+      "y": 526,
+      "text": "\ud83c\udf19 30 min",
+      "props": {
+        "fill": "#F59E0B",
+        "fontSize": 11.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "as": "lyrics_card",
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Synchronized Transcript Card",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 80,
+      "y": 700,
+      "width": 800,
+      "height": 380,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Lyrics Icon & Heading",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 724,
+      "text": "\ud83d\udcdd Live Transcript & Penjelasan Alur Bisnis Odoo 19",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 16,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Lyrics Sub",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 748,
+      "text": "Narasi terjemahan dan logika akuntansi otomatis disinkronkan dengan playback audio",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 12,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Quiz CTA Btn",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 680,
+      "y": 722,
+      "width": 170,
+      "height": 34,
+      "props": {
+        "fill": "#0E242E",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Quiz CTA Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 694,
+      "y": 732,
+      "text": "\u26a1 Uji Soal Ini di Quiz \u2192",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 11.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Transcript Q Box",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 780,
+      "width": 744,
+      "height": 62,
+      "props": {
+        "fill": "#0B0F19",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Transcript Q Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 124,
+      "y": 794,
+      "text": "Soal #14: On automated inventory valuation (FIFO) in Odoo 19, which account is credited\nupon Goods Receipt before vendor bill arrives?",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 13,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptRow_A",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 852,
+      "width": 744,
+      "height": 32,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1F283B",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptBadge_A",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 116,
+      "y": 857,
+      "width": 22,
+      "height": 22,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptLetter_A",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 123,
+      "y": 861,
+      "text": "A",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptText_A",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 148,
+      "y": 861,
+      "text": "Accounts Payable (Vendor Liability)",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 12.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptRow_B",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 890,
+      "width": 744,
+      "height": 32,
+      "props": {
+        "fill": "#0E2721",
+        "stroke": "#10B981",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptBadge_B",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 116,
+      "y": 895,
+      "width": 22,
+      "height": 22,
+      "props": {
+        "fill": "#10B981",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptLetter_B",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 123,
+      "y": 899,
+      "text": "B",
+      "props": {
+        "fill": "#0B0F19",
+        "fontSize": 11,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptText_B",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 148,
+      "y": 899,
+      "text": "Stock Interim Account (Received) \u2014 Kunci Jawaban Resmi \u2713",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 12.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptRow_C",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 928,
+      "width": 744,
+      "height": 32,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1F283B",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptBadge_C",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 116,
+      "y": 933,
+      "width": 22,
+      "height": 22,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptLetter_C",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 123,
+      "y": 937,
+      "text": "C",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptText_C",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 148,
+      "y": 937,
+      "text": "Cost of Goods Sold (COGS)",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 12.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptRow_D",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 966,
+      "width": 744,
+      "height": 32,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1F283B",
+        "strokeWeight": 1,
+        "cornerRadius": 6
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "OptBadge_D",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 116,
+      "y": 971,
+      "width": 22,
+      "height": 22,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptLetter_D",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 123,
+      "y": 975,
+      "text": "D",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "OptText_D",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 148,
+      "y": 975,
+      "text": "Inventory Valuation Loss Account",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 12.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Explanation Box",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 108,
+      "y": 1012,
+      "width": 744,
+      "height": 52,
+      "props": {
+        "fill": "#1F1522",
+        "stroke": "#714B67",
+        "strokeWeight": 1,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Explanation Text",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 122,
+      "y": 1022,
+      "text": "\ud83d\udca1 Pembahasan Vokal: Pada saat penerimaan barang (Goods Receipt), jurnal otomatis mendebit Persediaan\ndan mengkredit Akun Stock Interim (Received) hingga tagihan vendor (Vendor Bill) direkonsiliasi.",
+      "props": {
+        "fill": "#E0B0D5",
+        "fontSize": 11.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "as": "playlist_card",
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Playlist Card Deck",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 904,
+      "y": 88,
+      "width": 456,
+      "height": 992,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 24
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Playlist Title",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 114,
+      "text": "Daftar Putar MP3 Audio",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 18,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Playlist Sub",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 140,
+      "text": "300 pembahasan audio \u00b7 4.8 jam durasi vokal jernih",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 12,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TopicPill_Semua (300)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 166,
+      "width": 95,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TopicPillText_Semua (300)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 942,
+      "y": 173,
+      "text": "Semua (300)",
+      "props": {
+        "fill": "#0B0F19",
+        "fontSize": 10.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TopicPill_Akuntansi (50)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1035,
+      "y": 166,
+      "width": 116,
+      "height": 28,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TopicPillText_Akuntansi (50)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1045,
+      "y": 173,
+      "text": "Akuntansi (50)",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 10.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TopicPill_Inventory (45)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1159,
+      "y": 166,
+      "width": 116,
+      "height": 28,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TopicPillText_Inventory (45)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1169,
+      "y": 173,
+      "text": "Inventory (45)",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 10.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TopicPill_Sales (25)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1283,
+      "y": 166,
+      "width": 88,
+      "height": 28,
+      "props": {
+        "fill": "#1A2232",
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TopicPillText_Sales (25)",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1293,
+      "y": 173,
+      "text": "Sales (25)",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 10.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Search Box BG",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 206,
+      "width": 400,
+      "height": 38,
+      "props": {
+        "fill": "#0B0F19",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Search Placeholder",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 218,
+      "text": "\ud83d\udd0d Cari materi atau nomor soal...",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_11",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 258,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackNum_11",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 282,
+      "text": "11",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_11",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 272,
+      "text": "Multi-step routing: 2-step receipt vs \u2026",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_11",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 294,
+      "text": "Inventory \u00b7 #11 \u00b7 0:44",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_12",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 328,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackNum_12",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 352,
+      "text": "12",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_12",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 342,
+      "text": "Landed cost allocation in multi-curren\u2026",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_12",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 364,
+      "text": "Accounting \u00b7 #12 \u00b7 0:52",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_13",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 398,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackNum_13",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 422,
+      "text": "13",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_13",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 412,
+      "text": "Automated FIFO valuation vs AVCO costi\u2026",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_13",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 434,
+      "text": "Accounting \u00b7 #13 \u00b7 0:46",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_14",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 468,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#0D252E",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1.5,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackNowPlayingBadge_14",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 944,
+      "y": 486,
+      "width": 26,
+      "height": 26,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 13
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackPlayIcon_14",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 952,
+      "y": 491,
+      "text": "\u25b6",
+      "props": {
+        "fill": "#0B0F19",
+        "fontSize": 12,
+        "fontWeight": 900
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_14",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 482,
+      "text": "Goods Receipt credit account (Stock In\u2026",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 12.5,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_14",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 504,
+      "text": "Accounting \u00b7 #14 \u00b7 0:48",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackPlayingStatus_14",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 1248,
+      "y": 492,
+      "text": "SEDANG PUTAR",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 9.5,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_15",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 538,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackNum_15",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 562,
+      "text": "15",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_15",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 552,
+      "text": "Anglo-Saxon stock output reconciliatio\u2026",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_15",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 574,
+      "text": "Accounting \u00b7 #15 \u00b7 0:56",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_16",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 608,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackNum_16",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 632,
+      "text": "16",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_16",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 622,
+      "text": "Scrap order vs inventory adjustment sc\u2026",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_16",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 644,
+      "text": "Inventory \u00b7 #16 \u00b7 0:38",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_17",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 678,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackNum_17",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 702,
+      "text": "17",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_17",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 692,
+      "text": "Standard price vs real-time revaluatio\u2026",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_17",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 714,
+      "text": "Accounting \u00b7 #17 \u00b7 0:42",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "TrackRow_18",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 748,
+      "width": 400,
+      "height": 62,
+      "props": {
+        "fill": "#111723",
+        "stroke": "#1E2738",
+        "strokeWeight": 1,
+        "cornerRadius": 12
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackNum_18",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 772,
+      "text": "18",
+      "props": {
+        "fill": "#64748B",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackTitle_18",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 762,
+      "text": "Vendor bill 3-way matching tolerance t\u2026",
+      "props": {
+        "fill": "#F8FAFC",
+        "fontSize": 12.5,
+        "fontWeight": 600
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "TrackMeta_18",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 982,
+      "y": 784,
+      "text": "Purchases \u00b7 #18 \u00b7 0:50",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 10.5,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Key Takeaways Box",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 932,
+      "y": 832,
+      "width": 400,
+      "height": 220,
+      "props": {
+        "fill": "#101622",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Takeaways Heading",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 848,
+      "text": "\ud83d\udca1 Cheat Sheet Vokal Penjelasan",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 14,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tip_878",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 878,
+      "text": "\u2022 Vokal Gadis Neural menjelaskan alur akuntansi dalam baha",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tip_904",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 904,
+      "text": "\u2022 Vokal Jenny Neural membacakan pertanyaan resmi bahasa In",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tip_930",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 930,
+      "text": "\u2022 Lakukan simulasi kuis segera setelah mendengarkan untuk ",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Tip_956",
+      "parent": {
+        "$ref": "desktop"
+      },
+      "x": 948,
+      "y": 956,
+      "text": "\u2022 Gunakan sleep timer saat belajar menjelang tidur tanpa b",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "as": "mobile",
+    "command": "node.create",
+    "params": {
+      "type": "frame",
+      "name": "Mobile 390 - Audio Box",
+      "x": 1480,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "props": {
+        "fill": "#0B0F19"
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mobile Header BG",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 56,
+      "props": {
+        "fill": "#0E1320",
+        "stroke": "#232E42",
+        "strokeBottomWeight": 1
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile Back",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 16,
+      "y": 18,
+      "text": "\u2190 Beranda",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 13,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile Title",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 135,
+      "y": 18,
+      "text": "Audiobook Studio",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 14,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mobile Player Box",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 16,
+      "y": 72,
+      "width": 358,
+      "height": 480,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 20
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mobile Accent Top",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 16,
+      "y": 72,
+      "width": 358,
+      "height": 3,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile Badges",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 88,
+      "text": "BAB 04 \u00b7 SOAL #14 DARI 300",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 11,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile HiFi",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 272,
+      "y": 88,
+      "text": "\u25cf 192 KBPS",
+      "props": {
+        "fill": "#10B981",
+        "fontSize": 10,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mobile Vinyl Disc",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 150,
+      "y": 118,
+      "width": 90,
+      "height": 90,
+      "props": {
+        "fill": "#0A0D14",
+        "stroke": "#232E42",
+        "strokeWeight": 2,
+        "cornerRadius": 45
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mobile Vinyl Center",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 177,
+      "y": 145,
+      "width": 36,
+      "height": 36,
+      "props": {
+        "fill": "#714B67",
+        "stroke": "#00D2D3",
+        "strokeWeight": 1.5,
+        "cornerRadius": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile Vinyl Icon",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 185,
+      "y": 155,
+      "text": "\ud83c\udfa7",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 14
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile Q Title",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 224,
+      "text": "Pada metode Automated Valuation FIFO Odoo 19,\nakun apa yang di-kredit saat Goods Receipt?",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 13.5,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile Vocal Pill",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 272,
+      "text": "\ud83c\udf99\ufe0f Vokal Penjelasan: Gadis Neural (Natural)",
+      "props": {
+        "fill": "#00D2D3",
+        "fontSize": 11,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_0",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 36,
+      "y": 309,
+      "width": 8,
+      "height": 18,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_1",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 54,
+      "y": 307,
+      "width": 8,
+      "height": 23,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_2",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 72,
+      "y": 304,
+      "width": 8,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_3",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 90,
+      "y": 304,
+      "width": 8,
+      "height": 29,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_4",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 108,
+      "y": 304,
+      "width": 8,
+      "height": 28,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_5",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 126,
+      "y": 306,
+      "width": 8,
+      "height": 25,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_6",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 144,
+      "y": 309,
+      "width": 8,
+      "height": 19,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_7",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 162,
+      "y": 312,
+      "width": 8,
+      "height": 13,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_8",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 180,
+      "y": 314,
+      "width": 8,
+      "height": 8,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_9",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 198,
+      "y": 315,
+      "width": 8,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_10",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 216,
+      "y": 315,
+      "width": 8,
+      "height": 6,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_11",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 234,
+      "y": 314,
+      "width": 8,
+      "height": 9,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_12",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 252,
+      "y": 311,
+      "width": 8,
+      "height": 14,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_13",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 270,
+      "y": 308,
+      "width": 8,
+      "height": 20,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_14",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 288,
+      "y": 306,
+      "width": 8,
+      "height": 25,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_15",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 306,
+      "y": 304,
+      "width": 8,
+      "height": 29,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_16",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 324,
+      "y": 304,
+      "width": 8,
+      "height": 29,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "MobEqBar_17",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 342,
+      "y": 305,
+      "width": 8,
+      "height": 27,
+      "props": {
+        "fill": "#714B67",
+        "cornerRadius": 4
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob CurTime",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 348,
+      "text": "0:14",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 11,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mob Scrubber BG",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 68,
+      "y": 352,
+      "width": 254,
+      "height": 6,
+      "props": {
+        "fill": "#232E42",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mob Scrubber Fill",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 68,
+      "y": 352,
+      "width": 80,
+      "height": 6,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 3
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mob Scrubber Knob",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 144,
+      "y": 348,
+      "width": 14,
+      "height": 14,
+      "props": {
+        "fill": "#00D2D3",
+        "stroke": "#FFFFFF",
+        "strokeWeight": 1.5,
+        "cornerRadius": 7
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob TotTime",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 330,
+      "y": 348,
+      "text": "0:48",
+      "props": {
+        "fill": "#94A3B8",
+        "fontSize": 11,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Rewind",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 58,
+      "y": 395,
+      "text": "\u21ba10s",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 12,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Prev",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 110,
+      "y": 394,
+      "text": "\u23ee",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mob Master Play",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 166,
+      "y": 378,
+      "width": 58,
+      "height": 58,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 29
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Play Icon",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 187,
+      "y": 394,
+      "text": "\u23f8",
+      "props": {
+        "fill": "#0B0F19",
+        "fontSize": 22,
+        "fontWeight": 900
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Next",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 250,
+      "y": 394,
+      "text": "\u23ed",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 18
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Forward",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 296,
+      "y": 395,
+      "text": "\u21bb10s",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 12,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Aux Speed",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 78,
+      "y": 470,
+      "text": "\u26a1 1.25x Kecepatan",
+      "props": {
+        "fill": "#CBD5E1",
+        "fontSize": 11,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Aux Sleep",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 224,
+      "y": 470,
+      "text": "\ud83c\udf19 30m Sleep Timer",
+      "props": {
+        "fill": "#F59E0B",
+        "fontSize": 11,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mobile Lyrics Snippet",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 16,
+      "y": 568,
+      "width": 358,
+      "height": 250,
+      "props": {
+        "fill": "#141A26",
+        "stroke": "#232E42",
+        "strokeWeight": 1,
+        "cornerRadius": 16
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mobile Lyrics Head",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 586,
+      "text": "\ud83d\udcdd Kunci Jawaban & Penjelasan",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 13.5,
+        "fontWeight": 800
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mob Ans Box",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 612,
+      "width": 326,
+      "height": 44,
+      "props": {
+        "fill": "#0E2721",
+        "stroke": "#10B981",
+        "strokeWeight": 1,
+        "cornerRadius": 8
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Ans Text",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 44,
+      "y": 624,
+      "text": "B. Stock Interim Account (Received) \u2713",
+      "props": {
+        "fill": "#FFFFFF",
+        "fontSize": 12,
+        "fontWeight": 700
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Exp Text",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 670,
+      "text": "\ud83d\udca1 Jurnal otomatis mendebit Persediaan dan\nmengkredit Stock Interim Received hingga faktur tiba.",
+      "props": {
+        "fill": "#E0B0D5",
+        "fontSize": 11,
+        "fontWeight": 500
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "rectangle",
+      "name": "Mob Quiz Btn",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 32,
+      "y": 752,
+      "width": 326,
+      "height": 42,
+      "props": {
+        "fill": "#00D2D3",
+        "cornerRadius": 10
+      }
+    }
+  },
+  {
+    "command": "node.create",
+    "params": {
+      "type": "text",
+      "name": "Mob Quiz Btn Text",
+      "parent": {
+        "$ref": "mobile"
+      },
+      "x": 108,
+      "y": 765,
+      "text": "Lanjut Kerjakan Simulasi Kuis \u2192",
+      "props": {
+        "fill": "#0B0F19",
+        "fontSize": 12.5,
+        "fontWeight": 800
+      }
+    }
+  }
+]
